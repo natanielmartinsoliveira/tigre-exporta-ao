@@ -1,0 +1,34 @@
+# Ignore configuration files that may contain sensitive information.
+docroot/sites/*/settings.php
+docroot/sites/*/sync
+
+# Ignore paths that contain user-generated content.
+
+/docroot/sites/*/private
+docroot/sites/default/files
+!/docroot/sites/default/files/config_acqTmp-2017-12-20T15.47.55-8516/active/.htaccess
+!/docroot/sites/default/files/config_acqTmp-2017-12-20T15.47.55-8516/staging/.htaccess
+
+/docroot/sites/default/files/css/*
+!/docroot/sites/default/files/css/.gitkeep
+
+/docroot/sites/default/files/js/*
+!/docroot/sites/default/files/js/.gitkeep
+
+/docroot/sites/default/files/php/*
+/docroot/sites/default/files/php/twig/*
+!/docroot/sites/default/files/php/twig/.gitkeep
+
+!/docroot/sites/default/files/styles/.gitkeep
+
+!/docroot/sites/default/files/.htaccess
+
+cache
+docroot/themes/*/.sass-cache
+docroot/themes/theme_tigre/node_modules
+docroot/themes/theme_tigre/css/mixins.css
+docroot/themes/theme_tigre/css/style.css
+.idea/
+docroot/sites/tigre-exportacao.dd
+databases/
++acquia-files/
