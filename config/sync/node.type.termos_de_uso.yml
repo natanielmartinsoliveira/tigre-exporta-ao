@@ -1,0 +1,17 @@
+uuid: 5ee638e0-a40c-45df-bf56-6fef2cc0e03c
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Termos de Uso'
+type: termos_de_uso
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

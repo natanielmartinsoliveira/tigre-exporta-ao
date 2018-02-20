@@ -1,0 +1,25 @@
+uuid: c883e8c0-0512-4536-bbfa-0338942c5826
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragrafos
+    - node.type.politicas_de_privacidade
+  module:
+    - entity_reference_revisions
+id: node.politicas_de_privacidade.field_paragrafos
+field_name: field_paragrafos
+entity_type: node
+bundle: politicas_de_privacidade
+label: Parágrafos
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+field_type: entity_reference_revisions

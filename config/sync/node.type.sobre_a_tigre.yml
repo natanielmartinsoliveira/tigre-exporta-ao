@@ -1,0 +1,19 @@
+uuid: 21f8652d-589e-4f3a-8dc0-f2a1a624cd67
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - footer
+    parent: 'footer:menu_link_content:e8d94874-b6e2-4159-9f82-2f25fb187668'
+name: 'Sobre a Tigre'
+type: sobre_a_tigre
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

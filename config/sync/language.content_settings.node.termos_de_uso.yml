@@ -1,0 +1,16 @@
+uuid: 702b94cd-57a0-409d-827d-752ac1af3e1f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.termos_de_uso
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.termos_de_uso
+target_entity_type_id: node
+target_bundle: termos_de_uso
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: a8c9d928-19e7-44c8-91ac-b36341019b4f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.termos_de_uso.field_imagem_destaque
+    - node.type.termos_de_uso
+  module:
+    - user
+id: node.termos_de_uso.teaser
+targetEntityType: node
+bundle: termos_de_uso
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_imagem_destaque: true
+  langcode: true

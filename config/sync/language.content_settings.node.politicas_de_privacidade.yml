@@ -1,0 +1,16 @@
+uuid: 307d3430-9b0c-41b8-befb-04c8c0647127
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.politicas_de_privacidade
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.politicas_de_privacidade
+target_entity_type_id: node
+target_bundle: politicas_de_privacidade
+default_langcode: site_default
+language_alterable: false

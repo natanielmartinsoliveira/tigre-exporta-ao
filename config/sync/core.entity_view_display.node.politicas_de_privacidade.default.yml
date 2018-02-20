@@ -1,0 +1,40 @@
+uuid: 7b633324-0956-4127-9a75-9ddcee28829d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.politicas_de_privacidade.field_imagem_destaque
+    - field.field.node.politicas_de_privacidade.field_paragrafos
+    - node.type.politicas_de_privacidade
+  module:
+    - entity_reference_revisions
+    - image
+    - user
+id: node.politicas_de_privacidade.default
+targetEntityType: node
+bundle: politicas_de_privacidade
+mode: default
+content:
+  field_imagem_destaque:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_paragrafos:
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

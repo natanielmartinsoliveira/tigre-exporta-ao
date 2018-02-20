@@ -1,0 +1,8 @@
+uuid: 1e8efa14-8776-4dea-b26a-dc679768a9f6
+langcode: pt-br
+status: true
+dependencies: {  }
+id: sites-do-grupo
+label: 'Sites do grupo'
+description: 'Sites do grupo Tigre'
+locked: false
