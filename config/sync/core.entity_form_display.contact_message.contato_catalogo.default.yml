@@ -1,0 +1,44 @@
+uuid: 7ff15f15-2f3b-4118-9f84-c8c77236fc6a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.contato_catalogo
+    - field.field.contact_message.contato_catalogo.field_contato_catalogo_email
+    - field.field.contact_message.contato_catalogo.field_contato_catalogo_nome
+    - field.field.contact_message.contato_catalogo.field_contato_catalogo_profissao
+id: contact_message.contato_catalogo.default
+targetEntityType: contact_message
+bundle: contato_catalogo
+mode: default
+content:
+  field_contato_catalogo_email:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_contato_catalogo_nome:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contato_catalogo_profissao:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  copy: true
+  langcode: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

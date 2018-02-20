@@ -1,0 +1,11 @@
+uuid: c2454215-82e5-4a4c-95da-803eed586493
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.unidade
+id: node.unidade
+target_entity_type_id: node
+target_bundle: unidade
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: 157a4e91-b854-4b16-9507-275411b4ab96
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.newsletter
+    - field.storage.contact_message.field_newsletter_email
+id: contact_message.newsletter.field_newsletter_email
+field_name: field_newsletter_email
+entity_type: contact_message
+bundle: newsletter
+label: E-mail
+description: 'Digite aqui seu e-mail'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

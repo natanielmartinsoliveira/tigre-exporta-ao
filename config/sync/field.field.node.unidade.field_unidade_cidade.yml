@@ -1,0 +1,19 @@
+uuid: ebfdcd41-24e1-4162-b699-127dd34698dc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unidade_cidade
+    - node.type.unidade
+id: node.unidade.field_unidade_cidade
+field_name: field_unidade_cidade
+entity_type: node
+bundle: unidade
+label: Cidade
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

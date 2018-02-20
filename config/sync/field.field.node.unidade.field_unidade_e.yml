@@ -1,0 +1,19 @@
+uuid: 4f2594e1-1554-4377-9e2b-066decd1f8ef
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unidade_e
+    - node.type.unidade
+id: node.unidade.field_unidade_e
+field_name: field_unidade_e
+entity_type: node
+bundle: unidade
+label: Endereço
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

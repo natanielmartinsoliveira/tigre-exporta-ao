@@ -1,0 +1,28 @@
+uuid: adcf9caf-69e2-4634-98fc-b4c3d12bda28
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.newsletter
+    - field.field.contact_message.newsletter.field_newsletter_email
+id: contact_message.newsletter.default
+targetEntityType: contact_message
+bundle: newsletter
+mode: default
+content:
+  field_newsletter_email:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+hidden:
+  copy: true
+  langcode: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

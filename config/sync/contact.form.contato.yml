@@ -1,0 +1,12 @@
+uuid: e7c311e6-6b80-416f-b238-765a61dde497
+langcode: pt-br
+status: true
+dependencies: {  }
+id: contato
+label: Contato
+recipients:
+  - lucas@nextidea.com.br
+reply: ''
+weight: 0
+message: ''
+redirect: ''

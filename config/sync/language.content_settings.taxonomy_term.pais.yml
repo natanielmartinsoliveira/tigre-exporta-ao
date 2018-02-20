@@ -1,0 +1,16 @@
+uuid: 60ffcc33-322b-4f8d-9784-cdee40aac8be
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pais
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.pais
+target_entity_type_id: taxonomy_term
+target_bundle: pais
+default_langcode: site_default
+language_alterable: false

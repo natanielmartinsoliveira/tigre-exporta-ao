@@ -1,0 +1,66 @@
+uuid: 41d63670-679e-4c00-95d3-03ddfacb0105
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.contato
+    - field.field.contact_message.contato.field_contato_celular
+    - field.field.contact_message.contato.field_contato_empresa
+    - field.field.contact_message.contato.field_contato_pais
+    - field.field.contact_message.contato.field_contato_profissao
+    - field.field.contact_message.contato.field_contato_telefone
+  module:
+    - options
+id: contact_message.contato.default
+targetEntityType: contact_message
+bundle: contato
+mode: default
+content:
+  field_contato_celular:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contato_empresa:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contato_pais:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_contato_profissao:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_contato_telefone:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: d2be309b-c773-40bb-b0a7-251a072c06a0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.contato
+    - field.storage.contact_message.field_contato_profissao
+  module:
+    - options
+id: contact_message.contato.field_contato_profissao
+field_name: field_contato_profissao
+entity_type: contact_message
+bundle: contato
+label: Profissão
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

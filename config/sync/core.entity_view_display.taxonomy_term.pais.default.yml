@@ -1,0 +1,31 @@
+uuid: ed74e2da-1211-4278-9780-3fcfd3a25691
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.pais.field_pais_sigla
+    - taxonomy.vocabulary.pais
+  module:
+    - text
+id: taxonomy_term.pais.default
+targetEntityType: taxonomy_term
+bundle: pais
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pais_sigla:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

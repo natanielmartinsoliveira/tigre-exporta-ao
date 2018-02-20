@@ -1,0 +1,21 @@
+uuid: 5f163eba-21fc-4c8b-b74c-20f669eed501
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.contato_catalogo
+    - field.storage.contact_message.field_contato_catalogo_profissao
+  module:
+    - options
+id: contact_message.contato_catalogo.field_contato_catalogo_profissao
+field_name: field_contato_catalogo_profissao
+entity_type: contact_message
+bundle: contato_catalogo
+label: Profissão
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,9 @@
+uuid: 9c3b69dd-ee24-442e-a639-f9743a049a53
+langcode: pt-br
+status: true
+dependencies: {  }
+name: Marcas
+vid: marcas
+description: ''
+hierarchy: 0
+weight: 0

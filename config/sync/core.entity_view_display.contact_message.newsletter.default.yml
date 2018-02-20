@@ -1,0 +1,29 @@
+uuid: 786a8ae5-d9b4-45ed-9a36-7a797b316e1f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.newsletter
+    - field.field.contact_message.newsletter.field_newsletter_email
+id: contact_message.newsletter.default
+targetEntityType: contact_message
+bundle: newsletter
+mode: default
+content:
+  field_newsletter_email:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

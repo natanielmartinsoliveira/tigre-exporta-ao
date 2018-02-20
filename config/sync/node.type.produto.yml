@@ -1,0 +1,17 @@
+uuid: e33044da-923a-4cb8-aac8-d7a1b0406bae
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Produto
+type: produto
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

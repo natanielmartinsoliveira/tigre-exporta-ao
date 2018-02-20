@@ -1,0 +1,19 @@
+uuid: f1a72a6b-3020-48db-898f-908080ccab5c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unidade_estado
+    - node.type.unidade
+id: node.unidade.field_unidade_estado
+field_name: field_unidade_estado
+entity_type: node
+bundle: unidade
+label: Estado
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

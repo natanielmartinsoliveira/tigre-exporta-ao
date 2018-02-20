@@ -1,0 +1,16 @@
+uuid: e960c36c-bba6-4684-a7a5-7cf294890cc0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.marcas
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.marcas
+target_entity_type_id: taxonomy_term
+target_bundle: marcas
+default_langcode: site_default
+language_alterable: false

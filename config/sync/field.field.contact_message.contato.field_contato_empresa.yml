@@ -1,0 +1,19 @@
+uuid: 20fd8920-aecf-452f-910f-786a6464437a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.contato
+    - field.storage.contact_message.field_contato_empresa
+id: contact_message.contato.field_contato_empresa
+field_name: field_contato_empresa
+entity_type: contact_message
+bundle: contato
+label: Empresa
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 472593f1-fd29-4a60-b121-600bbc4f3901
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.contato_catalogo
+    - field.storage.contact_message.field_contato_catalogo_email
+id: contact_message.contato_catalogo.field_contato_catalogo_email
+field_name: field_contato_catalogo_email
+entity_type: contact_message
+bundle: contato_catalogo
+label: E-mail
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

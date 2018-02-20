@@ -1,0 +1,16 @@
+uuid: a449c7ca-2cce-4912-9f6a-3992582d6f4d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.produto
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.produto
+target_entity_type_id: taxonomy_term
+target_bundle: produto
+default_langcode: site_default
+language_alterable: true

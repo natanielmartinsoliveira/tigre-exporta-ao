@@ -1,0 +1,22 @@
+uuid: e51dc6f3-2fec-4a02-a70d-02cae813e239
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.produto
+  module:
+    - text
+id: node.produto.body
+field_name: body
+entity_type: node
+bundle: produto
+label: Descrição
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
