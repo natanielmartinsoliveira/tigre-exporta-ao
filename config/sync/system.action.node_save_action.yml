@@ -1,0 +1,13 @@
+uuid: cd404738-221a-4d78-a015-b758aa516792
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: U9HspszLxcw6pZmRacFa6yDbbheyMN-We4fPbrWWHGg
+id: node_save_action
+label: 'Salvar conteúdo'
+type: node
+plugin: node_save_action
+configuration: {  }
