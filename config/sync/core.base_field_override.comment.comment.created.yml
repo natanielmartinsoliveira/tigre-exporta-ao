@@ -1,0 +1,18 @@
+uuid: ef085edb-1820-4e12-9ca1-9dfd62bf0266
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.created
+field_name: created
+entity_type: comment
+bundle: comment
+label: Criado
+description: 'The time that the comment was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,18 @@
+uuid: da45168a-003d-4beb-8c48-fa6f32f5b9bb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.homepage
+field_name: homepage
+entity_type: comment
+bundle: comment
+label: 'Sua página'
+description: 'The comment author''s home page address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: uri

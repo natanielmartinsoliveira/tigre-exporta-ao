@@ -1,0 +1,16 @@
+uuid: 34d60a24-78cf-4a3f-ab45-a8ec1694f64d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: comment.comment
+target_entity_type_id: comment
+target_bundle: comment
+default_langcode: site_default
+language_alterable: false
