@@ -1,0 +1,22 @@
+uuid: 055fdf2c-4fa2-41ad-8703-d249bb905ee8
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tigre
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: tigre_breadcrumbs
+theme: tigre
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

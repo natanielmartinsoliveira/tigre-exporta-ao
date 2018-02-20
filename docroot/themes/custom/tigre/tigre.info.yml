@@ -1,0 +1,8 @@
+name: Tigre Exportação
+type: theme
+description: 'Tema do site Tigre Exportação'
+core: 8.x
+base theme: bootstrap
+screenshot: screenshot.png
+
+  

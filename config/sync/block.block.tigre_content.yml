@@ -1,0 +1,22 @@
+uuid: 078694a1-7f3e-4ddd-a2fc-ae377895eb19
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tigre
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: tigre_content
+theme: tigre
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Conteúdo da página principal'
+  provider: system
+  label_display: '0'
+visibility: {  }
