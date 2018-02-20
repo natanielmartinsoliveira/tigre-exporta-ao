@@ -1,17 +1,17 @@
-uuid: 8bf1092b-d111-4f8a-8716-bef89306b4bd
+uuid: b506a0fd-2ec9-4728-8e1a-22c00985c9ce
 langcode: pt-br
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.termos_de_uso.body
-    - node.type.termos_de_uso
+    - field.field.node.politica_de_privacidade.body
+    - node.type.politica_de_privacidade
   module:
     - text
     - user
-id: node.termos_de_uso.teaser
+id: node.politica_de_privacidade.teaser
 targetEntityType: node
-bundle: termos_de_uso
+bundle: politica_de_privacidade
 mode: teaser
 content:
   body:

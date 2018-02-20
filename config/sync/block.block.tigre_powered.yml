@@ -1,6 +1,6 @@
 uuid: 47a9329a-b602-4291-a7f7-0c5cb220d025
 langcode: pt-br
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: tigre_powered
 theme: tigre
 region: sidebar_first
-weight: 10
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:

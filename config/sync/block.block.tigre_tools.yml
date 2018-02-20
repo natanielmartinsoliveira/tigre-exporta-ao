@@ -1,6 +1,6 @@
 uuid: c42a167c-5187-417b-b5b6-6324795c7230
 langcode: pt-br
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -13,7 +13,7 @@ _core:
 id: tigre_tools
 theme: tigre
 region: sidebar_first
-weight: 0
+weight: -6
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

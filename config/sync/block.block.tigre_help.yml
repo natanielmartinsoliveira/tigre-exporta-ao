@@ -11,7 +11,7 @@ _core:
 id: tigre_help
 theme: tigre
 region: content
-weight: -30
+weight: -7
 provider: null
 plugin: help_block
 settings:

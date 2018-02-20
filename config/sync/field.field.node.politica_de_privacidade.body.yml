@@ -1,0 +1,22 @@
+uuid: 3f5037cf-648e-4bed-8739-198634eebde3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.politica_de_privacidade
+  module:
+    - text
+id: node.politica_de_privacidade.body
+field_name: body
+entity_type: node
+bundle: politica_de_privacidade
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

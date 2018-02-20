@@ -1,4 +1,4 @@
-uuid: 87e2b79e-e186-49d8-a76c-21115662ee80
+uuid: f885f675-535c-4337-8228-47ac61d216fa
 langcode: pt-br
 status: true
 dependencies:
@@ -9,8 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Termos de Uso'
-type: termos_de_uso
+name: 'Política de Privacidade'
+type: politica_de_privacidade
 description: ''
 help: ''
 new_revision: true
