@@ -182,7 +182,7 @@ display:
     display_options:
       display_description: 'A list of new users'
       block_description: 'Novos membros'
-      block_category: Usuário
+      block_category: User
       display_extenders: {  }
     cache_metadata:
       contexts:
