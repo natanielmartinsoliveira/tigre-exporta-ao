@@ -1,0 +1,22 @@
+uuid: 89c991d6-62d8-4bff-bac1-851fd1498128
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.banner_home
+id: node.banner_home.promote
+field_name: promote
+entity_type: node
+bundle: banner_home
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

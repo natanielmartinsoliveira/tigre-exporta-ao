@@ -1,0 +1,28 @@
+uuid: a49dfc64-bd1f-4945-916f-4fc8adeb82bd
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.marcas
+  module:
+    - block_class
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: marcas
+theme: tigre
+region: primary_menu
+weight: -9
+provider: null
+plugin: 'system_menu_block:marcas'
+settings:
+  id: 'system_menu_block:marcas'
+  label: Marcas
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

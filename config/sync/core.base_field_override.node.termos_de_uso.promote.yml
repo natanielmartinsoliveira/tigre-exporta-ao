@@ -1,0 +1,22 @@
+uuid: e49c22ef-4934-40d7-b743-410076675f6c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.termos_de_uso
+id: node.termos_de_uso.promote
+field_name: promote
+entity_type: node
+bundle: termos_de_uso
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

@@ -1,6 +1,6 @@
 uuid: 2f8ecf48-c364-4839-8e23-671a7bc748f9
 langcode: pt-br
-status: true
+status: false
 dependencies:
   module:
     - search

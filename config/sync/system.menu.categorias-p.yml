@@ -1,0 +1,8 @@
+uuid: 2b382eb8-1839-4ecc-91c3-7d3000c19a6e
+langcode: pt-br
+status: true
+dependencies: {  }
+id: categorias-p
+label: 'Categorias Produto'
+description: ''
+locked: false

@@ -1,0 +1,21 @@
+uuid: c032d649-bdff-4fd3-822c-d8cd3f818bce
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.banner_topo.field_imagem_destaque
+    - node.type.banner_topo
+  module:
+    - user
+id: node.banner_topo.teaser
+targetEntityType: node
+bundle: banner_topo
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_imagem_destaque: true
+  langcode: true

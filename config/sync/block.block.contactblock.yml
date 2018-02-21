@@ -1,0 +1,27 @@
+uuid: 5b16ce23-3e59-4d5f-90e4-f0da971b16a0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.newsletter
+  module:
+    - block_class
+    - contact_block
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: contactblock
+theme: tigre
+region: footer
+weight: -7
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  provider: contact_block
+  label_display: '0'
+  contact_form: newsletter
+visibility: {  }
