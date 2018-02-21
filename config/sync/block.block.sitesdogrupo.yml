@@ -1,6 +1,6 @@
 uuid: 32b7c90a-4037-474f-aa21-b89e16cb78e9
 langcode: pt-br
-status: true
+status: false
 dependencies:
   config:
     - system.menu.sites-do-grupo
@@ -14,8 +14,8 @@ third_party_settings:
     classes: ''
 id: sitesdogrupo
 theme: tigre
-region: primary_menu
-weight: -8
+region: navigation
+weight: -10
 provider: null
 plugin: 'system_menu_block:sites-do-grupo'
 settings:

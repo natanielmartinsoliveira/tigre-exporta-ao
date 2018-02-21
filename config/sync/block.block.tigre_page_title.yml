@@ -9,7 +9,7 @@ _core:
 id: tigre_page_title
 theme: tigre
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

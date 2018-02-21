@@ -1,0 +1,70 @@
+body {
+    font-family: "ubunturegular",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #797979;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.footer {
+    margin-top: 0;
+    padding: 0;
+    border-top: 0;
+}
+#footer {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+#footer-top {
+    background-color: #00418A;
+    color: #fff;
+}
+#footer-top .footer--principal-social{
+    display: block;
+    float: right;
+}
+#footer-top .icon-social {
+    display: block;
+    font: 0/0 'a';
+    height: 27px;
+    color: transparent;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    background: url(../../assets/images/xicon_social.png) no-repeat 0 0;
+}
+#footer-top li {
+    display: inline-block;
+    margin-left: 30px;
+}
+#footer-top .icon-social.icon-facebook {
+    width: 25px;
+    background-position: 5px 0;
+}
+#footer-top .icon-social.icon-twitter {
+    width: 26px;
+    background-position: -51px 0;
+}
+#footer-top .icon-social.icon-youtube {
+    width: 29px;
+    background-position: -113px 0;
+}
+#footer-top .icon-social.icon-gplus {
+    width: 36px;
+    background-position: -178px 0;
+}
+#footer-middle{
+    background-color: #00418A;
+    color: #fff;
+}
+#footer-bottom {
+    background-color: #003169;
+    padding: 15px 0;
+    color: #707070;
+}

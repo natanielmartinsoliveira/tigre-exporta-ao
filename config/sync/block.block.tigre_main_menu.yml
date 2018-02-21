@@ -12,8 +12,8 @@ _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
 id: tigre_main_menu
 theme: tigre
-region: primary_menu
-weight: -7
+region: navigation_collapsible
+weight: -10
 provider: null
 plugin: 'system_menu_block:main'
 settings:

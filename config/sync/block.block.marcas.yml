@@ -14,8 +14,8 @@ third_party_settings:
     classes: ''
 id: marcas
 theme: tigre
-region: primary_menu
-weight: -9
+region: navigation
+weight: -11
 provider: null
 plugin: 'system_menu_block:marcas'
 settings:
