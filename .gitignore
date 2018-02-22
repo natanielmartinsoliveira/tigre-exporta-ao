@@ -23,7 +23,7 @@ docroot/sites/default/files
 
 !/docroot/sites/default/files/.htaccess
 
-cache
+#cache
 docroot/themes/*/.sass-cache
 docroot/themes/theme_tigre/node_modules
 docroot/themes/theme_tigre/css/mixins.css
