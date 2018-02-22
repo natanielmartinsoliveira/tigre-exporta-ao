@@ -14,8 +14,8 @@ third_party_settings:
     classes: ''
 id: marcas
 theme: tigre
-region: navigation
-weight: -11
+region: navigation_collapsible
+weight: -10
 provider: null
 plugin: 'system_menu_block:marcas'
 settings:
@@ -24,5 +24,5 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 0
+  depth: 1
 visibility: {  }
