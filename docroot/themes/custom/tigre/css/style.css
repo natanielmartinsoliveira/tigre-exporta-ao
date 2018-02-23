@@ -1,16 +1,87 @@
+@font-face {
+  font-family: 'ubuntumedium';
+  src: url(../fonts/ubuntu/Ubuntu-M.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-M.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntumedium_italic';
+  src: url(../fonts/ubuntu/Ubuntu-MI.eot);
+  src: url(../fonts/ubuntu/Ubuntu-MI.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-MI.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntubold';
+  src: url(../fonts/ubuntu/Ubuntu-B-webfont.eot);
+  src: url(../fonts/ubuntu/Ubuntu-B-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-B-webfont.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntubold_italic';
+  src: url(../fonts/ubuntu/Ubuntu-BI.eot);
+  src: url(../fonts/ubuntu/Ubuntu-BI.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-BI.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntu_condensedregular';
+  src: url(../fonts/ubuntu/Ubuntu-C.eot);
+  src: url(../fonts/ubuntu/Ubuntu-C.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-C.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntulight';
+  src: url(../fonts/ubuntu/Ubuntu-L.eot);
+  src: url(../fonts/ubuntu/Ubuntu-L.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-L.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntulight_italic';
+  src: url(../fonts/ubuntu/Ubuntu-LI.eot);
+  src: url(../fonts/ubuntu/Ubuntu-LI.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-LI.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubunturegular';
+  src: url(../fonts/ubuntu/Ubuntu-R.eot);
+  src: url(../fonts/ubuntu/Ubuntu-R.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-R.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntuitalic';
+  src: url(../fonts/ubuntu/Ubuntu-RI.eot);
+  src: url(../fonts/ubuntu/Ubuntu-RI.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-RI.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 body {
   font-family: "ubunturegular",Arial,sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #797979; }
+  color: #797979;
+  margin-top: 0px; }
 
 a {
   color: #666;
   text-decoration: none; }
 
+h3 {
+  font-size: 30px;
+  color: #2b2b2b; }
+
+h3 {
+  font-size: 24px;
+  color: #2b2b2b; }
+
+p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #2b2b2b; }
+
 .container-fluid {
   padding-right: 0px;
   padding-left: 0px; }
+
+.row {
+  margin-right: 0;
+  margin-left: 0; }
 
 .menu-global {
   position: relative;
@@ -58,7 +129,7 @@ a {
     background-color: #00418A;
     color: #fff; }
   .footer #footer-bottom {
-    background-color: #2B2B2B;
+    background-color: #003169;
     padding: 15px 0;
     color: #707070; }
 
@@ -70,17 +141,16 @@ a {
 #block-marcas {
   position: relative;
   height: 40px;
-  background-color: rgba(42, 54, 83, 0.7);
   z-index: 3; }
-  #block-marcas ul {
+  #block-marcas .menu--marcas {
     position: absolute;
     padding: 0 10px;
     background-color: rgba(42, 54, 83, 0.7);
     list-style: none; }
-    #block-marcas ul li {
+    #block-marcas .menu--marcas li {
       position: relative;
       text-align: center; }
-      #block-marcas ul li a {
+      #block-marcas .menu--marcas li a {
         display: block;
         line-height: 40px;
         font-size: 10px;
@@ -88,31 +158,33 @@ a {
         color: rgba(255, 255, 255, 0.6);
         cursor: pointer;
         -webkit-transition: 0.2s all;
-        transition: 0.2s all; }
-      #block-marcas ul li a:focus, #block-marcas ul li a:active {
+        transition: 0.2s all;
+        padding: 0; }
+      #block-marcas .menu--marcas li a:focus, #block-marcas .menu--marcas li a:active {
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none; }
-      #block-marcas ul li a:hover {
+      #block-marcas .menu--marcas li a:hover {
         color: #FE860C;
-        text-decoration: none; }
+        text-decoration: none;
+        background-color: transparent; }
 
 @media (min-width: 1200px) {
-  #block-marcas ul li a {
+  #block-marcas .menu--marcas li a {
     font-size: 12px; } }
 @media (max-width: 1199px) {
-  #block-marcas ul {
+  #block-marcas .menu--marcas {
     padding: 0; } }
 @media (min-width: 992px) {
-  #block-marcas ul {
+  #block-marcas .menu--marcas {
     position: relative;
     display: block;
     background: none; }
-    #block-marcas ul li {
+    #block-marcas .menu--marcas li {
       display: inline-block;
       margin-right: 12px;
       text-align: left; } }
 @media (min-width: 480px) {
-  li:before {
+  #block-marcas .menu--marcas li:before {
     display: none;
     content: '';
     position: absolute;
@@ -210,3 +282,47 @@ a {
 
 .dropdown-menu > li > .menu-localizacao__pais__lnk:hover {
   color: #FE860C; }
+
+#block-contactblock {
+  background-color: #DADADA; }
+  #block-contactblock #edit-preview {
+    display: none; }
+
+.view-termos-de-uso .panel, .view-politica-de-privacidade .panel {
+  margin-bottom: 21px;
+  background-color: #fff; }
+  .view-termos-de-uso .panel .panel-title, .view-politica-de-privacidade .panel .panel-title {
+    font-size: 16px;
+    color: inherit;
+    margin: 0 0 30px 0;
+    padding: 0; }
+    .view-termos-de-uso .panel .panel-title a, .view-politica-de-privacidade .panel .panel-title a {
+      position: relative;
+      display: block;
+      font-family: 'ubunturegular';
+      font-size: 20px;
+      color: #2b2b2b;
+      padding-right: 80px;
+      padding-top: 15px;
+      text-decoration: none; }
+    .view-termos-de-uso .panel .panel-title a:after, .view-politica-de-privacidade .panel .panel-title a:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 5px;
+      width: 25px;
+      height: 50px;
+      background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xicon-mais-menos.png.pagespeed.ic.DOMjQS2Qca.png) no-repeat 50% -146px; }
+    .view-termos-de-uso .panel .panel-title a.collapsed:after, .view-politica-de-privacidade .panel .panel-title a.collapsed:after {
+      background-position: 50% 10px; }
+  .view-termos-de-uso .panel .panel-body, .view-politica-de-privacidade .panel .panel-body {
+    padding-left: 0;
+    padding-right: 0; }
+    .view-termos-de-uso .panel .panel-body p, .view-politica-de-privacidade .panel .panel-body p {
+      color: #797979; }
+.view-termos-de-uso .panel-default, .view-politica-de-privacidade .panel-default {
+  border-radius: inherit;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0; }

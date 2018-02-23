@@ -14,7 +14,7 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: tigre_branding
 theme: tigre
-region: header
+region: navigation_collapsible
 weight: -10
 provider: null
 plugin: system_branding_block
