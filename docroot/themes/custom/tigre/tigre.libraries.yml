@@ -1,4 +1,4 @@
 global-styling:
   css:
     layout:
-      css/layout/layout.css: {}
+      css/style.css: {}
