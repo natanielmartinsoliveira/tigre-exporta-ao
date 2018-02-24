@@ -23,7 +23,8 @@
     border-top: 0;
     width: 100%;
     overflow: hidden;
-    position: fixed;
+
+    //position: fixed;
 
     #footer-top {
         background-color: #00418A;
@@ -79,6 +80,10 @@
         background-color: $azulEscuro;
         padding: 15px 0;
         color: #707070;
+
+        .pull-right {
+            text-align: right;
+        }
     }
 }
 
@@ -92,8 +97,10 @@
     position: relative;
     height: 40px;
     z-index: 3;
+
     .menu--marcas {
         position: absolute;
+
         //display: none;
         padding: 0 10px;
         background-color: rgba(42, 54, 83, 0.7);
@@ -360,5 +367,138 @@
         border: none;
         border-bottom: 1px solid #ccc;
         padding-bottom: 0;
+    }
+}
+
+.block-content--type-catalagos-cta {
+    h2 {
+        font-size: 24px;
+        font-family: 'ubuntubold';
+    }
+
+    p {
+        font-size: 30px;
+        line-height: 38px;
+        font-family: 'ubuntulight';
+    }
+
+    a {
+        background: #FF8532;
+        background-image: -webkit-linear-gradient(to right, #FF8532, #FFA832);
+        background-image: -moz-linear-gradient(to right, #FF8532, #FFA832);
+        background-image: -ms-linear-gradient(to right, #FF8532, #FFA832);
+        background-image: -o-linear-gradient(to right, #FF8532, #FFA832);
+        background-image: linear-gradient(to right, #FF8532, #FFA832);
+        -webkit-border-radius: 4;
+        -moz-border-radius: 4;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        border: 0;
+    }
+
+    .field--name-field-bloco-catalogo-link {
+        margin-top: 30px;
+    }
+}
+
+// Paragrafo Imagem c/ Texto
+.paragraph--type--imagem-c-texto {
+    .paragraph-fundo {
+        background: #f3f3f3;
+        background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre-b.png.pagespeed.ic.3s9qNlVJ1F.png);
+        background-repeat: no-repeat;
+        background-position: 0 110%;
+        background-attachment: inherit;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        clear: both;
+        border-radius: 6px 6px 20px 6px;
+        .container {
+            height: 450px;
+        }
+        .container:after {
+            position: relative;
+            left: 0;
+            bottom: 28px;
+            height: 2px;
+            width: 100%; 
+            background-image: -webkit-linear-gradient(left,#3da13e 0%,#ffed18 50%,#f96d10 100%);
+            background-image: -o-linear-gradient(left,#3da13e 0%,#ffed18 50%,#f96d10 100%);
+            background-image: linear-gradient(to right,#3da13e 0%,#ffed18 50%,#f96d10 100%);
+        }
+
+        .description {
+            padding-left: 0;
+            padding-right: 50px;
+            position: relative;
+            z-index: 3;
+            display: table-cell;
+            float: none;
+            vertical-align: middle;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .img {
+            position: relative;
+            margin-top: -2%;
+            z-index: 2;   
+        }
+        .img-left {
+            float: left;
+            img {
+                float: right;
+                border-radius: 6px 0 0 20px;
+                vertical-align: middle;
+                border: 0;
+            }
+        }
+
+        .img-right {
+            float: right;
+            img {
+                float: left;
+                border-radius: 6px 0 0 20px;
+                vertical-align: middle;
+                border: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .paragraph--type--imagem-c-texto {
+        .paragraph-fundo {
+            float: left;
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .paragraph--type--imagem-c-texto {
+        .paragraph-fundo {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            margin: 50px 0;
+            width: 100%;
+            height: 450px;
+
+            .description {
+                height: 450px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                padding-left: 50px;
+            }
+
+            .img {
+                img {
+                    border-radius: 6px 0 0 20px;
+                    max-width: inherit;
+                }
+            }
+        }
     }
 }

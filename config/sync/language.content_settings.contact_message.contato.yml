@@ -1,0 +1,11 @@
+uuid: 599c41ce-d2e0-47b7-812b-da7c8bc61403
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.contato
+id: contact_message.contato
+target_entity_type_id: contact_message
+target_bundle: contato
+default_langcode: site_default
+language_alterable: false

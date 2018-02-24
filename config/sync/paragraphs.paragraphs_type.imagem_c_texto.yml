@@ -1,0 +1,9 @@
+uuid: d8c701a9-8f5b-49f4-9389-c1ad4e5838f2
+langcode: pt-br
+status: true
+dependencies: {  }
+id: imagem_c_texto
+label: 'Imagem c/ Texto'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,16 @@
+uuid: 97fc70ab-dbb6-4205-b944-93154c51edca
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.catalagos_cta
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.catalagos_cta
+target_entity_type_id: block_content
+target_bundle: catalagos_cta
+default_langcode: site_default
+language_alterable: false

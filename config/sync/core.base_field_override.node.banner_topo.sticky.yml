@@ -1,0 +1,22 @@
+uuid: 8f920037-7036-4ebb-a809-4a204fb9feef
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.banner_topo
+id: node.banner_topo.sticky
+field_name: sticky
+entity_type: node
+bundle: banner_topo
+label: 'Destacado no topo da página'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

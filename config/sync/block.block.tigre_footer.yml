@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.footer
   module:
+    - block_class
     - system
   theme:
     - tigre
+third_party_settings:
+  block_class:
+    classes: 'block-links col-xs-12 col-sm-8'
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: tigre_footer

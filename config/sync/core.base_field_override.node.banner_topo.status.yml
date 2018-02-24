@@ -1,0 +1,22 @@
+uuid: a96d1159-63d8-464c-8677-8f446f7ff1fa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.banner_topo
+id: node.banner_topo.status
+field_name: status
+entity_type: node
+bundle: banner_topo
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

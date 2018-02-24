@@ -1,0 +1,35 @@
+uuid: aa9d8325-9d69-4441-8cef-1a161225e4cc
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:catalagos_cta:4bf07070-8525-4ae6-adab-31e8df59652d'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: container
+id: catalogos
+theme: tigre
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:4bf07070-8525-4ae6-adab-31e8df59652d'
+settings:
+  id: 'block_content:4bf07070-8525-4ae6-adab-31e8df59652d'
+  label: Catálogos
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

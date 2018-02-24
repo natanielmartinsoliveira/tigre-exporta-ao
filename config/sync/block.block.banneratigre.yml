@@ -1,0 +1,37 @@
+uuid: 904032bf-2f52-4229-811c-08459c9e3bc7
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f3d2ac5-aa73-4ad4-980a-31ff971eafd7'
+  module:
+    - block_class
+    - block_content
+    - ctools
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: banneratigre
+theme: tigre
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:3f3d2ac5-aa73-4ad4-980a-31ff971eafd7'
+settings:
+  id: 'block_content:3f3d2ac5-aa73-4ad4-980a-31ff971eafd7'
+  label: 'Banner A Tigre'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      sobre_a_tigre: sobre_a_tigre
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

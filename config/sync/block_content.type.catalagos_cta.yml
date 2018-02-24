@@ -1,0 +1,8 @@
+uuid: 48f43822-5510-47eb-8e58-b28f79152826
+langcode: pt-br
+status: true
+dependencies: {  }
+id: catalagos_cta
+label: 'Catalagos CTA'
+revision: 1
+description: ''

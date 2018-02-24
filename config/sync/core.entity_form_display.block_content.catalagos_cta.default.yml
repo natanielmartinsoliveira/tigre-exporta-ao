@@ -1,0 +1,63 @@
+uuid: 0e75d633-d95b-46be-98a8-345b2d8d80e8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.catalagos_cta
+    - field.field.block_content.catalagos_cta.body
+    - field.field.block_content.catalagos_cta.field_bloco_catalagos_imagem
+    - field.field.block_content.catalagos_cta.field_bloco_catalogo_link
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: block_content.catalagos_cta.default
+targetEntityType: block_content
+bundle: catalagos_cta
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_bloco_catalagos_imagem:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_bloco_catalogo_link:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+hidden: {  }

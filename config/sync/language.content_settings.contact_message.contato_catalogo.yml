@@ -1,0 +1,11 @@
+uuid: 6873e388-eccf-4456-8059-76652ccd2ee8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.contato_catalogo
+id: contact_message.contato_catalogo
+target_entity_type_id: contact_message
+target_bundle: contato_catalogo
+default_langcode: site_default
+language_alterable: false

@@ -11,8 +11,8 @@
   font-style: normal; }
 @font-face {
   font-family: 'ubuntubold';
-  src: url(../fonts/ubuntu/Ubuntu-B-webfont.eot);
-  src: url(../fonts/ubuntu/Ubuntu-B-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-B-webfont.ttf) format("truetype");
+  src: url(../fonts/ubuntu/Ubuntu-B.eot);
+  src: url(../fonts/ubuntu/Ubuntu-B.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-B.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -75,6 +75,50 @@ p {
   line-height: 24px;
   color: #2b2b2b; }
 
+.btn-primary {
+  background: #FF8532;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF8532), to(#FFA832));
+  background-image: linear-gradient(to right, #FF8532, #FFA832);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 0; }
+
+.btn-primary:hover {
+  background: #FF8532;
+  text-decoration: none; }
+
+#edit-field-newsletter-email-0-value {
+  margin: 40px 25px;
+  width: 200px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #666666;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(96%, rgba(255, 255, 255, 0)), color-stop(4%, #666666));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #666666 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #333333;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  #edit-field-newsletter-email-0-value:focus, #edit-field-newsletter-email-0-value:valid {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline: none;
+    background-position: 0 0; }
+    #edit-field-newsletter-email-0-value:focus::-webkit-input-placeholder, #edit-field-newsletter-email-0-value:valid::-webkit-input-placeholder {
+      color: #666666;
+      font-size: 11px;
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+      visibility: visible !important; }
+
 .container-fluid {
   padding-right: 0px;
   padding-left: 0px; }
@@ -94,8 +138,7 @@ p {
   padding: 0;
   border-top: 0;
   width: 100%;
-  overflow: hidden;
-  position: fixed; }
+  overflow: hidden; }
   .footer #footer-top {
     background-color: #00418A;
     color: #fff; }
@@ -132,6 +175,8 @@ p {
     background-color: #003169;
     padding: 15px 0;
     color: #707070; }
+    .footer #footer-bottom .pull-right {
+      text-align: right; }
 
 .menu-localizacao__pais__item {
   margin-bottom: 10px;
@@ -326,3 +371,91 @@ p {
   border: none;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0; }
+
+.block-content--type-catalagos-cta h2 {
+  font-size: 24px;
+  font-family: 'ubuntubold'; }
+.block-content--type-catalagos-cta p {
+  font-size: 30px;
+  line-height: 38px;
+  font-family: 'ubuntulight'; }
+.block-content--type-catalagos-cta a {
+  background: #FF8532;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF8532), to(#FFA832));
+  background-image: linear-gradient(to right, #FF8532, #FFA832);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 0; }
+.block-content--type-catalagos-cta .field--name-field-bloco-catalogo-link {
+  margin-top: 30px; }
+
+.paragraph--type--imagem-c-texto .paragraph-fundo {
+  background: #f3f3f3;
+  background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre-b.png.pagespeed.ic.3s9qNlVJ1F.png);
+  background-repeat: no-repeat;
+  background-position: 0 110%;
+  background-attachment: inherit;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  clear: both;
+  border-radius: 6px 6px 20px 6px; }
+  .paragraph--type--imagem-c-texto .paragraph-fundo .container {
+    height: 450px; }
+  .paragraph--type--imagem-c-texto .paragraph-fundo .container:after {
+    position: relative;
+    left: 0;
+    bottom: 28px;
+    height: 2px;
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#3da13e), color-stop(50%, #ffed18), to(#f96d10));
+    background-image: linear-gradient(to right, #3da13e 0%, #ffed18 50%, #f96d10 100%); }
+  .paragraph--type--imagem-c-texto .paragraph-fundo .description {
+    padding-left: 0;
+    padding-right: 50px;
+    position: relative;
+    z-index: 3;
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .paragraph--type--imagem-c-texto .paragraph-fundo .img {
+    position: relative;
+    margin-top: -2%;
+    z-index: 2; }
+  .paragraph--type--imagem-c-texto .paragraph-fundo .img-left {
+    float: left; }
+    .paragraph--type--imagem-c-texto .paragraph-fundo .img-left img {
+      float: right;
+      border-radius: 6px 0 0 20px;
+      vertical-align: middle;
+      border: 0; }
+  .paragraph--type--imagem-c-texto .paragraph-fundo .img-right {
+    float: right; }
+    .paragraph--type--imagem-c-texto .paragraph-fundo .img-right img {
+      float: left;
+      border-radius: 6px 0 0 20px;
+      vertical-align: middle;
+      border: 0; }
+
+@media (max-width: 767px) {
+  .paragraph--type--imagem-c-texto .paragraph-fundo {
+    float: left; } }
+@media (min-width: 480px) {
+  .paragraph--type--imagem-c-texto .paragraph-fundo {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin: 50px 0;
+    width: 100%;
+    height: 450px; }
+    .paragraph--type--imagem-c-texto .paragraph-fundo .description {
+      height: 450px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 50px; }
+    .paragraph--type--imagem-c-texto .paragraph-fundo .img img {
+      border-radius: 6px 0 0 20px;
+      max-width: inherit; } }

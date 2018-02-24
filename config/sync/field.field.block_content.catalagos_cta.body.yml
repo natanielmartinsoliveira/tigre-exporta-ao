@@ -1,0 +1,22 @@
+uuid: 28f07041-9e61-4508-8311-8e7126c865a3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.catalagos_cta
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.catalagos_cta.body
+field_name: body
+entity_type: block_content
+bundle: catalagos_cta
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

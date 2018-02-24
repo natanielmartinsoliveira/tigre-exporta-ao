@@ -9,6 +9,6 @@ id: categorias_produto
 label: 'Categorias Produto'
 vocabulary: produto
 menu: categorias-p
-expanded: false
+expanded: true
 depth: 3
 menu_parent: 'admin:'

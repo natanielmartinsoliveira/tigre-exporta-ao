@@ -1,0 +1,23 @@
+uuid: a0499c1d-bbfa-4063-b9ea-525e55641b3b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.catalagos_cta
+    - field.storage.block_content.field_bloco_catalogo_link
+  module:
+    - link
+id: block_content.catalagos_cta.field_bloco_catalogo_link
+field_name: field_bloco_catalogo_link
+entity_type: block_content
+bundle: catalagos_cta
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

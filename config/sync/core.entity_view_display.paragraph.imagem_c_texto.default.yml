@@ -1,0 +1,56 @@
+uuid: f7fc8e6d-dfca-41eb-b17e-1987cc402c5a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagem_c_texto.field_alinhamento
+    - field.field.paragraph.imagem_c_texto.field_conteudo
+    - field.field.paragraph.imagem_c_texto.field_imagem
+    - field.field.paragraph.imagem_c_texto.field_link
+    - paragraphs.paragraphs_type.imagem_c_texto
+  module:
+    - image
+    - link
+    - options
+    - text
+id: paragraph.imagem_c_texto.default
+targetEntityType: paragraph
+bundle: imagem_c_texto
+mode: default
+content:
+  field_alinhamento:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_conteudo:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_imagem:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }
