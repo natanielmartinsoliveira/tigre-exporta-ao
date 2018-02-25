@@ -1,0 +1,21 @@
+uuid: 1d4d6918-2b25-4ea7-80ed-b85da6a77570
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_conteudo
+    - paragraphs.paragraphs_type.cta_centralizado
+  module:
+    - text
+id: paragraph.cta_centralizado.field_conteudo
+field_name: field_conteudo
+entity_type: paragraph
+bundle: cta_centralizado
+label: Conteúdo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

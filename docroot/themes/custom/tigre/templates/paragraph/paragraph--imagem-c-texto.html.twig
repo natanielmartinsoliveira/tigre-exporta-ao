@@ -50,17 +50,15 @@
     <div class="paragraph-fundo">
       <div class="container">
         {% block content %}
-        {{ content.field_alinhamento.value }}
-          {%- if content.field_alinhamento.value == "left" -%}
-          
+          {% if content.field_alinhamento[0]['#markup'] == "left" %}
+            <div class="img img-left col-xs-12 col-sm-6">
+              {{ content.field_imagem }}
+            </div>
             <div class="col-xs-12 col-sm-6">
               <div class="description col-sm-9">
                 {{ content.field_conteudo }}
                 {{ content.field_link }}
               </div>
-            </div>
-            <div class="img img-left col-xs-12 col-sm-6">
-              {{ content.field_imagem }}
             </div>
           {%- else -%}
             <div class="img img-right col-xs-12 col-sm-6">

@@ -1,0 +1,11 @@
+uuid: ba14247b-8d83-4b50-bf54-6993dd9cd1f0
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'file:file:ea7d59eb-eea2-4189-ad36-4a20970d13bd'
+id: cta_2_colunas
+label: 'CTA - 2 Colunas'
+icon_uuid: ea7d59eb-eea2-4189-ad36-4a20970d13bd
+description: ''
+behavior_plugins: {  }

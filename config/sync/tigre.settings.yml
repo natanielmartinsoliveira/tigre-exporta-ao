@@ -16,16 +16,20 @@ logo:
   url: ''
   use_default: 1
 region_wells:
-  sidebar_first: ''
-  sidebar_second: well
-  content: ''
+  menu_global: ''
+  navigation: ''
+  navigation_collapsible: ''
   header: ''
-  primary_menu: ''
-  secondary_menu: ''
-  footer: ''
   highlighted: ''
   help: ''
-  breadcrumb: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer_top: ''
+  footer: ''
+  footer_bottom: ''
 fluid_container: 1
 table_responsive: '-1'
 table: ''
+cdn_provider: jsdelivr
+cdn_provider_import_data: ''

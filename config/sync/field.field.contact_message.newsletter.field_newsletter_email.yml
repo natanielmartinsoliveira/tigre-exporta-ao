@@ -9,8 +9,8 @@ id: contact_message.newsletter.field_newsletter_email
 field_name: field_newsletter_email
 entity_type: contact_message
 bundle: newsletter
-label: E-mail
-description: 'Digite aqui seu e-mail'
+label: 'Digite aqui seu e-mail'
+description: ''
 required: false
 translatable: false
 default_value: {  }

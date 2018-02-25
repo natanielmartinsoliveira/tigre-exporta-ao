@@ -1,9 +1,9 @@
-uuid: aa9d8325-9d69-4441-8cef-1a161225e4cc
+uuid: 47d2464d-b110-439c-8d42-747f10cc9314
 langcode: pt-br
 status: true
 dependencies:
   content:
-    - 'block_content:catalagos_cta:4bf07070-8525-4ae6-adab-31e8df59652d'
+    - 'block_content:basic:e48fee8c-250c-4f8c-b450-f2e878007b9f'
   module:
     - block_class
     - block_content
@@ -12,16 +12,16 @@ dependencies:
     - tigre
 third_party_settings:
   block_class:
-    classes: container
-id: catalogos
+    classes: ''
+id: contatoexportacao
 theme: tigre
 region: content
-weight: -5
+weight: -4
 provider: null
-plugin: 'block_content:4bf07070-8525-4ae6-adab-31e8df59652d'
+plugin: 'block_content:e48fee8c-250c-4f8c-b450-f2e878007b9f'
 settings:
-  id: 'block_content:4bf07070-8525-4ae6-adab-31e8df59652d'
-  label: Catálogos
+  id: 'block_content:e48fee8c-250c-4f8c-b450-f2e878007b9f'
+  label: 'Contato Exportação'
   provider: block_content
   label_display: '0'
   status: true
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "/contato\r\n/contact/*"
     negate: false
     context_mapping: {  }
