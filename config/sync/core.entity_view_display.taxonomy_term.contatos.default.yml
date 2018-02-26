@@ -1,0 +1,33 @@
+uuid: 75f66e01-ead9-4a4a-a2dd-c78bae63cb5a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.contatos.field_icone
+    - taxonomy.vocabulary.contatos
+  module:
+    - image
+    - text
+id: taxonomy_term.contatos.default
+targetEntityType: taxonomy_term
+bundle: contatos
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icone:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

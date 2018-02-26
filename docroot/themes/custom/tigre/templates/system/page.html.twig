@@ -51,6 +51,7 @@
  * @see html.html.twig
  */
 #}
+
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.menu_global or page.navigation_collapsible %}
@@ -66,7 +67,7 @@
           </div>
         </div>
       {% endif %}
-
+      
       <div class="navbar-header">
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
         {% if page.navigation_collapsible %}
@@ -81,10 +82,14 @@
 
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
-        <div id="navbar-collapse" class="navbar-collapse collapse">
+      
+      <div id="navbar-collapse" class="navbar-collapse collapse">
+        <div class="container">
           {{ page.navigation_collapsible }}
         </div>
+      </div>
       {% endif %}
+      
     </header>
   {% endblock %}
 {% endif %}
@@ -96,7 +101,7 @@
       {# Header #}
       {% if page.header %}
         {% block header %}
-          <div class="col-sm-12" role="heading">
+          <div role="heading">
             {{ page.header }}
           </div>
         {% endblock %}

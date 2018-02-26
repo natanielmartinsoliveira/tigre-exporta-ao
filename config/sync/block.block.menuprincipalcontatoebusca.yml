@@ -1,0 +1,29 @@
+uuid: 9200f40c-9b79-4552-8980-fc70840805d4
+langcode: pt-br
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:16372a0a-7098-4d03-91e3-25b2a2b5ccef'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: menuprincipalcontatoebusca
+theme: tigre
+region: navigation_collapsible
+weight: -11
+provider: null
+plugin: 'block_content:16372a0a-7098-4d03-91e3-25b2a2b5ccef'
+settings:
+  id: 'block_content:16372a0a-7098-4d03-91e3-25b2a2b5ccef'
+  label: 'Menu Principal - Contato e Busca'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

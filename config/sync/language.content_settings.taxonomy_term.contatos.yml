@@ -1,0 +1,16 @@
+uuid: 5c7869ef-29da-4bcc-969c-d82753298668
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.contatos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.contatos
+target_entity_type_id: taxonomy_term
+target_bundle: contatos
+default_langcode: site_default
+language_alterable: true

@@ -2,3 +2,10 @@ global-styling:
   css:
     layout:
       css/style.css: {}
+
+global-script:
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

@@ -1,0 +1,28 @@
+uuid: dad9c586-ceac-4029-95f5-13ba220ccca9
+langcode: pt-br
+status: false
+dependencies:
+  config:
+    - views.view.contatos
+  module:
+    - block_class
+    - views
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__contatos_block_1
+theme: tigre
+region: navigation_collapsible
+weight: -10
+provider: null
+plugin: 'views_block:contatos-block_1'
+settings:
+  id: 'views_block:contatos-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

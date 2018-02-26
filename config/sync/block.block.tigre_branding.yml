@@ -15,7 +15,7 @@ _core:
 id: tigre_branding
 theme: tigre
 region: navigation_collapsible
-weight: -10
+weight: -13
 provider: null
 plugin: system_branding_block
 settings:

@@ -1,6 +1,6 @@
 uuid: 055fdf2c-4fa2-41ad-8703-d249bb905ee8
 langcode: pt-br
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: tigre_breadcrumbs
 theme: tigre
-region: navigation
-weight: -10
+region: navigation_collapsible
+weight: -9
 provider: null
 plugin: system_breadcrumb_block
 settings:

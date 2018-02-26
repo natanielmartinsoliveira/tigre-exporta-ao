@@ -6,6 +6,7 @@ base theme: bootstrap
 screenshot: screenshot.png
 libraries:
   - tigre/global-styling
+  - tigre/global-script
 regions:
   menu_global: 'Menu Global'
   navigation: 'Navigation'

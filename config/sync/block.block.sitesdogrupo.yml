@@ -15,7 +15,7 @@ third_party_settings:
 id: sitesdogrupo
 theme: tigre
 region: navigation
-weight: -11
+weight: -14
 provider: null
 plugin: 'system_menu_block:sites-do-grupo'
 settings:

@@ -2,8 +2,14 @@ uuid: f55d7461-6c46-4ae3-968e-75e3df473837
 langcode: pt-br
 status: true
 dependencies:
+  module:
+    - block_class
+    - system
   theme:
     - tigre
+third_party_settings:
+  block_class:
+    classes: ''
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: tigre_page_title
@@ -17,4 +23,9 @@ settings:
   label: 'Título da página'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
