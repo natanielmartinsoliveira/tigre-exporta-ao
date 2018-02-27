@@ -1,0 +1,55 @@
+uuid: 8a56b6d3-bf66-455c-a92d-90e54843045a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_unidade_canal_atendimento
+    - paragraphs.paragraphs_type.bloco_de_enderecos
+    - paragraphs.paragraphs_type.canal_de_atendimento
+  module:
+    - entity_reference_revisions
+id: paragraph.bloco_de_enderecos.field_unidade_canal_atendimento
+field_name: field_unidade_canal_atendimento
+entity_type: paragraph
+bundle: bloco_de_enderecos
+label: 'Canais de Atendimento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      canal_de_atendimento: canal_de_atendimento
+    target_bundles_drag_drop:
+      bloco_de_enderecos:
+        weight: 10
+        enabled: false
+      abas:
+        weight: 11
+        enabled: false
+      canal_de_atendimento:
+        enabled: true
+        weight: 12
+      cta_2_colunas:
+        weight: 13
+        enabled: false
+      cta_centralizado:
+        weight: 14
+        enabled: false
+      imagem_c_texto:
+        weight: 15
+        enabled: false
+      localidade_da_unidade:
+        weight: 16
+        enabled: false
+      texto:
+        weight: 17
+        enabled: false
+      unidades:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

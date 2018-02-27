@@ -1,0 +1,55 @@
+uuid: 702129e4-8b6a-46a5-8153-e0693888790b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloco_de_enderecos.field_cor_de_fundo
+    - field.field.paragraph.bloco_de_enderecos.field_descricao
+    - field.field.paragraph.bloco_de_enderecos.field_titulo_bloco
+    - field.field.paragraph.bloco_de_enderecos.field_unidade_canal_atendimento
+    - paragraphs.paragraphs_type.bloco_de_enderecos
+  module:
+    - paragraphs
+id: paragraph.bloco_de_enderecos.default
+targetEntityType: paragraph
+bundle: bloco_de_enderecos
+mode: default
+content:
+  field_cor_de_fundo:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_descricao:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_titulo_bloco:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_unidade_canal_atendimento:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,9 @@
+uuid: 41c59ad8-c0aa-4526-9a3f-36b0e810484f
+langcode: pt-br
+status: true
+dependencies: {  }
+id: canal_de_atendimento
+label: 'Canal de Atendimento'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,39 @@
+uuid: 272bcfdb-fac4-462a-8c07-5aa04285383d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.canal_de_atendimento.field_titulo_canal
+    - field.field.paragraph.canal_de_atendimento.field_unidade_canal_localidade
+    - paragraphs.paragraphs_type.canal_de_atendimento
+  module:
+    - paragraphs
+id: paragraph.canal_de_atendimento.default
+targetEntityType: paragraph
+bundle: canal_de_atendimento
+mode: default
+content:
+  field_titulo_canal:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_unidade_canal_localidade:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: b0767ab6-dc6f-4529-850c-6f8014fd7027
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_canal
+    - paragraphs.paragraphs_type.canal_de_atendimento
+id: paragraph.canal_de_atendimento.field_titulo_canal
+field_name: field_titulo_canal
+entity_type: paragraph
+bundle: canal_de_atendimento
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

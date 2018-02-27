@@ -1,0 +1,19 @@
+uuid: cc2855cb-ca4c-41ed-b782-dcbf4ac0a408
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_canal_localidade_subtitulo
+    - paragraphs.paragraphs_type.localidade_da_unidade
+id: paragraph.localidade_da_unidade.field_canal_localidade_subtitulo
+field_name: field_canal_localidade_subtitulo
+entity_type: paragraph
+bundle: localidade_da_unidade
+label: Subtítulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

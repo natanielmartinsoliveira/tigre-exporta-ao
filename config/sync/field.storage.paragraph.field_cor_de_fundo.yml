@@ -1,0 +1,27 @@
+uuid: 99ee785a-5e70-4e63-8840-2f84c2365513
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_cor_de_fundo
+field_name: field_cor_de_fundo
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Azul
+      label: Azul
+    -
+      value: Branco
+      label: Branco
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

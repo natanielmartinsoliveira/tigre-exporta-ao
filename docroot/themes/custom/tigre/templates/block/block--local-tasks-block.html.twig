@@ -9,8 +9,10 @@
 #}
 {% block content %}
   {% if content %}
-    <nav class="tabs" role="navigation" aria-label="{{ 'Tabs'|t }}">
-      {{ content }}
-    </nav>
+    <div class="container">
+      <nav class="tabs" role="navigation" aria-label="{{ 'Tabs'|t }}">
+        {{ content }}
+      </nav>
+    </div>
   {% endif %}
 {% endblock %}

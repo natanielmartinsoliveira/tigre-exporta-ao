@@ -1,0 +1,19 @@
+uuid: 04c55b84-d2c1-4793-8ef8-4125cb003edc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_canal_unidade_titulo
+    - paragraphs.paragraphs_type.unidades
+id: paragraph.unidades.field_canal_unidade_titulo
+field_name: field_canal_unidade_titulo
+entity_type: paragraph
+bundle: unidades
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

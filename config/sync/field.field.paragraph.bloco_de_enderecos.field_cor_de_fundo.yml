@@ -1,0 +1,23 @@
+uuid: 901cb659-8fcb-45a8-bfd1-fc1ac667c043
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cor_de_fundo
+    - paragraphs.paragraphs_type.bloco_de_enderecos
+  module:
+    - options
+id: paragraph.bloco_de_enderecos.field_cor_de_fundo
+field_name: field_cor_de_fundo
+entity_type: paragraph
+bundle: bloco_de_enderecos
+label: 'Cor de Fundo'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Azul
+default_value_callback: ''
+settings: {  }
+field_type: list_string

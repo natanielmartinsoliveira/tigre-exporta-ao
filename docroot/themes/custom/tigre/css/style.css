@@ -709,204 +709,72 @@ p {
     left: 2%;
     width: 100%; } }
 @media (max-width: 768px) {
-  .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption .div-btn {
-    margin-top: 25px; }
-
-  .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption p {
-    margin-bottom: 5px; }
-
-  .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption div {
-    max-width: 100% !important; }
-
   .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
     top: 0;
-    text-align: center; } }
-.carousel-full-bx {
-  position: relative;
-  height: 100vh; }
+    text-align: center; }
+    .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption .div-btn {
+      margin-top: 25px; }
+    .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption p {
+      margin-bottom: 5px; }
+    .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption div {
+      max-width: 100% !important; } }
+.paragraph--type--bloco-de-enderecos {
+  padding-top: 35px; }
+  .paragraph--type--bloco-de-enderecos.bg-color-azul {
+    background-color: #0083ca;
+    color: #fff;
+    background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre.png.pagespeed.ic.2muiFdbK1j.png);
+    background-repeat: no-repeat;
+    background-position: 90% 110%;
+    background-attachment: fixed;
+    padding-bottom: 0; }
+  .paragraph--type--bloco-de-enderecos h1 {
+    margin-top: 0;
+    margin-bottom: 23px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "ubuntumedium",Arial,sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: 32px; }
+  .paragraph--type--bloco-de-enderecos p {
+    color: #fff; }
+  .paragraph--type--bloco-de-enderecos .pg-unidades--wrap {
+    padding-top: 35px; }
+    .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--title {
+      padding-top: 65px;
+      display: block;
+      font-family: 'ubuntumedium';
+      font-size: 22px; }
+    .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 8px;
+      padding: 35px 38px;
+      margin-top: 30px; }
+      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--title {
+        font-family: 'ubuntumedium';
+        font-size: 18px; }
+      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--description {
+        padding-top: 11px; }
+      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list {
+        padding-top: 10px;
+        margin-bottom: 0; }
+        .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--list-item:first-child {
+          padding-top: 0; }
+        .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--list-item {
+          padding-top: 30px;
+          margin-bottom: 0; }
+        .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--sede {
+          font-family: 'ubuntumedium';
+          font-size: 14px; }
+        .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--endereco {
+          margin: 0; }
 
-.bx-wrapper {
-  position: relative;
-  display: block;
-  clear: both;
-  width: 100%;
-  margin: 0;
-  padding: 0; }
-
-.bx-wrapper img {
-  max-width: 100%;
-  display: block; }
-
-.bx-wrapper .bx-viewport {
-  left: -5px;
-  background: #fff;
-  -webkit-transform: translatez(0);
-  transform: translatez(0); }
-
-.carousel-full-bx .bx-wrapper .bx-viewport {
-  left: 0;
-  height: 100vh; }
-
-.carousel-full-bx .bx-wrapper .bx-viewport .itens {
-  height: 100vh; }
-
-.carousel-full-bx .bx-wrapper .bx-viewport .itens .item {
-  display: block !important;
-  visibility: hidden;
-  opacity: 0;
-  background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/loading.gif.pagespeed.ce.Szr7hLK3Hv.gif) no-repeat 50% 50%;
-  height: 100vh; }
-
-.carousel-full-bx .fill {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  -o-background-size: cover; }
-
-.carousel-full-bx .bx-wrapper .bx-viewport .itens .item.active {
-  visibility: visible;
-  opacity: 1 !important; }
-
-.bx-wrapper .bx-pager {
-  position: absolute;
-  bottom: -34px;
-  width: 100%;
-  text-align: left;
-  font-size: .85em;
-  font-family: Arial;
-  font-weight: bold;
-  color: #666;
-  padding-top: 20px; }
-
-@media (min-width: 480px) {
-  .bx-wrapper .bx-pager {
-    bottom: -50px; } }
-.bx-wrapper .bx-pager .bx-pager-item {
-  display: inline-block;
-  *zoom: 1;
-  *display: inline; }
-
-.bx-wrapper .bx-controls-auto {
-  position: absolute;
-  bottom: -30px;
-  width: 100%;
-  text-align: center; }
-
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-  display: inline-block;
-  *zoom: 1;
-  *display: inline; }
-
-.bx-wrapper .bx-controls-auto .bx-start {
-  display: block;
-  text-indent: -9999px;
-  width: 10px;
-  height: 11px;
-  outline: 0;
-  margin: 0 3px; }
-
-.bx-wrapper .bx-controls-auto .bx-start:hover {
-  background-position: -86px 0; }
-
-.bx-wrapper .bx-controls-auto .bx-start.active {
-  background-position: -86px 0; }
-
-.bx-wrapper .bx-controls-auto .bx-stop {
-  display: block;
-  text-indent: -9999px;
-  width: 9px;
-  height: 11px;
-  outline: 0;
-  margin: 0 3px; }
-
-.bx-wrapper .bx-controls-auto .bx-stop:hover {
-  background-position: -86px -33px; }
-
-.bx-wrapper .bx-controls-auto .bx-stop.active {
-  background-position: -86px -33px; }
-
-.bx-wrapper .bx-loading {
-  display: none;
-  min-height: 50px;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2000; }
-
-.bx-wrapper .bx-pager.bx-default-pager a {
-  background: #fff;
-  text-indent: -9999px;
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  outline: 0;
-  border: 1px solid #9b9b9b;
-  border-radius: 5px; }
-
-.bx-wrapper .bx-pager.bx-default-pager a:hover {
-  background: #9b9b9b; }
-
-.bx-wrapper .bx-pager.bx-default-pager a.active {
-  border-color: #fe860c;
-  background: #fe860c; }
-
-.bx-wrapper .bx-prev {
-  left: 10px;
-  opacity: .5;
-  background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbtn-slider-nav.png.pagespeed.ic.U9crpKtqZ4.png) no-repeat 0 -89px; }
-
-.bx-wrapper .bx-prev:hover {
-  opacity: 1; }
-
-.bx-wrapper .bx-next {
-  right: 10px;
-  opacity: .5;
-  background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbtn-slider-nav.png.pagespeed.ic.U9crpKtqZ4.png) no-repeat 0 0; }
-
-.bx-wrapper .bx-next:hover {
-  opacity: 1; }
-
-.bx-wrapper .bx-controls-direction a {
-  position: absolute;
-  top: 50%;
-  margin-top: -35px;
-  outline: 0;
-  width: 72px;
-  height: 72px;
-  text-indent: -9999px;
-  z-index: 9999;
-  -webkit-transition: all .3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-.bx-wrapper .bx-controls-direction a.disabled {
-  display: none; }
-
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-  text-align: left;
-  width: 80%; }
-
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-  right: 0;
-  width: 35px; }
-
-.bx-wrapper .bx-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #666 \9;
-  background: rgba(80, 80, 80, 0.75);
-  width: 100%; }
-
-.bx-wrapper .bx-caption span {
-  font-family: Arial;
-  display: block;
-  font-size: .85em;
-  padding: 10px; }
-
-.carousel-crop .bx-viewport {
-  overflow: hidden; }
+@media (min-width: 992px) {
+  .paragraph--type--bloco-de-enderecos .pg-unidades {
+    padding-top: 70px; }
+  .paragraph--type--bloco-de-enderecos .pg-unidades--wrap {
+    padding-top: 70px; } }
+@media (min-width: 768px) {
+  .paragraph--type--bloco-de-enderecos h1 {
+    font-size: 36px; } }

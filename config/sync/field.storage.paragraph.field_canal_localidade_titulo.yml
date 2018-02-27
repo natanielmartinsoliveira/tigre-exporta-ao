@@ -1,0 +1,21 @@
+uuid: 3e08c0fa-8e07-43e8-b770-aed48a5f24eb
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_canal_localidade_titulo
+field_name: field_canal_localidade_titulo
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

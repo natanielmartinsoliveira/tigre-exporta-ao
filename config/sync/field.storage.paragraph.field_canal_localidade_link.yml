@@ -1,0 +1,19 @@
+uuid: 8ea91ce9-b898-41ef-a6d8-4670f8a14d66
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_canal_localidade_link
+field_name: field_canal_localidade_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

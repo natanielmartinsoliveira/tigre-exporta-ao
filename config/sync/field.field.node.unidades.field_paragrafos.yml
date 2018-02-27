@@ -1,0 +1,53 @@
+uuid: 15821eda-b348-4f66-a0b0-b4cea4c9938f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragrafos
+    - node.type.unidades
+  module:
+    - entity_reference_revisions
+id: node.unidades.field_paragrafos
+field_name: field_paragrafos
+entity_type: node
+bundle: unidades
+label: Parágrafos
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      abas:
+        weight: 10
+        enabled: false
+      bloco_de_enderecos:
+        weight: 11
+        enabled: false
+      canal_de_atendimento:
+        weight: 12
+        enabled: false
+      cta_2_colunas:
+        weight: 13
+        enabled: false
+      cta_centralizado:
+        weight: 14
+        enabled: false
+      imagem_c_texto:
+        weight: 15
+        enabled: false
+      localidade_da_unidade:
+        weight: 16
+        enabled: false
+      texto:
+        weight: 17
+        enabled: false
+      unidades:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions
