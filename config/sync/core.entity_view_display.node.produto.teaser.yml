@@ -26,4 +26,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_produto_beneficios: true
+  field_produto_instrucoes: true
+  field_produto_video: true
   langcode: true

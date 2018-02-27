@@ -17,5 +17,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_banner_url: true
   field_imagem_destaque: true
   langcode: true

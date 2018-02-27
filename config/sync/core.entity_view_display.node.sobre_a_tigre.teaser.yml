@@ -17,5 +17,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_imagem_destaque: true
   field_paragrafos: true
   langcode: true
