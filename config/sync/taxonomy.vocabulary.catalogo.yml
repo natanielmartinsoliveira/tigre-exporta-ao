@@ -5,5 +5,5 @@ dependencies: {  }
 name: Catálogo
 vid: catalogo
 description: ''
-hierarchy: 0
+hierarchy: 1
 weight: 0

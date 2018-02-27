@@ -1,0 +1,23 @@
+uuid: 53dc92e2-d4a9-4923-90a9-be1631314ccc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.catalogo.field_arquivo
+    - field.field.node.catalogo.field_tipo
+    - node.type.catalogo
+  module:
+    - user
+id: node.catalogo.teaser
+targetEntityType: node
+bundle: catalogo
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_arquivo: true
+  field_tipo: true
+  langcode: true

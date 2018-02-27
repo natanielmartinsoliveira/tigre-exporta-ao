@@ -1,0 +1,27 @@
+uuid: c932c93c-007a-413d-b55c-d4c8ba2db45d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tipo
+field_name: field_tipo
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Ficha Técnica'
+      label: 'Ficha Técnica'
+    -
+      value: Catálogo
+      label: Catálogo
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
