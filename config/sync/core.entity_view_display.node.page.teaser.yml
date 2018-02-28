@@ -1,17 +1,17 @@
-uuid: 34a78abe-9d22-4048-8702-90c0a529d177
+uuid: 5f02b523-2b8d-4248-942b-0a1da2f73b25
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.produto.body
-    - node.type.produto
+    - field.field.node.page.body
+    - node.type.page
   module:
     - text
     - user
-id: node.produto.teaser
+id: node.page.teaser
 targetEntityType: node
-bundle: produto
+bundle: page
 mode: teaser
 content:
   body:
@@ -26,6 +26,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_produto_beneficios: true
-  field_produto_instrucoes: true
   langcode: true
