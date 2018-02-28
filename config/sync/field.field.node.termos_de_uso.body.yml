@@ -1,0 +1,22 @@
+uuid: e823e30d-a03b-4b5f-aeee-ed7149440b99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.termos_de_uso
+  module:
+    - text
+id: node.termos_de_uso.body
+field_name: body
+entity_type: node
+bundle: termos_de_uso
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

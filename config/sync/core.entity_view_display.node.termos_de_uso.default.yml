@@ -1,0 +1,27 @@
+uuid: 063d37ca-6175-4daa-b3bd-ca8cba6d9829
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.termos_de_uso.body
+    - node.type.termos_de_uso
+  module:
+    - text
+    - user
+id: node.termos_de_uso.default
+targetEntityType: node
+bundle: termos_de_uso
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

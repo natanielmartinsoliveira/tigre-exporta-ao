@@ -1,0 +1,11 @@
+uuid: c07c1b9e-4154-4c8c-95ff-305d848b5744
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.termos_de_uso
+id: node.termos_de_uso
+target_entity_type_id: node
+target_bundle: termos_de_uso
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,29 @@
+uuid: 229f9ad7-9fa2-4068-9003-7cce56ca3495
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.termos_de_uso.body
+    - node.type.termos_de_uso
+  module:
+    - text
+    - user
+id: node.termos_de_uso.teaser
+targetEntityType: node
+bundle: termos_de_uso
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true
