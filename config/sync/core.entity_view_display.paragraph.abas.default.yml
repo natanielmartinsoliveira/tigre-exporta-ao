@@ -1,0 +1,42 @@
+uuid: c313c367-8601-41eb-9b87-06a65b0aeba0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.abas.field_conteudo
+    - field.field.paragraph.abas.field_item
+    - field.field.paragraph.abas.field_titulo
+    - paragraphs.paragraphs_type.abas
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.abas.default
+targetEntityType: paragraph
+bundle: abas
+mode: default
+content:
+  field_conteudo:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_item:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_titulo:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
