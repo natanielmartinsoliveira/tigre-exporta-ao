@@ -1,0 +1,11 @@
+uuid: 453942e6-de70-4856-8dc0-197dd0126383
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sobre_a_tigre
+id: node.sobre_a_tigre
+target_entity_type_id: node
+target_bundle: sobre_a_tigre
+default_langcode: site_default
+language_alterable: false

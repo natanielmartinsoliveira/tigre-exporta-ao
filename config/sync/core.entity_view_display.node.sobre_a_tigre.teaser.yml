@@ -1,0 +1,23 @@
+uuid: ebc8d3ca-b23d-41e3-bfe7-d6a80b290a48
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sobre_a_tigre.field_imagem_destaque
+    - field.field.node.sobre_a_tigre.field_paragrafos
+    - node.type.sobre_a_tigre
+  module:
+    - user
+id: node.sobre_a_tigre.teaser
+targetEntityType: node
+bundle: sobre_a_tigre
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_imagem_destaque: true
+  field_paragrafos: true
+  langcode: true

@@ -1,0 +1,25 @@
+uuid: 96b98759-245d-48ae-90a3-2512534a98e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragrafos
+    - node.type.sobre_a_tigre
+  module:
+    - entity_reference_revisions
+id: node.sobre_a_tigre.field_paragrafos
+field_name: field_paragrafos
+entity_type: node
+bundle: sobre_a_tigre
+label: Parágrafos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+field_type: entity_reference_revisions
