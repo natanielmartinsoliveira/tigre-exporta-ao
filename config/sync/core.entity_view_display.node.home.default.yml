@@ -1,0 +1,38 @@
+uuid: eb2b4cf2-f558-4925-b658-3104109e5db9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home.body
+    - field.field.node.home.field_paragrafos
+    - node.type.home
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.home.default
+targetEntityType: node
+bundle: home
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_paragrafos:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

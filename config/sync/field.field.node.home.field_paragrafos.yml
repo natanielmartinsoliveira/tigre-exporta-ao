@@ -1,0 +1,25 @@
+uuid: 8b855960-36f9-40c3-a042-9e6e0d11ae71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragrafos
+    - node.type.home
+  module:
+    - entity_reference_revisions
+id: node.home.field_paragrafos
+field_name: field_paragrafos
+entity_type: node
+bundle: home
+label: Parágrafos
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+field_type: entity_reference_revisions
