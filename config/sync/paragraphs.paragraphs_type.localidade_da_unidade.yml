@@ -1,9 +1,0 @@
-uuid: 383bbf41-488b-4455-a12e-9ed476f3965b
-langcode: pt-br
-status: true
-dependencies: {  }
-id: localidade_da_unidade
-label: 'Localidade da Unidade'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

@@ -1,9 +1,0 @@
-uuid: 1dd04562-070a-4128-9a07-d5f9fb2ce21d
-langcode: pt-br
-status: true
-dependencies: {  }
-name: Catálogo
-vid: catalogo
-description: ''
-hierarchy: 1
-weight: 0

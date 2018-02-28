@@ -1,9 +1,0 @@
-uuid: 017673f4-2b45-4b83-a84d-1c0319191f2b
-langcode: pt-br
-status: true
-dependencies: {  }
-id: bloco_de_enderecos
-label: 'Bloco de Endereços'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

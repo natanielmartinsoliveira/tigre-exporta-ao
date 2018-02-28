@@ -1,9 +1,0 @@
-uuid: 49cb7b48-8093-439c-811b-bad48a61c602
-langcode: pt-br
-status: true
-dependencies: {  }
-id: texto
-label: Texto
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

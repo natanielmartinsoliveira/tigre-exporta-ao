@@ -1,9 +1,0 @@
-uuid: 2cb0acb5-82dc-421f-89e6-94768d9f0483
-langcode: pt-br
-status: true
-dependencies: {  }
-id: unidades
-label: Unidades
-icon_uuid: null
-description: 'Unidades do Grupo Tigre'
-behavior_plugins: {  }

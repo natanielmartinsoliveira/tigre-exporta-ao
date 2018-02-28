@@ -1,9 +1,0 @@
-uuid: 44d1a435-8f06-4fcd-83cd-5e86be4d47f2
-langcode: pt-br
-status: true
-dependencies: {  }
-name: Produto
-vid: produto
-description: ''
-hierarchy: 1
-weight: 0

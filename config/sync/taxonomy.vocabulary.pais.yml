@@ -1,9 +1,0 @@
-uuid: ef216d55-1355-483e-8923-891b5ad0d2d0
-langcode: pt-br
-status: true
-dependencies: {  }
-name: País
-vid: pais
-description: 'Lista de países'
-hierarchy: 0
-weight: 0
