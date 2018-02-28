@@ -11,7 +11,7 @@ _core:
 id: tigre_messages
 theme: tigre
 region: content
-weight: -11
+weight: -15
 provider: null
 plugin: system_messages_block
 settings:

@@ -11,4 +11,4 @@ recipients:
 reply: ''
 weight: 0
 message: 'Sua mensagem foi enviada.'
-redirect: ''
+redirect: /contact/feedback

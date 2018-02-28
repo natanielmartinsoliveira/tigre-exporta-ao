@@ -10,7 +10,33 @@ dependencies:
     - field.field.contact_message.contato.field_contato_profissao
     - field.field.contact_message.contato.field_contato_telefone
   module:
+    - ds
     - options
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      left:
+        - langcode
+        - message
+        - field_contato_empresa
+        - field_contato_telefone
+        - field_contato_celular
+        - field_contato_profissao
+        - field_contato_pais
 id: contact_message.contato.default
 targetEntityType: contact_message
 bundle: contato
@@ -55,12 +81,11 @@ content:
     type: string
     region: content
   message:
-    type: string
+    type: basic_string
     weight: 0
     label: above
     region: content
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
 hidden:
   langcode: true

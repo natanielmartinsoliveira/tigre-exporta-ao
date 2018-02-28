@@ -1,0 +1,8 @@
+uuid: a3a0527b-6244-401f-8604-2224083ca268
+langcode: pt-br
+status: true
+dependencies: {  }
+id: banner_topo
+label: 'Banner Topo'
+revision: 1
+description: ''

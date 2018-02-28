@@ -15,7 +15,7 @@ third_party_settings:
 id: contactblock
 theme: tigre
 region: content
-weight: -3
+weight: -9
 provider: null
 plugin: contact_block
 settings:

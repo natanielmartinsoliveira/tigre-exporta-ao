@@ -5,10 +5,13 @@ dependencies:
   config:
     - field.field.node.catalogo.field_arquivo
     - field.field.node.catalogo.field_categoria_catalogo
+    - field.field.node.catalogo.field_image
     - field.field.node.catalogo.field_tipo
+    - image.style.thumbnail
     - node.type.catalogo
   module:
     - file
+    - image
     - path
 id: node.catalogo.default
 targetEntityType: node
@@ -33,6 +36,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_image:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_tipo:
     weight: 1

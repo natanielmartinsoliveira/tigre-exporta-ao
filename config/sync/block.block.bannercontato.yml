@@ -1,0 +1,35 @@
+uuid: 0bdfdf67-7f16-49f3-87ce-63fc13743749
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_topo:2f146445-b9b3-4208-b9e7-dc930ba617b4'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: bannercontato
+theme: tigre
+region: header
+weight: -11
+provider: null
+plugin: 'block_content:2f146445-b9b3-4208-b9e7-dc930ba617b4'
+settings:
+  id: 'block_content:2f146445-b9b3-4208-b9e7-dc930ba617b4'
+  label: 'Banner Contato'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/contato\r\n"
+    negate: false
+    context_mapping: {  }

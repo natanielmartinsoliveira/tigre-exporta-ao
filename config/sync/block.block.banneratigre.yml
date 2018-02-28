@@ -1,9 +1,9 @@
-uuid: 904032bf-2f52-4229-811c-08459c9e3bc7
+uuid: 994723c7-d0a1-4a5d-a15c-c5568f7903a0
 langcode: pt-br
 status: true
 dependencies:
   content:
-    - 'block_content:basic:3f3d2ac5-aa73-4ad4-980a-31ff971eafd7'
+    - 'block_content:banner_topo:039eaae3-e8e9-4c62-ac69-0e00e695c093'
   module:
     - block_class
     - block_content
@@ -15,12 +15,12 @@ third_party_settings:
     classes: ''
 id: banneratigre
 theme: tigre
-region: content
-weight: -12
+region: header
+weight: -14
 provider: null
-plugin: 'block_content:3f3d2ac5-aa73-4ad4-980a-31ff971eafd7'
+plugin: 'block_content:039eaae3-e8e9-4c62-ac69-0e00e695c093'
 settings:
-  id: 'block_content:3f3d2ac5-aa73-4ad4-980a-31ff971eafd7'
+  id: 'block_content:039eaae3-e8e9-4c62-ac69-0e00e695c093'
   label: 'Banner A Tigre'
   provider: block_content
   label_display: '0'

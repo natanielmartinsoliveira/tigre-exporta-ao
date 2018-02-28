@@ -428,6 +428,20 @@ p {
     max-width: 60%; }
   #block-contactblock #edit-submit {
     width: auto; } }
+.block-block-content .field--name-field-banner-imagem img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.page-header {
+  position: relative;
+  color: white;
+  margin-top: -76px;
+  border-bottom: 0;
+  font-size: 42px;
+  font-family: 'ubuntubold'; }
+
 .view-termos-de-uso .panel, .view-politica-de-privacidade .panel {
   margin-bottom: 21px;
   background-color: #fff; }

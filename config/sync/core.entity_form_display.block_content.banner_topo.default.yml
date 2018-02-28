@@ -1,0 +1,42 @@
+uuid: 67189465-becb-4397-9700-f0e81e1289b8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_topo
+    - field.field.block_content.banner_topo.field_banner_imagem
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.banner_topo.default
+targetEntityType: block_content
+bundle: banner_topo
+mode: default
+content:
+  field_banner_imagem:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+hidden: {  }

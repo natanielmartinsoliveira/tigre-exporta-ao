@@ -1,0 +1,35 @@
+uuid: 59309edb-c46f-4758-8663-3c6ada0ae097
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_topo:08259cec-17c6-4bef-af8f-04603960ea46'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: bannertermosdeusoepoliticadeprivacidade
+theme: tigre
+region: header
+weight: -10
+provider: null
+plugin: 'block_content:08259cec-17c6-4bef-af8f-04603960ea46'
+settings:
+  id: 'block_content:08259cec-17c6-4bef-af8f-04603960ea46'
+  label: 'Banner Termos de Uso e Politica de Privacidade'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/termos-de-uso\r\n/politica-de-privacidade"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,35 @@
+uuid: 25cac56d-9f79-483b-af08-b9148f08fee4
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_topo:f5c4fb60-027c-49e9-a630-3284cb046bbd'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: bannerprodutos
+theme: tigre
+region: header
+weight: -9
+provider: null
+plugin: 'block_content:f5c4fb60-027c-49e9-a630-3284cb046bbd'
+settings:
+  id: 'block_content:f5c4fb60-027c-49e9-a630-3284cb046bbd'
+  label: 'Banner Produtos'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/catalogos/*'
+    negate: false
+    context_mapping: {  }

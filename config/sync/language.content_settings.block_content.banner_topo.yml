@@ -1,0 +1,16 @@
+uuid: e2076584-4573-491e-8519-05b26b572481
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_topo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.banner_topo
+target_entity_type_id: block_content
+target_bundle: banner_topo
+default_langcode: site_default
+language_alterable: false

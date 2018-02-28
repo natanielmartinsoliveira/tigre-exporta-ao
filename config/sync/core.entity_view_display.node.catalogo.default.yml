@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.catalogo.field_arquivo
     - field.field.node.catalogo.field_categoria_catalogo
+    - field.field.node.catalogo.field_image
     - field.field.node.catalogo.field_tipo
     - node.type.catalogo
   module:
     - file
+    - image
     - options
     - user
 id: node.catalogo.default
@@ -30,6 +32,15 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_image:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_tipo:
     weight: 103
