@@ -1,4 +1,12 @@
-## Instalação
+## Script instalaca
+Na raiz do projeto do drupal (docroot), rodar o comando:
+
+
+\# ./script/install.sh
+
+O banco será apagado, o profile tigre será instalado e toda config será importada. Cuidado: os dados salvos no banco serão perdidos.
+
+## Instalação passo a passo
 
 ### Linux
 Instalar profile tigre
