@@ -1,0 +1,18 @@
+uuid: 81e30e81-f26f-4dee-89d1-9eeffaccc734
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Unidades
+type: unidades
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

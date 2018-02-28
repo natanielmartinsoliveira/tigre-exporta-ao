@@ -1,0 +1,38 @@
+uuid: 3e99ccba-ba7c-4188-80be-0f616401c65b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.unidades.body
+    - field.field.node.unidades.field_paragrafos
+    - node.type.unidades
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.unidades.default
+targetEntityType: node
+bundle: unidades
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_paragrafos:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true
