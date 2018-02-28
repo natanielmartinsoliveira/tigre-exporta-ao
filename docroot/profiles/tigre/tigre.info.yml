@@ -1,0 +1,62 @@
+name: Tigre Profile
+type: profile
+description: 'Tigre Profile.'
+core: 8.x
+description: 'Install with commonly used features pre-configured.'
+# version: VERSION
+# core: 8.x
+dependencies:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+  - admin_toolbar
+  - bg_image_formatter
+  - block_class
+  - contact_block
+  - ctools
+  - ds
+  - entity_reference_revisions
+  - google_analytics
+  - metatag
+  - paragraphs
+  - pathauto
+  - taxonomy_menu
+  - token
+  - twig_field_value
+  - video_embed_field
+  - views_slideshow
+themes:
+  - seven
+  - bootstrap
+  - tigre
