@@ -1,0 +1,22 @@
+uuid: 9289c54f-1eb8-4e23-85dc-871e6a3f1046
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.produto
+  module:
+    - text
+id: node.produto.body
+field_name: body
+entity_type: node
+bundle: produto
+label: Descrição
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

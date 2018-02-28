@@ -1,0 +1,22 @@
+uuid: b4e349a7-ff89-4ae9-a59d-a429a03ff7cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_produto_instrucoes
+    - node.type.produto
+  module:
+    - text
+id: node.produto.field_produto_instrucoes
+field_name: field_produto_instrucoes
+entity_type: node
+bundle: produto
+label: Instruções
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

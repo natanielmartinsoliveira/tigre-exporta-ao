@@ -1,0 +1,56 @@
+uuid: e2824320-bfdf-4c88-98f3-37508e4c869c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.produto.body
+    - field.field.node.produto.field_produto_beneficios
+    - field.field.node.produto.field_produto_instrucoes
+    - field.field.node.produto.field_produto_video
+    - node.type.produto
+  module:
+    - text
+    - user
+    - video_embed_field
+id: node.produto.default
+targetEntityType: node
+bundle: produto
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_produto_beneficios:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_produto_instrucoes:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_produto_video:
+    weight: 104
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

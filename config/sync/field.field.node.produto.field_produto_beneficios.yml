@@ -1,0 +1,22 @@
+uuid: 11f5a23e-63f5-4249-b306-a8aff15cc29f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_produto_beneficios
+    - node.type.produto
+  module:
+    - text
+id: node.produto.field_produto_beneficios
+field_name: field_produto_beneficios
+entity_type: node
+bundle: produto
+label: Benefícios
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

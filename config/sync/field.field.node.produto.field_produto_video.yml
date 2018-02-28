@@ -1,0 +1,25 @@
+uuid: 10022467-acb5-4c7d-afcb-af858a2f62cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_produto_video
+    - node.type.produto
+  module:
+    - video_embed_field
+id: node.produto.field_produto_video
+field_name: field_produto_video
+entity_type: node
+bundle: produto
+label: Vídeo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: '0'
+    youtube_playlist: '0'
+    vimeo: '0'
+field_type: video_embed_field
