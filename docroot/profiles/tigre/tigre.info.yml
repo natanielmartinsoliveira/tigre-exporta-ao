@@ -60,6 +60,6 @@ dependencies:
   - content_translation
   - config_translation
 themes:
-  - seven
+  - adminimal_theme
   - bootstrap
   - tigre
