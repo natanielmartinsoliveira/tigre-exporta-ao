@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.sobre_a_tigre.field_imagem_destaque
+    - field.field.node.sobre_a_tigre.field_meta_tags
     - field.field.node.sobre_a_tigre.field_paragrafos
     - image.style.thumbnail
     - node.type.sobre_a_tigre
   module:
     - image
+    - metatag
     - paragraphs
     - path
 id: node.sobre_a_tigre.default
@@ -29,6 +31,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_meta_tags:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_paragrafos:
     type: entity_reference_paragraphs
@@ -66,7 +74,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:

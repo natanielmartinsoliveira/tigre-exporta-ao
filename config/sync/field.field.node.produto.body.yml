@@ -11,7 +11,7 @@ id: node.produto.body
 field_name: body
 entity_type: node
 bundle: produto
-label: Descrição
+label: Benefícios
 description: ''
 required: false
 translatable: true

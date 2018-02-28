@@ -1,0 +1,23 @@
+uuid: 7de1fadf-c65a-4624-95d2-ba1937bedf9b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.sobre_a_tigre
+  module:
+    - metatag
+id: node.sobre_a_tigre.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: sobre_a_tigre
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

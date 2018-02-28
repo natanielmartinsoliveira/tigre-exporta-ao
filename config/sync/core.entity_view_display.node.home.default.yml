@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.home.body
+    - field.field.node.home.field_meta_tags
     - field.field.node.home.field_paragrafos
     - node.type.home
   module:
     - entity_reference_revisions
+    - metatag
     - text
     - user
 id: node.home.default
@@ -21,6 +23,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   field_paragrafos:
     weight: 102
