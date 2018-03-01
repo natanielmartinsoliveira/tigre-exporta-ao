@@ -1,0 +1,16 @@
+uuid: b663ef32-f4ae-40f4-a4d1-492f6763aea3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.pagina_nao_encontrada_404
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.pagina_nao_encontrada_404
+target_entity_type_id: node
+target_bundle: pagina_nao_encontrada_404
+default_langcode: site_default
+language_alterable: false

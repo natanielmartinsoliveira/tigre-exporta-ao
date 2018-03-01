@@ -1,0 +1,22 @@
+uuid: 4bfb62d3-7701-4726-9a68-15506a6f5166
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_nao_encontrada_404
+  module:
+    - text
+id: node.pagina_nao_encontrada_404.body
+field_name: body
+entity_type: node
+bundle: pagina_nao_encontrada_404
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,27 @@
+uuid: 4f4b2e18-d448-4477-a79f-8ba9aad9e144
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_nao_encontrada_404.body
+    - node.type.pagina_nao_encontrada_404
+  module:
+    - text
+    - user
+id: node.pagina_nao_encontrada_404.default
+targetEntityType: node
+bundle: pagina_nao_encontrada_404
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

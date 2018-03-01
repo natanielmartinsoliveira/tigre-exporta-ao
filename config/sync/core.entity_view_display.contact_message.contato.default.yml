@@ -15,76 +15,136 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_2col
-      library: ds/ds_2col
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes: {  }
         wrappers:
+          header: div
           left: div
           right: div
+          footer: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
+        classes:
+          layout_class: {  }
     regions:
       left:
-        - langcode
-        - message
-        - field_contato_empresa
-        - field_contato_telefone
         - field_contato_celular
+        - field_contato_telefone
         - field_contato_profissao
+      right:
+        - field_contato_empresa
         - field_contato_pais
+      footer:
+        - message
 id: contact_message.contato.default
 targetEntityType: contact_message
 bundle: contato
 mode: default
 content:
   field_contato_celular:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: ''
+            ow-cl: col-sm-2
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: string
+    region: left
+  field_contato_empresa:
     weight: 3
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_contato_empresa:
-    weight: 1
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
+    region: right
   field_contato_pais:
-    weight: 5
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_contato_profissao:
     weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
-    region: content
-  field_contato_telefone:
+    type: list_key
+    region: right
+  field_contato_profissao:
     weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: left
+  field_contato_telefone:
+    weight: 1
     label: above
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: ''
+            ow-cl: col-sm-2
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
     type: string
-    region: content
+    region: left
   message:
     type: basic_string
-    weight: 0
+    weight: 5
     label: above
-    region: content
+    region: footer
     settings: {  }
     third_party_settings: {  }
 hidden:

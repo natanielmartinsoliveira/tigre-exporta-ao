@@ -1,0 +1,35 @@
+uuid: cf05771c-a899-4c2b-92ea-f932fa93dbbb
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:953ecb58-68da-4cef-9c9b-a47c818371a5'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: paginacontatotexto
+theme: tigre
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:953ecb58-68da-4cef-9c9b-a47c818371a5'
+settings:
+  id: 'block_content:953ecb58-68da-4cef-9c9b-a47c818371a5'
+  label: 'Pagina Contato - Texto'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contato
+    negate: false
+    context_mapping: {  }

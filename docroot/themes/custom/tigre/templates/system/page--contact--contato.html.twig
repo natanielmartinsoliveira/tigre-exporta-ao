@@ -145,13 +145,14 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          {% if page.content.catalogos %}
+          {% if page.content.contatoexportacao %}
             <div class="container">
-              <div class="col-sm-3">
-                {{ page.content.catalogo }}
+              <div class="col-xs-12 col-sm-8">
+                {{ page.content.paginacontatotexto }}
+                {{ page.content.tigre_content }}
               </div>
-              <div class="col-xs-12 col-sm-9">
-                {{ page.content.views_block__catalogos_block_1 }}
+              <div class="col-sm-4">
+                {{ page.content.contatoexportacao }}
               </div>
             </div>
           {% else %}

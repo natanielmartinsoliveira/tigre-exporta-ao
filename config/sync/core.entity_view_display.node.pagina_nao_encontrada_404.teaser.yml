@@ -1,0 +1,29 @@
+uuid: ac6c1350-fafb-4928-888f-c33d921b166a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pagina_nao_encontrada_404.body
+    - node.type.pagina_nao_encontrada_404
+  module:
+    - text
+    - user
+id: node.pagina_nao_encontrada_404.teaser
+targetEntityType: node
+bundle: pagina_nao_encontrada_404
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

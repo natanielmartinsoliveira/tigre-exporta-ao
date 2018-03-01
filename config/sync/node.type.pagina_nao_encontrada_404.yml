@@ -1,0 +1,17 @@
+uuid: 508f562f-78e2-4977-aed6-5f354ace640d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Página não Encontrada - 404'
+type: pagina_nao_encontrada_404
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

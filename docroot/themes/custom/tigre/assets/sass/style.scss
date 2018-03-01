@@ -1242,3 +1242,27 @@
 #block-categoriasproduto-menu{
     display: none;
 }
+
+// Contatos - Pagina contato
+#block-contatoexportacao {
+    background-color: #F3F3F3;
+    width: 265px;
+    margin: auto;
+    padding: 36px;
+    h4 {
+        font-family: "ubuntubold", Arial, sans-serif;
+        font-size: 24px;
+        color: #000;
+    }
+    p {
+        font-family: "ubuntulight", Arial, sans-serif;
+        font-size: 14px;
+        color: #666666;
+        margin-bottom: 0;
+    }
+    h5 {
+        margin-top: 0;
+        font-family: "ubuntulight", Arial, sans-serif;
+        font-size: 18px;
+    }
+}
