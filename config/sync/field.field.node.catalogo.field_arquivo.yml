@@ -20,7 +20,7 @@ default_value_callback: ''
 settings:
   file_directory: arquivos/catalogos
   file_extensions: pdf
-  max_filesize: '20 MB'
+  max_filesize: '50 MB'
   description_field: true
   handler: 'default:file'
   handler_settings: {  }

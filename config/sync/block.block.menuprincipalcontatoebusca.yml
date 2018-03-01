@@ -15,7 +15,7 @@ third_party_settings:
 id: menuprincipalcontatoebusca
 theme: tigre
 region: navigation_collapsible
-weight: -11
+weight: 5
 provider: null
 plugin: 'block_content:16372a0a-7098-4d03-91e3-25b2a2b5ccef'
 settings:

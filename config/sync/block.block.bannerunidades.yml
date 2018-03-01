@@ -16,7 +16,7 @@ third_party_settings:
 id: bannerunidades
 theme: tigre
 region: header
-weight: -13
+weight: 7
 provider: null
 plugin: 'block_content:66a06f35-a6b7-4c7d-b6a7-0fdb7218aa45'
 settings:

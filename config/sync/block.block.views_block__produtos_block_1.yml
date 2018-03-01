@@ -16,7 +16,7 @@ third_party_settings:
 id: views_block__produtos_block_1
 theme: tigre
 region: content
-weight: -10
+weight: 15
 provider: null
 plugin: 'views_block:produtos-block_1'
 settings:

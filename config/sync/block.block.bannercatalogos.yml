@@ -1,9 +1,9 @@
-uuid: 0bdfdf67-7f16-49f3-87ce-63fc13743749
+uuid: 37c8119f-eb8f-4e34-bf7b-b6b9424452dc
 langcode: pt-br
 status: true
 dependencies:
   content:
-    - 'block_content:banner_topo:2f146445-b9b3-4208-b9e7-dc930ba617b4'
+    - 'block_content:banner_topo:1e1f198c-ab33-47e3-908f-e57de706cd2d'
   module:
     - block_class
     - block_content
@@ -13,15 +13,15 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: bannercontato
+id: bannercatalogos
 theme: tigre
 region: header
-weight: 9
+weight: 15
 provider: null
-plugin: 'block_content:2f146445-b9b3-4208-b9e7-dc930ba617b4'
+plugin: 'block_content:1e1f198c-ab33-47e3-908f-e57de706cd2d'
 settings:
-  id: 'block_content:2f146445-b9b3-4208-b9e7-dc930ba617b4'
-  label: 'Banner Contato'
+  id: 'block_content:1e1f198c-ab33-47e3-908f-e57de706cd2d'
+  label: 'Banner Catálogos'
   provider: block_content
   label_display: '0'
   status: true
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/contato\r\n"
+    pages: "/catalogos/*\r\n/catalogos\r\n/catalogo/*"
     negate: false
     context_mapping: {  }

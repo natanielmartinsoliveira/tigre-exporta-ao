@@ -16,7 +16,7 @@ third_party_settings:
 id: bannerprodutos
 theme: tigre
 region: header
-weight: -9
+weight: 13
 provider: null
 plugin: 'block_content:f5c4fb60-027c-49e9-a630-3284cb046bbd'
 settings:
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/catalogos/*'
+    pages: "/produtos/*\r\n/produtos"
     negate: false
     context_mapping: {  }

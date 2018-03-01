@@ -19,6 +19,7 @@ content:
     region: content
 hidden:
   field_arquivo: true
+  field_catalogo_arquivo_tipo: true
   field_categoria_catalogo: true
   field_image: true
   field_tipo: true

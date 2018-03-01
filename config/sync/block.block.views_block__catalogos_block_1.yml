@@ -16,7 +16,7 @@ third_party_settings:
 id: views_block__catalogos_block_1
 theme: tigre
 region: content
-weight: -12
+weight: 13
 provider: null
 plugin: 'views_block:catalogos-block_1'
 settings:

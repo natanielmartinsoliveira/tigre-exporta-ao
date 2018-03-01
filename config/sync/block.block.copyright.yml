@@ -1,7 +1,9 @@
-uuid: 055fdf2c-4fa2-41ad-8703-d249bb905ee8
+uuid: 01392ac1-994a-407a-a170-9bddd8223d91
 langcode: pt-br
 status: true
 dependencies:
+  config:
+    - system.menu.copyright
   module:
     - block_class
     - system
@@ -10,17 +12,17 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-_core:
-  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: tigre_breadcrumbs
+id: copyright
 theme: tigre
-region: breadcrumb
-weight: -17
+region: footer_bottom
+weight: 0
 provider: null
-plugin: system_breadcrumb_block
+plugin: 'system_menu_block:copyright'
 settings:
-  id: system_breadcrumb_block
-  label: Breadcrumbs
+  id: 'system_menu_block:copyright'
+  label: Copyright
   provider: system
   label_display: '0'
+  level: 1
+  depth: 0
 visibility: {  }

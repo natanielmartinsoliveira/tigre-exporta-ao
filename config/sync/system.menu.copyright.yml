@@ -1,0 +1,8 @@
+uuid: 0797a91a-27a8-4ee3-9ae8-523a1de4aa24
+langcode: pt-br
+status: true
+dependencies: {  }
+id: copyright
+label: Copyright
+description: ''
+locked: false
