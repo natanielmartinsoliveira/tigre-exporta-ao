@@ -818,6 +818,51 @@
     }
 }
 
+
+// Home - 
+@media (min-width: 768px) {
+    .home .container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    .contact-message-newsletter-form{
+        .field--name-field-newsletter-email {
+            margin-top: 25px;
+        }
+        .form-actions {
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .home .container {
+        text-align: center;
+        p {
+            font-size: 24px;
+            line-height: 38px;
+            font-family: 'ubuntulight';
+        }
+        .col-xs-12:first-child {
+            padding-top: 15%;
+            padding-bottom: 20%;
+        }
+        .col-xs-12:last-child {
+            padding: 0;
+            right: -15px;
+        }
+    }
+    .contact-message-newsletter-form{
+        text-align: center;
+    }
+    #navbar .container .region.region-menu-global {
+        display: none;
+    }
+}
+
 // Paragrafo CTA 2 Colunas
 .paragraph--type--cta-2-colunas {
     .field--name-field-titulo {
@@ -845,7 +890,6 @@
 #block-views-block-banners-home-block-1 {
     height: 100vh;
 }
-
 
 //Slideshow Home
 .views_slideshow_cycle_main {
@@ -928,7 +972,7 @@
 
 @media (max-width: 768px) {
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
-        top: 0;
+        top: 20vh;
         text-align: center;
         .div-btn {
             margin-top: 25px;
@@ -945,9 +989,19 @@
 // Unidades 
 .paragraph--type--bloco-de-enderecos {
     padding-top: 35px;
-    &.bg-color-azul {
+    .bg-color-blue {
         background-color: #0083ca;
         color: #fff;
+        background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre.png.pagespeed.ic.2muiFdbK1j.png);
+        background-repeat: no-repeat;
+        background-position: 90% 110%;
+        background-attachment: fixed;
+        padding-bottom: 0;
+    }
+
+    .bg-color-white {
+        background-color: #fff;
+        color: #707070;
         background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre.png.pagespeed.ic.2muiFdbK1j.png);
         background-repeat: no-repeat;
         background-position: 90% 110%;
@@ -1031,4 +1085,17 @@
     }
 }
 
-
+// A tigre
+@media (max-width: 768px){
+    .sobre-a-tigre .field--name-field-paragrafos {
+        .container {
+            text-align: justify;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .col-sm-9, .col-sm-6, .col-sm-3 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

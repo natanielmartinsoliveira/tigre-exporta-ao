@@ -635,6 +635,41 @@ p {
         border: 0;
         font-size: 14px; }
 
+@media (min-width: 768px) {
+  .home .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .contact-message-newsletter-form .field--name-field-newsletter-email {
+    margin-top: 25px; }
+  .contact-message-newsletter-form .form-actions {
+    margin-top: 40px; } }
+@media (max-width: 768px) {
+  .home .container {
+    text-align: center; }
+    .home .container p {
+      font-size: 24px;
+      line-height: 38px;
+      font-family: 'ubuntulight'; }
+    .home .container .col-xs-12:first-child {
+      padding-top: 15%;
+      padding-bottom: 20%; }
+    .home .container .col-xs-12:last-child {
+      padding: 0;
+      right: -15px; }
+
+  .contact-message-newsletter-form {
+    text-align: center; }
+
+  #navbar .container .region.region-menu-global {
+    display: none; } }
 .paragraph--type--cta-2-colunas .field--name-field-titulo {
   font-size: 24px;
   font-family: 'ubuntubold'; }
@@ -724,7 +759,7 @@ p {
     width: 100%; } }
 @media (max-width: 768px) {
   .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
-    top: 0;
+    top: 20vh;
     text-align: center; }
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption .div-btn {
       margin-top: 25px; }
@@ -734,9 +769,17 @@ p {
       max-width: 100% !important; } }
 .paragraph--type--bloco-de-enderecos {
   padding-top: 35px; }
-  .paragraph--type--bloco-de-enderecos.bg-color-azul {
+  .paragraph--type--bloco-de-enderecos .bg-color-blue {
     background-color: #0083ca;
     color: #fff;
+    background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre.png.pagespeed.ic.2muiFdbK1j.png);
+    background-repeat: no-repeat;
+    background-position: 90% 110%;
+    background-attachment: fixed;
+    padding-bottom: 0; }
+  .paragraph--type--bloco-de-enderecos .bg-color-white {
+    background-color: #fff;
+    color: #707070;
     background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre.png.pagespeed.ic.2muiFdbK1j.png);
     background-repeat: no-repeat;
     background-position: 90% 110%;
@@ -792,3 +835,20 @@ p {
 @media (min-width: 768px) {
   .paragraph--type--bloco-de-enderecos h1 {
     font-size: 36px; } }
+/*.sobre-a-tigre 
+.field--name-field-paragrafos {
+    p:first-child{
+        font-size: 32px;
+        text-decoration: bold;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+}*/
+@media (max-width: 768px) {
+  .sobre-a-tigre .field--name-field-paragrafos .container {
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 8px; }
+  .sobre-a-tigre .field--name-field-paragrafos .col-sm-9, .sobre-a-tigre .field--name-field-paragrafos .col-sm-6, .sobre-a-tigre .field--name-field-paragrafos .col-sm-3 {
+    padding-left: 0;
+    padding-right: 0; } }
