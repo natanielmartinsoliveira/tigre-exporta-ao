@@ -1,0 +1,25 @@
+uuid: 43b6b47b-74e4-4351-8c33-4e5be1ce115e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.produto
+  module:
+    - video_embed_field
+id: node.produto.field_video
+field_name: field_video
+entity_type: node
+bundle: produto
+label: Vídeo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: '0'
+    youtube: '0'
+    youtube_playlist: '0'
+field_type: video_embed_field

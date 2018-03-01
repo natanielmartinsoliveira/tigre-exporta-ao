@@ -1,0 +1,21 @@
+uuid: cfb9c9ef-2b6b-4b49-b7ea-3c4fbb7e53d1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label_aba_2
+    - node.type.produto
+id: node.produto.field_label_aba_2
+field_name: field_label_aba_2
+entity_type: node
+bundle: produto
+label: 'Label aba 2'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'TABELA DESCRITIVA'
+default_value_callback: ''
+settings: {  }
+field_type: string

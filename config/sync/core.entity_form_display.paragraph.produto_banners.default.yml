@@ -1,0 +1,45 @@
+uuid: 8cfd5e1b-d364-400a-9212-bfd6631650c0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.produto_banners.field_produto_banners_imagem
+    - field.field.paragraph.produto_banners.field_produto_banners_texto
+    - field.field.paragraph.produto_banners.field_produto_banners_titulo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.produto_banners
+  module:
+    - image
+id: paragraph.produto_banners.default
+targetEntityType: paragraph
+bundle: produto_banners
+mode: default
+content:
+  field_produto_banners_imagem:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_produto_banners_texto:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_produto_banners_titulo:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

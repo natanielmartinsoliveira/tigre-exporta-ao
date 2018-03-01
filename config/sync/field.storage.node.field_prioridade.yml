@@ -1,0 +1,20 @@
+uuid: 7865d4d0-0fbb-4689-a705-eea1a2e7144e
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_prioridade
+field_name: field_prioridade
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

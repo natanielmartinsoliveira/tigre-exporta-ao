@@ -1,0 +1,23 @@
+uuid: 5f765d16-a652-4218-881a-4251445c05d1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.produto
+  module:
+    - metatag
+id: node.produto.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: produto
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

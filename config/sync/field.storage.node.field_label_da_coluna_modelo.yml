@@ -1,0 +1,21 @@
+uuid: 42ade46a-e1fa-4af0-9e9f-7146fdcd5dcc
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_label_da_coluna_modelo
+field_name: field_label_da_coluna_modelo
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

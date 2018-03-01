@@ -1,0 +1,19 @@
+uuid: fb282bd2-871e-4148-8063-8d0b79e021d9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_titulo
+    - node.type.produto
+id: node.produto.field_video_titulo
+field_name: field_video_titulo
+entity_type: node
+bundle: produto
+label: 'Título do vídeo'
+description: 'Título do vídeo'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

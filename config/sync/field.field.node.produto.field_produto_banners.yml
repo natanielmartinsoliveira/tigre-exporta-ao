@@ -1,0 +1,61 @@
+uuid: 282b78a5-a40a-4514-a51e-acf0e8ffe204
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_produto_banners
+    - node.type.produto
+    - paragraphs.paragraphs_type.produto_banners
+  module:
+    - entity_reference_revisions
+id: node.produto.field_produto_banners
+field_name: field_produto_banners
+entity_type: node
+bundle: produto
+label: Banners
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      produto_banners: produto_banners
+    target_bundles_drag_drop:
+      produto_banners:
+        enabled: true
+        weight: 12
+      abas:
+        weight: 13
+        enabled: false
+      abas_item:
+        weight: 14
+        enabled: false
+      bloco_de_enderecos:
+        weight: 15
+        enabled: false
+      canal_de_atendimento:
+        weight: 16
+        enabled: false
+      cta_2_colunas:
+        weight: 17
+        enabled: false
+      cta_centralizado:
+        weight: 18
+        enabled: false
+      imagem_c_texto:
+        weight: 19
+        enabled: false
+      localidade_da_unidade:
+        weight: 20
+        enabled: false
+      texto:
+        weight: 21
+        enabled: false
+      unidades:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

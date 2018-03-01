@@ -1,0 +1,9 @@
+uuid: 56b67ee5-4fb8-4e6a-a7a7-264b1784d8dc
+langcode: pt-br
+status: true
+dependencies: {  }
+id: produto_banners
+label: 'Produto Banners'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

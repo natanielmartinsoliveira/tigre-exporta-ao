@@ -1,0 +1,21 @@
+uuid: b3bafa9f-8af9-471c-a952-8c3f1babf0e1
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_video_titulo
+field_name: field_video_titulo
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

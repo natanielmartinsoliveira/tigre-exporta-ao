@@ -1,0 +1,21 @@
+uuid: 2637226b-4bd4-4444-ba35-d70df3b58870
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label_aba_3
+    - node.type.produto
+id: node.produto.field_label_aba_3
+field_name: field_label_aba_3
+entity_type: node
+bundle: produto
+label: 'Label aba 3'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'INFORMAÇÕES TÉCNICAS'
+default_value_callback: ''
+settings: {  }
+field_type: string

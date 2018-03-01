@@ -1,0 +1,25 @@
+uuid: ccd072b9-9133-444f-9759-4a2c44857699
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prioridade
+    - node.type.produto
+id: node.produto.field_prioridade
+field_name: field_prioridade
+entity_type: node
+bundle: produto
+label: Prioridade
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

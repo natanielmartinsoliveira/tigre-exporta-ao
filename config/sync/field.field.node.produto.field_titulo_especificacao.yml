@@ -1,0 +1,21 @@
+uuid: 1d30724c-996c-4a23-a3ea-079f6d06d0fd
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_especificacao
+    - node.type.produto
+id: node.produto.field_titulo_especificacao
+field_name: field_titulo_especificacao
+entity_type: node
+bundle: produto
+label: 'Título da Especificação'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Bitola
+default_value_callback: ''
+settings: {  }
+field_type: string

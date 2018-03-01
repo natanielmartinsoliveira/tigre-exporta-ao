@@ -1,0 +1,21 @@
+uuid: a07855d0-30d3-41be-9fa6-c9c21f55faaa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_texto_tecnico
+    - node.type.produto
+  module:
+    - text
+id: node.produto.field_texto_tecnico
+field_name: field_texto_tecnico
+entity_type: node
+bundle: produto
+label: 'Texto Técnico'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

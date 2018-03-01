@@ -1,0 +1,21 @@
+uuid: e775f02a-7e6e-4890-89b0-bbe60322566b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label_coluna_1_aba_1
+    - node.type.produto
+id: node.produto.field_label_coluna_1_aba_1
+field_name: field_label_coluna_1_aba_1
+entity_type: node
+bundle: produto
+label: 'Label coluna 1'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: BENEFÍCIOS
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 9a335d3c-5850-4886-a310-fc7cc5de00af
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label_coluna_2_aba_1
+    - node.type.produto
+id: node.produto.field_label_coluna_2_aba_1
+field_name: field_label_coluna_2_aba_1
+entity_type: node
+bundle: produto
+label: 'Label coluna 2'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: INSTRUÇÕES
+default_value_callback: ''
+settings: {  }
+field_type: string

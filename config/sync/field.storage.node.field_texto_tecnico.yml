@@ -1,0 +1,19 @@
+uuid: 49fd7a6b-913c-4729-8d1f-5e0ac05c4726
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_texto_tecnico
+field_name: field_texto_tecnico
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

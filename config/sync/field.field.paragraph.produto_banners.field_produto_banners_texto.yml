@@ -1,0 +1,19 @@
+uuid: 1ec805f8-c226-45e5-bbb0-638b79fd278b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_produto_banners_texto
+    - paragraphs.paragraphs_type.produto_banners
+id: paragraph.produto_banners.field_produto_banners_texto
+field_name: field_produto_banners_texto
+entity_type: paragraph
+bundle: produto_banners
+label: Texto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

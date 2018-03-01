@@ -9,17 +9,35 @@ dependencies:
     - field.field.node.produto.field_ficha_tecnica
     - field.field.node.produto.field_keywords
     - field.field.node.produto.field_label_aba_1
+    - field.field.node.produto.field_label_aba_2
+    - field.field.node.produto.field_label_aba_3
+    - field.field.node.produto.field_label_coluna_1_aba_1
+    - field.field.node.produto.field_label_coluna_2_aba_1
+    - field.field.node.produto.field_label_da_coluna_modelo
+    - field.field.node.produto.field_meta_tags
+    - field.field.node.produto.field_prioridade
+    - field.field.node.produto.field_produto_banners
     - field.field.node.produto.field_produto_chamada
     - field.field.node.produto.field_produto_descricao
+    - field.field.node.produto.field_produto_genero
     - field.field.node.produto.field_produto_instrucoes
+    - field.field.node.produto.field_produto_revisado
+    - field.field.node.produto.field_sku
     - field.field.node.produto.field_taxonomy_catalog
+    - field.field.node.produto.field_texto_tecnico
+    - field.field.node.produto.field_titulo_especificacao
     - field.field.node.produto.field_uc_product_image
+    - field.field.node.produto.field_video
+    - field.field.node.produto.field_video_titulo
     - node.type.produto
   module:
+    - entity_reference_revisions
     - file
     - image
+    - metatag
     - text
     - user
+    - video_embed_field
 id: node.produto.default
 targetEntityType: node
 bundle: produto
@@ -71,6 +89,71 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_label_aba_2:
+    weight: 114
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_label_aba_3:
+    weight: 115
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_label_coluna_1_aba_1:
+    weight: 116
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_label_coluna_2_aba_1:
+    weight: 117
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_label_da_coluna_modelo:
+    weight: 118
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_meta_tags:
+    weight: 119
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_prioridade:
+    weight: 120
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_produto_banners:
+    type: entity_reference_revisions_entity_view
+    weight: 127
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_produto_chamada:
     weight: 105
     label: above
@@ -86,12 +169,40 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
+  field_produto_genero:
+    weight: 121
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_produto_instrucoes:
     weight: 103
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_produto_revisado:
+    weight: 122
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_sku:
+    weight: 128
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_taxonomy_catalog:
     weight: 113
@@ -101,6 +212,21 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_texto_tecnico:
+    weight: 123
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_titulo_especificacao:
+    weight: 124
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_uc_product_image:
     weight: 110
     label: above
@@ -109,6 +235,25 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_video:
+    weight: 126
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  field_video_titulo:
+    weight: 125
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   links:
     weight: 100

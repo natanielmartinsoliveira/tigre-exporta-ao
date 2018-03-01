@@ -21,7 +21,7 @@ settings:
   file_directory: arquivos/catalogos
   file_extensions: pdf
   max_filesize: '20 MB'
-  description_field: false
+  description_field: true
   handler: 'default:file'
   handler_settings: {  }
 field_type: file

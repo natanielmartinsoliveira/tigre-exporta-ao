@@ -1,0 +1,19 @@
+uuid: d400d134-ef6c-46cb-875a-9333f1149a33
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sku
+    - node.type.produto
+id: node.produto.field_sku
+field_name: field_sku
+entity_type: node
+bundle: produto
+label: SKU
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
