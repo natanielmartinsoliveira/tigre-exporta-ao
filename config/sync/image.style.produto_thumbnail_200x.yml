@@ -1,0 +1,14 @@
+uuid: 29d2e9b7-2ee7-42b4-a765-5a4c7326c249
+langcode: pt-br
+status: true
+dependencies: {  }
+name: produto_thumbnail_200x
+label: 'Produto Thumbnail (200x200)'
+effects:
+  4043b52f-e032-40f5-83ef-ebdfed67f25e:
+    uuid: 4043b52f-e032-40f5-83ef-ebdfed67f25e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200

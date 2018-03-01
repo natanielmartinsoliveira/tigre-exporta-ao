@@ -1,30 +1,32 @@
-uuid: c9ca8711-1a4b-4a5b-ba2f-c55117610524
+uuid: bf830e79-73c1-4278-ac1d-f58e6ac159a1
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - system.menu.categorias-p
+    - views.view.produtos
   module:
     - block_class
     - system
+    - views
   theme:
     - tigre
 third_party_settings:
   block_class:
     classes: ''
-id: categoriasproduto
+id: views_block__produtos_block_1
 theme: tigre
-region: sidebar_first
-weight: 0
+region: content
+weight: -10
 provider: null
-plugin: 'system_menu_block:categorias-p'
+plugin: 'views_block:produtos-block_1'
 settings:
-  id: 'system_menu_block:categorias-p'
-  label: 'Categorias Produto'
-  provider: system
-  label_display: visible
-  level: 1
-  depth: 0
+  id: 'views_block:produtos-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
 visibility:
   request_path:
     id: request_path

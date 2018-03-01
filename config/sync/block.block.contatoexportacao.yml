@@ -16,7 +16,7 @@ third_party_settings:
 id: contatoexportacao
 theme: tigre
 region: content
-weight: -10
+weight: -11
 provider: null
 plugin: 'block_content:e48fee8c-250c-4f8c-b450-f2e878007b9f'
 settings:
