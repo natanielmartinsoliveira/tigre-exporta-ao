@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.catalogo.field_arquivo
+    - field.field.node.catalogo.field_catalogo_arquivo_tipo
     - field.field.node.catalogo.field_categoria_catalogo
     - field.field.node.catalogo.field_image
     - field.field.node.catalogo.field_tipo
@@ -30,6 +31,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
+  field_catalogo_arquivo_tipo:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_categoria_catalogo:
     weight: 3

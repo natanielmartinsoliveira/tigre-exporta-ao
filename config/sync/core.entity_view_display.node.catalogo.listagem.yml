@@ -5,12 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.listagem
     - field.field.node.catalogo.field_arquivo
+    - field.field.node.catalogo.field_catalogo_arquivo_tipo
     - field.field.node.catalogo.field_categoria_catalogo
     - field.field.node.catalogo.field_image
     - field.field.node.catalogo.field_tipo
     - node.type.catalogo
   module:
     - ds
+    - field_group
     - file
     - image
     - options
@@ -38,6 +40,8 @@ third_party_settings:
       right:
         - node_title
         - field_tipo
+        - field_catalogo_arquivo_tipo
+        - group_downloads
         - field_arquivo
     fields:
       node_title:
@@ -45,18 +49,102 @@ third_party_settings:
         weight: 1
         label: hidden
         formatter: default
+  field_group:
+    group_downloads:
+      children:
+        - field_arquivo
+      parent_name: ''
+      weight: 4
+      format_type: html_element
+      format_settings:
+        label: Downloads
+        element: div
+        show_label: true
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+      label: Downloads
+      region: hidden
 id: node.catalogo.listagem
 targetEntityType: node
 bundle: catalogo
 mode: listagem
 content:
   field_arquivo:
-    weight: 3
+    weight: 4
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: Downloads
+            prefix: 'Clique no idioma de sua preferência e baixe o catálogo'
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
     type: file_default
     region: right
+  field_catalogo_arquivo_tipo:
+    type: string
+    weight: 3
+    region: right
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: Arquivo
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
   field_image:
     weight: 0
     label: above

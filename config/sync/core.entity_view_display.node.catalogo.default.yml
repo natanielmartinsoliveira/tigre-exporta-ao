@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.catalogo.field_arquivo
+    - field.field.node.catalogo.field_catalogo_arquivo_tipo
     - field.field.node.catalogo.field_categoria_catalogo
     - field.field.node.catalogo.field_image
     - field.field.node.catalogo.field_tipo
@@ -24,6 +25,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: file_default
+    region: content
+  field_catalogo_arquivo_tipo:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_categoria_catalogo:
     weight: 104
