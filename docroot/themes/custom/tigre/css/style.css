@@ -722,61 +722,60 @@ p {
         font-size: 14px; }
 
 @media (min-width: 768px) {
-  .home .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-
   .contact-message-newsletter-form .field--name-field-newsletter-email {
     margin-top: 25px; }
   .contact-message-newsletter-form .form-actions {
     margin-top: 40px; } }
 @media (max-width: 768px) {
-  .home .container {
-    text-align: center; }
-    .home .container p {
-      font-size: 24px;
-      line-height: 38px;
-      font-family: 'ubuntulight'; }
-    .home .container .col-xs-12:first-child {
-      padding-top: 15%;
-      padding-bottom: 20%; }
-    .home .container .col-xs-12:last-child {
-      padding: 0;
-      right: -15px; }
-
   .contact-message-newsletter-form {
     text-align: center; }
 
   #navbar .container .region.region-menu-global {
     display: none; } }
-.paragraph--type--cta-2-colunas .field--name-field-titulo {
-  font-size: 24px;
-  font-family: 'ubuntubold'; }
-.paragraph--type--cta-2-colunas p {
-  font-size: 30px;
-  line-height: 38px;
-  font-family: 'ubuntulight'; }
-.paragraph--type--cta-2-colunas .field--name-field-link {
-  margin-top: 30px; }
-.paragraph--type--cta-2-colunas a {
-  background: #FF8532;
-  background-image: -webkit-gradient(linear, left top, right top, from(#FF8532), to(#FFA832));
-  background-image: linear-gradient(to right, #FF8532, #FFA832);
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 16px;
-  padding: 14px 20px 14px 20px;
-  text-decoration: none;
-  border: 0;
-  font-size: 14px; }
+.paragraph--type--cta-2-colunas {
+  text-align: center; }
+  .paragraph--type--cta-2-colunas .col-xs-12:first-child {
+    padding-top: 15%;
+    padding-bottom: 20%; }
+  .paragraph--type--cta-2-colunas .col-xs-12:last-child {
+    padding: 0;
+    right: -15px; }
+  .paragraph--type--cta-2-colunas .field--name-field-titulo {
+    font-size: 24px;
+    font-family: 'ubuntubold'; }
+  .paragraph--type--cta-2-colunas p {
+    font-size: 24px;
+    line-height: 38px;
+    font-family: 'ubuntulight'; }
+  .paragraph--type--cta-2-colunas .field--name-field-link {
+    margin-top: 30px; }
+  .paragraph--type--cta-2-colunas a {
+    background: #FF8532;
+    background-image: -webkit-gradient(linear, left top, right top, from(#FF8532), to(#FFA832));
+    background-image: linear-gradient(to right, #FF8532, #FFA832);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 14px 20px 14px 20px;
+    text-decoration: none;
+    border: 0;
+    font-size: 14px; }
 
+@media (min-width: 768px) {
+  .paragraph--type--cta-2-colunas {
+    text-align: left; }
+    .paragraph--type--cta-2-colunas .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .paragraph--type--cta-2-colunas p {
+      font-size: 30px; } }
 #block-views-block-banners-home-block-1 {
   height: 100vh; }
 

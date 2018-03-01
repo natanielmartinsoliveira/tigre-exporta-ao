@@ -1,21 +1,6 @@
 @import "base/base";
 
-@mixin button-style {
-    background: #FF8532;
-    background-image: -webkit-linear-gradient(to right, #FF8532, #FFA832);
-    background-image: -moz-linear-gradient(to right, #FF8532, #FFA832);
-    background-image: -ms-linear-gradient(to right, #FF8532, #FFA832);
-    background-image: -o-linear-gradient(to right, #FF8532, #FFA832);
-    background-image: linear-gradient(to right, #FF8532, #FFA832);
-    -webkit-border-radius: 4;
-    -moz-border-radius: 4;
-    border-radius: 4px;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 14px 20px 14px 20px;
-    text-decoration: none;
-    border: 0;
-}
+
 
 .container-fluid {
     padding-right: 0px;
@@ -928,14 +913,6 @@
 
 // Home - 
 @media (min-width: 768px) {
-    .home .container {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        align-items: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-    }
     .contact-message-newsletter-form{
         .field--name-field-newsletter-email {
             margin-top: 25px;
@@ -946,22 +923,7 @@
     }
 }
 @media (max-width: 768px) {
-    .home .container {
-        text-align: center;
-        p {
-            font-size: 24px;
-            line-height: 38px;
-            font-family: 'ubuntulight';
-        }
-        .col-xs-12:first-child {
-            padding-top: 15%;
-            padding-bottom: 20%;
-        }
-        .col-xs-12:last-child {
-            padding: 0;
-            right: -15px;
-        }
-    }
+
     .contact-message-newsletter-form{
         text-align: center;
     }
@@ -972,13 +934,22 @@
 
 // Paragrafo CTA 2 Colunas
 .paragraph--type--cta-2-colunas {
+    text-align: center;    
+    .col-xs-12:first-child {
+        padding-top: 15%;
+        padding-bottom: 20%;
+    }
+    .col-xs-12:last-child {
+        padding: 0;
+        right: -15px;
+    }
     .field--name-field-titulo {
         font-size: 24px;
         font-family: 'ubuntubold';
     }
 
     p {
-        font-size: 30px;
+        font-size: 24px;
         line-height: 38px;
         font-family: 'ubuntulight';
     }
@@ -991,6 +962,22 @@
         @include button-style;
 
         font-size: 14px;
+    }
+}
+@media (min-width: 768px) {
+    .paragraph--type--cta-2-colunas{
+        text-align: left; 
+        .container {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;   
+        }
+        p {
+            font-size: 30px;
+        }
     }
 }
 
