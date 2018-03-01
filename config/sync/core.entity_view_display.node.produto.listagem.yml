@@ -106,7 +106,7 @@ content:
       image_link: content
     third_party_settings:
       ds:
-        ds_limit: ''
+        ds_limit: '1'
         ft:
           id: expert
           settings:
