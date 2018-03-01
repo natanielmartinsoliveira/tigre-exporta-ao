@@ -1,0 +1,33 @@
+uuid: 7a1af40d-73fd-45d7-ad27-8099954fff06
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: content_
+label: 'Content Produto'
+type: 'canonical_entities:node'
+pattern: 'produto/[node:title]'
+selection_criteria:
+  9721adf3-3b34-4e75-9741-c3914076095f:
+    id: node_type
+    bundles:
+      produto: produto
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9721adf3-3b34-4e75-9741-c3914076095f
+  de9b830d-f535-4450-9c09-177b07c3aa63:
+    id: language
+    langcodes:
+      pt-br: pt-br
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: de9b830d-f535-4450-9c09-177b07c3aa63
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma
