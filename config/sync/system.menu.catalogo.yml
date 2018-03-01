@@ -1,0 +1,8 @@
+uuid: de6534dc-4e70-46f5-bc6f-e5048699a79b
+langcode: pt-br
+status: true
+dependencies: {  }
+id: catalogo
+label: Catálogo
+description: 'Catálogo de produtos'
+locked: false

@@ -1,0 +1,10 @@
+uuid: a98747fe-5bbb-41fa-936d-587612e5d7a0
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.listagem
+label: Listagem
+targetEntityType: node
+cache: true

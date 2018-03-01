@@ -1,0 +1,19 @@
+uuid: 61b8aca3-8cfa-44c0-91f7-f931fcf10dcc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_catalogo_arquivo_tipo
+    - node.type.catalogo
+id: node.catalogo.field_catalogo_arquivo_tipo
+field_name: field_catalogo_arquivo_tipo
+entity_type: node
+bundle: catalogo
+label: 'Arquivo Tipo'
+description: 'Ex: PDF, DOC, XLS'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

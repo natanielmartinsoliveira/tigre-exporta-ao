@@ -1,0 +1,34 @@
+uuid: e15e692a-02db-42a1-a61e-5b4057f2c2be
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - ctools
+    - language
+    - taxonomy
+id: patterns_catalogo
+label: 'Pattern Catalogo'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'catalogos/[term:name]'
+selection_criteria:
+  a5a57266-2c19-4446-a2d7-7c827a9d26db:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      catalogo: catalogo
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: a5a57266-2c19-4446-a2d7-7c827a9d26db
+  cdfac26f-9664-4504-9ffe-97714c9d9703:
+    id: language
+    langcodes:
+      pt-br: pt-br
+    negate: false
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    uuid: cdfac26f-9664-4504-9ffe-97714c9d9703
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Idioma

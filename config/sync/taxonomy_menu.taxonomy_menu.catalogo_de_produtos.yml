@@ -1,0 +1,14 @@
+uuid: 731d8664-68b3-459b-b53b-8ca6a0b4c6a7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.catalogo
+    - taxonomy.vocabulary.catalogo
+id: catalogo_de_produtos
+label: 'Catálogo de Produtos'
+vocabulary: catalogo
+menu: catalogo
+expanded: true
+depth: 8
+menu_parent: 'admin:'
