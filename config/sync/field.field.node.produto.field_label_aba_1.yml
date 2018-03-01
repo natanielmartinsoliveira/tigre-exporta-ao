@@ -1,0 +1,21 @@
+uuid: df3ef710-c8ab-4b3a-b1b6-2ab815247300
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label_aba_1
+    - node.type.produto
+id: node.produto.field_label_aba_1
+field_name: field_label_aba_1
+entity_type: node
+bundle: produto
+label: 'Label aba 1'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'BENEFÍCIOS E INSTRUÇÕES'
+default_value_callback: ''
+settings: {  }
+field_type: string

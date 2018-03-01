@@ -1,0 +1,27 @@
+uuid: 9edd3a75-b85f-42ee-91cf-49f9e188aa0d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ficha_seguranca
+    - node.type.produto
+  module:
+    - file
+id: node.produto.field_ficha_seguranca
+field_name: field_ficha_seguranca
+entity_type: node
+bundle: produto
+label: 'Ficha segurança'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: produtos/ficha-de-seguranca
+  file_extensions: pdf
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

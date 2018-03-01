@@ -1,16 +1,18 @@
-uuid: 5c99fcb3-432b-42d9-bdfb-dedc3f04e567
+uuid: 01d38764-100f-44d3-a904-9d0c29bb9b37
 langcode: pt-br
 status: true
 dependencies:
   module:
     - node
-    - video_embed_field
-id: node.field_produto_video
-field_name: field_produto_video
+id: node.field_label_aba_1
+field_name: field_label_aba_1
 entity_type: node
-type: video_embed_field
-settings: {  }
-module: video_embed_field
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

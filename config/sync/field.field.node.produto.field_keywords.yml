@@ -1,0 +1,19 @@
+uuid: 60139aa8-41fa-49d0-8e0b-6163648488f9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keywords
+    - node.type.produto
+id: node.produto.field_keywords
+field_name: field_keywords
+entity_type: node
+bundle: produto
+label: Keywords
+description: '<p>Keywords diferenciados por ";". Ex. janela;porta;</p>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

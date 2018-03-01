@@ -5,17 +5,22 @@ dependencies:
   config:
     - field.field.node.produto.body
     - field.field.node.produto.field_desenho_tecnico
+    - field.field.node.produto.field_ficha_seguranca
+    - field.field.node.produto.field_ficha_tecnica
+    - field.field.node.produto.field_keywords
+    - field.field.node.produto.field_label_aba_1
     - field.field.node.produto.field_produto_chamada
     - field.field.node.produto.field_produto_descricao
     - field.field.node.produto.field_produto_instrucoes
-    - field.field.node.produto.field_produto_video
+    - field.field.node.produto.field_taxonomy_catalog
+    - field.field.node.produto.field_uc_product_image
     - image.style.thumbnail
     - node.type.produto
   module:
+    - file
     - image
     - path
     - text
-    - video_embed_field
 id: node.produto.default
 targetEntityType: node
 bundle: produto
@@ -44,6 +49,36 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  field_ficha_seguranca:
+    weight: 128
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_ficha_tecnica:
+    weight: 129
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_keywords:
+    weight: 131
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_label_aba_1:
+    weight: 132
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_produto_chamada:
     weight: 125
     settings:
@@ -69,11 +104,22 @@ content:
     third_party_settings: {  }
     type: text_textarea_with_summary
     region: content
-  field_produto_video:
-    weight: 124
-    settings: {  }
+  field_taxonomy_catalog:
+    weight: 133
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: video_embed_field_textfield
+    type: entity_reference_autocomplete
+    region: content
+  field_uc_product_image:
+    weight: 130
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   langcode:
     type: language_select

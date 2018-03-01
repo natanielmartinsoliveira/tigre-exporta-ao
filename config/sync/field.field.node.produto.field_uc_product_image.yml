@@ -1,0 +1,38 @@
+uuid: 88df349f-50c9-4d79-ba7c-eb8b2d72baa5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uc_product_image
+    - node.type.produto
+  module:
+    - image
+id: node.produto.field_uc_product_image
+field_name: field_uc_product_image
+entity_type: node
+bundle: produto
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: produtos/imagens
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '10 MB'
+  max_resolution: 1000x1000
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
