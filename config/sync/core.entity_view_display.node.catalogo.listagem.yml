@@ -1,0 +1,196 @@
+uuid: 61e5494a-0d61-4573-9659-51eac1f899fb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listagem
+    - field.field.node.catalogo.field_arquivo
+    - field.field.node.catalogo.field_catalogo_arquivo_tipo
+    - field.field.node.catalogo.field_categoria_catalogo
+    - field.field.node.catalogo.field_image
+    - field.field.node.catalogo.field_tipo
+    - image.style.catalogo_thumbnail
+    - node.type.catalogo
+  module:
+    - ds
+    - field_group
+    - file
+    - image
+    - options
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_image
+      right:
+        - node_title
+        - field_tipo
+        - field_catalogo_arquivo_tipo
+        - field_arquivo
+        - group_downloads
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+  field_group:
+    group_downloads:
+      children:
+        - field_arquivo
+      parent_name: ''
+      weight: 4
+      format_type: html_element
+      format_settings:
+        label: Downloads
+        element: div
+        show_label: true
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+      label: Downloads
+      region: hidden
+id: node.catalogo.listagem
+targetEntityType: node
+bundle: catalogo
+mode: listagem
+content:
+  field_arquivo:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: Downloads
+            prefix: 'Clique no idioma de sua preferência e baixe o catálogo'
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: file_default
+    region: right
+  field_catalogo_arquivo_tipo:
+    type: string
+    weight: 3
+    region: right
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: Arquivo
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: catalogo_thumbnail
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: image
+    region: left
+  field_tipo:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: right
+hidden:
+  field_categoria_catalogo: true
+  langcode: true
+  links: true

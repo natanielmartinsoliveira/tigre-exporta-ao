@@ -1,0 +1,33 @@
+uuid: ffc3a1b8-dab1-4aa9-b8c3-7af85a827957
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.catalogo
+  module:
+    - block_class
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: catalogo
+theme: tigre
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:catalogo'
+settings:
+  id: 'system_menu_block:catalogo'
+  label: Catálogo
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/catalogos\r\n/catalogos/*"
+    negate: false
+    context_mapping: {  }

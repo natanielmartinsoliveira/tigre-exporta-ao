@@ -1,0 +1,35 @@
+uuid: 3adfc654-5861-467e-9df3-53ff0dec7fc1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.catalogos
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__catalogos_block_1
+theme: tigre
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:catalogos-block_1'
+settings:
+  id: 'views_block:catalogos-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/catalogos\r\n/catalogos/*"
+    negate: false
+    context_mapping: {  }

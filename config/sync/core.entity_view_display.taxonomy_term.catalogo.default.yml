@@ -1,0 +1,22 @@
+uuid: a10a1c9b-3479-48c5-b4ef-169204869cc2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.catalogo
+  module:
+    - text
+id: taxonomy_term.catalogo.default
+targetEntityType: taxonomy_term
+bundle: catalogo
+mode: default
+content:
+  description:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
