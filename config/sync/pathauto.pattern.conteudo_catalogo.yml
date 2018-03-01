@@ -1,0 +1,33 @@
+uuid: 3bf73a36-018d-473b-88a6-e698897183a2
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: conteudo_catalogo
+label: 'Conteúdo Catálogo'
+type: 'canonical_entities:node'
+pattern: 'catalogo/[node:title]'
+selection_criteria:
+  989222d2-ae3d-47ec-b0d7-4e45112669f8:
+    id: node_type
+    bundles:
+      catalogo: catalogo
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 989222d2-ae3d-47ec-b0d7-4e45112669f8
+  d6e9bac2-1856-44ef-b6ee-75c4485ce949:
+    id: language
+    langcodes:
+      pt-br: pt-br
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: d6e9bac2-1856-44ef-b6ee-75c4485ce949
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

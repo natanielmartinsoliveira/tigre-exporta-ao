@@ -1,0 +1,14 @@
+uuid: 691dd30a-7895-485d-8bc4-bef899bbdf77
+langcode: pt-br
+status: true
+dependencies: {  }
+name: catalogo_thumbnail
+label: 'Catalogo Thumbnail (137x197)'
+effects:
+  15e24e71-7d9a-4947-a5b3-adda7345a886:
+    uuid: 15e24e71-7d9a-4947-a5b3-adda7345a886
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 137
+      height: 197
