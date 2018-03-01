@@ -921,15 +921,6 @@ p {
 @media (min-width: 768px) {
   .paragraph--type--bloco-de-enderecos h1 {
     font-size: 36px; } }
-/*.sobre-a-tigre 
-.field--name-field-paragrafos {
-    p:first-child{
-        font-size: 32px;
-        text-decoration: bold;
-        margin-top: 35px;
-        margin-bottom: 25px;
-    }
-}*/
 @media (max-width: 768px) {
   .sobre-a-tigre .field--name-field-paragrafos .container {
     text-align: justify;
