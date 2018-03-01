@@ -1,0 +1,79 @@
+uuid: 61e5494a-0d61-4573-9659-51eac1f899fb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.listagem
+    - field.field.node.catalogo.field_arquivo
+    - field.field.node.catalogo.field_categoria_catalogo
+    - field.field.node.catalogo.field_image
+    - field.field.node.catalogo.field_tipo
+    - node.type.catalogo
+  module:
+    - ds
+    - file
+    - image
+    - options
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_image
+      right:
+        - node_title
+        - field_tipo
+        - field_arquivo
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.catalogo.listagem
+targetEntityType: node
+bundle: catalogo
+mode: listagem
+content:
+  field_arquivo:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: right
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: left
+  field_tipo:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: right
+hidden:
+  field_categoria_catalogo: true
+  langcode: true
+  links: true
