@@ -1,0 +1,21 @@
+uuid: b1124022-72be-49b4-8e53-e7a61658ac52
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_conteudo
+    - paragraphs.paragraphs_type.abas
+  module:
+    - text
+id: paragraph.abas.field_conteudo
+field_name: field_conteudo
+entity_type: paragraph
+bundle: abas
+label: Conteúdo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,58 @@
+uuid: 15c167e4-af4e-4be5-9cc2-45702ce4dc81
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item
+    - paragraphs.paragraphs_type.abas
+    - paragraphs.paragraphs_type.abas_item
+  module:
+    - entity_reference_revisions
+id: paragraph.abas.field_item
+field_name: field_item
+entity_type: paragraph
+bundle: abas
+label: Item
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      abas_item: abas_item
+    target_bundles_drag_drop:
+      abas_item:
+        enabled: true
+        weight: 11
+      abas:
+        weight: 12
+        enabled: false
+      bloco_de_enderecos:
+        weight: 13
+        enabled: false
+      canal_de_atendimento:
+        weight: 14
+        enabled: false
+      cta_2_colunas:
+        weight: 15
+        enabled: false
+      cta_centralizado:
+        weight: 16
+        enabled: false
+      imagem_c_texto:
+        weight: 17
+        enabled: false
+      localidade_da_unidade:
+        weight: 18
+        enabled: false
+      texto:
+        weight: 19
+        enabled: false
+      unidades:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

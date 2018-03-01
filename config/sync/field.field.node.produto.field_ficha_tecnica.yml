@@ -1,0 +1,27 @@
+uuid: 6ea1fbcd-810c-4c78-96c7-3bdcf350d4e2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ficha_tecnica
+    - node.type.produto
+  module:
+    - file
+id: node.produto.field_ficha_tecnica
+field_name: field_ficha_tecnica
+entity_type: node
+bundle: produto
+label: 'Ficha técnica'
+description: '<em><b>CAMPO OBSOLETO!! Para produtos novos, utilizar o novo campo “Catálogo técnico”.</b></em>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: produtos/ficha-tecnica
+  file_extensions: pdf
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

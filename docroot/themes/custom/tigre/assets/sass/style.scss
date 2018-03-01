@@ -601,39 +601,146 @@
     }
 }
 
-.block-content--type-catalagos-cta {
-    h2 {
-        font-size: 24px;
-        font-family: 'ubuntubold';
+// Paragrafos abas
+.paragraph--type--abas {
+    padding: 60px 0 20px;
+    h1 {
+        .field--name-field-titulo {
+            font-size: 30px;
+            color: #000;
+        }
     }
-
-    p {
-        font-size: 30px;
-        line-height: 38px;
-        font-family: 'ubuntulight';
+    .field--name-field-conteudo {
+        margin-bottom: 20px;
     }
-
-    a {
-        background: #FF8532;
-        background-image: -webkit-linear-gradient(to right, #FF8532, #FFA832);
-        background-image: -moz-linear-gradient(to right, #FF8532, #FFA832);
-        background-image: -ms-linear-gradient(to right, #FF8532, #FFA832);
-        background-image: -o-linear-gradient(to right, #FF8532, #FFA832);
-        background-image: linear-gradient(to right, #FF8532, #FFA832);
-        -webkit-border-radius: 4;
-        -moz-border-radius: 4;
-        border-radius: 4px;
-        color: #ffffff;
-        font-size: 16px;
-        padding: 10px 20px 10px 20px;
-        text-decoration: none;
-        border: 0;
-    }
-
-    .field--name-field-bloco-catalogo-link {
-        margin-top: 30px;
+    .cards-slider {
+        .paragraph--type--abas-item {
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            padding-bottom: 10px;
+            .cards-dinamicos--item {
+                position: relative;
+                background-color: #0083ca;
+                padding: 30px;
+                height: 440px;
+                -webkit-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+                border-radius: 5px;
+                
+                figure {
+                    margin: 0 auto 10px;
+                    float: none;
+                    max-width: 200px;
+                }
+                h2 {
+                    display:block;
+                    color:#fff;
+                    text-transform:none;
+                    font-family:"ubunturegular",Arial,sans-serif;
+                    font-size:19px;
+                    letter-spacing:0;
+                    line-height:150%;
+                    font-weight:normal;
+                    clear:both;
+                    max-width:230px
+                }
+                .field--name-field-texto{
+                    font-size:13px;
+                    color:#fff;
+                    line-height:160%;
+                    max-width:230px;
+                    -webkit-transition:none;
+                    transition:none;
+                    font-family:"ubuntulight",Arial,sans-serif
+                }
+                a {
+                    @include button-style;
+                    width: 100%;
+                    display: inline-block;
+                    text-align: center;
+                    padding: 10px 20px 10px 20px;
+                }
+                .controls-button {
+                    position: absolute;
+                    bottom: 35px;
+                    left: 0;
+                    padding: 0 50px;
+                }
+            }
+        }
+            
+        .cards-dinamicos--item:before{
+            content:"";
+            position:absolute;
+            top:0;
+            background:url(https://www.tigre.com.br/themes/tigre2016/assets/images/xshadow-card.png.pagespeed.ic.8WUWVCBLA3.png) top center no-repeat;
+            left:50%;
+            width:100%;
+            height:100%;
+            transform:translate(-50%,0);
+            opacity:.8
+        }
     }
 }
+@media (min-width: 1200px){
+    .paragraph--type--abas {
+        .cards-slider {
+            .cards-dinamicos--item {
+                padding: 30px;
+                h2{
+                    max-width:185px
+                }
+                .field--name-field-texto{
+                    max-width:185px
+                }
+            }
+        }
+    }
+}
+@media (min-width:992px){
+    .paragraph--type--abas {
+        .cards-slider {
+            .cards-dinamicos--item:hover{
+                z-index: 2;
+                -webkit-transition: all 200ms ease-in;
+                -webkit-transform: scale(1.2);
+                -ms-transition: all 200ms ease-in;
+                -ms-transform: scale(1.2);   
+                -moz-transition: all 200ms ease-in;
+                -moz-transform: scale(1.2);
+                transition: all 200ms ease-in;
+                transform: scale(1.2);
+                background-color:#0c2d58
+            }
+            .cards-dinamicos--item:hover:before{
+                opacity:.3
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){    
+    .paragraph--type--abas {
+        .cards-slider {
+            .paragraph--type--abas-item{
+                padding-left: 3px !important;
+                padding-right: 3px !important;
+                padding-bottom: 10px !important;
+            }
+            .cards-dinamicos--item {
+                padding: 30px 20px;
+                h2{
+                    margin-top:10px;
+                    max-width:290px
+                }
+                .field--name-field-texto{
+                    max-width:290px
+                }
+            }
+        }
+    }
+}
+
 
 // Paragrafo Imagem c/ Texto
 .paragraph--type--imagem-c-texto {

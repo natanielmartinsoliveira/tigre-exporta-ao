@@ -1,0 +1,22 @@
+uuid: 9fa2c2ae-76a7-454f-bad7-d4cf619ac6fa
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - material_admin
+_core:
+  default_config_hash: NgLsbLszEUM6yHAE9EUvz8meZCPjf9g959hMEwrai6o
+id: material_admin_content
+theme: material_admin
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

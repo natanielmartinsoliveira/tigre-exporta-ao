@@ -1,0 +1,55 @@
+uuid: fba0d95d-db44-4374-af12-db4ef43df945
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.abas_item.field_imagem
+    - field.field.paragraph.abas_item.field_link
+    - field.field.paragraph.abas_item.field_texto
+    - field.field.paragraph.abas_item.field_titulo
+    - paragraphs.paragraphs_type.abas_item
+  module:
+    - image
+    - link
+id: paragraph.abas_item.default
+targetEntityType: paragraph
+bundle: abas_item
+mode: default
+content:
+  field_imagem:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_texto:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_titulo:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

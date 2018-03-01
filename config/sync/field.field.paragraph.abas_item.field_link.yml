@@ -1,0 +1,23 @@
+uuid: 86fb7a14-d2e1-4bb5-9708-9e0fc7672685
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.abas_item
+  module:
+    - link
+id: paragraph.abas_item.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: abas_item
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
