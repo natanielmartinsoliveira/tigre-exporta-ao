@@ -1193,3 +1193,52 @@
         }
     }
 }
+
+
+// Catalogos
+.view-catalogos{
+ .node--type-catalogo {
+        padding: 14px;
+        margin: 14px;
+        .group-left {
+            width: 45%;
+        }
+        .group-right {
+            width: 55%;
+            h2 {
+                font-family: "ubuntubold", Arial, sans-serif;
+                font-size: 20px;
+                color: #000;
+                margin-top: 0;
+            }
+            h3 {
+                font-family: "ubuntulight", Arial, sans-serif;
+                font-size: 20px;
+                color: #FF8532;
+                margin-bottom: 0;
+            }
+        }
+     }
+}
+
+@media (min-width: 768px){
+    .view-catalogos{
+        .node--type-catalogo {
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                -webkit-transition: border-color .3s ease;
+                transition: border-color .3s ease;
+            }
+        }
+}
+
+.breadcrumb {
+    background-color: transparent;
+    margin-top: 80px;
+}
+#block-catalogo-menu{
+    display: none;
+}
+#block-categoriasproduto-menu{
+    display: none;
+}

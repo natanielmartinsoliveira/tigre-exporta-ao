@@ -89,14 +89,14 @@
         </div>
       </div>
       {% endif %}
-
-      {# Breadcrumb #}
+      
+        {# Breadcrumb #}
       {% if page.breadcrumb %}
         <div class="container">
           {{ page.breadcrumb }}
         </div>
       {% endif %}
-      
+
     </header>
   {% endblock %}
 {% endif %}
@@ -115,15 +115,6 @@
       {% endif %}
 
       {# Sidebar First #}
-      {% if page.sidebar_first %}
-        {% block sidebar_first %}
-          <div class="container">
-            <aside class="col-sm-3" role="complementary">
-              {{ page.sidebar_first }}
-            </aside>
-          </div>
-        {% endblock %}
-      {% endif %}
 
       {# Content #}
 
@@ -145,13 +136,13 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          {% if page.content.catalogos %}
+          {% if page.sidebar_first %}
             <div class="container">
               <div class="col-sm-3">
-                {{ page.content.catalogo }}
+                {{ page.sidebar_first }}
               </div>
               <div class="col-xs-12 col-sm-9">
-                {{ page.content.views_block__catalogos_block_1 }}
+                {{ page.content }}
               </div>
             </div>
           {% else %}
@@ -168,8 +159,8 @@
           </aside>
         {% endblock %}
       {% endif %}
-
-      {# News  #}
+  </div>
+  {# News  #}
       {% if page.newsletter %}
         {% block newsletter %}
           <div>
@@ -177,7 +168,6 @@
           </div>
         {% endblock %}
       {% endif %}
-  </div>
 {% endblock %}
 
 
