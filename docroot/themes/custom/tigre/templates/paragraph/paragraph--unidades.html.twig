@@ -38,18 +38,18 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-  ]
-%}
+
 {% block paragraph %}
     {% block content %}
-      <li class="pg-unidades--box--list-item">
-        <span class="pg-unidades--box--sede">{{ content.field_canal_unidade_titulo }}</span>
-        <p class="pg-unidades--box--endereco">{{ content.field_canal_unidade_subtitulo }}<br/></p>
-       </li>
+      {% if content.field_canal_unidade_titulo[0] is not empty or content.field_canal_unidade_subtitulo[0] is not empty %}
+        <li class="pg-unidades--box--list-item">
+          {% if content.field_canal_unidade_titulo[0] is not empty %}
+          <span class="pg-unidades--box--sede">{{ content.field_canal_unidade_titulo }}</span>
+          {% endif %}
+          {% if content.field_canal_unidade_subtitulo[0] is not empty %}
+            <p class="pg-unidades--box--endereco">{{ content.field_canal_unidade_subtitulo }}</p>
+          {% endif %}
+        </li>
+      {% endif %}
     {% endblock %}
 {% endblock paragraph %}

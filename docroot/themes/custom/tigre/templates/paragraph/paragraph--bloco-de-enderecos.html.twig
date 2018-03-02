@@ -41,7 +41,6 @@
 {%
   set classes = [
     'paragraph',
-    'bg-color-azul',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   ]
@@ -49,15 +48,23 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-              <h1>{{ content.field_titulo_bloco }}</h1>
-              <p>{{ content.field_descricao }}</p>
-            </div>
-        </div>
-        <div class="row pg-unidades--wrap">
-          {{ content.field_unidade_canal_atendimento }}
+      {% if content.field_cor_de_fundo[0]['#markup'] == "Azul" %}
+          <div class="bg-color-blue">
+      {%- elseif content.field_cor_de_fundo[0]['#markup'] == "Branco" -%}
+          <div class="bg-color-white">
+      {%- else -%}
+          <div class="bg-color-gray">
+      {%- endif -%}
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <h1>{{ content.field_titulo_bloco }}</h1>
+                <p>{{ content.field_descricao }}</p>
+              </div>
+          </div>
+          <div class="row pg-unidades--wrap">
+            {{ content.field_unidade_canal_atendimento }}
+          </div>
         </div>
       </div>
     {% endblock %}

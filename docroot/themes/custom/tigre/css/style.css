@@ -442,44 +442,47 @@ p {
   font-size: 42px;
   font-family: 'ubuntubold'; }
 
-.view-termos-de-uso .panel, .view-politica-de-privacidade .panel {
-  margin-bottom: 21px;
-  background-color: #fff; }
-  .view-termos-de-uso .panel .panel-title, .view-politica-de-privacidade .panel .panel-title {
-    font-size: 16px;
-    color: inherit;
-    margin: 0 0 30px 0;
-    padding: 0; }
-    .view-termos-de-uso .panel .panel-title a, .view-politica-de-privacidade .panel .panel-title a {
-      position: relative;
-      display: block;
-      font-family: 'ubunturegular';
-      font-size: 20px;
-      color: #2b2b2b;
-      padding-right: 80px;
-      padding-top: 15px;
-      text-decoration: none; }
-    .view-termos-de-uso .panel .panel-title a:after, .view-politica-de-privacidade .panel .panel-title a:after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 5px;
-      width: 25px;
-      height: 50px;
-      background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xicon-mais-menos.png.pagespeed.ic.DOMjQS2Qca.png) no-repeat 50% -146px; }
-    .view-termos-de-uso .panel .panel-title a.collapsed:after, .view-politica-de-privacidade .panel .panel-title a.collapsed:after {
-      background-position: 50% 10px; }
-  .view-termos-de-uso .panel .panel-body, .view-politica-de-privacidade .panel .panel-body {
-    padding-left: 0;
-    padding-right: 0; }
-    .view-termos-de-uso .panel .panel-body p, .view-politica-de-privacidade .panel .panel-body p {
-      color: #797979; }
-.view-termos-de-uso .panel-default, .view-politica-de-privacidade .panel-default {
-  border-radius: inherit;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0; }
+.view-termos-de-uso, .view-politica-de-privacidade {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .view-termos-de-uso .panel, .view-politica-de-privacidade .panel {
+    margin-bottom: 21px;
+    background-color: #fff; }
+    .view-termos-de-uso .panel .panel-title, .view-politica-de-privacidade .panel .panel-title {
+      font-size: 16px;
+      color: inherit;
+      margin: 0 0 30px 0;
+      padding: 0; }
+      .view-termos-de-uso .panel .panel-title a, .view-politica-de-privacidade .panel .panel-title a {
+        position: relative;
+        display: block;
+        font-family: 'ubunturegular';
+        font-size: 20px;
+        color: #2b2b2b;
+        padding-right: 80px;
+        padding-top: 15px;
+        text-decoration: none; }
+      .view-termos-de-uso .panel .panel-title a:after, .view-politica-de-privacidade .panel .panel-title a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 25px;
+        height: 50px;
+        background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xicon-mais-menos.png.pagespeed.ic.DOMjQS2Qca.png) no-repeat 50% -146px; }
+      .view-termos-de-uso .panel .panel-title a.collapsed:after, .view-politica-de-privacidade .panel .panel-title a.collapsed:after {
+        background-position: 50% 10px; }
+    .view-termos-de-uso .panel .panel-body, .view-politica-de-privacidade .panel .panel-body {
+      padding-left: 0;
+      padding-right: 0; }
+      .view-termos-de-uso .panel .panel-body p, .view-politica-de-privacidade .panel .panel-body p {
+        color: #797979; }
+  .view-termos-de-uso .panel-default, .view-politica-de-privacidade .panel-default {
+    border-radius: inherit;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0; }
 
 .paragraph--type--abas {
   padding: 60px 0 20px; }
@@ -487,7 +490,8 @@ p {
     font-size: 30px;
     color: #000; }
   .paragraph--type--abas .field--name-field-conteudo {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: justify; }
   .paragraph--type--abas .cards-slider .paragraph--type--abas-item {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -576,6 +580,8 @@ p {
   .paragraph--type--abas .cards-slider .cards-dinamicos--item:hover:before {
     opacity: 0.3; } }
 @media (min-width: 768px) {
+  .paragraph--type--abas .field--name-field-conteudo {
+    text-align: left; }
   .paragraph--type--abas .cards-slider .paragraph--type--abas-item {
     padding-left: 3px !important;
     padding-right: 3px !important;
@@ -652,20 +658,20 @@ p {
       vertical-align: middle;
       border: 0; }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .paragraph--type--imagem-c-texto .paragraph-fundo .container:after {
-    bottom: 32px; } }
+    bottom: 30px; } }
 @media (min-width: 768px) {
   .paragraph--type--imagem-c-texto .paragraph-fundo {
     margin-top: 80px;
     margin-bottom: 80px;
-    margin: 50px 0;
+    margin: 100px 0;
     width: 100%;
     height: 450px; }
     .paragraph--type--imagem-c-texto .paragraph-fundo .container {
       height: 450px; }
     .paragraph--type--imagem-c-texto .paragraph-fundo .container:after {
-      bottom: 36px; }
+      bottom: 32px; }
     .paragraph--type--imagem-c-texto .paragraph-fundo .description {
       height: 450px;
       padding-top: 40px 50px 40px 50px;
@@ -779,6 +785,18 @@ p {
 #block-views-block-banners-home-block-1 {
   height: 100vh; }
 
+.views-slideshow-controls-bottom .views-slideshow-pager-bullets {
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  top: 48vh;
+  z-index: 9; }
+  .views-slideshow-controls-bottom .views-slideshow-pager-bullets li {
+    display: block;
+    background: #fff; }
+  .views-slideshow-controls-bottom .views-slideshow-pager-bullets li.active {
+    background: #FFA832; }
+
 .views_slideshow_cycle_main {
   width: 100%;
   float: left; }
@@ -842,81 +860,121 @@ p {
   .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
     left: 2%;
     width: 100%; } }
+@media (max-width: 992px) {
+  .views-slideshow-controls-bottom .views-slideshow-pager-bullets {
+    right: 5px;
+    top: 20vh;
+    z-index: 9; }
+
+  #block-views-block-banners-home-block-1 {
+    max-height: 450px; }
+
+  .views_slideshow_cycle_main .views-slideshow-cycle-main-frame {
+    max-height: 450px; }
+  .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
+    max-height: 450px; }
+  .views_slideshow_cycle_main .field-content {
+    max-height: 450px; }
+  .views_slideshow_cycle_main .field-content img {
+    max-height: 450px; }
+  .views_slideshow_cycle_main .views_slideshow_cycle_teaser_section {
+    max-height: 450px; }
+  .views_slideshow_cycle_main .views_slideshow_cycle_slide {
+    max-height: 450px; }
+  .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
+    top: 11vh; }
+    .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption div h2 {
+      font-size: 32px; }
+    .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption div p {
+      font-size: 14px; } }
 @media (max-width: 768px) {
   .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
-    top: 20vh;
-    text-align: center; }
+    top: 9vh;
+    text-align: center;
+    left: 0; }
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption .div-btn {
       margin-top: 25px; }
+    .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption h2 {
+      font-size: 26px; }
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption p {
       margin-bottom: 5px; }
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption div {
       max-width: 100% !important; } }
-.paragraph--type--bloco-de-enderecos {
+.paragraph--type--bloco-de-enderecos .bg-color-blue {
+  background-color: #0083ca;
+  color: #fff;
+  background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre.png.pagespeed.ic.2muiFdbK1j.png);
+  background-repeat: no-repeat;
+  background-position: 90% 110%;
+  background-attachment: fixed;
+  padding-bottom: 0; }
+  .paragraph--type--bloco-de-enderecos .bg-color-blue .pg-unidades--box {
+    border: 1px solid #fff; }
+.paragraph--type--bloco-de-enderecos .bg-color-white {
+  background-color: #fff;
+  color: #2B2B2B;
+  padding-bottom: 0; }
+  .paragraph--type--bloco-de-enderecos .bg-color-white .pg-unidades--box {
+    border: 1px solid #666666; }
+.paragraph--type--bloco-de-enderecos .bg-color-gray {
+  background-color: #E6E6E6;
+  color: #2B2B2B;
+  padding-bottom: 0; }
+  .paragraph--type--bloco-de-enderecos .bg-color-gray .pg-unidades--box {
+    border: 1px solid #666666; }
+.paragraph--type--bloco-de-enderecos .container {
   padding-top: 35px; }
-  .paragraph--type--bloco-de-enderecos .bg-color-blue {
-    background-color: #0083ca;
-    color: #fff;
-    background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre.png.pagespeed.ic.2muiFdbK1j.png);
-    background-repeat: no-repeat;
-    background-position: 90% 110%;
-    background-attachment: fixed;
-    padding-bottom: 0; }
-  .paragraph--type--bloco-de-enderecos .bg-color-white {
-    background-color: #fff;
-    color: #707070;
-    background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre.png.pagespeed.ic.2muiFdbK1j.png);
-    background-repeat: no-repeat;
-    background-position: 90% 110%;
-    background-attachment: fixed;
-    padding-bottom: 0; }
-  .paragraph--type--bloco-de-enderecos h1 {
-    margin-top: 0;
-    margin-bottom: 23px;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "ubuntumedium",Arial,sans-serif;
-    font-weight: normal;
-    line-height: 1.1;
-    font-size: 32px; }
-  .paragraph--type--bloco-de-enderecos p {
-    color: #fff; }
-  .paragraph--type--bloco-de-enderecos .pg-unidades--wrap {
-    padding-top: 35px; }
-    .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--title {
-      padding-top: 65px;
-      display: block;
+.paragraph--type--bloco-de-enderecos h1 {
+  margin-top: 0;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+  font-family: "ubuntubold",Arial,sans-serif;
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 32px; }
+.paragraph--type--bloco-de-enderecos .field--name-field-descricao {
+  font-size: 16px; }
+.paragraph--type--bloco-de-enderecos .pg-unidades--wrap {
+  padding-bottom: 60px; }
+  .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--title {
+    padding-top: 65px;
+    display: block;
+    font-family: 'ubuntumedium';
+    font-size: 22px; }
+  .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box {
+    border-radius: 8px;
+    padding: 35px 38px;
+    margin-top: 30px; }
+    .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--title {
       font-family: 'ubuntumedium';
-      font-size: 22px; }
-    .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box {
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      border-radius: 8px;
-      padding: 35px 38px;
-      margin-top: 30px; }
-      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--title {
-        font-family: 'ubuntumedium';
-        font-size: 18px; }
-      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--description {
-        padding-top: 11px; }
-      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list {
-        padding-top: 10px;
+      font-size: 18px; }
+    .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--description {
+      padding-top: 11px; }
+    .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list {
+      padding-top: 10px;
+      margin-bottom: 0; }
+      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--list-item:first-child {
+        padding-top: 0; }
+      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--list-item {
+        padding-top: 30px;
         margin-bottom: 0; }
-        .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--list-item:first-child {
-          padding-top: 0; }
-        .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--list-item {
-          padding-top: 30px;
-          margin-bottom: 0; }
-        .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--sede {
-          font-family: 'ubuntumedium';
-          font-size: 14px; }
-        .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--endereco {
-          margin: 0; }
+      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--sede {
+        font-family: 'ubuntumedium';
+        font-size: 14px; }
+      .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box .pg-unidades--box--list .pg-unidades--box--endereco {
+        margin: 0; }
+    .paragraph--type--bloco-de-enderecos .pg-unidades--wrap .pg-unidades--box a {
+      display: block;
+      padding-top: 11px;
+      color: #ff8600;
+      font-size: 16px;
+      text-decoration: none; }
 
 @media (min-width: 992px) {
   .paragraph--type--bloco-de-enderecos .pg-unidades {
     padding-top: 70px; }
   .paragraph--type--bloco-de-enderecos .pg-unidades--wrap {
-    padding-top: 70px; } }
+    padding-bottom: 60px; } }
 @media (min-width: 768px) {
   .paragraph--type--bloco-de-enderecos h1 {
     font-size: 36px; } }
