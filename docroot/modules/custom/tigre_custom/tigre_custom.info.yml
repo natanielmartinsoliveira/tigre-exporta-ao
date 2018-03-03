@@ -1,0 +1,5 @@
+name: Tigre Custom
+description: Customizacao Site Tigre.
+package: Tigre
+type: module
+core: 8.x
