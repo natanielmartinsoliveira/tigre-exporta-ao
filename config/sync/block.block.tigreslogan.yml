@@ -1,0 +1,29 @@
+uuid: 093d03af-7739-40d6-b2d2-1802e7e5c6e4
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3121fcfe-3d3f-4945-a3b2-fed6896d943d'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-6 pull-right'
+id: tigreslogan
+theme: tigre
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:3121fcfe-3d3f-4945-a3b2-fed6896d943d'
+settings:
+  id: 'block_content:3121fcfe-3d3f-4945-a3b2-fed6896d943d'
+  label: 'Tigre Slogan '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

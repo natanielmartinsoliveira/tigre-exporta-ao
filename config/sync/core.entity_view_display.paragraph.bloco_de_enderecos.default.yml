@@ -10,11 +10,19 @@ dependencies:
     - paragraphs.paragraphs_type.bloco_de_enderecos
   module:
     - entity_reference_revisions
+    - options
 id: paragraph.bloco_de_enderecos.default
 targetEntityType: paragraph
 bundle: bloco_de_enderecos
 mode: default
 content:
+  field_cor_de_fundo:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_descricao:
     weight: 1
     label: hidden
@@ -39,5 +47,4 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-hidden:
-  field_cor_de_fundo: true
+hidden: {  }

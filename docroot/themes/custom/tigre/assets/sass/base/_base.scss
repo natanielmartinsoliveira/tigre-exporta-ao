@@ -1,64 +1,72 @@
-@font-face{
-  font-family:'ubuntumedium';
-  src:url(../fonts/ubuntu/Ubuntu-M.eot?#iefix) format("embedded-opentype") , url(../fonts/ubuntu/Ubuntu-M.ttf) format("truetype");
-  font-weight:normal;
-  font-style:normal
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url(../fonts/ubuntu/Ubuntu-M.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-M.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face{
-  font-family:'ubuntumedium_italic';
-  src:url(../fonts/ubuntu/Ubuntu-MI.eot);
-  src:url(../fonts/ubuntu/Ubuntu-MI.eot?#iefix) format("embedded-opentype") , url(../fonts/ubuntu/Ubuntu-MI.ttf) format("truetype");
-  font-weight:normal;
-  font-style:normal
+
+@font-face {
+    font-family: 'ubuntumedium_italic';
+    src: url(../fonts/ubuntu/Ubuntu-MI.eot);
+    src: url(../fonts/ubuntu/Ubuntu-MI.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-MI.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face{
-  font-family:'ubuntubold';
-  src:url(../fonts/ubuntu/Ubuntu-B.eot);
-  src:url(../fonts/ubuntu/Ubuntu-B.eot?#iefix) format("embedded-opentype") , url(../fonts/ubuntu/Ubuntu-B.ttf) format("truetype");
-  font-weight:normal;
-  font-style:normal
+
+@font-face {
+    font-family: 'ubuntubold';
+    src: url(../fonts/ubuntu/Ubuntu-B.eot);
+    src: url(../fonts/ubuntu/Ubuntu-B.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-B.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face{
-  font-family:'ubuntubold_italic';
-  src:url(../fonts/ubuntu/Ubuntu-BI.eot);
-  src:url(../fonts/ubuntu/Ubuntu-BI.eot?#iefix) format("embedded-opentype") , url(../fonts/ubuntu/Ubuntu-BI.ttf) format("truetype");
-  font-weight:normal;
-  font-style:normal
+
+@font-face {
+    font-family: 'ubuntubold_italic';
+    src: url(../fonts/ubuntu/Ubuntu-BI.eot);
+    src: url(../fonts/ubuntu/Ubuntu-BI.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-BI.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face{
-  font-family:'ubuntu_condensedregular';
-  src:url(../fonts/ubuntu/Ubuntu-C.eot);
-  src:url(../fonts/ubuntu/Ubuntu-C.eot?#iefix) format("embedded-opentype") , url(../fonts/ubuntu/Ubuntu-C.ttf) format("truetype");
-  font-weight:normal;
-  font-style:normal
+
+@font-face {
+    font-family: 'ubuntu_condensedregular';
+    src: url(../fonts/ubuntu/Ubuntu-C.eot);
+    src: url(../fonts/ubuntu/Ubuntu-C.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-C.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face{
-  font-family:'ubuntulight';
-  src:url(../fonts/ubuntu/Ubuntu-L.eot);
-  src:url(../fonts/ubuntu/Ubuntu-L.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-L.ttf) format("truetype");
-  font-weight:normal;
-  font-style:normal
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url(../fonts/ubuntu/Ubuntu-L.eot);
+    src: url(../fonts/ubuntu/Ubuntu-L.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-L.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face{
-  font-family:'ubuntulight_italic';
-  src:url(../fonts/ubuntu/Ubuntu-LI.eot);
-  src:url(../fonts/ubuntu/Ubuntu-LI.eot?#iefix) format("embedded-opentype") , url(../fonts/ubuntu/Ubuntu-LI.ttf) format("truetype");
-  font-weight:normal;
-  font-style:normal
+
+@font-face {
+    font-family: 'ubuntulight_italic';
+    src: url(../fonts/ubuntu/Ubuntu-LI.eot);
+    src: url(../fonts/ubuntu/Ubuntu-LI.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-LI.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face{
-  font-family:'ubunturegular';
-  src:url(../fonts/ubuntu/Ubuntu-R.eot);
-  src:url(../fonts/ubuntu/Ubuntu-R.eot?#iefix) format("embedded-opentype") , url(../fonts/ubuntu/Ubuntu-R.ttf) format("truetype");
-  font-weight:normal;
-  font-style:normal
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url(../fonts/ubuntu/Ubuntu-R.eot);
+    src: url(../fonts/ubuntu/Ubuntu-R.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-R.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-@font-face{
-  font-family:'ubuntuitalic';
-  src:url(../fonts/ubuntu/Ubuntu-RI.eot);
-  src:url(../fonts/ubuntu/Ubuntu-RI.eot?#iefix) format("embedded-opentype") , url(../fonts/ubuntu/Ubuntu-RI.ttf) format("truetype");
-  font-weight:normal;
-  font-style:normal
+
+@font-face {
+    font-family: 'ubuntuitalic';
+    src: url(../fonts/ubuntu/Ubuntu-RI.eot);
+    src: url(../fonts/ubuntu/Ubuntu-RI.eot?#iefix) format("embedded-opentype"), url(../fonts/ubuntu/Ubuntu-RI.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 $larangaEscuro: #FF8532;
@@ -79,26 +87,30 @@ body {
     line-height: 1.5;
     color: #797979;
     margin-top: 0px;
-  }
-  a {
+}
+
+a {
     color: #666;
     text-decoration: none;
-  }
-  h3 {
-    font-size: 30px; 
+}
+
+h3 {
+    font-size: 30px;
     color: $texto;
-  }
-  h3 {
-    font-size: 24px; 
+}
+
+h3 {
+    font-size: 24px;
     color: $texto;
-  }
-  p {
+}
+
+p {
     font-size: 14px;
     line-height: 24px;
     color: $texto;
-  }
+}
 
-  .btn-primary {
+.btn-primary {
     background: #FF8532;
     background-image: -webkit-linear-gradient(to right, #FF8532, #FFA832);
     background-image: -moz-linear-gradient(to right, #FF8532, #FFA832);
@@ -113,14 +125,14 @@ body {
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     border: 0;
-  }
-  
-  .btn-primary:hover {
+}
+
+.btn-primary:hover {
     background: #FF8532;
     text-decoration: none;
-  }
+}
 
-  @mixin button-style {
+@mixin button-style {
     background: #FF8532;
     background-image: -webkit-linear-gradient(to right, #FF8532, #FFA832);
     background-image: -moz-linear-gradient(to right, #FF8532, #FFA832);
@@ -135,4 +147,15 @@ body {
     padding: 14px 20px 14px 20px;
     text-decoration: none;
     border: 0;
+}
+
+@mixin container-bottom-border {
+    position: relative;
+    left: 0;
+    bottom: 0px;
+    height: 1px;
+    width: 100%;
+    background-image: -webkit-linear-gradient(left, #3da13e 0%, #ffed18 50%, #f96d10 100%);
+    background-image: -o-linear-gradient(left, #3da13e 0%, #ffed18 50%, #f96d10 100%);
+    background-image: linear-gradient(to right, #3da13e 0%, #ffed18 50%, #f96d10 100%);
 }

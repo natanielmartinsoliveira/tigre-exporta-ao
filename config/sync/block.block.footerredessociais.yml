@@ -11,7 +11,7 @@ dependencies:
     - tigre
 third_party_settings:
   block_class:
-    classes: ''
+    classes: 'col-xs-6 col-sm-6'
 id: footerredessociais
 theme: tigre
 region: footer_top

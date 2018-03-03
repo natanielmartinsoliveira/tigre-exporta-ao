@@ -115,9 +115,9 @@ display:
                 views_slideshow_pager_fields:
                   views_slideshow_pager_fields_fields:
                     title: 0
+                    body: 0
                     field_url: 0
                     field_image: 0
-                    body: 0
                   views_slideshow_pager_fields_hover: 0
             bottom:
               views_slideshow_controls:
@@ -130,16 +130,16 @@ display:
                 weight: '1'
                 hide_on_single_slide: '0'
               views_slideshow_pager:
-                enable: false
+                enable: true
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_pager_bullets
                 views_slideshow_pager_fields:
                   views_slideshow_pager_fields_fields:
                     title: 0
+                    body: 0
                     field_url: 0
                     field_image: 0
-                    body: 0
                   views_slideshow_pager_fields_hover: 0
       row:
         type: fields

@@ -56,17 +56,19 @@
 <section{{ attributes.addClass(classes) }}>
 
   <div class="container">
-    <div class="col-sm-12 col-md-4">
-      {{ title_prefix }}
-      {% if label %}
-        <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
-      {% endif %}
-      {{ title_suffix }}
-    </div>
-    <div class="col-sm-12 col-md-8">
-      {% block content %}
-        {{ content }}
-      {% endblock %}
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        {{ title_prefix }}
+        {% if label %}
+          <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+        {% endif %}
+        {{ title_suffix }}
+      </div>
+      <div class="col-sm-12 col-md-8">
+        {% block content %}
+          {{ content }}
+        {% endblock %}
+      </div>
     </div>
   </div>
 </section>

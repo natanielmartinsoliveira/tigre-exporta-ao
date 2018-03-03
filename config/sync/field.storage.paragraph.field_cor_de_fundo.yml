@@ -1,4 +1,4 @@
-uuid: 99ee785a-5e70-4e63-8840-2f84c2365513
+uuid: 8ba7e77b-75a5-4828-a5f8-e0d72e7a67c6
 langcode: pt-br
 status: true
 dependencies:
@@ -12,11 +12,14 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: Azul
+      value: blue
       label: Azul
     -
-      value: Branco
+      value: white
       label: Branco
+    -
+      value: gray
+      label: Cinza
   allowed_values_function: ''
 module: options
 locked: false

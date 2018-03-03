@@ -1,0 +1,8 @@
+uuid: 20ee1b39-025f-469b-a067-1de83cd52ad9
+langcode: pt-br
+status: true
+dependencies: {  }
+id: contatos
+label: Contatos
+description: ''
+locked: false

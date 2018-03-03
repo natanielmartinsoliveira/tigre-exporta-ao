@@ -1,9 +1,9 @@
-uuid: b54a1c1d-79e3-4555-822c-7fa41fd55d7a
+uuid: 1cce91b2-f8dd-479b-8632-0c5f67c26318
 langcode: pt-br
-status: true
+status: false
 dependencies:
   config:
-    - system.menu.categorias-p
+    - system.menu.contatos
   module:
     - block_class
     - system
@@ -11,16 +11,16 @@ dependencies:
     - tigre
 third_party_settings:
   block_class:
-    classes: ''
-id: categoriasproduto_2
+    classes: 'col-xs-12 col-sm-4'
+id: contatos
 theme: tigre
 region: footer
 weight: 0
 provider: null
-plugin: 'system_menu_block:categorias-p'
+plugin: 'system_menu_block:contatos'
 settings:
-  id: 'system_menu_block:categorias-p'
-  label: 'Categorias Produto'
+  id: 'system_menu_block:contatos'
+  label: Contatos
   provider: system
   label_display: '0'
   level: 1

@@ -1,4 +1,4 @@
-uuid: 901cb659-8fcb-45a8-bfd1-fc1ac667c043
+uuid: fce8efe3-2af8-40cd-954b-30a2aa8d9432
 langcode: pt-br
 status: true
 dependencies:
@@ -17,7 +17,7 @@ required: false
 translatable: false
 default_value:
   -
-    value: Azul
+    value: blue
 default_value_callback: ''
 settings: {  }
 field_type: list_string

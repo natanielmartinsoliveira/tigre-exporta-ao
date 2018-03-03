@@ -48,16 +48,18 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
       <div class="container">
-        {% block content %}
-          <div class="col-sm-4 col-xs-12">
-              {{ content.field_titulo }}
-              {{ content.field_conteudo }}
-              {{ content.field_link }}
-          </div>
-          <div class="col-sm-8 col-xs-12">
-            {{ content.field_imagem }}
-          </div>
-        {% endblock %}
+        <div class="row">
+          {% block content %}
+            <div class="col-sm-4 col-xs-12">
+                {{ content.field_titulo }}
+                {{ content.field_conteudo }}
+                {{ content.field_link }}
+            </div>
+            <div class="col-sm-8 col-xs-12">
+              {{ content.field_imagem }}
+            </div>
+          {% endblock %}
+        </div>
       </div>
   </div>
 {% endblock paragraph %}
