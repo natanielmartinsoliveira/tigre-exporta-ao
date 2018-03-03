@@ -1,0 +1,18 @@
+uuid: a2be8c27-b34d-4c81-8dbb-e7deed2b9967
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.produto.field_cad_produto_anexo
+    - field.field.taxonomy_term.produto.field_cat_produto_image
+    - taxonomy.vocabulary.produto
+id: taxonomy_term.produto.default
+targetEntityType: taxonomy_term
+bundle: produto
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_cad_produto_anexo: true
+  field_cat_produto_image: true
+  langcode: true

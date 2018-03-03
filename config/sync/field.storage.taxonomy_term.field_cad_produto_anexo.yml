@@ -1,0 +1,23 @@
+uuid: 85078d82-41a3-4333-bf06-3a4fc33c3322
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - taxonomy
+id: taxonomy_term.field_cad_produto_anexo
+field_name: field_cad_produto_anexo
+entity_type: taxonomy_term
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

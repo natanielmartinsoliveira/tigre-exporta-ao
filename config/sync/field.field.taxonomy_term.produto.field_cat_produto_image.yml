@@ -1,0 +1,38 @@
+uuid: 71e6b6c4-db82-44e4-9f5d-8abd315c2c0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_cat_produto_image
+    - taxonomy.vocabulary.produto
+  module:
+    - image
+id: taxonomy_term.produto.field_cat_produto_image
+field_name: field_cat_produto_image
+entity_type: taxonomy_term
+bundle: produto
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
