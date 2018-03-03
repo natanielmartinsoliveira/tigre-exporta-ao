@@ -1,0 +1,67 @@
+uuid: d270d036-e96d-4212-9e56-8a568102284b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.produto.field_cad_produto_anexo
+    - field.field.taxonomy_term.produto.field_cat_produto_image
+    - image.style.thumbnail
+    - taxonomy.vocabulary.produto
+  module:
+    - file
+    - image
+    - path
+    - text
+id: taxonomy_term.produto.default
+targetEntityType: taxonomy_term
+bundle: produto
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cad_produto_anexo:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_cat_produto_image:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+hidden: {  }

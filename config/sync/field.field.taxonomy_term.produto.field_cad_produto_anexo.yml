@@ -1,0 +1,27 @@
+uuid: 1160ff12-4f5d-439f-9a40-2082766016d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_cad_produto_anexo
+    - taxonomy.vocabulary.produto
+  module:
+    - file
+id: taxonomy_term.produto.field_cad_produto_anexo
+field_name: field_cad_produto_anexo
+entity_type: taxonomy_term
+bundle: produto
+label: Anexo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

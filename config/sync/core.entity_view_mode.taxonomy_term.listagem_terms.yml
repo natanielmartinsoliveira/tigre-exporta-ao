@@ -1,0 +1,10 @@
+uuid: a309f56e-b5e8-499c-92f0-ec9709785533
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.listagem_terms
+label: 'Listagem Terms'
+targetEntityType: taxonomy_term
+cache: true
