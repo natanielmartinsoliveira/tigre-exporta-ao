@@ -1,0 +1,23 @@
+uuid: cc14fbce-6426-4a34-acd5-eb096cc58da6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.token
+    - taxonomy.vocabulary.produto
+  module:
+    - text
+id: taxonomy_term.produto.token
+targetEntityType: taxonomy_term
+bundle: produto
+mode: token
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
