@@ -1,0 +1,7 @@
+uuid: 14ee5d1c-2217-4ceb-bf17-01ff6888424f
+langcode: pt-br
+status: false
+dependencies: {  }
+formId: node_banner_topo_form
+captchaType: default
+label: null

@@ -482,6 +482,8 @@ p {
   width: 100%;
   clear: both;
   padding: 80px 0; }
+  #block-contactblock #contact-message-newsletter-form {
+    display: inline; }
   #block-contactblock .block-title {
     font-size: 24px;
     line-height: 34px;
@@ -494,7 +496,7 @@ p {
   #block-contactblock #edit-actions {
     width: 100%;
     float: right; }
-  #block-contactblock #edit-preview {
+  #block-contactblock #edit-preview, #block-contactblock #edit-preview--3 {
     display: none; }
   #block-contactblock #edit-submit {
     width: 100%; }
@@ -527,10 +529,10 @@ p {
   #block-contactblock .block-title {
     font-size: 28px; }
   #block-contactblock #edit-actions {
-    width: 200px;
+    width: 150px;
     float: right; }
   #block-contactblock .field--name-field-newsletter-email {
-    max-width: 60%; }
+    max-width: 70%; }
   #block-contactblock #edit-submit {
     width: auto; } }
 .block-block-content .field--name-field-banner-imagem img {
@@ -1129,7 +1131,8 @@ p {
   background-color: #F3F3F3;
   width: 265px;
   margin: auto;
-  padding: 36px; }
+  padding: 36px;
+  margin-top: 70px; }
   #block-contatoexportacao h4 {
     font-family: "ubuntubold", Arial, sans-serif;
     font-size: 24px;
@@ -1143,3 +1146,84 @@ p {
     margin-top: 0;
     font-family: "ubuntulight", Arial, sans-serif;
     font-size: 18px; }
+
+#block-paginacontatotexto p {
+  color: #95989A;
+  font-family: "ubuntulight", Arial, sans-serif;
+  font-size: 20px; }
+
+.page--contact--content--region {
+  padding-top: 30px;
+  padding-bottom: 61px; }
+  .page--contact--content--region .panel-default {
+    border-color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .page--contact--content--region .panel-default .panel-heading {
+      display: none; }
+    .page--contact--content--region .panel-default #bootstrap-panel--description {
+      display: none; }
+
+.contact-form #edit-preview {
+  display: none; }
+.contact-form #edit-submit {
+  float: right; }
+.contact-form .box {
+  border-bottom: 1px solid #666666; }
+.contact-form .form-group {
+  margin-bottom: 20px; }
+  .contact-form .form-group .control-label {
+    font-family: "ubuntulight", Arial, sans-serif;
+    color: #666666;
+    display: block;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: normal; }
+  .contact-form .form-group input, .contact-form .form-group select, .contact-form .form-group textarea {
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 0 10px;
+    background: transparent; }
+  .contact-form .form-group input, .contact-form .form-group select {
+    height: 48px;
+    line-height: 48px; }
+  .contact-form .form-group .select-wrapper:after {
+    color: #666666; }
+  .contact-form .form-group textarea {
+    padding: 10px; }
+.contact-form .box-checkbox {
+  clear: both;
+  color: #666666;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-family: "Ubuntu";
+  line-height: 25px;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  position: relative; }
+  .contact-form .box-checkbox span {
+    color: #cccccc;
+    font-size: 22px;
+    position: absolute;
+    top: 3px;
+    left: 0; }
+    .contact-form .box-checkbox span:before {
+      content: "\f096"; }
+  .contact-form .box-checkbox input {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 10; }
+
+.page--user--content--region {
+  padding-bottom: 70px; }
+  .page--user--content--region .user-login-form {
+    padding-top: 30px; }
+    .page--user--content--region .user-login-form #edit-submit {
+      float: right; }

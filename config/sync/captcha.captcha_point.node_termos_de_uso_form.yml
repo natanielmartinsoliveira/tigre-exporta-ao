@@ -1,0 +1,7 @@
+uuid: ce34a4ae-1351-4062-b606-aa557afdc921
+langcode: pt-br
+status: false
+dependencies: {  }
+formId: node_termos_de_uso_form
+captchaType: default
+label: null

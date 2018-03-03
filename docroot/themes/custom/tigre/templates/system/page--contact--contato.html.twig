@@ -146,13 +146,17 @@
         {% block content %}
           <a id="main-content"></a>
           {% if page.content.contatoexportacao %}
-            <div class="container">
-              <div class="col-xs-12 col-sm-8">
-                {{ page.content.paginacontatotexto }}
-                {{ page.content.tigre_content }}
-              </div>
-              <div class="col-sm-4">
-                {{ page.content.contatoexportacao }}
+            <div class="container page--contact--content--region">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                  {{ page.content.paginacontatotexto }}
+                  <div class="row">
+                    {{ page.content.tigre_content }}
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                  {{ page.content.contatoexportacao }}
+                </div>
               </div>
             </div>
           {% else %}
@@ -188,7 +192,9 @@
       {% block footer_top %}
         <div id="footer-top">
           <div class="container">
-            {{ page.footer_top }}
+            <div class="row">
+              {{ page.footer_top }}
+            </div>
           </div>
         </div>
       {% endblock %}
@@ -197,7 +203,9 @@
       {% block footer %}
         <div id="footer-middle">
           <div class="container">
-            {{ page.footer }}
+            <div class="row">
+              {{ page.footer }}
+            </div>
           </div>
         </div>
       {% endblock %}
@@ -206,9 +214,12 @@
       {% block footer_bottom %}
         <div id="footer-bottom">
           <div class="container">
-            {{ page.footer_bottom }}
+            <div class="row">
+              {{ page.footer_bottom }}
+            </div>
           </div>
         </div>
       {% endblock %}
     {% endif %}
 </footer>
+{{ kint(page) }}

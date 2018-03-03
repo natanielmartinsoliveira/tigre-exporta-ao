@@ -1,0 +1,11 @@
+site_key: 6LcDSUoUAAAAANiEaGtdQ_ARTOnfNp2l2-3-HJOV
+secret_key: 6LcDSUoUAAAAALxiTjsme2n0P2XWKp7YHWTtZDVy
+widget:
+  theme: light
+  type: image
+  size: ''
+  tabindex: 0
+  noscript: false
+_core:
+  default_config_hash: ZKQ03ePk4sH2zESRw4tdZYw__nG2YN4Ru5roPL23g3A
+langcode: pt-br

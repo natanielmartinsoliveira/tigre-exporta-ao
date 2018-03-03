@@ -596,7 +596,9 @@
     width: 100%;
     clear: both;
     padding: 80px 0;
-
+    #contact-message-newsletter-form{
+        display: inline;
+    }
     .block-title {
         font-size: 24px;
         line-height: 34px;
@@ -615,7 +617,7 @@
         float: right;
     }
 
-    #edit-preview {
+    #edit-preview, #edit-preview--3 {
         display: none;
     }
 
@@ -669,12 +671,12 @@
             font-size: 28px;
         }
         #edit-actions {
-            width: 200px;
+            width: 150px;
             float: right;
         }
 
         .field--name-field-newsletter-email {
-            max-width: 60%;
+            max-width: 70%;
         }
 
         #edit-submit {
@@ -1586,6 +1588,7 @@
     width: 265px;
     margin: auto;
     padding: 36px;
+    margin-top: 70px;
 
     h4 {
         font-family: "ubuntubold", Arial, sans-serif;
@@ -1605,4 +1608,120 @@
         font-family: "ubuntulight", Arial, sans-serif;
         font-size: 18px;
     }
+    
 }
+
+// Contato 
+#block-paginacontatotexto{
+    p {
+        color: #95989A;
+        font-family: "ubuntulight", Arial, sans-serif;
+        font-size: 20px;
+    }
+}
+.page--contact--content--region {
+    padding-top: 30px;
+    padding-bottom: 61px;
+    .panel-default{
+        border-color: #fff;
+        box-shadow: none;
+        .panel-heading {
+            display: none;
+        }
+        #bootstrap-panel--description{
+            display: none;
+        }
+    }
+}
+
+// Formularios
+.contact-form {
+
+    #edit-preview {
+        display: none;
+    }
+    #edit-submit {
+        float: right;
+    }
+    .box {
+      border-bottom: 1px solid #666666;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+
+      .control-label {
+        font-family: "ubuntulight", Arial, sans-serif;
+        color: #666666;
+        display: block;
+        margin-bottom: 0px;
+        font-size: 14px;
+        font-weight: normal;
+      }
+  
+      input, select, textarea {
+        width: 100%;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        padding: 0 10px;
+        background: transparent;
+      }
+      input, select {
+        height: 48px;
+        line-height: 48px;
+      }
+      .select-wrapper:after {
+          color: #666666;
+      }
+      textarea {
+        padding: 10px;
+      }
+  
+    }
+  
+    .box-checkbox {
+      clear: both;
+      color: #666666;
+      cursor: pointer;
+      display: block;
+      font-size: 16px;
+      font-family: "Ubuntu";
+      line-height: 25px;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      position: relative;
+  
+      span {
+        color: #cccccc;
+        font-size: 22px;
+        position: absolute;
+        top: 3px;
+        left: 0;
+  
+        &:before {
+          content: "\f096";
+        }
+      }
+  
+      input {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        z-index: 10;
+      }
+    }
+  }
+
+  .page--user--content--region {
+    padding-bottom: 70px;
+      .user-login-form {
+          padding-top: 30px;          
+          #edit-submit {
+              float: right;
+          }
+      }
+  }
