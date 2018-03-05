@@ -1,0 +1,7 @@
+uuid: 55aab9f2-0f42-4fa4-925b-306562d4a267
+langcode: pt-br
+status: false
+dependencies: {  }
+formId: node_politica_de_privacidade_form
+captchaType: default
+label: null

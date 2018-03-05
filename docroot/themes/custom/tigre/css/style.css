@@ -105,6 +105,9 @@ p {
   z-index: 9999;
   width: 100%;
   position: fixed; }
+  .menu-global #navbar-collapse .logo {
+    padding-bottom: 5px;
+    margin-right: 10px; }
 
 .footer {
   margin-top: 0;
@@ -431,7 +434,8 @@ p {
       cursor: pointer;
       -webkit-transition: .2s all;
       transition: .2s all;
-      background-color: transparent; }
+      background-color: transparent;
+      padding-top: 20px; }
 
 #block-menuprincipalcontatoebusca .menu-contact-search {
   display: block;
@@ -482,6 +486,8 @@ p {
   width: 100%;
   clear: both;
   padding: 80px 0; }
+  #block-contactblock #contact-message-newsletter-form {
+    display: inline; }
   #block-contactblock .block-title {
     font-size: 24px;
     line-height: 34px;
@@ -494,7 +500,7 @@ p {
   #block-contactblock #edit-actions {
     width: 100%;
     float: right; }
-  #block-contactblock #edit-preview {
+  #block-contactblock #edit-preview, #block-contactblock #edit-preview--3 {
     display: none; }
   #block-contactblock #edit-submit {
     width: 100%; }
@@ -527,10 +533,10 @@ p {
   #block-contactblock .block-title {
     font-size: 28px; }
   #block-contactblock #edit-actions {
-    width: 200px;
+    width: 150px;
     float: right; }
   #block-contactblock .field--name-field-newsletter-email {
-    max-width: 60%; }
+    max-width: 70%; }
   #block-contactblock #edit-submit {
     width: auto; } }
 .block-block-content .field--name-field-banner-imagem img {
@@ -1091,13 +1097,28 @@ p {
   .sobre-a-tigre .field--name-field-paragrafos .col-sm-9, .sobre-a-tigre .field--name-field-paragrafos .col-sm-6, .sobre-a-tigre .field--name-field-paragrafos .col-sm-3 {
     padding-left: 0;
     padding-right: 0; } }
+.view-catalogos .views-col {
+  width: 100% !important; }
 .view-catalogos .node--type-catalogo {
-  padding: 14px;
-  margin: 14px; }
+  padding: 19px;
+  margin: 0 28px 28px 0; }
   .view-catalogos .node--type-catalogo .group-left {
-    width: 45%; }
+    width: 50%; }
+    .view-catalogos .node--type-catalogo .group-left img {
+      border: 1px solid #ccc;
+      padding: 10px;
+      max-height: 216px;
+      max-width: 157px;
+      width: 100%;
+      height: 100%; }
   .view-catalogos .node--type-catalogo .group-right {
-    width: 55%; }
+    width: 50%;
+    font-size: 12px; }
+    .view-catalogos .node--type-catalogo .group-right .field-label-inline {
+      float: left;
+      margin-right: 2px; }
+    .view-catalogos .node--type-catalogo .group-right .field--label {
+      font-weight: normal; }
     .view-catalogos .node--type-catalogo .group-right h2 {
       font-family: "ubuntubold", Arial, sans-serif;
       font-size: 20px;
@@ -1108,7 +1129,34 @@ p {
       font-size: 20px;
       color: #FF8532;
       margin-bottom: 0; }
+    .view-catalogos .node--type-catalogo .group-right .download--links {
+      display: table; }
+      .view-catalogos .node--type-catalogo .group-right .download--links .file {
+        width: 38px;
+        display: inline-block;
+        margin: 5px 2px 0 0; }
+        .view-catalogos .node--type-catalogo .group-right .download--links .file .file-icon {
+          display: none; }
+        .view-catalogos .node--type-catalogo .group-right .download--links .file .file-size {
+          display: none; }
+        .view-catalogos .node--type-catalogo .group-right .download--links .file .file-link {
+          background-color: #fff;
+          border: 1px solid #FF8532;
+          height: 38px;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          width: 38px;
+          text-align: center; }
+          .view-catalogos .node--type-catalogo .group-right .download--links .file .file-link a {
+            text-decoration: none;
+            color: #FF8532;
+            font-size: 12px;
+            font-family: "ubuntubold", Arial, sans-serif; }
 
+@media (min-width: 992px) {
+  .view-catalogos .views-col {
+    width: 50% !important; } }
 @media (min-width: 768px) {
   .view-catalogos .node--type-catalogo {
     border: 1px solid #ccc;
@@ -1117,7 +1165,10 @@ p {
     transition: border-color .3s ease; } }
 .breadcrumb {
   background-color: transparent;
-  margin-top: 80px; }
+  margin-top: 80px;
+  padding: 8px 0px; }
+  .breadcrumb li a {
+    color: #fff; }
 
 #block-catalogo-menu {
   display: none; }
@@ -1129,7 +1180,8 @@ p {
   background-color: #F3F3F3;
   width: 265px;
   margin: auto;
-  padding: 36px; }
+  padding: 36px;
+  margin-top: 70px; }
   #block-contatoexportacao h4 {
     font-family: "ubuntubold", Arial, sans-serif;
     font-size: 24px;
@@ -1143,3 +1195,155 @@ p {
     margin-top: 0;
     font-family: "ubuntulight", Arial, sans-serif;
     font-size: 18px; }
+
+#block-paginacontatotexto p {
+  color: #95989A;
+  font-family: "ubuntulight", Arial, sans-serif;
+  font-size: 20px; }
+
+.page--contact--content--region {
+  padding-top: 30px;
+  padding-bottom: 61px; }
+  .page--contact--content--region .panel-default {
+    border-color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .page--contact--content--region .panel-default .panel-heading {
+      display: none; }
+    .page--contact--content--region .panel-default #bootstrap-panel--description {
+      display: none; }
+
+.contact-form #edit-preview {
+  display: none; }
+.contact-form #edit-submit {
+  float: right; }
+.contact-form .box {
+  border-bottom: 1px solid #666666; }
+.contact-form .form-group {
+  margin-bottom: 20px; }
+  .contact-form .form-group .control-label {
+    font-family: "ubuntulight", Arial, sans-serif;
+    color: #666666;
+    display: block;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: normal; }
+  .contact-form .form-group input, .contact-form .form-group select, .contact-form .form-group textarea {
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 0 10px;
+    background: transparent; }
+  .contact-form .form-group input, .contact-form .form-group select {
+    height: 48px;
+    line-height: 48px; }
+  .contact-form .form-group .select-wrapper:after {
+    color: #666666; }
+  .contact-form .form-group textarea {
+    padding: 10px; }
+.contact-form .box-checkbox {
+  clear: both;
+  color: #666666;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-family: "Ubuntu";
+  line-height: 25px;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  position: relative; }
+  .contact-form .box-checkbox span {
+    color: #cccccc;
+    font-size: 22px;
+    position: absolute;
+    top: 3px;
+    left: 0; }
+    .contact-form .box-checkbox span:before {
+      content: "\f096"; }
+  .contact-form .box-checkbox input {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 10; }
+
+.page--user--content--region {
+  padding-bottom: 70px; }
+  .page--user--content--region .tabs {
+    display: none; }
+  .page--user--content--region .user-login-form {
+    padding-top: 30px; }
+    .page--user--content--region .user-login-form #edit-submit {
+      float: right; }
+
+.page--catalogos--content--region {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.tree, .tree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.tree {
+  border: 1px solid #dadada;
+  border-radius: 6px;
+  padding: 21px 21px 21px 12px; }
+  .tree ul {
+    margin-left: 1em;
+    position: relative; }
+  .tree ul ul {
+    margin-left: .5em; }
+  .tree ul:before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid;
+    color: #dadada; }
+  .tree li {
+    margin: 0;
+    padding: 0 0 0 1em;
+    line-height: 2em;
+    font-weight: 700;
+    position: relative; }
+  .tree ul li:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 0;
+    border-top: 1px solid;
+    margin-top: -1px;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    color: #dadada; }
+  .tree ul li:last-child:before {
+    background: #fff;
+    height: auto;
+    top: 1em;
+    bottom: 0; }
+  .tree li a {
+    text-decoration: none;
+    font-family: "ubuntulight", Arial, sans-serif;
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal; }
+
+.indicator {
+  margin-right: 5px;
+  float: right; }
+
+.tree li button, .tree li button:active, .tree li button:focus {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  outline: 0; }

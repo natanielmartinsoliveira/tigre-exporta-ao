@@ -1,0 +1,35 @@
+uuid: e1f53161-486d-4b8c-ab41-9a3d3966b9a4
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_topo:d8b66637-dcd6-4861-9501-4d612af1fa16'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: bannerusuarios
+theme: tigre
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:d8b66637-dcd6-4861-9501-4d612af1fa16'
+settings:
+  id: 'block_content:d8b66637-dcd6-4861-9501-4d612af1fa16'
+  label: 'Banner Usuários'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user\r\n/user/*"
+    negate: false
+    context_mapping: {  }
