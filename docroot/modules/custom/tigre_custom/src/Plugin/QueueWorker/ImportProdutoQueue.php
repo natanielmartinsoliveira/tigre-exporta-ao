@@ -34,9 +34,10 @@ public function crateProduct($detail) {
 
   $node->set('title', $detail['title'][0]['value']);
   $node->set('body', $detail['body'][0]['value']);
-  /*if (!empty($detail['field_produto_banners'])) {
-    $node->set('field_produto_banners', $detail['field_produto_banners'][0]['value']);
-  }*/
+  
+  if (!empty($detail['uc_product_image'])) {
+    $node->set('field_uc_product_image_url', $detail['uc_product_image'][0]['url']);
+  }
   if (!empty($detail['field_produto_chamada'])) {
     $node->set('field_produto_chamada', $detail['field_produto_chamada'][0]['value']);
   }
