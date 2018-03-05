@@ -11,7 +11,17 @@ use Drupal\Core\Controller\ControllerBase;
 class TigreCustomController extends ControllerBase {
 
   public function product() {
-    tigre_list_products();
-    die();
+    //tigre_list_products();
+    $batch = array(
+      'title' => t('Exporting'),
+      'operations' => array(
+        array('tigre_list_products'),
+      ),
+      'finished' => 'tigre_list_products_finished',
+      'file' => drupal_get_path('module', 'tigre_custom') . '/tigre_custom.module',
+    );
+
+    batch_set($batch);
+
   }
 }
