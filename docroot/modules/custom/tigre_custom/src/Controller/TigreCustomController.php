@@ -2,6 +2,8 @@
 
 namespace Drupal\tigre_custom\Controller;
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\tigre_custom\Rest\TigreRestService;
+
 /**
  * Created by PhpStorm.
  * User: julio
@@ -11,17 +13,20 @@ use Drupal\Core\Controller\ControllerBase;
 class TigreCustomController extends ControllerBase {
 
   public function product() {
-    //tigre_list_products();
-    $batch = array(
-      'title' => t('Exporting'),
-      'operations' => array(
-        array('tigre_list_products'),
-      ),
-      'finished' => 'tigre_list_products_finished',
-      'file' => drupal_get_path('module', 'tigre_custom') . '/tigre_custom.module',
-    );
+    tigre_custom_queue_import_produto_cronjob();
 
-    batch_set($batch);
+    //tigre_list_products();
+
+    /*$tigre_service = new TigreRestService();
+    $tigre_service->setHost("http://34.193.90.181");
+    //$tigre_service->setHost("https://www.tigre.com.br");
+    $tigre_service->setUsername("lucas");
+    $tigre_service->setPassword('102030');
+    $produtos = $tigre_service->getProducts();
+    $total = count($produtos);
+    var_dump($total);*/
+
+    die();
 
   }
 }

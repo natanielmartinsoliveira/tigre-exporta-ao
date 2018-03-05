@@ -70,10 +70,8 @@ function tigre_list_products_finished() {
 
 function tigre_custom_queue_import_produto_cronjob() {
 
-  /** @var QueueFactory $queue_factory */
-  $queue_factory = \Drupal::service('queue');
   /** @var QueueInterface $queue */
-  $queue = $queue_factory->get('import_produto_queue');
+  $queue = \Drupal::queue('tigre_custom_queue_worker');
 
   /** @var TigreRestService $tigre_service */
   $tigre_service = new TigreRestService();
