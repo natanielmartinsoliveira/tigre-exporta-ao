@@ -1,0 +1,8 @@
+tigre_custom.controller:
+  path: '/tigre_custom/product_list'
+  defaults:
+    _controller: '\Drupal\tigre_custom\Controller\TigreCustomController::product'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
