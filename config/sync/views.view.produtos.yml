@@ -9,6 +9,7 @@ dependencies:
     - ds
     - node
     - user
+    - views_bootstrap
 id: produtos
 label: Produtos
 module: views
@@ -68,16 +69,17 @@ display:
             previous: ‹‹
             next: ››
       style:
-        type: grid
+        type: views_bootstrap_grid
         options:
+          row_class: ''
+          default_row_class: true
           uses_fields: false
-          columns: 3
-          automatic_width: true
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          columns: '999'
+          col_xs: col-xs-12
+          col_sm: col-sm-6
+          col_md: col-md-4
+          col_lg: col-lg-4
       row:
         type: 'ds_entity:node'
         options:

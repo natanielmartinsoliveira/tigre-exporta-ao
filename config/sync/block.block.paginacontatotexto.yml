@@ -16,7 +16,7 @@ third_party_settings:
 id: paginacontatotexto
 theme: tigre
 region: content
-weight: 0
+weight: -18
 provider: null
 plugin: 'block_content:953ecb58-68da-4cef-9c9b-a47c818371a5'
 settings:

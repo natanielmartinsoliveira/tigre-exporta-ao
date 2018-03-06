@@ -45,7 +45,7 @@ bundle: produto
 mode: default
 content:
   body:
-    label: hidden
+    label: above
     type: text_default
     weight: 101
     settings: {  }
@@ -69,7 +69,7 @@ content:
     region: content
   field_ficha_tecnica:
     weight: 109
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: file_default
@@ -165,7 +165,7 @@ content:
     region: content
   field_produto_descricao:
     weight: 106
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -199,7 +199,7 @@ content:
     region: content
   field_sku:
     weight: 128
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -246,7 +246,7 @@ content:
     region: content
   field_video:
     weight: 126
-    label: above
+    label: hidden
     settings:
       responsive: true
       width: 854
@@ -257,7 +257,7 @@ content:
     region: content
   field_video_titulo:
     weight: 125
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

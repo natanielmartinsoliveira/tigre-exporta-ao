@@ -1,9 +1,9 @@
-uuid: fe4a77e5-1b3f-4ad9-8c33-5da55c273a22
-langcode: en
+uuid: 58ea1076-9b0d-472f-a616-45a89cc5ec9a
+langcode: pt-br
 status: true
 dependencies:
   config:
-    - views.view.categoria_produtos
+    - views.view.categoria_produto_descricao
   module:
     - block_class
     - system
@@ -13,14 +13,14 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: views_block__categoria_produtos_block_1
+id: views_block__categoria_produto_descricao_block_1
 theme: tigre
 region: content
-weight: -19
+weight: -20
 provider: null
-plugin: 'views_block:categoria_produtos-block_1'
+plugin: 'views_block:categoria_produto_descricao-block_1'
 settings:
-  id: 'views_block:categoria_produtos-block_1'
+  id: 'views_block:categoria_produto_descricao-block_1'
   label: ''
   provider: views
   label_display: '0'
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/produtos\r\n/produtos/*"
+    pages: '/produtos/*'
     negate: false
     context_mapping: {  }

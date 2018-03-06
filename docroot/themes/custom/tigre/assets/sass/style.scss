@@ -1535,12 +1535,9 @@
 
 // Catalogos
 .view-catalogos {
-    .views-col {
-        width: 100% !important;
-    }
     .node--type-catalogo {
         padding: 19px;
-        margin: 0 28px 28px 0;
+        margin: 0 0 28px 0;
 
         .group-left {
             width: 50%;
@@ -1610,17 +1607,6 @@
         }
     }
 }
-
-
-
-@media (min-width: 992px) {
-    .view-catalogos {
-        .views-col {
-            width: 50% !important;
-        }
-    }
-}
-
 
 @media (min-width: 768px) {
     .view-catalogos {
@@ -1634,10 +1620,37 @@
 }
 
 // produtos
-.view-categoria-produtos {
-    // .views-col {
-    //     width: 100% !important;
-    // }
+.view-categoria-produto-descricao {
+    margin-bottom: 26px;
+    h1 {
+        margin-top: 0;
+        font-family: "ubuntubold", Arial, sans-serif;
+        color: #000000;
+        font-size: 37px;
+    }
+    p, .views-label-field-cad-produto-anexo {
+        font-family: "ubunturegular", Arial, sans-serif;
+        color: #95989A;
+        font-size: 14px;
+    }
+    .views-field-nothing {
+        display: inline-block;
+        .txt-catalogo {
+            .lk-download {
+                display: inline-block;
+                padding-right: 26px;
+                font-size: 16px;
+                color: #fe860c;
+                font-family: 'ubuntumedium';
+                text-transform: uppercase;
+                text-decoration: none;
+                background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xicon_download2.png.pagespeed.ic.c6B5s82Nsy.png) no-repeat 100% 50%;
+            }
+        }
+    }
+}
+
+.view-categoria-produtos, .view-produtos {
         .views-col{
             h2 {
                 font-family: "ubuntulight", Arial, sans-serif;
@@ -1646,109 +1659,69 @@
                 margin-top: 0;
             }
         }
+        .col {
+            padding-bottom: 30px;
+        }
     .taxonomy-term--type-produto, .node--type-produto{
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        -webkit-transition: border-color .3s ease;
+        transition: border-color .3s ease;
+        padding: 24px;
+        cursor: pointer;
+        
         h2 {
             font-family: "ubuntulight", Arial, sans-serif;
             font-size: 20px;
             color: #000;
-            margin-top: 0;
+            margin-top: 8px;
+        }
+        img {
+            max-height: 200px;
+            margin: 0 auto;
+            
         }
     }
-    .node--type-catalogo {
-        padding: 19px;
-        margin: 0 28px 28px 0;
-
-        .group-left {
-            width: 50%;
-            img {
-                border: 1px solid #ccc;
-                padding: 10px;
-                max-height: 216px;
-                max-width: 157px;
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .group-right {
-            width: 50%;
-            font-size: 12px;
-            .field-label-inline{
-                float: left;
-                margin-right: 2px;
-            }
-            .field--label {
-                font-weight: normal;
-            }
-            h2 {
-                font-family: "ubuntubold", Arial, sans-serif;
-                font-size: 20px;
-                color: #000;
-                margin-top: 0;
-            }
-
-            h3 {
-                font-family: "ubuntulight", Arial, sans-serif;
-                font-size: 20px;
-                color: #FF8532;
-                margin-bottom: 0;
-            }
-            .download--links {
-                display: table;
-                .file {
-                    width: 38px;
-                    display: inline-block;
-                    margin: 5px 2px 0 0;
-                    .file-icon {
-                        display: none;
-                    }
-                    .file-size {
-                        display: none;
-                    }
-                    .file-link {
-                        background-color: #fff;
-                        border: 1px solid #FF8532;
-                        height: 38px;
-                        border-radius: 50%;
-                        -moz-border-radius: 50%;
-                        -webkit-border-radius: 50%;
-                        width: 38px;
-                        text-align: center;
-                        a {
-                            text-decoration: none;
-                            color: #FF8532;
-                            font-size: 12px;
-                            font-family: "ubuntubold", Arial, sans-serif;
-                        }
-                    }
-                }
-            }
-        }
+    .taxonomy-term--type-produto:hover, .node--type-produto:hover {
+        border: 2px solid #FF8532;
     }
 }
-
-
-
-@media (min-width: 992px) {
-    .view-catalogos {
-        // .views-col {
-        //     width: 33% !important;
-        // }
-    }
-}
-
 
 @media (min-width: 768px) {
-    .view-catalogos {
-        .node--type-catalogo {
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            -webkit-transition: border-color .3s ease;
-            transition: border-color .3s ease;
+    .view-categoria-produtos, .view-produtos {
+        .taxonomy-term--type-produto, .node--type-produto{
+            min-height: 340px;
         }
     }
 }
 
+// Produto - Conteudo
+.produto { 
+    .nav-tabs {
+        ul li a {
+            font-family: "ubuntubold", Arial, sans-serif;
+            color: #95989A;
+            font-size: 16px;
+        }
+    }
+    .field--name-field-produto-instrucoes, .field--type-text-with-summary {
+        .field--label {
+            font-family: "ubunturegular", Arial, sans-serif;
+            color: #000000;
+            font-size: 24px;
+        }
+        .field--item {
+            font-family: "ubunturegular", Arial, sans-serif;
+            color: #000000;
+            font-size: 14px;
+        }
+    }
+    .field--name-field-video-titulo {
+        font-family: "ubuntubold", Arial, sans-serif;
+        color: #000000;
+        font-size: 24px;
+    }
+}
 .breadcrumb {
     background-color: transparent;
     margin-top: 80px;

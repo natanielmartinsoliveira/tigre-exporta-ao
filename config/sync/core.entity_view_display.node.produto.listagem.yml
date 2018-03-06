@@ -47,7 +47,7 @@ third_party_settings:
           ds_content: div
         outer_wrapper: div
         attributes: ''
-        link_attribute: ''
+        link_attribute: content
         link_custom: ''
         classes:
           layout_class: {  }
@@ -62,9 +62,9 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          link: true
           wrapper: h2
           class: ''
+          link: false
         ft:
           id: expert
           settings:
