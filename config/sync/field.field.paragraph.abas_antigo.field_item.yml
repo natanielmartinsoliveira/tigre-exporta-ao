@@ -1,0 +1,67 @@
+uuid: de1c5c72-2f42-431f-b5e5-55ed4fe433af
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item
+    - paragraphs.paragraphs_type.abas_an_item_
+    - paragraphs.paragraphs_type.abas_antigo
+  module:
+    - entity_reference_revisions
+id: paragraph.abas_antigo.field_item
+field_name: field_item
+entity_type: paragraph
+bundle: abas_antigo
+label: Item
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      abas_an_item_: abas_an_item_
+    target_bundles_drag_drop:
+      abas_antigo:
+        weight: 13
+        enabled: false
+      abas:
+        weight: 14
+        enabled: false
+      abas_item:
+        weight: 15
+        enabled: false
+      abas_an_item_:
+        enabled: true
+        weight: 16
+      bloco_de_enderecos:
+        weight: 16
+        enabled: false
+      canal_de_atendimento:
+        weight: 17
+        enabled: false
+      cta_2_colunas:
+        weight: 18
+        enabled: false
+      cta_centralizado:
+        weight: 19
+        enabled: false
+      imagem_c_texto:
+        weight: 20
+        enabled: false
+      localidade_da_unidade:
+        weight: 21
+        enabled: false
+      produto_banners:
+        weight: 22
+        enabled: false
+      texto:
+        weight: 23
+        enabled: false
+      unidades:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

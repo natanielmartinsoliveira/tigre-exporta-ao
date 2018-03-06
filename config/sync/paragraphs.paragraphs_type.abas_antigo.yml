@@ -1,0 +1,9 @@
+uuid: b98ef24e-816a-4aa8-aba1-6eaae846b3ce
+langcode: pt-br
+status: true
+dependencies: {  }
+id: abas_antigo
+label: 'Abas Antigo'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

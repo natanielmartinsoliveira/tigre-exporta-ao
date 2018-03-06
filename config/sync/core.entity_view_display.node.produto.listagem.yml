@@ -28,13 +28,12 @@ dependencies:
     - field.field.node.produto.field_texto_tecnico
     - field.field.node.produto.field_titulo_especificacao
     - field.field.node.produto.field_uc_product_image
+    - field.field.node.produto.field_uc_product_image_url
     - field.field.node.produto.field_video
     - field.field.node.produto.field_video_titulo
-    - image.style.produto_thumbnail_200x
     - node.type.produto
   module:
     - ds
-    - image
     - user
 third_party_settings:
   ds:
@@ -54,7 +53,7 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_uc_product_image
+        - field_uc_product_image_url
         - node_title
     fields:
       node_title:
@@ -98,44 +97,13 @@ targetEntityType: node
 bundle: produto
 mode: listagem
 content:
-  field_uc_product_image:
+  field_uc_product_image_url:
+    type: basic_string
     weight: 0
-    label: hidden
-    settings:
-      image_style: produto_thumbnail_200x
-      image_link: content
-    third_party_settings:
-      ds:
-        ds_limit: '1'
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi: false
-            fi-def-at: false
-    type: image
     region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   body: true
   field_desenho_tecnico: true
@@ -160,6 +128,7 @@ hidden:
   field_taxonomy_catalog: true
   field_texto_tecnico: true
   field_titulo_especificacao: true
+  field_uc_product_image: true
   field_video: true
   field_video_titulo: true
   langcode: true

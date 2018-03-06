@@ -1,0 +1,49 @@
+uuid: 47d88e5b-6051-4b12-9c87-660b74926485
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.abas_antigo.field_conteudo
+    - field.field.paragraph.abas_antigo.field_item
+    - field.field.paragraph.abas_antigo.field_titulo
+    - paragraphs.paragraphs_type.abas_antigo
+  module:
+    - paragraphs
+    - text
+id: paragraph.abas_antigo.default
+targetEntityType: paragraph
+bundle: abas_antigo
+mode: default
+content:
+  field_conteudo:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_item:
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_titulo:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

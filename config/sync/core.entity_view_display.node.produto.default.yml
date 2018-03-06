@@ -27,6 +27,7 @@ dependencies:
     - field.field.node.produto.field_texto_tecnico
     - field.field.node.produto.field_titulo_especificacao
     - field.field.node.produto.field_uc_product_image
+    - field.field.node.produto.field_uc_product_image_url
     - field.field.node.produto.field_video
     - field.field.node.produto.field_video_titulo
     - node.type.produto
@@ -235,6 +236,13 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_uc_product_image_url:
+    weight: 129
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_video:
     weight: 126

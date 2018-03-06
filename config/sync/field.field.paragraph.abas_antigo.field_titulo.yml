@@ -1,0 +1,19 @@
+uuid: 2ac3c045-3dd8-4daf-a0b3-8754b084510f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.abas_antigo
+id: paragraph.abas_antigo.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: abas_antigo
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

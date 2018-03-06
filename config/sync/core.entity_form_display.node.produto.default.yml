@@ -27,6 +27,7 @@ dependencies:
     - field.field.node.produto.field_texto_tecnico
     - field.field.node.produto.field_titulo_especificacao
     - field.field.node.produto.field_uc_product_image
+    - field.field.node.produto.field_uc_product_image_url
     - field.field.node.produto.field_video
     - field.field.node.produto.field_video_titulo
     - image.style.thumbnail
@@ -83,6 +84,7 @@ third_party_settings:
       region: content
     group_imagens:
       children:
+        - field_uc_product_image_url
         - field_video_titulo
         - field_video
         - field_produto_banners
@@ -302,7 +304,7 @@ content:
     region: content
   field_produto_banners:
     type: entity_reference_paragraphs
-    weight: 35
+    weight: 3
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -382,21 +384,29 @@ content:
     type: string_textfield
     region: content
   field_uc_product_image:
-    weight: 36
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
+  field_uc_product_image_url:
+    weight: 38
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
   field_video:
-    weight: 34
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
     region: content
   field_video_titulo:
-    weight: 33
+    weight: 1
     settings:
       size: 60
       placeholder: ''

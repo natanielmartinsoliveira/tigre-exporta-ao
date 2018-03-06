@@ -1,0 +1,55 @@
+uuid: 60bbc693-7aa0-4eb8-b8b7-51a329ce2ac5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.abas_an_item_.field_imagem
+    - field.field.paragraph.abas_an_item_.field_link
+    - field.field.paragraph.abas_an_item_.field_texto
+    - field.field.paragraph.abas_an_item_.field_titulo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.abas_an_item_
+  module:
+    - image
+    - link
+id: paragraph.abas_an_item_.default
+targetEntityType: paragraph
+bundle: abas_an_item_
+mode: default
+content:
+  field_imagem:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_texto:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_titulo:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

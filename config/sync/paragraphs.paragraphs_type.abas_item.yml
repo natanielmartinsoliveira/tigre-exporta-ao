@@ -3,7 +3,7 @@ langcode: pt-br
 status: true
 dependencies: {  }
 id: abas_item
-label: 'Abas - Item'
+label: 'Cards - Item'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

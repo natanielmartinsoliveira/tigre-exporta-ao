@@ -1,0 +1,9 @@
+uuid: 19b541dd-cb6c-4c56-92cd-88dde082b534
+langcode: pt-br
+status: true
+dependencies: {  }
+id: abas_an_item_
+label: 'Abas Antigo Item '
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

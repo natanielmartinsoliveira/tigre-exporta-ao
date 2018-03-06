@@ -1,0 +1,19 @@
+uuid: 9ab111b4-0a42-48db-a157-568d295d110e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto
+    - paragraphs.paragraphs_type.abas_an_item_
+id: paragraph.abas_an_item_.field_texto
+field_name: field_texto
+entity_type: paragraph
+bundle: abas_an_item_
+label: Texto
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

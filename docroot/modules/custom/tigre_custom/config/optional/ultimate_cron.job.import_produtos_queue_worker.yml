@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - tigre_custom
+title: 'Import Produtos Tigre Queue Worker'
+id: tigre_custom_queue_worker
+module: tigre_custom
+callback: tigre_custom_queue_import_produto_cronjob
