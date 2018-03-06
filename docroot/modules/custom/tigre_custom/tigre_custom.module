@@ -1,6 +1,6 @@
 <?php
 
-use Drupal\tigre_custom\Rest\TigreRestService;
+use \Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_preprocess_HOOK().
@@ -60,67 +60,6 @@ function tigre_custom_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
     }
     if ($form_id == 'contact_message_newsletter_form') {
       $form['actions']['submit']['#value'] = t('Enviar');
-  }
-
-}
-
-/**
- * Implements hook_cronapi().
- */
-function tigre_custom_cronapi() {
-  $items = array();
-  $items['_tigre_custom_import_produto'] = array();
-  return $items;
-}
-
-/*function tigre_custom_cron() {
-  tigre_list_products();
-}*/
-
-function tigre_list_products_finished() {
-
-}
-
-function tigre_custom_queue_import_produto_cronjob() {
-
-  /** @var QueueInterface $queue */
-  $queue = \Drupal::queue('tigre_custom_queue_worker');
-
-  /** @var TigreRestService $tigre_service */
-  $tigre_service = new TigreRestService();
-  $tigre_service->setHost("http://34.193.90.181");
-  //$tigre_service->setHost("https://www.tigre.com.br");
-  $tigre_service->setUsername("lucas");
-  $tigre_service->setPassword('102030');
-  $produtos = $tigre_service->getProducts();
-
-  foreach ($produtos as $nid => $produto) {
-    $produto_language = $produto['pt-br'];
-    $detail = $tigre_service->getDetailProduct($produto_language['url']);
-    $data['detail'] = $detail;
-    $queue->createItem($data);
-  }
-}
-
-
-function tigre_list_products() {
-  /** @var TigreRestService $tigre_service */
-  $tigre_service = new TigreRestService();
-  $tigre_service->setHost("http://34.193.90.181");
-  //$tigre_service->setHost("https://www.tigre.com.br");
-  $tigre_service->setUsername("lucas");
-  $tigre_service->setPassword('102030');
-  $produtos = $tigre_service->getProducts();
-
-  foreach ($produtos as $nid => $produto) {
-
-    $produto_language = $produto['pt-br'];
-    $detail = $tigre_service->getDetailProduct($produto_language['url']);
-
-
-    //die();
-
-
   }
 
 }
