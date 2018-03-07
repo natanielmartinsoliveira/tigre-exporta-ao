@@ -11,7 +11,7 @@ dependencies:
     - tigre
 third_party_settings:
   block_class:
-    classes: 'col-xs-12 col-sm-4'
+    classes: 'col-xs-12 col-sm-3'
 id: contatoexportacaorodape
 theme: tigre
 region: footer

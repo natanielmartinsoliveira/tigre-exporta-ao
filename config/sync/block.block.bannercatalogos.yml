@@ -21,7 +21,7 @@ provider: null
 plugin: 'block_content:1e1f198c-ab33-47e3-908f-e57de706cd2d'
 settings:
   id: 'block_content:1e1f198c-ab33-47e3-908f-e57de706cd2d'
-  label: 'Banner Catálogos'
+  label: 'Banner Materiais Técnicos'
   provider: block_content
   label_display: '0'
   status: true
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/catalogos/*\r\n/catalogos\r\n/catalogo/*"
+    pages: "/materiais-tecnicos/*\r\nen/technical-materials/*\r\nes/materiales-tecnicos/*\r\nfr/materiaux-techniques/*\r\n/materiais-tecnicos\r\nen/technical-materials\r\nes/materiales-tecnicos\r\nfr/materiaux-techniques\r\n/material-tecnico/*\r\nen/technical-material/*\r\nes/material-tecnico/*\r\nfr/materiel-technique/*"
     negate: false
     context_mapping: {  }

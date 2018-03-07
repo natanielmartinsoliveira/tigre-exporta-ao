@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/contato\r\n"
+    pages: "/contato\r\nen/contact\r\nes/contacto\r\nfr/contacter\r\n"
     negate: false
     context_mapping: {  }

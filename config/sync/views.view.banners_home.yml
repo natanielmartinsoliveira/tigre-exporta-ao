@@ -112,6 +112,8 @@ display:
                 weight: '1'
                 hide_on_single_slide: '1'
                 type: views_slideshow_pager_bullets
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
                 views_slideshow_pager_fields:
                   views_slideshow_pager_fields_fields:
                     title: 0
@@ -134,6 +136,8 @@ display:
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_pager_bullets
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
                 views_slideshow_pager_fields:
                   views_slideshow_pager_fields_fields:
                     title: 0

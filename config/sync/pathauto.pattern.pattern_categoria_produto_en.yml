@@ -1,0 +1,34 @@
+uuid: 9bfefc77-854f-41b1-a942-51a2fb54fb36
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - ctools
+    - language
+    - taxonomy
+id: pattern_categoria_produto_en
+label: 'Pattern Categoria Produto - EN'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'products/[term:parents:first]/[term:parent:name]/[term:name]'
+selection_criteria:
+  e4ca6682-de78-420b-92c6-9dd2b8c88479:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      produto: produto
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: e4ca6682-de78-420b-92c6-9dd2b8c88479
+  b4615423-6fd5-432b-bcb6-7aeead4fee0b:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    uuid: b4615423-6fd5-432b-bcb6-7aeead4fee0b
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Idioma

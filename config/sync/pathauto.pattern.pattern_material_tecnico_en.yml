@@ -1,0 +1,34 @@
+uuid: 46b3f93f-9e20-4faf-9322-c1854a8811a8
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - ctools
+    - language
+    - taxonomy
+id: pattern_material_tecnico_en
+label: 'Pattern Material Técnico - EN'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'technical-materials/[term:parent:name]/[term:name]'
+selection_criteria:
+  26ab3f4e-e98d-41d8-a04b-608952680ea8:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      catalogo: catalogo
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 26ab3f4e-e98d-41d8-a04b-608952680ea8
+  942b60cb-e82d-4fbc-92a2-f2a95f909b0f:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    uuid: 942b60cb-e82d-4fbc-92a2-f2a95f909b0f
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Idioma

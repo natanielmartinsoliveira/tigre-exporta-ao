@@ -7,26 +7,26 @@ dependencies:
     - language
     - taxonomy
 id: patterns_catalogo
-label: 'Pattern Catalogo'
+label: 'Pattern Material Técnico'
 type: 'canonical_entities:taxonomy_term'
-pattern: 'catalogos/[term:name]'
+pattern: 'materiais-tecnicos/[term:parent:name]/[term:name]'
 selection_criteria:
-  a5a57266-2c19-4446-a2d7-7c827a9d26db:
+  e55851c0-6660-4ce0-a17b-176b9316d4a4:
     id: 'entity_bundle:taxonomy_term'
     bundles:
       catalogo: catalogo
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: a5a57266-2c19-4446-a2d7-7c827a9d26db
-  cdfac26f-9664-4504-9ffe-97714c9d9703:
+    uuid: e55851c0-6660-4ce0-a17b-176b9316d4a4
+  83c81703-c378-4f54-bb1e-17f8f37c61b9:
     id: language
     langcodes:
       pt-br: pt-br
     negate: false
     context_mapping:
       language: 'taxonomy_term:langcode:language'
-    uuid: cdfac26f-9664-4504-9ffe-97714c9d9703
+    uuid: 83c81703-c378-4f54-bb1e-17f8f37c61b9
 selection_logic: and
 weight: -10
 relationships:

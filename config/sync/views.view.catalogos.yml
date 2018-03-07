@@ -189,7 +189,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Catálogos
+      title: 'Materiais Técnicos'
       header: {  }
       footer: {  }
       empty: {  }
@@ -271,7 +271,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: catalogos
+      path: materiais-tecnicos
     cache_metadata:
       max-age: -1
       contexts:

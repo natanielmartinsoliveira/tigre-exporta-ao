@@ -11,7 +11,7 @@ dependencies:
     - tigre
 third_party_settings:
   block_class:
-    classes: 'block-links col-xs-12 col-sm-8'
+    classes: 'block-links col-xs-12 col-sm-9'
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: tigre_footer
