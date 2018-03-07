@@ -90,10 +90,21 @@
       </div>
       {% endif %}
       
-        {# Breadcrumb #}
+      {# Breadcrumb #}
       {% if page.breadcrumb %}
         <div class="container">
-          {{ page.breadcrumb }}
+          <div class="breadcrumb--social">
+            {{ page.breadcrumb }}
+
+            <div class="share pull-right">
+              <span class="share--txt">COMPARTILHE</span>
+                <ul class="list-inline share--icons">
+                <li id="shareBtn"><a href="javascript:void(0)" class="icon-social icon-facebook" title="Facebook">Facebook</a></li>
+                <li><a href="https://twitter.com/intent/tweet?url=https://www.tigre.com.br/tubo-soldavel-6-m&text=Tubo Soldável 6 m" class="icon-social icon-twitter">Tweet</a></li>
+                <li><a href="javascript:void(window.open('https://plus.google.com/share?url='+encodeURIComponent(location), 'Google+','width=600,height=460,menubar=no,location=no,status=no'));" class="icon-social icon-gplus" data-tooltip-align="b,c" data-title="Tubo Soldável 6 m">Google Plus</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       {% endif %}
 

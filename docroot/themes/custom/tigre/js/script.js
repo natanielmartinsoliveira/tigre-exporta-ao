@@ -19,7 +19,7 @@
                     // $("#navbar-collapse .logo img").css({
                     //         'background': 'url(themes/custom/tigre/assets/images/logo-azul.png) no-repeat'
                     //     });
-                    //$("#navbar-collapse .logo img")[0].src = 'themes/custom/tigre/assets/images/logo-azul.png';
+                    $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/assets/images/logo-azul.png';
                     } else {
                     $('#navbar-collapse').css({
                         'background-color': 'transparent',
@@ -29,6 +29,7 @@
                         $(".menu--main li a").css({
                             'color': '#ffffff'
                     });
+                    $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/logo.svg';
                     }
                 });
             //}

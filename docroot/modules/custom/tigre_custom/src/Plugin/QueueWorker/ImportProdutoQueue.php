@@ -33,7 +33,7 @@ public function crateProduct($detail) {
   $node->set('uuid', $detail['uuid'][0]['value']);
 
   $node->set('title', $detail['title'][0]['value']);
-  $node->set('body', $detail['body'][0]['value']);
+  $node->set('body', array('format' => 'full_html', 'value' => $detail['body'][0]['value']) );
   
   if (!empty($detail['uc_product_image'])) {
     $node->set('field_uc_product_image_url', $detail['uc_product_image'][0]['url']);
@@ -42,7 +42,7 @@ public function crateProduct($detail) {
     $node->set('field_produto_chamada', $detail['field_produto_chamada'][0]['value']);
   }
   if (!empty($detail['field_produto_descricao'])) {
-    $node->set('field_produto_descricao', $detail['field_produto_descricao'][0]['value']);
+    $node->set('field_produto_descricao', array('format' => 'full_html', 'value' => $detail['field_produto_descricao'][0]['value']) );
   }
   if (!empty($detail['field_desenho_tecnico'])) {
     $node->set('field_desenho_tecnico', $detail['field_desenho_tecnico'][0]['value']);
@@ -54,7 +54,7 @@ public function crateProduct($detail) {
     $node->set('field_ficha_tecnica', $detail['field_ficha_tecnica'][0]['value']);
   }
   if (!empty($detail['field_produtos_instrucoes'])) {
-    $node->set('field_produto_instrucoes', $detail['field_produtos_instrucoes'][0]['value']);
+    $node->set('field_produto_instrucoes', array('format' => 'full_html', 'value' => $detail['field_produtos_instrucoes'][0]['value']) );
   }
   if (!empty($detail['field_keywords'])) {
     $node->set('field_keywords', $detail['field_keywords'][0]['value']);

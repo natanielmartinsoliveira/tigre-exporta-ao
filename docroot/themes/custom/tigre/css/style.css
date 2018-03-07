@@ -101,8 +101,8 @@ p {
     left: 0;
     width: 100%;
     height: 217px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 80, 141, 0.5)), to(rgba(125, 185, 232, 0)));
-    background: linear-gradient(to bottom, rgba(27, 80, 141, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#00418A), to(rgba(125, 185, 232, 0)));
+    background: linear-gradient(to bottom, #00418A 0%, rgba(125, 185, 232, 0) 100%);
     z-index: 1; } }
 @media (min-width: 768px) {
   #navbar:before {
@@ -110,10 +110,99 @@ p {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 140px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 80, 141, 0.5)), to(rgba(125, 185, 232, 0)));
-    background: linear-gradient(to bottom, rgba(27, 80, 141, 0.5) 0%, rgba(125, 185, 232, 0) 100%);
+    height: 170px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00418A), to(rgba(125, 185, 232, 0)));
+    background: linear-gradient(to bottom, #00418A 0%, rgba(125, 185, 232, 0) 100%);
     z-index: 1; } }
+.list-product-icons-row {
+  margin-bottom: 25px;
+  margin-top: 25px; }
+
+.list-product-icons:not(:first-child) {
+  border-left: 1px solid #ccc; }
+
+.list-product-icons .icon {
+  display: block;
+  margin-right: 15px;
+  width: 36px;
+  height: 52px; }
+
+.list-product-icons .icon-materia-prima {
+  background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/svg/icon_materia-prima.svg) no-repeat 0 0; }
+
+.list-product-icons .icon-presao {
+  background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/svg/icon_pressao.svg) no-repeat 0 0; }
+
+.list-product-icons .icon-norma {
+  background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/svg/icon_norma.svg) no-repeat 0 0; }
+
+.list-product-icons .icon-label {
+  display: table-cell;
+  height: 54px;
+  vertical-align: middle;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #2b2b2b;
+  line-height: 16px; }
+
+.list-product-icons .icon-destaque {
+  display: table-cell;
+  font-family: 'ubuntumedium';
+  font-size: 22px;
+  color: #0083ca;
+  line-height: 50px; }
+
+.breadcrumb--social {
+  margin-top: 88px; }
+
+.share {
+  display: block; }
+
+.share .share--txt {
+  float: left;
+  padding: 5px 10px;
+  color: #797979; }
+
+.share .share--icons {
+  float: right;
+  margin: 0;
+  padding: 0; }
+
+.list-inline {
+  list-style: none; }
+
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.share .share--icons li {
+  vertical-align: top; }
+
+.share .icon-social.icon-facebook {
+  width: 25px;
+  background-position: 7px 3px; }
+
+.share .icon-social {
+  -webkit-filter: brightness(100%) !important;
+          filter: brightness(100%) !important;
+  display: block;
+  font: 0/0 'a';
+  height: 27px;
+  color: transparent;
+  background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xicon_social-gray.png.pagespeed.ic.sJ1pQtY2xR.png) no-repeat 0 50%; }
+
+.share .icon-social.icon-twitter {
+  width: 26px;
+  background-position: -36px 3px; }
+
+.share .icon-social.icon-gplus {
+  width: 27px;
+  background-position: -88px 3px; }
+
+.pull-right {
+  float: right !important; }
+
 .menu-global {
   position: absolute;
   width: 100%;
@@ -290,6 +379,7 @@ p {
   z-index: 3; }
   #block-marcas .menu--marcas {
     position: absolute;
+    display: none;
     padding: 0 10px;
     background-color: rgba(42, 54, 83, 0.7);
     list-style: none; }
@@ -1227,29 +1317,101 @@ p {
 @media (min-width: 768px) {
   .view-categoria-produtos .taxonomy-term--type-produto, .view-categoria-produtos .node--type-produto, .view-produtos .taxonomy-term--type-produto, .view-produtos .node--type-produto {
     min-height: 340px; } }
-.produto .nav-tabs ul li a {
-  font-family: "ubuntubold", Arial, sans-serif;
-  color: #95989A;
-  font-size: 16px; }
-.produto .field--name-field-produto-instrucoes .field--label, .produto .field--type-text-with-summary .field--label {
-  font-family: "ubunturegular", Arial, sans-serif;
-  color: #000000;
-  font-size: 24px; }
-.produto .field--name-field-produto-instrucoes .field--item, .produto .field--type-text-with-summary .field--item {
-  font-family: "ubunturegular", Arial, sans-serif;
-  color: #000000;
-  font-size: 14px; }
-.produto .field--name-field-video-titulo {
-  font-family: "ubuntubold", Arial, sans-serif;
-  color: #000000;
-  font-size: 24px; }
+.block-views-blockproduto-banner-block-1 {
+  border-bottom: 1px solid #95989A;
+  height: 612px; }
+  .block-views-blockproduto-banner-block-1 .view-produto-banner {
+    margin-top: 200px; }
+    .block-views-blockproduto-banner-block-1 .view-produto-banner .group-left {
+      max-width: 432px; }
+    .block-views-blockproduto-banner-block-1 .view-produto-banner img {
+      float: right; }
+    .block-views-blockproduto-banner-block-1 .view-produto-banner h2 {
+      font-family: "ubunturegular", Arial, sans-serif;
+      color: #000000;
+      font-size: 50px; }
+    .block-views-blockproduto-banner-block-1 .view-produto-banner .field--name-field-sku .field--label, .block-views-blockproduto-banner-block-1 .view-produto-banner .field--name-field-sku .field--item {
+      font-family: "ubunturegular", Arial, sans-serif;
+      color: #000000;
+      font-size: 12px;
+      font-weight: normal; }
+    .block-views-blockproduto-banner-block-1 .view-produto-banner .field--name-field-produto-descricao .field--item p {
+      font-family: "ubunturegular", Arial, sans-serif;
+      color: #95989A;
+      font-size: 14px; }
+
+.produto {
+  margin-bottom: 40px; }
+  .produto .card-contato {
+    max-width: 240px;
+    min-height: 231px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 43px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 43px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 250px; }
+    .produto .card-contato h3 {
+      font-family: "ubunturegular", Arial, sans-serif;
+      color: #0083CA;
+      font-size: 28px;
+      margin-bottom: 25px; }
+    .produto .card-contato a {
+      background: #FF8532;
+      background-image: -webkit-gradient(linear, left top, right top, from(#FF8532), to(#FFA832));
+      background-image: linear-gradient(to right, #FF8532, #FFA832);
+      border-radius: 4px;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 14px 20px 14px 20px;
+      text-decoration: none;
+      border: 0; }
+  .produto .product--details {
+    margin-bottom: 60px; }
+  .produto .nav-tabs.nav {
+    margin-bottom: 50px; }
+  .produto .nav-tabs > li {
+    margin-right: 10px;
+    line-height: 1.4em;
+    font-size: 16px;
+    font-family: 'ubuntumedium'; }
+  .produto .nav-tabs > li.active a, .produto .nav-tabs > li.active a:hover, .produto .nav-tabs > li.active a:focus {
+    color: #00418a;
+    border: none;
+    border-bottom: 3px solid #00418a;
+    cursor: default; }
+  .produto .nav-tabs > li > a {
+    display: inline-block;
+    font-family: 'ubuntumedium';
+    line-height: 1.4em;
+    font-size: 16px;
+    padding: 13px 10px 5px 10px;
+    border: none; }
+  .produto .field--name-field-produto-instrucoes .field--label, .produto .field--type-text-with-summary .field--label {
+    font-family: "ubunturegular", Arial, sans-serif;
+    color: #000000;
+    font-size: 24px; }
+  .produto .field--name-field-produto-instrucoes .field--item, .produto .field--type-text-with-summary .field--item {
+    font-family: "ubunturegular", Arial, sans-serif;
+    color: #000000;
+    font-size: 14px; }
+  .produto .field--name-field-video-titulo {
+    font-family: "ubuntubold", Arial, sans-serif;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 18px; }
 
 .breadcrumb {
   background-color: transparent;
-  margin-top: 80px;
   padding: 8px 0px; }
   .breadcrumb li a {
     color: #fff; }
+
+.region-breadcrumb {
+  float: left; }
+
+.breadcrumb > .active {
+  color: #fff; }
 
 #block-catalogo-menu {
   display: none; }

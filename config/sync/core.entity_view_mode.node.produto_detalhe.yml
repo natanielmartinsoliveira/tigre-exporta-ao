@@ -1,0 +1,10 @@
+uuid: e9ebd029-58be-4dab-a4a4-77f253bf466a
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.produto_detalhe
+label: 'Produto Detalhe'
+targetEntityType: node
+cache: true

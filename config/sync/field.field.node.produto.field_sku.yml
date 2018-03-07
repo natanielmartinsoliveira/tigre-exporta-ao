@@ -9,7 +9,7 @@ id: node.produto.field_sku
 field_name: field_sku
 entity_type: node
 bundle: produto
-label: SKU
+label: Código
 description: ''
 required: true
 translatable: false

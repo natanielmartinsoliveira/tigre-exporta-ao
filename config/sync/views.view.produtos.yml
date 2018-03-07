@@ -5,11 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.listagem
     - node.type.produto
-    - taxonomy.vocabulary.produto
   module:
     - ds
     - node
-    - taxonomy
     - user
     - views_bootstrap
 id: produtos
@@ -175,49 +173,6 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        field_taxonomy_catalog_target_id:
-          id: field_taxonomy_catalog_target_id
-          table: node__field_taxonomy_catalog
-          field: field_taxonomy_catalog_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: 'not empty'
-          value: {  }
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: textfield
-          limit: true
-          vid: produto
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -287,7 +242,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -305,7 +259,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -326,7 +279,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

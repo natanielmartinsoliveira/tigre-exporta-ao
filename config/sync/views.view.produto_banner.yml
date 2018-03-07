@@ -3,15 +3,17 @@ langcode: pt-br
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.produto_detalhe
     - field.storage.node.body
     - field.storage.node.field_produto_banners
     - node.type.produto
   module:
+    - ds
     - entity_reference_revisions
     - node
     - text
     - user
-    - views_slideshow
+    - views_bootstrap
 id: produto_banner
 label: 'Produto - Banner'
 module: views
@@ -58,9 +60,36 @@ display:
           items_per_page: 5
           offset: 0
       style:
-        type: slideshow
+        type: views_bootstrap_grid
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          alignment: horizontal
+          columns: '1'
+          col_xs: col-xs-12
+          col_sm: col-sm-12
+          col_md: col-md-12
+          col_lg: col-lg-12
       row:
-        type: fields
+        type: 'ds_entity:node'
+        options:
+          relationship: none
+          view_mode: produto_detalhe
+          alternating_fieldset:
+            alternating: false
+            allpages: false
+            item_0: teaser
+            item_1: teaser
+            item_2: teaser
+            item_3: teaser
+            item_4: teaser
+          grouping_fieldset:
+            group: false
+            group_field: node_field_data|created
+            group_field_function: ''
+          advanced_fieldset:
+            advanced: false
       fields:
         title:
           id: title
