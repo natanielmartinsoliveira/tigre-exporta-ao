@@ -15,7 +15,7 @@ third_party_settings:
 id: catalogo
 theme: tigre
 region: sidebar_first
-weight: -17
+weight: 3
 provider: null
 plugin: 'system_menu_block:catalogo'
 settings:

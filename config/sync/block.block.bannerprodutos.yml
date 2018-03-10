@@ -16,7 +16,7 @@ third_party_settings:
 id: bannerprodutos
 theme: tigre
 region: header
-weight: 13
+weight: -14
 provider: null
 plugin: 'block_content:f5c4fb60-027c-49e9-a630-3284cb046bbd'
 settings:

@@ -16,7 +16,7 @@ third_party_settings:
 id: bannertermosdeusoepoliticadeprivacidade
 theme: tigre
 region: header
-weight: 11
+weight: -15
 provider: null
 plugin: 'block_content:08259cec-17c6-4bef-af8f-04603960ea46'
 settings:

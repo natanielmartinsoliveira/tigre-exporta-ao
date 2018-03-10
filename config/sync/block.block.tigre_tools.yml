@@ -13,7 +13,7 @@ _core:
 id: tigre_tools
 theme: tigre
 region: sidebar_first
-weight: -14
+weight: 7
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

@@ -16,7 +16,7 @@ third_party_settings:
 id: banneratigre
 theme: tigre
 region: header
-weight: 5
+weight: -18
 provider: null
 plugin: 'block_content:039eaae3-e8e9-4c62-ac69-0e00e695c093'
 settings:

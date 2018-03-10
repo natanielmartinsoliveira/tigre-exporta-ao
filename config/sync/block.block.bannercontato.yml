@@ -16,7 +16,7 @@ third_party_settings:
 id: bannercontato
 theme: tigre
 region: header
-weight: 9
+weight: -16
 provider: null
 plugin: 'block_content:2f146445-b9b3-4208-b9e7-dc930ba617b4'
 settings:

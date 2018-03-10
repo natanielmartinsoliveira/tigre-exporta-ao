@@ -16,7 +16,7 @@ third_party_settings:
 id: bannercatalogos
 theme: tigre
 region: header
-weight: 15
+weight: -13
 provider: null
 plugin: 'block_content:1e1f198c-ab33-47e3-908f-e57de706cd2d'
 settings:

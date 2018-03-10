@@ -1,0 +1,22 @@
+langcode: pt-br
+_core:
+  default_config_hash: 2lo0hIx3RV2AgnE1fkdPLRQcYWGamMyouBoe2OiYk24
+id: search_block
+uuid: 759f2cc5-9ce1-4cf4-aea5-0d5969602d70
+label: 'Search Block'
+selector: ''
+status: true
+minChar: 1
+autoSubmit: true
+autoRedirect: true
+maxSuggestions: 5
+noResultLabel: 'No results found for [search-phrase]. Click to perform full search.'
+noResultValue: '[search-phrase]'
+noResultLink: ''
+moreResultsLabel: 'View all results for [search-phrase].'
+moreResultsValue: '[search-phrase]'
+moreResultsLink: ''
+source: /produtos
+theme: basic-blue.css
+editable: true
+deletable: false
