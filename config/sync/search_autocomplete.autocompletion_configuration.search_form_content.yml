@@ -2,14 +2,14 @@ langcode: pt-br
 _core:
   default_config_hash: GbwamktrK8GXKxWeEk8m8o_PWXbPj2vOiFqIANDYIEc
 id: search_form_content
-uuid: a5193ee4-aec1-4fee-a424-ce328350ceb1
+uuid: 1624a63c-cd8f-4947-9800-722d87b624e9
 label: 'Search Form (content tab)'
 selector: ''
-status: true
-minChar: 1
+status: false
+minChar: 3
 autoSubmit: true
 autoRedirect: true
-maxSuggestions: 5
+maxSuggestions: 10
 noResultLabel: 'No results found containing the word [search-phrase].'
 noResultValue: '[search-phrase]'
 noResultLink: ''

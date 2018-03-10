@@ -1,4 +1,4 @@
-uuid: 3c409835-9069-475f-b250-3198b0c4e9b0
+uuid: e088761f-4a6b-40a9-b03c-e040208c3ff0
 langcode: pt-br
 status: true
 dependencies:
@@ -10,8 +10,8 @@ dependencies:
     - user
 _core:
   default_config_hash: xL9Hk4AQHs1h4kuPUWFrapn1sZbCxsV3B7omkB1FhMg
-id: produtos_autocompletion_callbacks
-label: 'Produtos Autocompletion Callbacks'
+id: views_produtos_callbacks
+label: 'Views Produtos Callbacks'
 module: views
 description: 'This vew is used to store default nodes autocompletion callbacks for Search Autocomplete module.'
 tag: ''
@@ -66,10 +66,10 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ anterior'
-            next: 'próximo ›'
-            first: '« início'
-            last: 'fim »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           quantity: 9
       style:
         type: default
@@ -578,7 +578,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      path: callback/produtos
+      path: callback/json_produtos
       style:
         type: callback_serializer
         options:

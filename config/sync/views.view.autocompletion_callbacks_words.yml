@@ -1,4 +1,4 @@
-uuid: 6aba47be-ee68-4042-9622-75d15e899cfe
+uuid: d2a6b7ad-1541-44b4-adff-02046aabfa65
 langcode: pt-br
 status: true
 dependencies:
@@ -65,10 +65,10 @@ display:
             offset: false
             offset_label: Offset
           tags:
-            previous: '‹ anterior'
-            next: 'próximo ›'
-            first: '« início'
-            last: 'fim »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           quantity: 9
       style:
         type: default
