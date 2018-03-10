@@ -1,10 +1,8 @@
 langcode: pt-br
-_core:
-  default_config_hash: 2lo0hIx3RV2AgnE1fkdPLRQcYWGamMyouBoe2OiYk24
-id: search_block
-uuid: c6b17dfa-404b-4e68-b617-f67e0bee522b
-label: 'Search Block'
-selector: ''
+id: autocompletion_callbacks_for_produtos
+uuid: 5670f13d-05dd-435e-9045-9f1e7f067e56
+label: 'Autocompletion Callbacks for Produtos'
+selector: edit-keys
 status: true
 minChar: 3
 autoSubmit: true
@@ -19,4 +17,4 @@ moreResultsLink: ''
 source: 'views_produtos_callbacks::nodes_autocompletion_callback'
 theme: basic-blue.css
 editable: true
-deletable: false
+deletable: true

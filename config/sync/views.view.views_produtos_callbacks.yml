@@ -1,16 +1,17 @@
-uuid: d2a6b7ad-1541-44b4-adff-02046aabfa65
+uuid: e088761f-4a6b-40a9-b03c-e040208c3ff0
 langcode: pt-br
 status: true
 dependencies:
+  config:
+    - node.type.produto
   module:
     - node
-    - search
     - search_autocomplete
     - user
 _core:
-  default_config_hash: almUtDut35gJXJM7YuIQm_98O79VaOtzstIkPmYJ9co
-id: autocompletion_callbacks_words
-label: 'Words Autocompletion Callbacks'
+  default_config_hash: xL9Hk4AQHs1h4kuPUWFrapn1sZbCxsV3B7omkB1FhMg
+id: views_produtos_callbacks
+label: 'Views Produtos Callbacks'
 module: views
 description: 'This vew is used to store default nodes autocompletion callbacks for Search Autocomplete module.'
 tag: ''
@@ -446,24 +447,24 @@ display:
           expose:
             operator: ''
           group: 1
-        keys:
-          id: keys
-          table: node_search_index
-          field: keys
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          operator: optional
+          operator: contains
           value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: keys_op
-            label: 'Search Keywords'
+            operator_id: title_op
+            label: Title
             description: ''
             use_operator: false
-            operator: keys_op
-            identifier: keys
+            operator: title_op
+            identifier: title
             required: false
             remember: false
             multiple: false
@@ -483,20 +484,64 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: search_keywords
-      sorts:
-        score:
-          id: score
-          table: node_search_index
-          field: score
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+        type:
+          id: type
+          table: node_field_data
+          field: type
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
+          operator: in
+          value:
+            produto: produto
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
-          plugin_id: search_score
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
       header: {  }
       footer: {  }
       empty: {  }
@@ -512,40 +557,7 @@ display:
           entity_type: node
           entity_field: uid
           plugin_id: standard
-      arguments:
-        keys:
-          id: keys
-          table: node_search_index
-          field: keys
-          relationship: none
-          group_type: group
-          admin_label: ''
-          default_action: ignore
-          exception:
-            value: all
-            title_enable: false
-            title: All
-          title_enable: false
-          title: ''
-          default_argument_type: fixed
-          default_argument_options:
-            argument: ''
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            items_per_page: 25
-            override: false
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: false
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          plugin_id: search
+      arguments: {  }
       display_extenders: {  }
     cache_metadata:
       contexts:
@@ -558,15 +570,15 @@ display:
       cacheable: false
       max-age: -1
       tags: {  }
-  words_autocompletion_callback:
+  nodes_autocompletion_callback:
     display_plugin: autocompletion_callback
-    id: words_autocompletion_callback
-    display_title: 'Words Autocompletion Callback'
+    id: nodes_autocompletion_callback
+    display_title: 'Nodes Autocompletion Callback'
     position: 1
     display_options:
       display_extenders: {  }
       display_description: ''
-      path: callback/words
+      path: callback/json_produtos
       style:
         type: callback_serializer
         options:
@@ -575,6 +587,22 @@ display:
               field: type
           input_label: title
           input_link: path
+      row:
+        type: callback_fields
+        options:
+          field_options:
+            title:
+              alias: ''
+            name:
+              alias: ''
+            created:
+              alias: ''
+            type:
+              alias: ''
+            path:
+              alias: ''
+            nothing:
+              alias: created
     cache_metadata:
       contexts:
         - 'languages:language_content'
