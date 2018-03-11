@@ -1,11 +1,16 @@
 uuid: 2f8ecf48-c364-4839-8e23-671a7bc748f9
 langcode: pt-br
-status: false
+status: true
 dependencies:
   module:
+    - block_class
     - search
+    - system
   theme:
     - tigre
+third_party_settings:
+  block_class:
+    classes: ''
 _core:
   default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
 id: tigre_search
@@ -19,4 +24,9 @@ settings:
   label: Buscar
   provider: search
   label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

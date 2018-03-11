@@ -1,0 +1,24 @@
+uuid: 5a2ec5de-76db-4cf5-867c-adff6bb2b723
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - block_class
+    - search
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: formulariodebusca
+theme: tigre
+region: header
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulário de busca'
+  provider: search
+  label_display: '0'
+visibility: {  }

@@ -13,7 +13,7 @@ third_party_settings:
 id: dropdownlanguageselector
 theme: tigre
 region: menu_global
-weight: -19
+weight: -20
 provider: null
 plugin: dropdown_language
 settings:
