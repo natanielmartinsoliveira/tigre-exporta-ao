@@ -30,10 +30,52 @@
       %}
       {% if menu_level == 0 and item.is_expanded and item.below %}
         <li{{ item.attributes.addClass(item_classes) }}>
-        <a href="{{ item.url }}" class="dropdown-toggle" data-toggle="dropdown">{{ item.title }} <span class="caret"></span></a>
+        <a href="{{ item.url }}" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-export"></i> 
+          <svg width="11px" height="7px" viewBox="0 0 11 7" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                <g transform="translate(-1354.000000, -14.000000)" stroke="#FFFFFF" stroke-width="2">
+                <g transform="translate(0.000000, -4.000000)">
+                <g>
+                <g transform="translate(240.000000, 15.000000)">
+                <g transform="translate(1000.000000, 0.000000)">
+                <g transform="translate(116.000000, 5.000000)">
+                <path d="M0.291666667,0.285714286 L3.51323016,3.44153159"></path>
+                <path d="M6.83796296,0.285714286 L3.61639946,3.44153159"></path>
+                </g>
+                </g>
+                </g>
+                </g>
+                </g>
+                </g>
+                </g>
+                </svg>
+        </a>
       {% else %}
         <li{{ item.attributes.addClass(item_classes) }}>
-        {{ link(item.title, item.url) }}
+        <a href="{{ item.url }}">
+        {% set menuUri %}{{ item.url }}{% endset %}
+        {% if menuUri == 'https://www.tigre.com.br' %}
+          <i class="icon-brasil"></i>
+        {% elseif menuUri == 'http://www.tigre.com.ar' %}
+          <i class="icon-argentina"></i>
+        {% elseif menuUri == 'http://www.tigre.com.bo' %}
+          <i class="icon-bolivia"></i>
+        {% elseif menuUri == 'http://www.tigre.cl/' %}
+          <i class="icon-chile"></i>
+        {% elseif menuUri == 'http://www.tigre.com.co/' %}
+          <i class="icon-colombia"></i>
+        {% elseif menuUri == 'http://www.tigre.com.ec/' %}
+          <i class="icon-equador"></i>
+        {% elseif menuUri == 'http://www.tigre.com.py/' %}
+          <i class="icon-paraguai"></i>
+        {% elseif menuUri == 'http://www.tigre.pe/' %}
+          <i class="icon-peru"></i>
+        {% elseif menuUri == 'http://www.tigre.com.uy/' %}
+          <i class="icon-uruguai"></i>
+        {% elseif menuUri == 'http://www.tigreadsusa.com/' %}
+          <i class="icon-tigreads"></i>
+        {% endif %}
+        {{ item.title }}</a>
       {% endif %}
       {% if item.below %}
         {{ _self.menu_links(item.below, attributes.removeClass(classes), menu_level + 1, classes) }}

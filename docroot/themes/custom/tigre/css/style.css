@@ -423,7 +423,7 @@ p {
         line-height: 40px;
         font-size: 10px;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.6);
+        color: #fff;
         cursor: pointer;
         -webkit-transition: 0.2s all;
         transition: 0.2s all;
@@ -557,11 +557,47 @@ p {
     border-radius: 0;
     left: auto;
     right: 0;
-    z-index: 11000; }
+    z-index: 11000;
+    margin-top: 0; }
+    #block-sitesdogrupo .dropdown-menu li {
+      margin-bottom: 10px; }
+      #block-sitesdogrupo .dropdown-menu li a:hover {
+        color: #FE860C; }
   #block-sitesdogrupo .dropdown-toggle {
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 9px 15px; }
+  #block-sitesdogrupo .dropdown-toggle:focus, #block-sitesdogrupo .dropdown-toggle:hover {
+    background-color: transparent; }
   #block-sitesdogrupo a {
     text-transform: uppercase; }
+  #block-sitesdogrupo i {
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-bottom: -3px;
+    background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xicon_flags.png.pagespeed.ic.j46k5HYJ_7.webp) no-repeat 0 0; }
+  #block-sitesdogrupo .icon-brasil {
+    background-position: 0 0; }
+  #block-sitesdogrupo .icon-argentina {
+    background-position: 0 -30px; }
+  #block-sitesdogrupo .icon-bolivia {
+    background-position: 0 -60px; }
+  #block-sitesdogrupo .icon-chile {
+    background-position: 0 -90px; }
+  #block-sitesdogrupo .icon-colombia {
+    background-position: 0 -120px; }
+  #block-sitesdogrupo .icon-equador {
+    background-position: 0 -150px; }
+  #block-sitesdogrupo .icon-paraguai {
+    background-position: 0 -180px; }
+  #block-sitesdogrupo .icon-peru {
+    background-position: 0 -210px; }
+  #block-sitesdogrupo .icon-uruguai {
+    background-position: 0 -240px; }
+  #block-sitesdogrupo .icon-tigreads {
+    background-position: 0 -300px; }
+  #block-sitesdogrupo .icon-export {
+    background-position: 0 -330px; }
 
 #block-sitesdogrupo:hover, .menu--sites-do-grupo:hover {
   color: #FE860C;
@@ -583,6 +619,10 @@ p {
     border-radius: 0; }
     #block-dropdownlanguageselector .dropdown-menu a {
       color: #797979; }
+  #block-dropdownlanguageselector .active-language {
+    padding: 6px 0; }
+  #block-dropdownlanguageselector .dropdown-toggle {
+    padding-bottom: 8px; }
 
 #navbar-collapse {
   padding-top: 8px;
