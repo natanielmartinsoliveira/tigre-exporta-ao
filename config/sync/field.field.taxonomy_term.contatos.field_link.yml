@@ -1,0 +1,19 @@
+uuid: 61e7548d-8261-40ac-b73e-7540c2c3923b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_link
+    - taxonomy.vocabulary.contatos
+id: taxonomy_term.contatos.field_link
+field_name: field_link
+entity_type: taxonomy_term
+bundle: contatos
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

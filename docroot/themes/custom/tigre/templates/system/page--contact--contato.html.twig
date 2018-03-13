@@ -156,7 +156,7 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          {% if page.content.contatoexportacao %}
+          {% if page.content.views_block__exportacao_block_1 %}
             <div class="container page--contact--content--region">
               <div class="row">
                 <div class="col-xs-12 col-sm-8">
@@ -166,7 +166,7 @@
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
-                  {{ page.content.contatoexportacao }}
+                  {{ page.content.views_block__exportacao_block_1 }}
                 </div>
               </div>
             </div>
@@ -215,7 +215,11 @@
         <div id="footer-middle">
           <div class="container">
             <div class="row">
-              {{ page.footer }}
+              {{ page.footer.tigre_footer }}
+              <div class="col-xs-12 col-sm-3">
+                {{ page.footer.contato }}
+                {{ page.footer.views_block__contato_rodape_block_1 }}
+              </div>
             </div>
           </div>
         </div>

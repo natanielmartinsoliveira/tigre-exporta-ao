@@ -1,29 +1,30 @@
-uuid: 2f8ecf48-c364-4839-8e23-671a7bc748f9
+uuid: 74bee263-28bf-4b13-a0c5-93d97fe7456b
 langcode: pt-br
 status: true
 dependencies:
+  config:
+    - system.menu.categoria-busca
   module:
     - block_class
-    - search
     - system
   theme:
     - tigre
 third_party_settings:
   block_class:
     classes: ''
-_core:
-  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
-id: tigre_search
+id: categoriabusca
 theme: tigre
 region: search
-weight: -21
+weight: -22
 provider: null
-plugin: search_form_block
+plugin: 'system_menu_block:categoria-busca'
 settings:
-  id: search_form_block
-  label: Buscar
-  provider: search
-  label_display: visible
+  id: 'system_menu_block:categoria-busca'
+  label: 'Categoria Busca'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
 visibility:
   request_path:
     id: request_path

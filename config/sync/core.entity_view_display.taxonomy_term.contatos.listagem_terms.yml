@@ -1,0 +1,69 @@
+uuid: 0c3f23c8-9dc6-4e51-bb50-1a98f3c84c66
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.listagem_terms
+    - field.field.taxonomy_term.contatos.field_icone
+    - field.field.taxonomy_term.contatos.field_icone_azul
+    - field.field.taxonomy_term.contatos.field_link
+    - taxonomy.vocabulary.contatos
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_icone_azul
+      right:
+        - taxonomy_term_title
+        - description
+    fields:
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: taxonomy_term.contatos.listagem_terms
+targetEntityType: taxonomy_term
+bundle: contatos
+mode: listagem_terms
+content:
+  description:
+    type: text_trimmed
+    weight: 2
+    region: right
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_icone_azul:
+    type: image
+    weight: 0
+    region: left
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_icone: true
+  field_link: true
+  langcode: true

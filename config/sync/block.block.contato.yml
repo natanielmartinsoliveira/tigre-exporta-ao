@@ -1,0 +1,28 @@
+uuid: 31b87968-0bcc-4fd1-a3c2-c683194b2074
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.contato
+  module:
+    - block_class
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: contato
+theme: tigre
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:contato'
+settings:
+  id: 'system_menu_block:contato'
+  label: Contato
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

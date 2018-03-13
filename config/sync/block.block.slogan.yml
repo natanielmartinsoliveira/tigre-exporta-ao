@@ -1,9 +1,9 @@
-uuid: 1cce91b2-f8dd-479b-8632-0c5f67c26318
+uuid: 836fe9cd-e2e1-4e41-8f29-dd3b43e6a01d
 langcode: pt-br
-status: false
+status: true
 dependencies:
   config:
-    - system.menu.contatos
+    - system.menu.slogan
   module:
     - block_class
     - system
@@ -11,16 +11,16 @@ dependencies:
     - tigre
 third_party_settings:
   block_class:
-    classes: 'col-xs-12 col-sm-4'
-id: contatos
+    classes: 'col-xs-12 col-sm-6 pull-right'
+id: slogan
 theme: tigre
-region: footer
+region: footer_bottom
 weight: 0
 provider: null
-plugin: 'system_menu_block:contatos'
+plugin: 'system_menu_block:slogan'
 settings:
-  id: 'system_menu_block:contatos'
-  label: Contatos
+  id: 'system_menu_block:slogan'
+  label: Slogan
   provider: system
   label_display: '0'
   level: 1

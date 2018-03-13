@@ -16,7 +16,7 @@ third_party_settings:
 id: bannerusuarios
 theme: tigre
 region: header
-weight: -21
+weight: 1
 provider: null
 plugin: 'block_content:d8b66637-dcd6-4861-9501-4d612af1fa16'
 settings:

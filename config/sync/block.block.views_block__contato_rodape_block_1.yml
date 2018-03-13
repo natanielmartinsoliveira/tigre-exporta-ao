@@ -1,9 +1,9 @@
-uuid: dad9c586-ceac-4029-95f5-13ba220ccca9
+uuid: 6b224a3a-ba4a-4479-9d8c-7ff6b77ecb72
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - views.view.contatos
+    - views.view.contato_rodape
   module:
     - block_class
     - views
@@ -12,14 +12,14 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: views_block__contatos_block_1
+id: views_block__contato_rodape_block_1
 theme: tigre
-region: navigation_collapsible
-weight: -19
+region: footer
+weight: 0
 provider: null
-plugin: 'views_block:contatos-block_1'
+plugin: 'views_block:contato_rodape-block_1'
 settings:
-  id: 'views_block:contatos-block_1'
+  id: 'views_block:contato_rodape-block_1'
   label: ''
   provider: views
   label_display: '0'

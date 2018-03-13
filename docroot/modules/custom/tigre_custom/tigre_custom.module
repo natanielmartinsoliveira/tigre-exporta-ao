@@ -9,11 +9,12 @@ function tigre_custom_preprocess_form_element(&$variables) {
 
   if ($variables['element']['#id'] == 'edit-name') {
     $variables['attributes']['class'][] = 'col-md-6';
-    $variables['#title'] = t('Name');
+    //$variables['element']['#title'] = t('Name');
   }
 
   if ($variables['element']['#id'] == 'edit-mail') {
     $variables['attributes']['class'][] = 'col-md-6';
+    //$variables['element']['#title']['string'] = t('E-mail');
   }
 
   if ($variables['element']['#id'] == 'edit-pass') {
@@ -60,7 +61,10 @@ function tigre_custom_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
     }
     if ($form_id == 'contact_message_newsletter_form') {
       $form['actions']['submit']['#value'] = t('Enviar');
-  }
+    }
+    if ($form_id == 'search_block_form') {
+      $form['keys']['#attributes']['placeholder'] = t( 'Digite sua pesquisa' );
+    }
 
 }
 

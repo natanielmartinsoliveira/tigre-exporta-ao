@@ -1,0 +1,38 @@
+uuid: 83dbeab6-fff6-4a7b-9523-a7be922f988a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icone_azul
+    - taxonomy.vocabulary.contatos
+  module:
+    - image
+id: taxonomy_term.contatos.field_icone_azul
+field_name: field_icone_azul
+entity_type: taxonomy_term
+bundle: contatos
+label: 'Icone Azul'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: taxonomia/contatos
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 22x22
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

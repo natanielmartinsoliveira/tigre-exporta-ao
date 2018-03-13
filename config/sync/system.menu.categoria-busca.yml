@@ -1,0 +1,8 @@
+uuid: b89163d4-02a5-4d13-82f3-5654fa582052
+langcode: pt-br
+status: true
+dependencies: {  }
+id: categoria-busca
+label: 'Categoria Busca'
+description: ''
+locked: false

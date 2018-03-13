@@ -13,6 +13,7 @@ regions:
   navigation_collapsible: 'Navigation (Collapsible)'
   breadcrumb: 'Breadcrumb'
   header: 'Top Bar'
+  search: 'Search'
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'

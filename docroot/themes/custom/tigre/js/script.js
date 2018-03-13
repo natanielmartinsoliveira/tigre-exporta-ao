@@ -6,30 +6,43 @@
             //var offset = startchange.offset();
             //if (startchange.length){
                 $(document).scroll(function() { 
-                scroll_start = $(this).scrollTop();
-                if(scroll_start > 0) {
-                    $("#navbar-collapse").css({
-                        'background-color': '#ffffff',
-                        "margin-top": "-39px",
-                        "box-shadow": "0 1px 0 rgba(12,13,14,0.1), 0 1px 3px rgba(12,13,14,0.1), 0 4px 20px rgba(12,13,14,0.035), 0 1px 1px rgba(12,13,14,0.025)"
+                    scroll_start = $(this).scrollTop();
+                    if(scroll_start > 0) {
+                        $("#navbar-collapse").css({
+                            'background-color': '#ffffff',
+                            "margin-top": "-39px",
+                            "box-shadow": "0 1px 0 rgba(12,13,14,0.1), 0 1px 3px rgba(12,13,14,0.1), 0 4px 20px rgba(12,13,14,0.035), 0 1px 1px rgba(12,13,14,0.025)"
+                            });
+                        $(".menu--main li a").css({
+                                'color': '#000000'
                         });
-                    $(".menu--main li a").css({
+                        $(".menu--busca li a").css({
                             'color': '#000000'
-                    });
-                    // $("#navbar-collapse .logo img").css({
-                    //         'background': 'url(themes/custom/tigre/assets/images/logo-azul.png) no-repeat'
-                    //     });
-                    $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/assets/images/logo-azul.png';
+                        });
+                        $("#block-views-block-contatos-block-1").css({
+                            'display': 'none'
+                        });
+                        // $("#navbar-collapse .logo img").css({
+                        //         'background': 'url(themes/custom/tigre/assets/images/logo-azul.png) no-repeat'
+                        //     });
+                        $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/assets/images/logo-azul.png';
                     } else {
-                    $('#navbar-collapse').css({
-                        'background-color': 'transparent',
-                        "margin-top": "0",
-                        "box-shadow": "none"
+                        $('#navbar-collapse').css({
+                            'background-color': 'transparent',
+                            "margin-top": "0",
+                            "box-shadow": "none"
                         });
                         $(".menu--main li a").css({
                             'color': '#ffffff'
-                    });
-                    $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/logo.svg';
+                        });
+                        $(".menu--busca li a").css({
+                            'color': '#ffffff'
+                        });
+                        $("#block-views-block-contatos-block-1").css({
+                            'display': 'block'
+                        });
+                        
+                        $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/logo.svg';
                     }
                 });
             //}

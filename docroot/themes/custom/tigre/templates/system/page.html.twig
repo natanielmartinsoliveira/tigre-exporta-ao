@@ -125,6 +125,17 @@
         {% endblock %}
       {% endif %}
 
+      {# Search #}
+      {% if page.search %}
+        {% block search %}
+          <div id="search--section--block" role="search">
+            <div class="container">
+              {{ page.search }}
+            </div>
+          </div>
+        {% endblock %}
+      {% endif %}
+
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
@@ -210,7 +221,11 @@
         <div id="footer-middle">
           <div class="container">
             <div class="row">
-              {{ page.footer }}
+              {{ page.footer.tigre_footer }}
+              <div class="col-xs-12 col-sm-3">
+                {{ page.footer.contato }}
+                {{ page.footer.views_block__contato_rodape_block_1 }}
+              </div>
             </div>
           </div>
         </div>

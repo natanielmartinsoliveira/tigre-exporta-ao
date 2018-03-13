@@ -11,7 +11,7 @@ maxSuggestions: 10
 noResultLabel: 'No results found for [search-phrase]. Click to perform full search.'
 noResultValue: '[search-phrase]'
 noResultLink: ''
-moreResultsLabel: 'View all results for [search-phrase].'
+moreResultsLabel: ''
 moreResultsValue: '[search-phrase]'
 moreResultsLink: ''
 source: 'views_produtos_callbacks::nodes_autocompletion_callback'

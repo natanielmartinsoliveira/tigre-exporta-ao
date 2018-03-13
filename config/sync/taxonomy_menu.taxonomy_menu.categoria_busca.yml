@@ -1,0 +1,14 @@
+uuid: 42fdb15c-a373-4325-8f0e-1e0ea8dc993d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.categoria-busca
+    - taxonomy.vocabulary.produto
+id: categoria_busca
+label: 'Categoria Busca'
+vocabulary: produto
+menu: categoria-busca
+expanded: false
+depth: 0
+menu_parent: 'admin:'

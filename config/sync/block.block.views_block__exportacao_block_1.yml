@@ -1,9 +1,9 @@
-uuid: 83f8f3d3-e5a1-45b3-8c2c-404be26b5f93
+uuid: 369547c0-7ec1-4116-b609-ea8cb0c9bd38
 langcode: pt-br
-status: false
+status: true
 dependencies:
   config:
-    - views.view.slideshow_home
+    - views.view.exportacao
   module:
     - block_class
     - system
@@ -13,22 +13,22 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: views_block__slideshow_home_block_1
+id: views_block__exportacao_block_1
 theme: tigre
-region: header
-weight: 21
+region: content
+weight: 0
 provider: null
-plugin: 'views_block:slideshow_home-block_1'
+plugin: 'views_block:exportacao-block_1'
 settings:
-  id: 'views_block:slideshow_home-block_1'
+  id: 'views_block:exportacao-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "/contato\r\n/contact/*"
     negate: false
     context_mapping: {  }
