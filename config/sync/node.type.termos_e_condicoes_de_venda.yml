@@ -1,0 +1,17 @@
+uuid: 0f8fa0eb-0849-4ef7-a4c3-dd0f4e308a88
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Termos e Condições de Venda'
+type: termos_e_condicoes_de_venda
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

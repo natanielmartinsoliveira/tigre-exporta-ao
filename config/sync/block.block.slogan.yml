@@ -11,7 +11,7 @@ dependencies:
     - tigre
 third_party_settings:
   block_class:
-    classes: 'col-xs-12 col-sm-6 pull-right'
+    classes: 'col-xs-12 col-sm-4 pull-right'
 id: slogan
 theme: tigre
 region: footer_bottom

@@ -1,0 +1,22 @@
+uuid: 347254f9-c98c-4b29-8941-cebdaca5d599
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.termos_e_condicoes_de_venda
+id: node.termos_e_condicoes_de_venda.promote
+field_name: promote
+entity_type: node
+bundle: termos_e_condicoes_de_venda
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

@@ -1,0 +1,24 @@
+uuid: 73c323d2-3f9e-4c2b-8309-cc98c3a107e3
+langcode: pt-br
+status: false
+dependencies:
+  module:
+    - addtoany
+    - block_class
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: addtoanybuttons
+theme: tigre
+region: breadcrumb
+weight: 0
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: Compartilhe
+  provider: addtoany
+  label_display: visible
+visibility: {  }

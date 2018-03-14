@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/termos-de-uso\r\n/politica-de-privacidade"
+    pages: "/termos-de-uso\r\n/politica-de-privacidade\r\n/termos-e-condicoes-de-venda"
     negate: false
     context_mapping: {  }

@@ -1,0 +1,28 @@
+uuid: 62965935-ea5d-4693-a000-9e47f1874077
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.termos_e_condicoes_de_venda.body
+    - node.type.termos_e_condicoes_de_venda
+  module:
+    - text
+    - user
+id: node.termos_e_condicoes_de_venda.default
+targetEntityType: node
+bundle: termos_e_condicoes_de_venda
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

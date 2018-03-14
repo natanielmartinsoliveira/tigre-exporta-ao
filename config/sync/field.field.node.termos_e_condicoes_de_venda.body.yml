@@ -1,0 +1,22 @@
+uuid: c1bb5b2c-feda-4d54-b2e8-c5c45b9277aa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.termos_e_condicoes_de_venda
+  module:
+    - text
+id: node.termos_e_condicoes_de_venda.body
+field_name: body
+entity_type: node
+bundle: termos_e_condicoes_de_venda
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

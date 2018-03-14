@@ -708,6 +708,9 @@
     }
     #block-busca {
         float: right;
+        .glyphicon {
+            top: 3px;
+        }
     }
     #block-tigre-main-menu, #block-busca {
         li {
@@ -1054,6 +1057,10 @@ li.ui-menu-item:hover {
         border-bottom: 1px solid #ccc;
         padding-bottom: 0;
     }
+}
+.termos-e-condicoes-de-venda {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 // Paragrafos abas
@@ -1579,7 +1586,6 @@ li.ui-menu-item:hover {
 @media (max-width: 1280px) {
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
         left: 2%;
-        width: 100%;
     }
 }
 

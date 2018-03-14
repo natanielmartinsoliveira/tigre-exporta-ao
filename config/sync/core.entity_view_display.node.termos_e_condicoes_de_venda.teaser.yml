@@ -1,0 +1,30 @@
+uuid: f04f32c9-a477-4140-8f9f-53b0d3591a6e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.termos_e_condicoes_de_venda.body
+    - node.type.termos_e_condicoes_de_venda
+  module:
+    - text
+    - user
+id: node.termos_e_condicoes_de_venda.teaser
+targetEntityType: node
+bundle: termos_e_condicoes_de_venda
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

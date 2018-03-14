@@ -613,6 +613,8 @@ p {
       margin: 5px; }
   #navbar-collapse #block-busca {
     float: right; }
+    #navbar-collapse #block-busca .glyphicon {
+      top: 3px; }
   #navbar-collapse #block-tigre-main-menu li, #navbar-collapse #block-busca li {
     display: block;
     text-align: center;
@@ -843,6 +845,10 @@ li.ui-menu-item:hover {
     border: none;
     border-bottom: 1px solid #ccc;
     padding-bottom: 0; }
+
+.termos-e-condicoes-de-venda {
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .paragraph--type--abas {
   padding: 60px 0 20px; }
@@ -1218,8 +1224,7 @@ li.ui-menu-item:hover {
 
 @media (max-width: 1280px) {
   .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
-    left: 2%;
-    width: 100%; } }
+    left: 2%; } }
 @media (max-width: 992px) {
   .views-slideshow-controls-bottom .views-slideshow-pager-bullets {
     right: 5px;

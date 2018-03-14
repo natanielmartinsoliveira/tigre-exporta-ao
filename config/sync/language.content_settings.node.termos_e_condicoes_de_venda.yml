@@ -1,0 +1,16 @@
+uuid: 026b2653-4dc8-46ee-aa3d-72a35b4e4e21
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.termos_e_condicoes_de_venda
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.termos_e_condicoes_de_venda
+target_entity_type_id: node
+target_bundle: termos_e_condicoes_de_venda
+default_langcode: site_default
+language_alterable: false
