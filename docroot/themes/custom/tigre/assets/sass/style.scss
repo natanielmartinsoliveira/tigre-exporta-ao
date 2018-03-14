@@ -130,6 +130,7 @@
     float: right!important;
 }
 
+
 .menu-global {
     //position: relative;
     position: absolute;
@@ -1130,6 +1131,15 @@ li.ui-menu-item:hover {
                     display: inline-block;
                     text-align: center;
                     padding: 10px 20px 10px 20px;
+                }
+                a:after {
+                    content: "";
+                    display: inline-block;
+                    width: 6px;
+                    height: 10px;
+                    margin-left: 15px;
+                    text-transform: uppercase;
+                    background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0;
                 }
 
                 .controls-button {
@@ -2168,6 +2178,7 @@ li.ui-menu-item:hover {
         color: #95989A;
         font-family: "ubuntulight", Arial, sans-serif;
         font-size: 20px;
+        font-weight: 600;
     }
 }
 .page--contact--content--region {
@@ -2182,6 +2193,16 @@ li.ui-menu-item:hover {
         #bootstrap-panel--description{
             display: none;
         }
+    }
+    .label--required {
+        font-family: "ubunturegular", Arial, sans-serif;
+        float: right;
+        text-transform: lowercase;
+        font-size: 10px;
+        padding-top: 4px;
+    }
+    .form-required:after {
+        display: none;
     }
 }
 

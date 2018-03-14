@@ -9,12 +9,12 @@ function tigre_custom_preprocess_form_element(&$variables) {
 
   if ($variables['element']['#id'] == 'edit-name') {
     $variables['attributes']['class'][] = 'col-md-6';
-    //$variables['element']['#title'] = t('Name');
+    $variables['label']['#title'] = t('Name');
   }
 
   if ($variables['element']['#id'] == 'edit-mail') {
     $variables['attributes']['class'][] = 'col-md-6';
-    //$variables['element']['#title']['string'] = t('E-mail');
+    $variables['label']['#title'] = t('E-mail');
   }
 
   if ($variables['element']['#id'] == 'edit-pass') {

@@ -125,11 +125,22 @@ p {
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     border: 0;
+    text-transform: uppercase !important;
 }
 
 .btn-primary:hover {
     background: #FF8532;
     text-decoration: none;
+}
+
+.btn-primary:after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0;
 }
 
 @mixin button-style {
@@ -147,6 +158,16 @@ p {
     padding: 14px 20px 14px 20px;
     text-decoration: none;
     border: 0;
+    text-transform: uppercase !important;
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        margin-left: 15px;
+        text-transform: uppercase;
+        background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0;
+    }
 }
 
 @mixin container-bottom-border {

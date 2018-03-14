@@ -84,11 +84,21 @@ p {
   font-size: 16px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  border: 0; }
+  border: 0;
+  text-transform: uppercase !important; }
 
 .btn-primary:hover {
   background: #FF8532;
   text-decoration: none; }
+
+.btn-primary:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  margin-left: 15px;
+  text-transform: uppercase;
+  background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
 
 .container-fluid {
   padding-right: 0px;
@@ -903,10 +913,27 @@ li.ui-menu-item:hover {
         padding: 14px 20px 14px 20px;
         text-decoration: none;
         border: 0;
+        text-transform: uppercase !important;
         width: 100%;
         display: inline-block;
         text-align: center;
         padding: 10px 20px 10px 20px; }
+        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a:after {
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 10px;
+          margin-left: 15px;
+          text-transform: uppercase;
+          background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
+      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a:after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        margin-left: 15px;
+        text-transform: uppercase;
+        background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
       .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item .controls-button {
         position: absolute;
         bottom: 35px;
@@ -1002,9 +1029,18 @@ li.ui-menu-item:hover {
       padding: 14px 20px 14px 20px;
       text-decoration: none;
       border: 0;
+      text-transform: uppercase !important;
       font-size: 14px;
       display: block;
       text-align: center; }
+      .paragraph--type--imagem-c-texto .paragraph-fundo .description a:after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        margin-left: 15px;
+        text-transform: uppercase;
+        background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
   .paragraph--type--imagem-c-texto .paragraph-fundo .img {
     position: relative;
     margin-top: -2%;
@@ -1091,7 +1127,16 @@ li.ui-menu-item:hover {
         padding: 14px 20px 14px 20px;
         text-decoration: none;
         border: 0;
+        text-transform: uppercase !important;
         font-size: 14px; }
+        .paragraph--type--cta-centralizado .container figure figcaption a:after {
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 10px;
+          margin-left: 15px;
+          text-transform: uppercase;
+          background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
 
 @media (min-width: 768px) {
   .contact-message-newsletter-form .field--name-field-newsletter-email {
@@ -1131,7 +1176,16 @@ li.ui-menu-item:hover {
     padding: 14px 20px 14px 20px;
     text-decoration: none;
     border: 0;
+    text-transform: uppercase !important;
     font-size: 14px; }
+    .paragraph--type--cta-2-colunas a:after {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 10px;
+      margin-left: 15px;
+      text-transform: uppercase;
+      background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
 
 @media (min-width: 768px) {
   .paragraph--type--cta-2-colunas {
@@ -1212,7 +1266,16 @@ li.ui-menu-item:hover {
           font-size: 16px;
           padding: 14px 20px 14px 20px;
           text-decoration: none;
-          border: 0; }
+          border: 0;
+          text-transform: uppercase !important; }
+          .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption div .div-btn a:after {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 10px;
+            margin-left: 15px;
+            text-transform: uppercase;
+            background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
       .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption div h2 {
         font-family: "ubuntubold", Arial, sans-serif;
         font-size: 36px;
@@ -1511,7 +1574,16 @@ li.ui-menu-item:hover {
       font-size: 16px;
       padding: 14px 20px 14px 20px;
       text-decoration: none;
-      border: 0; }
+      border: 0;
+      text-transform: uppercase !important; }
+      .produto .card-contato a:after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        margin-left: 15px;
+        text-transform: uppercase;
+        background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
   .produto .product--details {
     margin-bottom: 60px; }
   .produto .nav-tabs.nav {
@@ -1605,7 +1677,8 @@ li.ui-menu-item:hover {
 #block-paginacontatotexto p {
   color: #95989A;
   font-family: "ubuntulight", Arial, sans-serif;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: 600; }
 
 .page--contact--content--region {
   padding-top: 30px;
@@ -1618,6 +1691,14 @@ li.ui-menu-item:hover {
       display: none; }
     .page--contact--content--region .panel-default #bootstrap-panel--description {
       display: none; }
+  .page--contact--content--region .label--required {
+    font-family: "ubunturegular", Arial, sans-serif;
+    float: right;
+    text-transform: lowercase;
+    font-size: 10px;
+    padding-top: 4px; }
+  .page--contact--content--region .form-required:after {
+    display: none; }
 
 .contact-form #edit-preview {
   display: none; }
