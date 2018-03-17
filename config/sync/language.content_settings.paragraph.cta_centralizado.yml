@@ -1,0 +1,16 @@
+uuid: 9ada55db-9928-45e7-b323-6bcf6d5fafab
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cta_centralizado
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.cta_centralizado
+target_entity_type_id: paragraph
+target_bundle: cta_centralizado
+default_langcode: site_default
+language_alterable: false

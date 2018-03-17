@@ -1,0 +1,18 @@
+uuid: f33a9861-f418-4f26-b83c-dc2ca7ba26c7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bloco_de_enderecos
+id: paragraph.bloco_de_enderecos.created
+field_name: created
+entity_type: paragraph
+bundle: bloco_de_enderecos
+label: 'Escrito em'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -19,9 +19,6 @@
                         $(".menu--busca li a").css({
                             'color': '#000000'
                         });
-                        $("#block-views-block-contatos-block-1").css({
-                            'display': 'none'
-                        });
                         // $("#navbar-collapse .logo img").css({
                         //         'background': 'url(themes/custom/tigre/assets/images/logo-azul.png) no-repeat'
                         //     });
@@ -37,9 +34,6 @@
                         });
                         $(".menu--busca li a").css({
                             'color': '#ffffff'
-                        });
-                        $("#block-views-block-contatos-block-1").css({
-                            'display': 'block'
                         });
                         
                         $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/logo.svg';
@@ -76,7 +70,11 @@
 
                 // });
 
-                
+                $("#search-block-form").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#search-block-form").offset().top - 200
+                    }, 1000);
+                });
 
                 $.fn.extend({
                     treed: function (o) {

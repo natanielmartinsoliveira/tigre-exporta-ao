@@ -89,7 +89,18 @@ public function crateProduct($detail) {
   if (!empty($detail['field_produto_revisado'])) {
     $node->set('field_produto_revisado', $detail['field_produto_revisado'][0]['value']);
   }
-  //      $node->set('field_taxonomy_catalog', $detail['taxonomy_catalog']['value']);
+  
+
+  if (!empty($detail['taxonomy_catalog'])) {
+    foreach ($detail['taxonomy_catalog'] as $term) {
+      $taxId = (string) $term['target_id'];
+      $node->field_taxonomy_catalog->appendItem(['target_id' => (int) $detail['taxonomias'][$taxId]]);
+    }
+  }
+  // if (!empty($detail['taxonomy_catalog'])) {
+  //   $node->set('field_taxonomy_catalog', ['target_id' => $detail['taxonomia_id'] ]);
+  // }
+
   if (!empty($detail['field_texto_tecnico'])){
     $node->set('field_texto_tecnico', $detail['field_texto_tecnico'][0]['value']);
   }

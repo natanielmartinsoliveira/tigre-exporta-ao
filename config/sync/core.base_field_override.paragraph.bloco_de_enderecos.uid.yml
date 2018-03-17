@@ -1,0 +1,20 @@
+uuid: b9a01865-f96f-4fa1-87ca-0bd33af3c42e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bloco_de_enderecos
+id: paragraph.bloco_de_enderecos.uid
+field_name: uid
+entity_type: paragraph
+bundle: bloco_de_enderecos
+label: 'Escrito por'
+description: 'The user ID of the paragraphs author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\paragraphs\Entity\Paragraph::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 63cecbae-5e53-4c7a-9556-af9bb2a364a8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.localidade_da_unidade
+id: paragraph.localidade_da_unidade.status
+field_name: status
+entity_type: paragraph
+bundle: localidade_da_unidade
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

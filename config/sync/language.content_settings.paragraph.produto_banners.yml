@@ -1,0 +1,16 @@
+uuid: 65848305-1325-403e-a28b-c35dd0ee37f9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produto_banners
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.produto_banners
+target_entity_type_id: paragraph
+target_bundle: produto_banners
+default_langcode: site_default
+language_alterable: false

@@ -28,6 +28,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/materiais-tecnicos\r\n/materiais-tecnicos/*"
+    pages: "/materiais-tecnicos/*\r\n/technical-materials/*\r\n/materiales-tecnicos/*\r\n/materiaux-techniques/*\r\n/materiais-tecnicos\r\n/technical-materials\r\n/materiales-tecnicos\r\n/materiaux-techniques\r\n/material-tecnico/*\r\n/technical-material/*\r\n/material-tecnico/*\r\n/materiel-technique/*"
     negate: false
     context_mapping: {  }

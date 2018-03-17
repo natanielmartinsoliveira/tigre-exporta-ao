@@ -1,0 +1,22 @@
+uuid: 595091b2-dd84-4406-9540-732248751aba
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cta_2_colunas
+id: paragraph.cta_2_colunas.status
+field_name: status
+entity_type: paragraph
+bundle: cta_2_colunas
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

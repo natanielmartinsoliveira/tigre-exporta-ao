@@ -1,0 +1,9 @@
+label: 'Conditions d''Utilisation'
+display:
+  default:
+    display_options:
+      fields:
+        nothing:
+          alter:
+            text: "                    <div class=\"panel panel-default\">\r\n                        <h4 class=\"panel-title\">\r\n                            <a role=\"button\" data-toggle=\"collapse\" data-parent=\"#faq\" href=\"#faq{{nid}}\" aria-expanded=\"true\" aria-controls=\"faq{{nid}}\" class=\"collapsed\">\r\n                                {{title}}\r\n                            </a>\r\n                        </h4>\r\n                        <div id=\"faq{{nid}}\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\">\r\n                            <div class=\"panel-body\">{{body}}\r\n                            </div>\r\n                        </div>\r\n                    </div>"
+      title: 'Conditions d''Utilisation'

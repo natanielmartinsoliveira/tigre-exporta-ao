@@ -1,0 +1,22 @@
+uuid: d1fa8c39-c8d6-4f3a-8e84-d2d7a65d06ef
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cta_centralizado
+id: paragraph.cta_centralizado.status
+field_name: status
+entity_type: paragraph
+bundle: cta_centralizado
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

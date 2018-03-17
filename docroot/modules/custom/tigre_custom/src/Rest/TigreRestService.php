@@ -68,6 +68,16 @@ class TigreRestService {
     return $this->getResult();
   }
 
+  public function getProductTaxonomies() {
+    $this->curl = curl_init($this->host . "/taxonomies/catalog/list?_format=json");
+    return $this->getResult();
+  }
+
+  public function getDetailTaxonomy($url) {
+    $this->curl = curl_init($url . '?_format=json');
+    return $this->getResult();
+  }
+
   public function getResult() {
     curl_setopt($this->curl, CURLOPT_HTTPHEADER, array('Authorization: Basic '. base64_encode($this->username . ':' . $this->password)));
     curl_setopt($this->curl, CURLOPT_RETURNTRANSFER,1);

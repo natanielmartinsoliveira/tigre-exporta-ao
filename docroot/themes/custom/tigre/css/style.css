@@ -618,7 +618,8 @@ p {
     padding-right: 5px;
     border-radius: 4px;
     float: right;
-    margin-top: 14px; }
+    margin-top: 14px;
+    z-index: 10; }
     #navbar-collapse #block-views-block-contatos-block-1 img {
       margin: 5px; }
   #navbar-collapse #block-busca {
@@ -752,20 +753,8 @@ p {
   margin-top: -140px;
   margin-bottom: 75px; }
 
-#block-categoriabusca {
-  width: 16%;
-  float: left;
-  z-index: 10;
-  position: relative; }
-  #block-categoriabusca select {
-    height: 50px;
-    border: 0;
-    border-radius: 8px 0 0 8px;
-    background-color: #f1f1f1; }
-
 .block-search-form-block {
-  width: 84%;
-  float: right;
+  width: 100%;
   z-index: 10;
   position: relative; }
   .block-search-form-block input {
@@ -777,6 +766,8 @@ p {
     background: #fff;
     color: #9D9C9C;
     border-radius: 0; }
+  .block-search-form-block .button:after {
+    display: none !important; }
 
 li.ui-menu-item:hover {
   background: #fff; }
@@ -1444,6 +1435,8 @@ li.ui-menu-item:hover {
       font-size: 20px;
       color: #FF8532;
       margin-bottom: 0; }
+    .view-catalogos .node--type-catalogo .group-right .tipo--arquivo {
+      margin-bottom: 30px; }
     .view-catalogos .node--type-catalogo .group-right .download--links {
       display: table; }
       .view-catalogos .node--type-catalogo .group-right .download--links .file {
@@ -1498,33 +1491,33 @@ li.ui-menu-item:hover {
       text-decoration: none;
       background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xicon_download2.png.pagespeed.ic.c6B5s82Nsy.png) no-repeat 100% 50%; }
 
-.view-categoria-produtos .views-col h2, .view-produtos .views-col h2 {
+.view-categoria-produtos .views-col h2, .view-produtos .views-col h2, .view-categoria-produtos-nivel-1 .views-col h2 {
   font-family: "ubuntulight", Arial, sans-serif;
   font-size: 20px;
   color: #000;
   margin-top: 0; }
-.view-categoria-produtos .col, .view-produtos .col {
+.view-categoria-produtos .col, .view-produtos .col, .view-categoria-produtos-nivel-1 .col {
   padding-bottom: 30px; }
-.view-categoria-produtos .taxonomy-term--type-produto, .view-categoria-produtos .node--type-produto, .view-produtos .taxonomy-term--type-produto, .view-produtos .node--type-produto {
+.view-categoria-produtos .taxonomy-term--type-produto, .view-categoria-produtos .node--type-produto, .view-produtos .taxonomy-term--type-produto, .view-produtos .node--type-produto, .view-categoria-produtos-nivel-1 .taxonomy-term--type-produto, .view-categoria-produtos-nivel-1 .node--type-produto {
   border: 1px solid #ccc;
   border-radius: 6px;
   -webkit-transition: border-color .3s ease;
   transition: border-color .3s ease;
   padding: 24px;
   cursor: pointer; }
-  .view-categoria-produtos .taxonomy-term--type-produto h2, .view-categoria-produtos .node--type-produto h2, .view-produtos .taxonomy-term--type-produto h2, .view-produtos .node--type-produto h2 {
+  .view-categoria-produtos .taxonomy-term--type-produto h2, .view-categoria-produtos .node--type-produto h2, .view-produtos .taxonomy-term--type-produto h2, .view-produtos .node--type-produto h2, .view-categoria-produtos-nivel-1 .taxonomy-term--type-produto h2, .view-categoria-produtos-nivel-1 .node--type-produto h2 {
     font-family: "ubuntulight", Arial, sans-serif;
     font-size: 20px;
     color: #000;
     margin-top: 8px; }
-  .view-categoria-produtos .taxonomy-term--type-produto img, .view-categoria-produtos .node--type-produto img, .view-produtos .taxonomy-term--type-produto img, .view-produtos .node--type-produto img {
+  .view-categoria-produtos .taxonomy-term--type-produto img, .view-categoria-produtos .node--type-produto img, .view-produtos .taxonomy-term--type-produto img, .view-produtos .node--type-produto img, .view-categoria-produtos-nivel-1 .taxonomy-term--type-produto img, .view-categoria-produtos-nivel-1 .node--type-produto img {
     max-height: 200px;
     margin: 0 auto; }
-.view-categoria-produtos .taxonomy-term--type-produto:hover, .view-categoria-produtos .node--type-produto:hover, .view-produtos .taxonomy-term--type-produto:hover, .view-produtos .node--type-produto:hover {
+.view-categoria-produtos .taxonomy-term--type-produto:hover, .view-categoria-produtos .node--type-produto:hover, .view-produtos .taxonomy-term--type-produto:hover, .view-produtos .node--type-produto:hover, .view-categoria-produtos-nivel-1 .taxonomy-term--type-produto:hover, .view-categoria-produtos-nivel-1 .node--type-produto:hover {
   border: 2px solid #FF8532; }
 
 @media (min-width: 768px) {
-  .view-categoria-produtos .taxonomy-term--type-produto, .view-categoria-produtos .node--type-produto, .view-produtos .taxonomy-term--type-produto, .view-produtos .node--type-produto {
+  .view-categoria-produtos .taxonomy-term--type-produto, .view-categoria-produtos .node--type-produto, .view-produtos .taxonomy-term--type-produto, .view-produtos .node--type-produto, .view-categoria-produtos-nivel-1 .taxonomy-term--type-produto, .view-categoria-produtos-nivel-1 .node--type-produto {
     min-height: 340px; } }
 .block-views-blockproduto-banner-block-1 {
   border-bottom: 1px solid #95989A;

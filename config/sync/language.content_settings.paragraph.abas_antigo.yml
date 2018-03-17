@@ -1,0 +1,16 @@
+uuid: 4f82f487-8f6a-4141-b266-7499b615d6a1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.abas_antigo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.abas_antigo
+target_entity_type_id: paragraph
+target_bundle: abas_antigo
+default_langcode: site_default
+language_alterable: false

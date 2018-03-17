@@ -1,0 +1,22 @@
+uuid: 53eeda1b-4f34-494f-beb5-cde5c9431b1b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.abas_item
+id: paragraph.abas_item.status
+field_name: status
+entity_type: paragraph
+bundle: abas_item
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

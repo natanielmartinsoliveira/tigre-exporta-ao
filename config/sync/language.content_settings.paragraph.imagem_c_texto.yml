@@ -1,0 +1,16 @@
+uuid: df760363-fa6b-4032-949c-81d601d4c21a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.imagem_c_texto
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.imagem_c_texto
+target_entity_type_id: paragraph
+target_bundle: imagem_c_texto
+default_langcode: site_default
+language_alterable: false

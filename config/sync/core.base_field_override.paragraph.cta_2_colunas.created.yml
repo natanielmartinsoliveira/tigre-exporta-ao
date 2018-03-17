@@ -1,0 +1,18 @@
+uuid: 83cf0ca8-ba4a-4d96-aac7-8164033512bb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cta_2_colunas
+id: paragraph.cta_2_colunas.created
+field_name: created
+entity_type: paragraph
+bundle: cta_2_colunas
+label: 'Escrito em'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

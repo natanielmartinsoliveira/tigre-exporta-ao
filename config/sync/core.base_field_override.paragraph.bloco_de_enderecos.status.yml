@@ -1,0 +1,22 @@
+uuid: b41d5dac-ee9e-4a70-8c87-a3239038dfcd
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bloco_de_enderecos
+id: paragraph.bloco_de_enderecos.status
+field_name: status
+entity_type: paragraph
+bundle: bloco_de_enderecos
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

@@ -28,6 +28,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/produtos\r\n/produtos/*"
+    pages: "/produtos/*\r\n/products/*\r\n/productos/*\r\n/produits/*\r\n/produtos\r\n/products\r\n/productos\r\n/produits"
     negate: false
     context_mapping: {  }

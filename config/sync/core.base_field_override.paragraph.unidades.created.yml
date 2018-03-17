@@ -1,0 +1,18 @@
+uuid: 223f9535-0c23-4941-89be-a8af28fde146
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.unidades
+id: paragraph.unidades.created
+field_name: created
+entity_type: paragraph
+bundle: unidades
+label: 'Escrito em'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -16,7 +16,7 @@ third_party_settings:
 id: views_block__catalogos_block_1
 theme: tigre
 region: content
-weight: -11
+weight: -13
 provider: null
 plugin: 'views_block:catalogos-block_1'
 settings:
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/materiais-tecnicos\r\n/materiais-tecnicos/*"
+    pages: "/materiais-tecnicos/*\r\n/technical-materials/*\r\n/materiales-tecnicos/*\r\n/materiaux-techniques/*\r\n/materiais-tecnicos\r\n/technical-materials\r\n/materiales-tecnicos\r\n/materiaux-techniques\r\n/material-tecnico/*\r\n/technical-material/*\r\n/material-tecnico/*\r\n/materiel-technique/*"
     negate: false
     context_mapping: {  }

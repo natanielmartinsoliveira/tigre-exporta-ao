@@ -6,14 +6,7 @@ dependencies:
     - field.storage.paragraph.field_imagem
     - paragraphs.paragraphs_type.cta_2_colunas
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 id: paragraph.cta_2_colunas.field_imagem
 field_name: field_imagem
 entity_type: paragraph
@@ -21,7 +14,7 @@ bundle: cta_2_colunas
 label: Imagem
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

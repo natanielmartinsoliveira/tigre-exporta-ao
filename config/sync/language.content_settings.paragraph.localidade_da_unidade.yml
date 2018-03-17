@@ -1,0 +1,16 @@
+uuid: 79e78979-a7c7-4e25-8f29-a97ae46401cb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.localidade_da_unidade
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.localidade_da_unidade
+target_entity_type_id: paragraph
+target_bundle: localidade_da_unidade
+default_langcode: site_default
+language_alterable: false

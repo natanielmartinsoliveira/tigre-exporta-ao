@@ -1,0 +1,16 @@
+uuid: a434496d-cad4-4fbb-b1c4-3938eeeddbd1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bloco_de_enderecos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.bloco_de_enderecos
+target_entity_type_id: paragraph
+target_bundle: bloco_de_enderecos
+default_langcode: site_default
+language_alterable: false

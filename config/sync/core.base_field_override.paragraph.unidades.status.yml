@@ -1,0 +1,22 @@
+uuid: cafa24d8-6067-4840-83a5-9ca55f1be891
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.unidades
+id: paragraph.unidades.status
+field_name: status
+entity_type: paragraph
+bundle: unidades
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

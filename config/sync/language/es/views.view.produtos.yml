@@ -1,0 +1,5 @@
+label: Productos
+display:
+  default:
+    display_options:
+      title: Productos

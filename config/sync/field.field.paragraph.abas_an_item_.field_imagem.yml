@@ -6,14 +6,7 @@ dependencies:
     - field.storage.paragraph.field_imagem
     - paragraphs.paragraphs_type.abas_an_item_
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 id: paragraph.abas_an_item_.field_imagem
 field_name: field_imagem
 entity_type: paragraph
@@ -21,7 +14,7 @@ bundle: abas_an_item_
 label: Imagem
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

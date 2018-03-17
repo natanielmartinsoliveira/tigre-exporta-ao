@@ -1,0 +1,22 @@
+uuid: 8971ce6b-7624-4414-b738-42e24730b1b3
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.abas_an_item_
+id: paragraph.abas_an_item_.status
+field_name: status
+entity_type: paragraph
+bundle: abas_an_item_
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

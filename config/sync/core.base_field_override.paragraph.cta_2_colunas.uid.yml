@@ -1,0 +1,20 @@
+uuid: 9f0d4301-fdde-449d-9f79-abbe1e9005bc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cta_2_colunas
+id: paragraph.cta_2_colunas.uid
+field_name: uid
+entity_type: paragraph
+bundle: cta_2_colunas
+label: 'Escrito por'
+description: 'The user ID of the paragraphs author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\paragraphs\Entity\Paragraph::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

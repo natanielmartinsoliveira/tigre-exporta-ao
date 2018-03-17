@@ -1,0 +1,18 @@
+uuid: f051082d-cf30-413b-94e1-f79de56b26a8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.canal_de_atendimento
+id: paragraph.canal_de_atendimento.created
+field_name: created
+entity_type: paragraph
+bundle: canal_de_atendimento
+label: 'Escrito em'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

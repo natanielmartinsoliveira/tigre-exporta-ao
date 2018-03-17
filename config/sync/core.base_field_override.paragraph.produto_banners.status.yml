@@ -1,0 +1,22 @@
+uuid: c5092565-3ab0-478b-8ce0-672700f07467
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produto_banners
+id: paragraph.produto_banners.status
+field_name: status
+entity_type: paragraph
+bundle: produto_banners
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

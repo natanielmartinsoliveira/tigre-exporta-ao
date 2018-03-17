@@ -1,0 +1,24 @@
+uuid: 18e30af4-be8f-47de-8c8f-9396a1e31349
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: path_conteudos
+label: 'Path Conteúdos'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  d3e8541c-2dae-4165-a01e-208240f635de:
+    id: node_type
+    bundles:
+      sobre_a_tigre: sobre_a_tigre
+      termos_e_condicoes_de_venda: termos_e_condicoes_de_venda
+      unidades: unidades
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d3e8541c-2dae-4165-a01e-208240f635de
+selection_logic: and
+weight: -5
+relationships: {  }

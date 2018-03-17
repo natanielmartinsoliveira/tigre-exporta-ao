@@ -1,0 +1,22 @@
+uuid: ea5dfc26-eac5-4dde-9f53-6e5fd2663cbe
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.abas_antigo
+id: paragraph.abas_antigo.status
+field_name: status
+entity_type: paragraph
+bundle: abas_antigo
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

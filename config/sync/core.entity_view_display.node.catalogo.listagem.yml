@@ -58,7 +58,7 @@ third_party_settings:
       weight: 4
       format_type: html_element
       format_settings:
-        label: Downloads
+        label: ''
         element: div
         show_label: true
         label_element: h3
@@ -67,7 +67,7 @@ third_party_settings:
         speed: fast
         id: ''
         classes: ''
-      label: Downloads
+      label: ''
       region: hidden
 id: node.catalogo.listagem
 targetEntityType: node
@@ -191,6 +191,7 @@ content:
     type: list_key
     region: right
 hidden:
+  addtoany: true
   field_categoria_catalogo: true
   langcode: true
   links: true

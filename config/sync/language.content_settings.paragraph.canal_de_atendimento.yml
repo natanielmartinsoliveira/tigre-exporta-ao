@@ -1,0 +1,16 @@
+uuid: a053037a-153f-4fc9-9b18-4bf76ca79ce7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.canal_de_atendimento
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.canal_de_atendimento
+target_entity_type_id: paragraph
+target_bundle: canal_de_atendimento
+default_langcode: site_default
+language_alterable: false

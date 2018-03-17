@@ -1,0 +1,18 @@
+uuid: 8758d7d6-4843-47e9-ba7a-d5c0dc1b6ba6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.abas_an_item_
+id: paragraph.abas_an_item_.created
+field_name: created
+entity_type: paragraph
+bundle: abas_an_item_
+label: 'Escrito em'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

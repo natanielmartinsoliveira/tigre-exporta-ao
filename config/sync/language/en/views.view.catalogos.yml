@@ -1,0 +1,5 @@
+label: 'Materiais Técnicos'
+display:
+  default:
+    display_options:
+      title: 'Technical Materials'

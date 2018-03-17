@@ -1,0 +1,35 @@
+uuid: c2f4d19e-719b-43cc-a38e-8fc3d567ba84
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - views.view.categoria_produtos_nivel_1
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__categoria_produtos_nivel_1_block_1
+theme: tigre
+region: content
+weight: -20
+provider: null
+plugin: 'views_block:categoria_produtos_nivel_1-block_1'
+settings:
+  id: 'views_block:categoria_produtos_nivel_1-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /produtos
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,18 @@
+uuid: 8e310b13-764a-4523-9ea1-0ff9bfecd783
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.localidade_da_unidade
+id: paragraph.localidade_da_unidade.created
+field_name: created
+entity_type: paragraph
+bundle: localidade_da_unidade
+label: 'Escrito em'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

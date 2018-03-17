@@ -1,0 +1,16 @@
+uuid: b0b1e513-224c-4d98-b811-a01ecf063c5d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.abas_an_item_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.abas_an_item_
+target_entity_type_id: paragraph
+target_bundle: abas_an_item_
+default_langcode: site_default
+language_alterable: false
