@@ -220,6 +220,13 @@ p {
   background-color: rgba(42, 54, 83, 0.7);
   z-index: 99; }
 
+.menu-global .navbar-header .logo {
+  display: none; }
+.menu-global .navbar-toggle {
+  padding: 15px;
+  right: 15px; }
+  .menu-global .navbar-toggle .icon-bar {
+    background: #fff; }
 .menu-global #navbar-collapse {
   z-index: 9999;
   width: 100%;
@@ -228,6 +235,30 @@ p {
     padding-bottom: 5px;
     margin-right: 10px; }
 
+@media (max-width: 768px) {
+  .menu-global {
+    background-color: transparent; }
+    .menu-global .region-menu-global {
+      display: none; }
+    .menu-global .navbar-header {
+      width: 100%;
+      position: fixed; }
+      .menu-global .navbar-header .logo {
+        display: block;
+        margin-left: 15px; }
+    .menu-global #navbar-collapse {
+      margin-top: 25px !important;
+      background: #fff; }
+      .menu-global #navbar-collapse .logo {
+        display: none; }
+      .menu-global #navbar-collapse #block-tigre-main-menu li {
+        text-align: justify; }
+        .menu-global #navbar-collapse #block-tigre-main-menu li a {
+          color: #000000; }
+      .menu-global #navbar-collapse #block-busca {
+        display: none; }
+      .menu-global #navbar-collapse #block-views-block-contatos-block-1 {
+        display: none; } }
 .footer {
   margin-top: 0;
   padding: 0;
@@ -316,7 +347,7 @@ p {
       width: 180px; }
     .footer #footer-middle #block-views-block-contato-rodape-block-1 h2 {
       font-size: 14px;
-      color: #0083CA;
+      color: #FF8532;
       margin-top: 0;
       margin-bottom: 0; }
     .footer #footer-middle #block-views-block-contato-rodape-block-1 p, .footer #footer-middle #block-views-block-contato-rodape-block-1 a {
@@ -641,6 +672,19 @@ p {
       background-color: transparent;
       padding-top: 20px; }
 
+@media (max-width: 768px) {
+  .menu-global #navbar-collapse {
+    top: 40px;
+    background: #fff; }
+    .menu-global #navbar-collapse #block-tigre-main-menu li, .menu-global #navbar-collapse #block-busca li {
+      text-align: justify;
+      margin-bottom: 10px; }
+      .menu-global #navbar-collapse #block-tigre-main-menu li a, .menu-global #navbar-collapse #block-busca li a {
+        color: #000000; }
+    .menu-global #navbar-collapse #block-busca {
+      display: none; }
+    .menu-global #navbar-collapse #block-views-block-contatos-block-1 {
+      display: none; } }
 #block-menuprincipalcontatoebusca .menu-contact-search {
   display: block;
   float: left;
@@ -859,56 +903,66 @@ li.ui-menu-item:hover {
   .paragraph--type--abas .field--name-field-conteudo {
     margin-bottom: 20px;
     text-align: justify; }
-  .paragraph--type--abas .cards-slider .paragraph--type--abas-item {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    padding-bottom: 10px; }
-    .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item {
-      position: relative;
-      background-color: #0083ca;
-      padding: 30px;
-      height: 440px;
+  .paragraph--type--abas .cards-slider {
+    padding-left: 15px; }
+    .paragraph--type--abas .cards-slider .paragraph--type--abas-item {
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out;
-      border-radius: 5px; }
-      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item figure {
-        margin: 0 auto 10px;
-        float: none;
-        max-width: 200px; }
-      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item h2 {
-        display: block;
-        color: #fff;
-        text-transform: none;
-        font-family: "ubunturegular",Arial,sans-serif;
-        font-size: 19px;
-        letter-spacing: 0;
-        line-height: 150%;
-        font-weight: normal;
-        clear: both;
-        max-width: 230px; }
-      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item .field--name-field-texto {
-        font-size: 13px;
-        color: #fff;
-        line-height: 160%;
-        max-width: 230px;
-        -webkit-transition: none;
-        transition: none;
-        font-family: "ubuntulight", Arial, sans-serif; }
-      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a {
-        background: #FF8532;
-        background-image: -webkit-gradient(linear, left top, right top, from(#FF8532), to(#FFA832));
-        background-image: linear-gradient(to right, #FF8532, #FFA832);
-        border-radius: 4px;
-        color: #ffffff;
-        font-size: 16px;
-        padding: 14px 20px 14px 20px;
-        text-decoration: none;
-        border: 0;
-        text-transform: uppercase !important;
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-        padding: 10px 20px 10px 20px; }
+      padding-bottom: 10px; }
+      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item {
+        position: relative;
+        background-color: #0083ca;
+        padding: 30px;
+        height: 440px;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        border-radius: 5px; }
+        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item figure {
+          margin: 0 auto 10px;
+          float: none;
+          max-width: 200px; }
+        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item h2 {
+          display: block;
+          color: #fff;
+          text-transform: none;
+          font-family: "ubunturegular",Arial,sans-serif;
+          font-size: 19px;
+          letter-spacing: 0;
+          line-height: 150%;
+          font-weight: normal;
+          clear: both;
+          max-width: 230px; }
+        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item .field--name-field-texto {
+          font-size: 13px;
+          color: #fff;
+          line-height: 160%;
+          max-width: 230px;
+          -webkit-transition: none;
+          transition: none;
+          font-family: "ubuntulight", Arial, sans-serif; }
+        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a {
+          background: #FF8532;
+          background-image: -webkit-gradient(linear, left top, right top, from(#FF8532), to(#FFA832));
+          background-image: linear-gradient(to right, #FF8532, #FFA832);
+          border-radius: 4px;
+          color: #ffffff;
+          font-size: 16px;
+          padding: 14px 20px 14px 20px;
+          text-decoration: none;
+          border: 0;
+          text-transform: uppercase !important;
+          width: 100%;
+          display: inline-block;
+          text-align: center;
+          padding: 10px 20px 10px 20px; }
+          .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a:after {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 10px;
+            margin-left: 15px;
+            text-transform: uppercase;
+            background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
         .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a:after {
           content: "";
           display: inline-block;
@@ -917,30 +971,22 @@ li.ui-menu-item:hover {
           margin-left: 15px;
           text-transform: uppercase;
           background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
-      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a:after {
-        content: "";
-        display: inline-block;
-        width: 6px;
-        height: 10px;
-        margin-left: 15px;
-        text-transform: uppercase;
-        background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
-      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item .controls-button {
-        position: absolute;
-        bottom: 35px;
-        left: 0;
-        padding: 0 50px; }
-  .paragraph--type--abas .cards-slider .cards-dinamicos--item:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xshadow-card.png.pagespeed.ic.8WUWVCBLA3.png) top center no-repeat;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    opacity: 0.8; }
+        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item .controls-button {
+          position: absolute;
+          bottom: 35px;
+          left: 0;
+          padding: 0 50px; }
+    .paragraph--type--abas .cards-slider .cards-dinamicos--item:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xshadow-card.png.pagespeed.ic.8WUWVCBLA3.png) top center no-repeat;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      opacity: 0.8; }
 
 @media (min-width: 1200px) {
   .paragraph--type--abas .cards-slider .cards-dinamicos--item {
@@ -1136,10 +1182,7 @@ li.ui-menu-item:hover {
     margin-top: 40px; } }
 @media (max-width: 768px) {
   .contact-message-newsletter-form {
-    text-align: center; }
-
-  #navbar .container .region.region-menu-global {
-    display: none; } }
+    text-align: center; } }
 .paragraph--type--cta-2-colunas {
   text-align: center; }
   .paragraph--type--cta-2-colunas .col-xs-12:first-child {
@@ -1527,7 +1570,8 @@ li.ui-menu-item:hover {
     .block-views-blockproduto-banner-block-1 .view-produto-banner .group-left {
       max-width: 432px; }
     .block-views-blockproduto-banner-block-1 .view-produto-banner img {
-      float: right; }
+      margin-left: 50px;
+      max-height: 300px; }
     .block-views-blockproduto-banner-block-1 .view-produto-banner h2 {
       font-family: "ubunturegular", Arial, sans-serif;
       color: #000000;
@@ -1545,14 +1589,16 @@ li.ui-menu-item:hover {
 .produto {
   margin-bottom: 40px; }
   .produto .card-contato {
-    max-width: 240px;
+    position: fixed;
+    max-width: 260px;
     min-height: 231px;
     text-align: center;
     -webkit-box-shadow: 0px 0px 43px 8px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 43px 8px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     padding: 20px;
-    margin-top: 250px; }
+    top: 50%;
+    left: 75%; }
     .produto .card-contato h3 {
       font-family: "ubunturegular", Arial, sans-serif;
       color: #0083CA;
@@ -1629,6 +1675,9 @@ li.ui-menu-item:hover {
 
 #block-categoriasproduto {
   margin-bottom: 30px; }
+  #block-categoriasproduto .is-active {
+    color: #FF8532;
+    font-weight: 700; }
   #block-categoriasproduto #block-categoriasproduto-menu {
     display: none; }
 
