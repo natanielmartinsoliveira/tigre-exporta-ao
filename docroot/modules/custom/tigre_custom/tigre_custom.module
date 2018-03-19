@@ -82,6 +82,14 @@ function hook_taxonomy_menu_update(&$item) {
   $item['weight'] = $menu_link['weight'];
 }
 
+
+function tigre_custom_preprocess_search_result(&$variables) {
+  // Change the date displayed in search results
+  // to be the created date, not the updated date.
+  if($variables['result']['node']->getType() == 'produto')
+    $variables['info_split']['image'] = $variables['result']['node']->get('field_uc_product_image_url')->getString();
+}
+
 /**
  * Implements hook_cronapi().
  */

@@ -1,0 +1,136 @@
+uuid: 06507c12-2dbd-468a-9440-c16a33ba3942
+langcode: pt-br
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.produto.body
+    - field.field.node.produto.field_desenho_tecnico
+    - field.field.node.produto.field_ficha_seguranca
+    - field.field.node.produto.field_ficha_tecnica
+    - field.field.node.produto.field_keywords
+    - field.field.node.produto.field_label_aba_1
+    - field.field.node.produto.field_label_aba_2
+    - field.field.node.produto.field_label_aba_3
+    - field.field.node.produto.field_label_coluna_1_aba_1
+    - field.field.node.produto.field_label_coluna_2_aba_1
+    - field.field.node.produto.field_label_da_coluna_modelo
+    - field.field.node.produto.field_meta_tags
+    - field.field.node.produto.field_prioridade
+    - field.field.node.produto.field_produto_banners
+    - field.field.node.produto.field_produto_chamada
+    - field.field.node.produto.field_produto_descricao
+    - field.field.node.produto.field_produto_genero
+    - field.field.node.produto.field_produto_instrucoes
+    - field.field.node.produto.field_produto_revisado
+    - field.field.node.produto.field_sku
+    - field.field.node.produto.field_taxonomy_catalog
+    - field.field.node.produto.field_texto_tecnico
+    - field.field.node.produto.field_titulo_especificacao
+    - field.field.node.produto.field_uc_product_image
+    - field.field.node.produto.field_uc_product_image_url
+    - field.field.node.produto.field_video
+    - field.field.node.produto.field_video_titulo
+    - node.type.produto
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: content
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_uc_product_image_url
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: ''
+          link: false
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+id: node.produto.search_index
+targetEntityType: node
+bundle: produto
+mode: search_index
+content:
+  field_uc_product_image_url:
+    type: basic_string
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_desenho_tecnico: true
+  field_ficha_seguranca: true
+  field_ficha_tecnica: true
+  field_keywords: true
+  field_label_aba_1: true
+  field_label_aba_2: true
+  field_label_aba_3: true
+  field_label_coluna_1_aba_1: true
+  field_label_coluna_2_aba_1: true
+  field_label_da_coluna_modelo: true
+  field_meta_tags: true
+  field_prioridade: true
+  field_produto_banners: true
+  field_produto_chamada: true
+  field_produto_descricao: true
+  field_produto_genero: true
+  field_produto_instrucoes: true
+  field_produto_revisado: true
+  field_sku: true
+  field_taxonomy_catalog: true
+  field_texto_tecnico: true
+  field_titulo_especificacao: true
+  field_uc_product_image: true
+  field_video: true
+  field_video_titulo: true
+  langcode: true
+  links: true

@@ -5,7 +5,27 @@
             //var startchange = 0;
             //var offset = startchange.offset();
             //if (startchange.length){
-                $(document).scroll(function() { 
+                
+            //}
+
+            // $('#tree3 li').find('a').each(function () {
+            //     if (document.location.pathname == $(this).attr('href')) {
+            //         $(this).parents().addClass("open");
+            //         $(this).addClass("open");
+            //         // add class as you need ul or li or a 
+            //     }
+            // });
+
+           
+            
+            //Initialization of treeviews
+            
+            // $('#tree1').treed();
+            
+            // $('#tree2').treed({openedClass:'glyphicon-folder-open', closedClass:'glyphicon-folder-close'});
+            $(document).ready(function(){
+                
+                function navBarVerify($param) {
                     scroll_start = $(this).scrollTop();
                     if(scroll_start > 0) {
                         $("#navbar-collapse").css({
@@ -38,25 +58,12 @@
                         
                         $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/logo.svg';
                     }
+                 }
+                 
+                navBarVerify();
+                $(document).scroll(function() { 
+                    navBarVerify();
                 });
-            //}
-
-            // $('#tree3 li').find('a').each(function () {
-            //     if (document.location.pathname == $(this).attr('href')) {
-            //         $(this).parents().addClass("open");
-            //         $(this).addClass("open");
-            //         // add class as you need ul or li or a 
-            //     }
-            // });
-
-           
-            
-            //Initialization of treeviews
-            
-            // $('#tree1').treed();
-            
-            // $('#tree2').treed({openedClass:'glyphicon-folder-open', closedClass:'glyphicon-folder-close'});
-            $(document).ready(function(){
 
                 // $(function () {
                 //     $( "#tree3 .selected" ).parents('#tree3 .branch').map(function() {

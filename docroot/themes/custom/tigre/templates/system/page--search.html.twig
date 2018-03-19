@@ -89,7 +89,7 @@
         </div>
       </div>
       {% endif %}
-      
+
       {# Breadcrumb #}
       {% if page.breadcrumb %}
         <div class="container">
@@ -98,7 +98,7 @@
           </div>
         </div>
       {% endif %}
-
+      
     </header>
   {% endblock %}
 {% endif %}
@@ -116,7 +116,27 @@
         {% endblock %}
       {% endif %}
 
+      {# Search #}
+      {% if page.search %}
+        {% block search %}
+          <div id="search--section--block" role="search">
+            <div class="container">
+              {{ page.search }}
+            </div>
+          </div>
+        {% endblock %}
+      {% endif %}
+
       {# Sidebar First #}
+      {% if page.sidebar_first %}
+        {% block sidebar_first %}
+          <div class="container">
+            <aside class="col-sm-3" role="complementary">
+              {{ page.sidebar_first }}
+            </aside>
+          </div>
+        {% endblock %}
+      {% endif %}
 
       {# Content #}
 
@@ -138,21 +158,9 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          {% if page.sidebar_first %}
-            <div class="container page--produtos--content--region">
-              <div class="row">
-                <div class="col-sm-3">
-                  {{ page.sidebar_first }}
-                </div>
-                <div class="col-xs-12 col-sm-9">
-                  {{ page.content }}
-                </div>
-              </div>
-            </div>
-          {% else %}
+          <div class="container search--content--page">
             {{ page.content }}
-          {% endif %}
-          
+          </div> 
         {% endblock %}
 
       {# Sidebar Second #}
@@ -163,8 +171,8 @@
           </aside>
         {% endblock %}
       {% endif %}
-  </div>
-  {# News  #}
+
+      {# News  #}
       {% if page.newsletter %}
         {% block newsletter %}
           <div>
@@ -172,6 +180,7 @@
           </div>
         {% endblock %}
       {% endif %}
+  </div>
 {% endblock %}
 
 
@@ -215,4 +224,3 @@
       {% endblock %}
     {% endif %}
 </footer>
-{{ kint(page) }}

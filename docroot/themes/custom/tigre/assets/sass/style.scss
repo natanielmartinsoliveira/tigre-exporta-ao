@@ -941,6 +941,78 @@
     }
      
 }
+
+// Resultado busca
+.search--content--page {
+    .tabs {
+        display: none;
+    }
+    .search-form {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        input {
+            height: 50px;
+            border-right: 0;
+        }
+        .btn-primary {
+            background: #fff;
+            color: #FF8532;
+            border: 1px solid #ccc;
+            border-left: 0;
+            height: 50px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            z-index: 0;
+        }
+        .btn-primary:after {
+            display: none;
+        }
+    }
+    .search-help-link, .search-advanced {
+        display: none;
+    }
+    .search-result-products {
+        list-style-type: none;
+        li {
+            border-bottom: 2px solid #ccc;
+            border-radius: 4px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        li:hover {
+            border: 2px solid #FF8532;
+        }
+        .search-result-row {
+            figure {
+                text-align: center;
+                min-height: 100px;
+                img {
+                    max-width: 100px;
+                    max-height: 100px;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .pager-nav {
+        .pager__item--last, .pager__item--first {
+            display: none;
+        }
+        .pagination > .active > a {
+            background-color: #fe860c;
+            border-color: #fe860c;
+        }
+    }
+}
+
 li.ui-menu-item:hover {
     background: #fff;
   }
@@ -955,8 +1027,7 @@ li.ui-menu-item:hover {
     
         .ui-menu-item-wrapper {
             text-decoration: none !important;
-            padding-bottom: 0 !important;
-            padding-top: 0 !important;
+            padding: 0 !important;
             &:hover {
                 background-color: #fff;
             }
@@ -977,7 +1048,13 @@ li.ui-menu-item:hover {
                 .ui-autocomplete-field-created {
                     display: none;
                 }
+                .ui-autocomplete-field-nothing {
+                    display: none;
+                }
             }  
+        }
+        .ui-menu-item-wrapper:hover {
+            padding: 0 !important;
         }
     }
 }
