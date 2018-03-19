@@ -11,22 +11,22 @@ label: 'Pattern Categoria Produto'
 type: 'canonical_entities:taxonomy_term'
 pattern: 'produtos/[term:parents:first]/[term:parent:name]/[term:name]'
 selection_criteria:
-  4c4b41ef-9e43-41e6-b392-7777b09fedb3:
+  453cc9ba-d534-4b05-bcdd-2e510f2952cd:
     id: 'entity_bundle:taxonomy_term'
     bundles:
       produto: produto
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 4c4b41ef-9e43-41e6-b392-7777b09fedb3
-  2ec26235-3769-4065-86f5-f99fe499d5e6:
+    uuid: 453cc9ba-d534-4b05-bcdd-2e510f2952cd
+  4a556735-0977-41f8-a214-1d8d3782f8c9:
     id: language
     langcodes:
       pt-br: pt-br
     negate: false
     context_mapping:
       language: 'taxonomy_term:langcode:language'
-    uuid: 2ec26235-3769-4065-86f5-f99fe499d5e6
+    uuid: 4a556735-0977-41f8-a214-1d8d3782f8c9
 selection_logic: and
 weight: -10
 relationships:

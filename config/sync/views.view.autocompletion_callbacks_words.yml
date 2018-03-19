@@ -459,7 +459,7 @@ display:
           exposed: true
           expose:
             operator_id: keys_op
-            label: 'Search Keywords'
+            label: 'Palavras-chave de busca'
             description: ''
             use_operator: false
             operator: keys_op

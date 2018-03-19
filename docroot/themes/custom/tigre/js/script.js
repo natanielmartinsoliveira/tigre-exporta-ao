@@ -2,27 +2,6 @@
     Drupal.behaviors.myBehavior = {
         attach: function (context, settings) {    
             var scroll_start = 0;
-            //var startchange = 0;
-            //var offset = startchange.offset();
-            //if (startchange.length){
-                
-            //}
-
-            // $('#tree3 li').find('a').each(function () {
-            //     if (document.location.pathname == $(this).attr('href')) {
-            //         $(this).parents().addClass("open");
-            //         $(this).addClass("open");
-            //         // add class as you need ul or li or a 
-            //     }
-            // });
-
-           
-            
-            //Initialization of treeviews
-            
-            // $('#tree1').treed();
-            
-            // $('#tree2').treed({openedClass:'glyphicon-folder-open', closedClass:'glyphicon-folder-close'});
             $(document).ready(function(){
                 
                 function navBarVerify($param) {

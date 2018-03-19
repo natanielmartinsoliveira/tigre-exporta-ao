@@ -1018,6 +1018,7 @@
 
 // Resultado busca
 .search--content--page {
+    padding-bottom: 30px;
     .tabs {
         display: none;
     }
@@ -1047,6 +1048,7 @@
     }
     .search-result-products {
         list-style-type: none;
+        padding-left: 0;
         li {
             border-bottom: 2px solid #ccc;
             border-radius: 4px;
@@ -1091,6 +1093,9 @@ li.ui-menu-item:hover {
     background: #fff;
   }
 .ui-autocomplete{ 
+    li:last-child {
+        display: none;
+    }
     .ui-autocomplete-field-group {
         display: none !important;
     }
@@ -1106,6 +1111,8 @@ li.ui-menu-item:hover {
                 background-color: #fff;
             }
             .ui-autocomplete-fields {
+                padding-top: 2px;
+                padding-bottom: 2px;
                 &:hover {
                     background-color: #fff;
                 } 
@@ -1127,8 +1134,10 @@ li.ui-menu-item:hover {
                 }
             }  
         }
-        .ui-menu-item-wrapper:hover {
+        .ui-state-active {
             padding: 0 !important;
+            margin: 0 !important;
+            border: 0 !important;
         }
     }
 }
@@ -2453,8 +2462,16 @@ li.ui-menu-item:hover {
 .page--catalogos--content--region, .page--produtos--content--region {
     padding-top: 30px;
     padding-bottom: 30px;
+    .view-produtos {
+        display: none;
+    }
 }
-
+#block-catalogo {
+    .is-active {
+        color: $larangaEscuro;
+        font-weight: 700;
+    }
+}
 //Menu cataologos e produtos
 .tree, .tree ul {
     margin:0;
