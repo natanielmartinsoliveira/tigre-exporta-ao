@@ -62,6 +62,16 @@
                       }
                 });
 
+                $(".busca--btn").click(function() { 
+                    if( $("#search-block-form--2").length > 0) {
+                        $('html, body').animate({
+                            scrollTop: $("#search-block-form").offset().top - 200
+                        }, 1000);
+                    }else{
+                        $('#modal-div').modal('show');
+                    }
+                });
+
                 // $(function () {
                 //     $( "#tree3 .selected" ).parents('#tree3 .branch').map(function() {
                 //     console.log($(this));

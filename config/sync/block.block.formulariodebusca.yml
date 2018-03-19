@@ -1,0 +1,24 @@
+uuid: 972379ae-87ae-4000-b40e-9f6ec5aa1e98
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - block_class
+    - search
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: formulariodebusca
+theme: tigre
+region: modals
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'BUSQUE POR PRODUTO, SOLUÇÃO OU DÚVIDA'
+  provider: search
+  label_display: visible
+visibility: {  }
