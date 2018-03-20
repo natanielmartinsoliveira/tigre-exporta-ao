@@ -11,7 +11,7 @@ id: node.catalogo.field_arquivo
 field_name: field_arquivo
 entity_type: node
 bundle: catalogo
-label: Arquivo
+label: 'Clique no idioma de sua preferência e baixe o catálogo'
 description: ''
 required: false
 translatable: false

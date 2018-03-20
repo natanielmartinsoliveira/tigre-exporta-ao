@@ -76,7 +76,7 @@ mode: listagem
 content:
   field_arquivo:
     weight: 4
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings:
       ds:
@@ -84,8 +84,8 @@ content:
         ft:
           id: expert
           settings:
-            lb: Downloads
-            prefix: 'Clique no idioma de sua preferência e baixe o catálogo'
+            lb: ''
+            prefix: ''
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
@@ -122,7 +122,7 @@ content:
         ft:
           id: expert
           settings:
-            lb: Arquivo
+            lb: ''
             prefix: ''
             lbw-el: ''
             lbw-cl: ''

@@ -9,7 +9,7 @@ id: node.catalogo.field_catalogo_arquivo_tipo
 field_name: field_catalogo_arquivo_tipo
 entity_type: node
 bundle: catalogo
-label: 'Arquivo Tipo'
+label: Arquivo
 description: 'Ex: PDF, DOC, XLS'
 required: false
 translatable: false

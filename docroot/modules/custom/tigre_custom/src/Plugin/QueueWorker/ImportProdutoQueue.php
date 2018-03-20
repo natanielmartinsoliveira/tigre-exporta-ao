@@ -102,7 +102,7 @@ public function crateProduct($detail) {
   // }
 
   if (!empty($detail['field_texto_tecnico'])){
-    $node->set('field_texto_tecnico', $detail['field_texto_tecnico'][0]['value']);
+    $node->set('field_texto_tecnico', array('format' => 'full_html', 'value' => $detail['field_texto_tecnico'][0]['value']) );
   }
   if (!empty($detail['field_titulo_especificacao'])) {
     $node->set('field_titulo_especificacao', $detail['field_titulo_especificacao'][0]['value']);
