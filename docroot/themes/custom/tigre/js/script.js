@@ -25,7 +25,7 @@
                         $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/assets/images/logo-azul.png';
                         if (screen.width <= 768){
                             $(".navbar-header").css({
-                                'background': 'transparent'
+                                'background': '#0083ca'
                             });
                         }
                     } else {
@@ -45,7 +45,7 @@
                             $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/logo.svg';
                         } else {
                             $(".navbar-header").css({
-                                'background': '#0083ca'
+                                'background': 'transparent'
                             });
                         }
                     }

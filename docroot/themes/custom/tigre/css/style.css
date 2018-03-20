@@ -344,10 +344,10 @@ p {
     .footer #footer-middle #block-views-block-contato-rodape-block-1 .views-row {
       padding-top: 10px;
       margin: auto;
-      width: 180px; }
+      width: 100%; }
     .footer #footer-middle #block-views-block-contato-rodape-block-1 h2 {
       font-size: 14px;
-      color: #FF8532;
+      color: #fff;
       margin-top: 0;
       margin-bottom: 0; }
     .footer #footer-middle #block-views-block-contato-rodape-block-1 p, .footer #footer-middle #block-views-block-contato-rodape-block-1 a {
@@ -357,7 +357,7 @@ p {
       margin-bottom: 0;
       text-decoration: none; }
     .footer #footer-middle #block-views-block-contato-rodape-block-1 .group-left, .footer #footer-middle #block-views-block-contato-rodape-block-1 .group-right {
-      width: auto; }
+      width: 100%; }
     .footer #footer-middle #block-views-block-contato-rodape-block-1 .group-left {
       padding-right: 5px;
       padding-top: 2px; }
@@ -396,16 +396,25 @@ p {
     .footer #footer-middle #block-tigre-footer .cols, .footer #footer-middle #block-contato .cols {
       margin-top: 0px;
       text-align: left; }
+    .footer #footer-middle #block-views-block-contato-rodape-block-1 h2 {
+      color: #FF8532; }
     .footer #footer-middle #block-views-block-contato-rodape-block-1 .views-row {
       padding-top: 10px;
       margin: 0;
-      width: 100%; }
+      width: auto; }
+    .footer #footer-middle #block-views-block-contato-rodape-block-1 .group-left, .footer #footer-middle #block-views-block-contato-rodape-block-1 .group-right {
+      width: auto; }
   .footer #footer-bottom .pull-left {
     text-align: left; }
   .footer #footer-bottom .pull-right {
     text-align: right; }
   .footer #footer-bottom #block-tigreslogan {
     margin-top: 0px; } }
+@media (max-width: 768px) {
+  #footer-middle #block-views-block-contato-rodape-block-1 .views-row {
+    text-align: center; }
+  #footer-middle #block-views-block-contato-rodape-block-1 .group-left {
+    display: none; } }
 .menu-localizacao__pais__item {
   margin-bottom: 10px;
   display: list-item;
@@ -793,10 +802,10 @@ p {
   -o-object-fit: cover;
      object-fit: cover; }
 
-#search--section--block {
-  margin-top: -140px;
-  margin-bottom: 75px; }
-
+@media (min-width: 768px) {
+  #search--section--block {
+    margin-top: -140px;
+    margin-bottom: 75px; } }
 .block-search-form-block {
   width: 100%;
   z-index: 10;
@@ -1020,66 +1029,56 @@ li.ui-menu-item:hover {
   .paragraph--type--abas .field--name-field-conteudo {
     margin-bottom: 20px;
     text-align: justify; }
-  .paragraph--type--abas .cards-slider {
-    padding-left: 15px; }
-    .paragraph--type--abas .cards-slider .paragraph--type--abas-item {
+  .paragraph--type--abas .cards-slider .paragraph--type--abas-item {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding-bottom: 10px; }
+    .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item {
+      position: relative;
+      background-color: #0083ca;
+      padding: 30px;
+      height: 440px;
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out;
-      padding-bottom: 10px; }
-      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item {
-        position: relative;
-        background-color: #0083ca;
-        padding: 30px;
-        height: 440px;
-        -webkit-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-        border-radius: 5px; }
-        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item figure {
-          margin: 0 auto 10px;
-          float: none;
-          max-width: 200px; }
-        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item h2 {
-          display: block;
-          color: #fff;
-          text-transform: none;
-          font-family: "ubunturegular",Arial,sans-serif;
-          font-size: 19px;
-          letter-spacing: 0;
-          line-height: 150%;
-          font-weight: normal;
-          clear: both;
-          max-width: 230px; }
-        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item .field--name-field-texto {
-          font-size: 13px;
-          color: #fff;
-          line-height: 160%;
-          max-width: 230px;
-          -webkit-transition: none;
-          transition: none;
-          font-family: "ubuntulight", Arial, sans-serif; }
-        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a {
-          background: #FF8532;
-          background-image: -webkit-gradient(linear, left top, right top, from(#FF8532), to(#FFA832));
-          background-image: linear-gradient(to right, #FF8532, #FFA832);
-          border-radius: 4px;
-          color: #ffffff;
-          font-size: 16px;
-          padding: 14px 20px 14px 20px;
-          text-decoration: none;
-          border: 0;
-          text-transform: uppercase !important;
-          width: 100%;
-          display: inline-block;
-          text-align: center;
-          padding: 10px 20px 10px 20px; }
-          .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a:after {
-            content: "";
-            display: inline-block;
-            width: 6px;
-            height: 10px;
-            margin-left: 15px;
-            text-transform: uppercase;
-            background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
+      border-radius: 5px; }
+      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item figure {
+        margin: 0 auto 10px;
+        float: none;
+        max-width: 200px; }
+      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item h2 {
+        display: block;
+        color: #fff;
+        text-transform: none;
+        font-family: "ubunturegular",Arial,sans-serif;
+        font-size: 19px;
+        letter-spacing: 0;
+        line-height: 150%;
+        font-weight: normal;
+        clear: both;
+        max-width: 230px; }
+      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item .field--name-field-texto {
+        font-size: 13px;
+        color: #fff;
+        line-height: 160%;
+        max-width: 230px;
+        -webkit-transition: none;
+        transition: none;
+        font-family: "ubuntulight", Arial, sans-serif; }
+      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a {
+        background: #FF8532;
+        background-image: -webkit-gradient(linear, left top, right top, from(#FF8532), to(#FFA832));
+        background-image: linear-gradient(to right, #FF8532, #FFA832);
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 16px;
+        padding: 14px 20px 14px 20px;
+        text-decoration: none;
+        border: 0;
+        text-transform: uppercase !important;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px 10px 20px; }
         .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a:after {
           content: "";
           display: inline-block;
@@ -1088,22 +1087,30 @@ li.ui-menu-item:hover {
           margin-left: 15px;
           text-transform: uppercase;
           background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
-        .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item .controls-button {
-          position: absolute;
-          bottom: 35px;
-          left: 0;
-          padding: 0 50px; }
-    .paragraph--type--abas .cards-slider .cards-dinamicos--item:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xshadow-card.png.pagespeed.ic.8WUWVCBLA3.png) top center no-repeat;
-      left: 50%;
-      width: 100%;
-      height: 100%;
-      -webkit-transform: translate(-50%, 0);
-              transform: translate(-50%, 0);
-      opacity: 0.8; }
+      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item a:after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 10px;
+        margin-left: 15px;
+        text-transform: uppercase;
+        background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xarrow-right.png.pagespeed.ic.kfUznHUqtA.png) no-repeat 0 0; }
+      .paragraph--type--abas .cards-slider .paragraph--type--abas-item .cards-dinamicos--item .controls-button {
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+        padding: 0 50px; }
+  .paragraph--type--abas .cards-slider .cards-dinamicos--item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xshadow-card.png.pagespeed.ic.8WUWVCBLA3.png) top center no-repeat;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    opacity: 0.8; }
 
 @media (min-width: 1200px) {
   .paragraph--type--abas .cards-slider .cards-dinamicos--item {
@@ -1129,17 +1136,23 @@ li.ui-menu-item:hover {
 @media (min-width: 768px) {
   .paragraph--type--abas .field--name-field-conteudo {
     text-align: left; }
-  .paragraph--type--abas .cards-slider .paragraph--type--abas-item {
-    padding-left: 3px !important;
-    padding-right: 3px !important;
-    padding-bottom: 10px !important; }
-  .paragraph--type--abas .cards-slider .cards-dinamicos--item {
-    padding: 30px 20px; }
-    .paragraph--type--abas .cards-slider .cards-dinamicos--item h2 {
-      margin-top: 10px;
-      max-width: 290px; }
-    .paragraph--type--abas .cards-slider .cards-dinamicos--item .field--name-field-texto {
-      max-width: 290px; } }
+  .paragraph--type--abas .cards-slider {
+    padding-left: 15px; }
+    .paragraph--type--abas .cards-slider .paragraph--type--abas-item {
+      padding-left: 3px !important;
+      padding-right: 3px !important;
+      padding-bottom: 10px !important; }
+    .paragraph--type--abas .cards-slider .cards-dinamicos--item {
+      padding: 30px 20px; }
+      .paragraph--type--abas .cards-slider .cards-dinamicos--item h2 {
+        margin-top: 10px;
+        max-width: 290px; }
+      .paragraph--type--abas .cards-slider .cards-dinamicos--item .field--name-field-texto {
+        max-width: 290px; } }
+@media (max-width: 768px) {
+  .paragraph--type--abas {
+    padding: 0;
+    padding-bottom: 20px; } }
 .paragraph--type--imagem-c-texto .paragraph-fundo {
   background: #f3f3f3;
   background-image: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xbg_pata_tigre-b.png.pagespeed.ic.3s9qNlVJ1F.png);
@@ -1306,8 +1319,7 @@ li.ui-menu-item:hover {
     padding-top: 15%;
     padding-bottom: 20%; }
   .paragraph--type--cta-2-colunas .col-xs-12:last-child {
-    padding: 0;
-    right: -15px; }
+    padding: 0; }
   .paragraph--type--cta-2-colunas .field--name-field-titulo {
     font-size: 24px;
     font-family: 'ubuntubold'; }
@@ -1468,11 +1480,22 @@ li.ui-menu-item:hover {
       font-size: 14px; } }
 @media (max-width: 768px) {
   .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
-    top: 9vh;
-    text-align: center;
-    left: 0; }
+    top: 50%;
+    left: 0;
+    padding-right: 25px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-align: left; }
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption .div-btn {
-      margin-top: 25px; }
+      height: 5px !important;
+      margin-top: 15px !important;
+      text-align: center; }
+      .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption .div-btn a {
+        position: absolute;
+        width: 90%;
+        margin-left: 5%;
+        left: 0;
+        padding: 10px 15px !important; }
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption h2 {
       font-size: 26px; }
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption p {
@@ -1715,7 +1738,9 @@ li.ui-menu-item:hover {
     border-radius: 8px;
     padding: 20px;
     top: 50%;
-    left: 75%; }
+    left: 75%;
+    background: #fff;
+    z-index: 999; }
     .produto .card-contato h3 {
       font-family: "ubunturegular", Arial, sans-serif;
       color: #0083CA;

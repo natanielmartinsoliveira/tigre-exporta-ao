@@ -319,11 +319,11 @@
             .views-row{
                 padding-top: 10px;
                 margin: auto;
-                width: 180px;
+                width: 100%;
             }
             h2 {
                 font-size: 14px;
-                color: #FF8532;
+                color: #fff;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -335,7 +335,7 @@
                 text-decoration: none;
             }
             .group-left, .group-right {
-                width: auto;
+                width: 100%;
             }
             .group-left {
                 padding-right: 5px;
@@ -407,10 +407,16 @@
                 }
             }
             #block-views-block-contato-rodape-block-1 {
+                h2 {
+                    color: #FF8532;
+                }
                 .views-row{
                     padding-top: 10px;
                     margin: 0;
-                    width: 100%;
+                    width: auto;
+                }
+                .group-left, .group-right {
+                    width: auto;
                 }
             }
         }
@@ -425,6 +431,19 @@
             }
             #block-tigreslogan {
                 margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #footer-middle {
+        #block-views-block-contato-rodape-block-1 {
+            .views-row{
+                text-align: center;
+            }
+            .group-left {
+                display: none;
             }
         }
     }
@@ -990,9 +1009,11 @@
 }
 
 // Busca principal
-#search--section--block {
-    margin-top: -140px;
-    margin-bottom: 75px;
+@media (min-width: 768px) {
+    #search--section--block {
+        margin-top: -140px;
+        margin-bottom: 75px;
+    }
 }
 
 .block-search-form-block {
@@ -1300,7 +1321,6 @@ li.ui-menu-item:hover {
     }
 
     .cards-slider {
-        padding-left: 15px;
         .paragraph--type--abas-item {
             -webkit-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
@@ -1433,6 +1453,7 @@ li.ui-menu-item:hover {
         }
 
         .cards-slider {
+            padding-left: 15px;
             .paragraph--type--abas-item {
                 padding-left: 3px !important;
                 padding-right: 3px !important;
@@ -1452,6 +1473,13 @@ li.ui-menu-item:hover {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .paragraph--type--abas {
+        padding: 0;
+        padding-bottom: 20px;
     }
 }
 
@@ -1668,7 +1696,6 @@ li.ui-menu-item:hover {
 
     .col-xs-12:last-child {
         padding: 0;
-        right: -15px;
     }
 
     .field--name-field-titulo {
@@ -1869,12 +1896,23 @@ li.ui-menu-item:hover {
 
 @media (max-width: 768px) {
     .views_slideshow_cycle_main .views_slideshow_cycle_slide .views-row .slideshow-caption {
-        top: 9vh;
-        text-align: center;
+        top: 50%;
         left: 0;
+        padding-right: 25px;
+        transform: translateY(-50%);
+        text-align: left;
 
         .div-btn {
-            margin-top: 25px;
+            height: 5px !important;
+            margin-top: 15px !important;
+            text-align: center;
+            a {
+                position: absolute;
+                width: 90%;
+                margin-left: 5%;
+                left: 0;
+                padding: 10px 15px !important;
+            }
         }
 
         h2 {
@@ -2266,6 +2304,8 @@ li.ui-menu-item:hover {
         padding: 20px;
         top: 50%;
         left: 75%;
+        background: #fff;
+        z-index: 999;
         h3 {
             font-family: "ubunturegular", Arial, sans-serif;
             color: #0083CA;
