@@ -35,6 +35,9 @@ public function crateProduct($detail) {
   $node->set('title', $detail['title'][0]['value']);
   $node->set('body', array('format' => 'full_html', 'value' => $detail['body'][0]['value']) );
   
+  if (!empty($detail['model'])) {
+    $node->set('field_sku', $detail['model'][0]['value']);
+  }
   if (!empty($detail['uc_product_image'])) {
     $node->set('field_uc_product_image_url', $detail['uc_product_image'][0]['url']);
   }

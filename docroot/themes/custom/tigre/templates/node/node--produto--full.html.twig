@@ -102,7 +102,7 @@
         <div class="col-xs-12">
 
           <div class="row">
-            <div class="col-xs-12 col-sm-9 product--details">
+            <div class="col-xs-12 col-md-9 product--details">
 
               <div class="row list-product-icons-row">
                 <div class="col-xs-12 col-sm-4  list-product-icons">
@@ -126,9 +126,13 @@
 
               <!-- Nav tabs -->
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">DESCRIÇÃO DO PRODUTO</a></li>
+                {% if content.body[0] is not empty or content.field_produto_instrucoes[0] is not empty %}
+                  <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">DESCRIÇÃO DO PRODUTO</a></li>
+                {% endif %}
                 <li role="presentation"><a href="#code" aria-controls="code" role="tab" data-toggle="tab">CÓDIGO E EMBALAGEM</a></li>
-                <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">INFORMAÇÕES TÉCNICAS</a></li>
+                {% if content.field_texto_tecnico[0] is not empty %}
+                  <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">INFORMAÇÕES TÉCNICAS</a></li>
+                {% endif %}
               </ul>
 
               <!-- Tab panes -->

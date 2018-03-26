@@ -1740,7 +1740,8 @@ li.ui-menu-item:hover {
     top: 50%;
     left: 75%;
     background: #fff;
-    z-index: 999; }
+    z-index: 999;
+    display: none; }
     .produto .card-contato h3 {
       font-family: "ubunturegular", Arial, sans-serif;
       color: #0083CA;
@@ -1756,7 +1757,8 @@ li.ui-menu-item:hover {
       padding: 14px 20px 14px 20px;
       text-decoration: none;
       border: 0;
-      text-transform: uppercase !important; }
+      text-transform: uppercase !important;
+      font-size: 14px; }
       .produto .card-contato a:after {
         content: "";
         display: inline-block;
@@ -1800,6 +1802,48 @@ li.ui-menu-item:hover {
     font-size: 24px;
     margin-bottom: 18px; }
 
+@media (min-width: 992px) {
+  .produto .card-contato {
+    display: block; } }
+#block-views-block-produtos-relacionados-block-1 {
+  margin-bottom: 30px; }
+  #block-views-block-produtos-relacionados-block-1 .block-title {
+    font-family: "ubuntubold", Arial, sans-serif;
+    font-size: 30px;
+    color: #0083CA;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  #block-views-block-produtos-relacionados-block-1 .col {
+    padding-bottom: 20px; }
+    #block-views-block-produtos-relacionados-block-1 .col .node--view-mode-produto-relacionado {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      -webkit-transition: border-color .3s ease;
+      transition: border-color .3s ease;
+      padding: 11px;
+      min-height: 229px;
+      cursor: pointer; }
+      #block-views-block-produtos-relacionados-block-1 .col .node--view-mode-produto-relacionado .group-left {
+        padding-top: 50px; }
+      #block-views-block-produtos-relacionados-block-1 .col .node--view-mode-produto-relacionado h2 {
+        font-family: "ubunturegular", Arial, sans-serif;
+        color: #000000;
+        font-size: 20px;
+        margin-top: 0; }
+      #block-views-block-produtos-relacionados-block-1 .col .node--view-mode-produto-relacionado img {
+        max-width: 138px;
+        max-height: 138px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+
+@media (min-width: 1200px) {
+  #block-views-block-produtos-relacionados-block-1 .node--view-mode-produto-relacionado img {
+    max-width: 178px;
+    max-height: 178px; } }
 .breadcrumb {
   background-color: transparent;
   padding: 8px 0px; }

@@ -2306,6 +2306,7 @@ li.ui-menu-item:hover {
         left: 75%;
         background: #fff;
         z-index: 999;
+        display: none;
         h3 {
             font-family: "ubunturegular", Arial, sans-serif;
             color: #0083CA;
@@ -2314,6 +2315,7 @@ li.ui-menu-item:hover {
         }
         a {
             @include button-style;
+            font-size: 14px;
         }
     }
     .product--details{
@@ -2361,6 +2363,66 @@ li.ui-menu-item:hover {
         margin-bottom: 18px;
     }
 }
+@media (min-width: 992px) {
+    .produto {
+        .card-contato {
+            display: block;
+        }
+    }
+}
+
+#block-views-block-produtos-relacionados-block-1 {
+    margin-bottom: 30px;
+    .block-title{
+        font-family: "ubuntubold", Arial, sans-serif;
+        font-size: 30px;
+        color: #0083CA;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .col {
+        padding-bottom: 20px;
+        .node--view-mode-produto-relacionado {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            -webkit-transition: border-color .3s ease;
+            transition: border-color .3s ease;
+            padding: 11px;
+            min-height: 229px;
+            .group-left {
+                padding-top: 50px;
+            }
+            cursor: pointer;
+            h2 {
+                font-family: "ubunturegular", Arial, sans-serif;
+                color: #000000;
+                font-size: 20px;
+                margin-top: 0;
+            }
+            img {
+                max-width: 138px;
+                max-height: 138px;
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    #block-views-block-produtos-relacionados-block-1 {
+        .node--view-mode-produto-relacionado {
+            img {
+                max-width: 178px;
+                max-height: 178px;
+            }
+        }
+    }
+}
+
 .breadcrumb {
     background-color: transparent;
     padding: 8px 0px;

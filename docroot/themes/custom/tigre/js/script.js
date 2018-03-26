@@ -55,11 +55,13 @@
                 $(document).scroll(function() { 
                     navBarVerify();
                     // From middle, session products
-                    if (scroll_start > 800) {
-                        $('.card-contato').fadeOut();
-                      } else {
-                        $('.card-contato').fadeIn();
-                      }
+                    if ( $(window).width() > 992 ) {
+                        if ( scroll_start > 800) {
+                            $('.card-contato').fadeOut();
+                        } else {
+                            $('.card-contato').fadeIn();
+                        }
+                    }
                 });
 
                 $(".busca--btn").click(function() { 
