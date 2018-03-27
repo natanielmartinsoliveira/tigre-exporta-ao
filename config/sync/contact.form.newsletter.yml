@@ -1,12 +1,21 @@
 uuid: 028840a7-82b4-4a1d-97be-3d098a2a9732
 langcode: pt-br
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Enviar mensagem'
+    show_preview: true
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
 id: newsletter
 label: Newsletter
 recipients:
   - lucas@nextidea.com.br
 reply: ''
 weight: 0
-message: ''
+message: 'Sua mensagem foi enviada'
 redirect: ''

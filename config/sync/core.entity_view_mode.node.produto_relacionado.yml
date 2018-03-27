@@ -1,0 +1,10 @@
+uuid: 2e39d625-27f4-4f9c-a7b6-60f7acc3a6e7
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: node.produto_relacionado
+label: 'Produto Relacionado'
+targetEntityType: node
+cache: true

@@ -1,0 +1,16 @@
+settings:
+  allowed_values:
+    -
+      label: ' Architect'
+    -
+      label: Constructor
+    -
+      label: Consumer
+    -
+      label: Distributor
+    -
+      label: Engineer
+    -
+      label: Student
+    -
+      label: Others

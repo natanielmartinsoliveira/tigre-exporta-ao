@@ -8,7 +8,8 @@ dependencies:
     - field.field.paragraph.abas.field_titulo
     - paragraphs.paragraphs_type.abas
   module:
-    - entity_reference_revisions
+    - ds
+    - slick_paragraphs
     - text
 id: paragraph.abas.default
 targetEntityType: paragraph
@@ -23,13 +24,58 @@ content:
     type: text_default
     region: content
   field_item:
-    type: entity_reference_revisions_entity_view
+    type: slick_paragraphs_vanilla
     weight: 2
     label: hidden
     settings:
+      optionset: cards_produtos
+      skin: default
       view_mode: default
-      link: ''
-    third_party_settings: {  }
+      cache: 0
+      current_view_mode: default
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      skin_arrows: ''
+      skin_dots: ''
+      style: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
     region: content
   field_titulo:
     weight: 0

@@ -1,0 +1,146 @@
+uuid: 2f6a2f1c-671d-4656-b253-9bf819c94063
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.produto_relacionado
+    - field.field.node.produto.body
+    - field.field.node.produto.field_desenho_tecnico
+    - field.field.node.produto.field_ficha_seguranca
+    - field.field.node.produto.field_ficha_tecnica
+    - field.field.node.produto.field_keywords
+    - field.field.node.produto.field_label_aba_1
+    - field.field.node.produto.field_label_aba_2
+    - field.field.node.produto.field_label_aba_3
+    - field.field.node.produto.field_label_coluna_1_aba_1
+    - field.field.node.produto.field_label_coluna_2_aba_1
+    - field.field.node.produto.field_label_da_coluna_modelo
+    - field.field.node.produto.field_meta_tags
+    - field.field.node.produto.field_prioridade
+    - field.field.node.produto.field_produto_banners
+    - field.field.node.produto.field_produto_chamada
+    - field.field.node.produto.field_produto_descricao
+    - field.field.node.produto.field_produto_genero
+    - field.field.node.produto.field_produto_instrucoes
+    - field.field.node.produto.field_produto_revisado
+    - field.field.node.produto.field_sku
+    - field.field.node.produto.field_taxonomy_catalog
+    - field.field.node.produto.field_texto_tecnico
+    - field.field.node.produto.field_titulo_especificacao
+    - field.field.node.produto.field_uc_product_image
+    - field.field.node.produto.field_uc_product_image_url
+    - field.field.node.produto.field_video
+    - field.field.node.produto.field_video_titulo
+    - node.type.produto
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: content
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_sku
+        - node_title
+      right:
+        - field_uc_product_image_url
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: ''
+          link: false
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+id: node.produto.produto_relacionado
+targetEntityType: node
+bundle: produto
+mode: produto_relacionado
+content:
+  field_sku:
+    type: string
+    weight: 0
+    region: left
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_uc_product_image_url:
+    type: basic_string
+    weight: 2
+    region: right
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_desenho_tecnico: true
+  field_ficha_seguranca: true
+  field_ficha_tecnica: true
+  field_keywords: true
+  field_label_aba_1: true
+  field_label_aba_2: true
+  field_label_aba_3: true
+  field_label_coluna_1_aba_1: true
+  field_label_coluna_2_aba_1: true
+  field_label_da_coluna_modelo: true
+  field_meta_tags: true
+  field_prioridade: true
+  field_produto_banners: true
+  field_produto_chamada: true
+  field_produto_descricao: true
+  field_produto_genero: true
+  field_produto_instrucoes: true
+  field_produto_revisado: true
+  field_taxonomy_catalog: true
+  field_texto_tecnico: true
+  field_titulo_especificacao: true
+  field_uc_product_image: true
+  field_video: true
+  field_video_titulo: true
+  langcode: true
+  links: true

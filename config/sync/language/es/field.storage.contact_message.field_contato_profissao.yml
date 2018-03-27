@@ -1,0 +1,12 @@
+settings:
+  allowed_values:
+    0:
+      label: Arquitecto
+    2:
+      label: Constructor
+    4:
+      label: Ingeniero
+    5:
+      label: Estudiante
+    6:
+      label: Otro
