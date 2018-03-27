@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ *
+ * Define a custom macro that will render all menu trees.
+ */
+#}
+{% macro menu_links(items, attributes, menu_level, classes) %}
+  {% if items %}
+    <div class="role-a-pagina">
+    {% for item in items %}
+      
+      <div class="block-roleapagina-btn">
+          <span class="lb-scroll">{{item.title}}</span>
+          <span class="glyphicon glyphicon-chevron-down glyphicon-refresh-animate"></span>
+      </div>
+    {% endfor %}
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{#
+  Invoke the custom macro defined above. If classes were provided, use them.
+  This allows the template to be extended without having to also duplicate the
+  code above. @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ _self.menu_links(items, attributes, 0, classes ? classes : ['menu', 'menu--' ~ menu_name|clean_class, 'nav']) }}

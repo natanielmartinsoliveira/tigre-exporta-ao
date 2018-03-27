@@ -23,13 +23,13 @@
                         //         'background': 'url(themes/custom/tigre/assets/images/logo-azul.png) no-repeat'
                         //     });
                         $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/assets/images/logo-azul.png';
-                        if (screen.width <= 768){
+                        if ($(window).width() <= 768){
                             $(".navbar-header").css({
                                 'background': '#0083ca'
                             });
                         }
                     } else {
-                        if (screen.width > 768){
+                        if ($(window).width() > 768){
                             $('#navbar-collapse').css({
                                 'background-color': 'transparent',
                                 "margin-top": "0",
@@ -73,6 +73,14 @@
                         $('#modal-div').modal('show');
                     }
                 });
+                $(".block-roleapagina-btn").click(function() { 
+                    if( $("#main-content").length > 0) {
+                        $('html, body').animate({
+                            scrollTop: $("#main-content").offset().top - 200
+                        }, 500);
+                    }
+                });
+                
 
                 // $(function () {
                 //     $( "#tree3 .selected" ).parents('#tree3 .branch').map(function() {

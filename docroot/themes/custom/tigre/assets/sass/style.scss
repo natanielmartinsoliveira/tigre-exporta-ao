@@ -24,29 +24,24 @@
 
 @media (min-width: 991px){
     #navbar:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
         height: 217px;
-        background: -moz-linear-gradient(top,#00418A 0%,rgba(125,185,232,0) 100%);
-        background: -webkit-linear-gradient(top,#00418A 0%,rgba(125,185,232,0) 100%);
-        background: linear-gradient(to bottom,#00418A 0%,rgba(125,185,232,0) 100%);
-        z-index: 1;
     }
 }
 @media (min-width: 768px){
     #navbar:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
         height: 170px;
-        background: -moz-linear-gradient(top,#00418A 0%,rgba(125,185,232,0) 100%);
-        background: -webkit-linear-gradient(top,#00418A 0%,rgba(125,185,232,0) 100%);
-        background: linear-gradient(to bottom,#00418A 0%,rgba(125,185,232,0) 100%);
-        z-index: 1;
     }
+}
+#navbar:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: -moz-linear-gradient(top,#00418A 0%,rgba(125,185,232,0) 100%);
+    background: -webkit-linear-gradient(top,#00418A 0%,rgba(125,185,232,0) 100%);
+    background: linear-gradient(to bottom,#00418A 0%,rgba(125,185,232,0) 100%);
+    z-index: 1;
 }
 
 .list-product-icons-row{
@@ -1023,7 +1018,7 @@
 // Busca principal
 @media (min-width: 768px) {
     #search--section--block {
-        margin-top: -140px;
+        margin-top: -180px;
         margin-bottom: 75px;
     }
 }
@@ -1674,7 +1669,7 @@ li.ui-menu-item:hover {
                 top: 0;
                 width: 100%;
                 text-align: center;
-                padding: 8% 20% 0;
+                padding: 8% 10% 0;
 
                 p {
                     font-size: 24px;
@@ -1688,6 +1683,18 @@ li.ui-menu-item:hover {
                     @include button-style;
 
                     font-size: 14px;
+                }
+            }
+        }
+    }
+}
+// Paragrafo CTA Centralizado
+@media (min-width: 768px) {
+    .paragraph--type--cta-centralizado {
+        .container {
+            figure {
+                figcaption {
+                    padding: 8% 20% 0;
                 }
             }
         }
@@ -2295,13 +2302,13 @@ li.ui-menu-item:hover {
             max-width: 432px;
         }
         img {
-            margin-left: 50px;
+            margin-left: 0px;
             max-height: 300px;
         }
         h2 {
             font-family: "ubunturegular", Arial, sans-serif;
             color: #000000;
-            font-size: 50px;
+            font-size: 32px;
         }
         .field--name-field-sku {
             .field--label, .field--item {
@@ -2315,6 +2322,18 @@ li.ui-menu-item:hover {
             font-family: "ubunturegular", Arial, sans-serif;
             color: #95989A;
             font-size: 14px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .block-views-blockproduto-banner-block-1 {
+        .view-produto-banner {
+            img {
+                margin-left: 50px;
+            }
+            h2 {
+                font-size: 50px;
+            }
         }
     }
 }
@@ -2408,7 +2427,7 @@ li.ui-menu-item:hover {
         text-transform: uppercase;
         margin-bottom: 30px;
     }
-    .slide__content {
+    .slick--view--produtos-relacionados, .slide__content {
         padding-left: 8px;
         padding-right: 8px;
         .slide__caption {
@@ -2449,6 +2468,7 @@ li.ui-menu-item:hover {
                 right: 24px;
                 bottom: 0;
                 margin: auto;
+                object-fit: contain;
             }
         }
     }
@@ -2765,4 +2785,64 @@ li.ui-menu-item:hover {
     margin:0px 0px 0px 0px;
     padding:0px 0px 0px 0px;
     outline: 0;
+}
+@media (max-width: 768px) {
+    #block-copyright {
+        .row {
+            display: grid;
+            a {
+                margin-bottom: 10px;
+            }
+        }
+        .separator--link {
+            display: none;
+        }
+    }
+}
+@-webkit-keyframes buttonnav{
+    0%{
+        bottom:-3px
+    }
+    50%{
+        bottom:3px
+    }
+    100%{
+        bottom:-3px
+    }
+}
+@keyframes buttonnav{
+    0%{
+        transform: translateY(-3px);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+    100%{
+        transform: translateY(-3px);
+    }
+}
+#block-roleapagina {
+    z-index: 999;
+    position: relative;
+    .role-a-pagina {
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        .lb-scroll{
+            color: #fff;
+            display: block;
+            font-family: "ubuntubold", Arial, sans-serif;
+        }
+        .glyphicon {
+            font-size: 18px;
+        }
+    }
+}
+.glyphicon-refresh-animate {
+    -webkit-animation-name: buttonnav;    
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: buttonnav;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }

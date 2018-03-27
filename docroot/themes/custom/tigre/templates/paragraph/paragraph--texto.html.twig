@@ -48,10 +48,8 @@
 %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-   <div class="row col-sm-9">
       {% block content %}
         {{ content }}
       {% endblock %}
-    </div>
   </div>
 {% endblock paragraph %}
