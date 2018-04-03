@@ -1,246 +1,391 @@
 <?php
 
-use Drupal\tigre_custom\Rest\TigreRestService;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\node\Entity\Node;
+use Drupal\tigre_custom\Rest\TigreRestService;
 
 /**
  * Implements hook_preprocess_HOOK().
  */
-function tigre_custom_preprocess_form_element(&$variables) {
+function tigre_custom_preprocess_form_element(&$variables)
+{
 
-  if ($variables['element']['#id'] == 'edit-name') {
-    $variables['attributes']['class'][] = 'col-md-6';
-    $variables['label']['#title'] = t('Name');
-  }
+    if ($variables['element']['#id'] == 'edit-name') {
+        $variables['attributes']['class'][] = 'col-md-6';
+        $variables['label']['#title'] = t('Name');
+    }
 
-  if ($variables['element']['#id'] == 'edit-mail') {
-    $variables['attributes']['class'][] = 'col-md-6';
-    $variables['label']['#title'] = t('E-mail');
-  }
+    if ($variables['element']['#id'] == 'edit-mail') {
+        $variables['attributes']['class'][] = 'col-md-6';
+        $variables['label']['#title'] = t('E-mail');
+    }
 
-  if ($variables['element']['#id'] == 'edit-pass') {
-    $variables['attributes']['class'][] = 'col-md-6';
-  }
+    if ($variables['element']['#id'] == 'edit-pass') {
+        $variables['attributes']['class'][] = 'col-md-6';
+    }
 
-  if ($variables['element']['#id'] == 'edit-field-contato-profissao') {
-    $variables['attributes']['class'][] = 'col-md-6';
-  }
+    if ($variables['element']['#id'] == 'edit-field-contato-profissao') {
+        $variables['attributes']['class'][] = 'col-md-6';
+    }
 
-  if ($variables['element']['#id'] == 'edit-field-contato-empresa-0-value') {
-    $variables['attributes']['class'][] = 'col-md-6';
-  }
+    if ($variables['element']['#id'] == 'edit-field-contato-empresa-0-value') {
+        $variables['attributes']['class'][] = 'col-md-6';
+    }
 
+    if ($variables['element']['#id'] == 'edit-field-contato-celular-0-value') {
+        $variables['attributes']['class'][] = 'col-md-6';
+    }
 
-  if ($variables['element']['#id'] == 'edit-field-contato-celular-0-value') {
-    $variables['attributes']['class'][] = 'col-md-6';
-  }
+    if ($variables['element']['#id'] == 'edit-field-contato-telefone-0-value') {
+        $variables['attributes']['class'][] = 'col-md-3';
+    }
 
+    if ($variables['element']['#id'] == 'edit-field-contato-celular-0-value') {
+        $variables['attributes']['class'][] = 'col-md-3';
+    }
 
-  if ($variables['element']['#id'] == 'edit-field-contato-telefone-0-value') {
-    $variables['attributes']['class'][] = 'col-md-3';
-  }
+    if ($variables['element']['#id'] == 'edit-field-contato-pais') {
+        $variables['attributes']['class'][] = 'col-md-6';
+    }
 
-
-  if ($variables['element']['#id'] == 'edit-field-contato-celular-0-value') {
-    $variables['attributes']['class'][] = 'col-md-3';
-  }
-
-  if ($variables['element']['#id'] == 'edit-field-contato-pais') {
-    $variables['attributes']['class'][] = 'col-md-6';
-  }
-
-
-  if ($variables['element']['#id'] == 'edit-message-0-value') {
-    $variables['attributes']['class'][] = 'col-md-12';
-  }
+    if ($variables['element']['#id'] == 'edit-message-0-value') {
+        $variables['attributes']['class'][] = 'col-md-12';
+    }
 
 }
 function tigre_custom_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
 {
     if ($form_id == 'contact_message_contato_form') {
-   
-      $form['actions']['submit']['#value'] = t('Enviar');
-   
-    }else if ($form_id == 'contact_message_newsletter_form') {
-   
-      $form['actions']['submit']['#value'] = t('Enviar');
+
+        $form['actions']['submit']['#value'] = t('Enviar');
+
+    } else if ($form_id == 'contact_message_newsletter_form') {
+
+        $form['actions']['submit']['#value'] = t('Enviar');
 
     }
 }
 
-function tigre_custom_search_block_form_alter(&$form, FormStateInterface $form_state) {
-  $form['keys']['#attributes']['placeholder'] = t('Digite aqui o produto ou categoria que busca');
+function tigre_custom_search_block_form_alter(&$form, FormStateInterface $form_state)
+{
+    $form['keys']['#attributes']['placeholder'] = t('Digite aqui o produto ou categoria que busca');
 }
 
-function hook_taxonomy_menu_update(&$item) {
-  if ($item['ptid'] !== '0') {
-    return;
-  }
+function hook_taxonomy_menu_update(&$item)
+{
+    if ($item['ptid'] !== '0') {
+        return;
+    }
 
-  $menu_link = menu_link_load($item['mlid']);
-  $item['weight'] = $menu_link['weight'];
+    $menu_link = menu_link_load($item['mlid']);
+    $item['weight'] = $menu_link['weight'];
 }
 
+function tigre_custom_preprocess_search_result(&$variables)
+{
+    // Change the date displayed in search results
+    // to be the created date, not the updated date.
+    if ($variables['result']['node']->getType() == 'produto') {
+        $variables['info_split']['image'] = $variables['result']['node']->get('field_uc_product_image_url')->getString();
+    }
 
-function tigre_custom_preprocess_search_result(&$variables) {
-  // Change the date displayed in search results
-  // to be the created date, not the updated date.
-  if($variables['result']['node']->getType() == 'produto')
-    $variables['info_split']['image'] = $variables['result']['node']->get('field_uc_product_image_url')->getString();
 }
 
 /**
  * Implements hook_cronapi().
  */
-function tigre_custom_cronapi() {
-  $items = array();
-  $items['_tigre_custom_import_produto'] = array();
-  return $items;
+function tigre_custom_cronapi()
+{
+    $items = array();
+    $items['_tigre_custom_import_produto'] = array();
+    return $items;
 }
 
 /*function tigre_custom_cron() {
-  tigre_list_products();
+tigre_list_products();
 }*/
 
-function tigre_list_products_finished() {
+function tigre_list_products_finished()
+{
 
 }
 
-function tigre_custom_queue_import_produto_cronjob() {
+function tigre_custom_queue_import_produto_cronjob()
+{
 
-  // $tids = \Drupal::entityQuery('taxonomy_term')
-  //   ->condition('vid', 'produto')
-  //   ->execute();
+    // $tids = \Drupal::entityQuery('taxonomy_term')
+    //   ->condition('vid', 'produto')
+    //   ->execute();
 
-  // $controller = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
-  // $entities = $controller->loadMultiple($tids);
-  // $controller->delete($entities);
-  
-  // $result = \Drupal::entityQuery('node')
-  //     ->condition('type', 'produto')
-  //     ->execute();
-  // entity_delete_multiple('node', $result);
+    // $controller = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+    // $entities = $controller->loadMultiple($tids);
+    // $controller->delete($entities);
 
-  /** @var QueueInterface $queue */
-  $queue = \Drupal::queue('tigre_custom_queue_worker');
+    // $result = \Drupal::entityQuery('node')
+    //     ->condition('type', 'produto')
+    //     ->execute();
+    // entity_delete_multiple('node', $result);
 
-  /** @var TigreRestService $tigre_service */
-  $tigre_service = new TigreRestService();
-  $tigre_service->setHost("http://34.193.90.181");
-  //$tigre_service->setHost("https://www.tigre.com.br");
-  $tigre_service->setUsername("lucas");
-  $tigre_service->setPassword('102030');
-  $produtos = $tigre_service->getProductTaxonomies();
+    //  return;
 
-  foreach ($produtos as $nid => $produto) {
-    $produto_language = $produto['pt-br'];
-    $parent = $produto_language['parent'];
-    if(!is_null($parent))
-        $parent = (int) $parent;
-    $data[] = array ( 'id' => $nid, 'parent_id' => $parent );
-  }
+    /** @var QueueInterface $queue */
+    $queue = \Drupal::queue('tigre_custom_queue_worker');
 
-  function cmp($a, $b) {    
-  if ($a['parent_id'] == $b['parent_id']) {
-      return 0;
-  }
-  return ($a['parent_id'] < $b['parent_id']) ? -1 : 1;
-  }
+    /** @var TigreRestService $tigre_service */
+    $tigre_service = new TigreRestService();
+    //$tigre_service->setHost("http://34.193.90.181");
+    $tigre_service->setHost("https://www.tigre.com.br");
+    $tigre_service->setUsername("lucas");
+    //$tigre_service->setPassword('102030');
+    $tigre_service->setPassword('TigreExportAPI');
+    $produtos = $tigre_service->getProductTaxonomies();
 
-  uasort($data, 'cmp');
-  
-  foreach ($data as $item) {
-    $nid = (string) $item['id'];
+    foreach ($produtos as $nid => $produto) {
+        $produto_language = $produto['pt-br'];
+        $parent = $produto_language['parent'];
+        if (!is_null($parent)) {
+            $parent = (int) $parent;
+        }
 
-    $produto = $produtos[$nid];
-    $produto_language = $produto['pt-br'];
-    $parent = $produto_language['parent'];
-    if(!is_null($parent)){
-      $detailParent = $tigre_service->getDetailTaxonomy($produtos[$parent]['pt-br']['url']);
-      $taxonomyParent = \Drupal::service('entity.repository')->loadEntityByUuid('taxonomy_term', $detailParent['uuid']['0']['value']);
+        $data[] = array('id' => $nid, 'parent_id' => $parent);
     }
-    $detail = $tigre_service->getDetailTaxonomy($produto_language['url']);
-    $current_taxonomy = \Drupal::service('entity.repository')->loadEntityByUuid('taxonomy_term', $detail['uuid']['0']['value']);
 
-      if (empty($current_taxonomy)) {
-        $taxonomy = Term::create([
-          'vid' => 'produto',
-        ]);
-      }
-      else {
-        $taxonomy = Term::load($current_taxonomy->id());
-      }
+    function cmp($a, $b)
+    {
+        if ($a['parent_id'] == $b['parent_id']) {
+            return 0;
+        }
+        return ($a['parent_id'] < $b['parent_id']) ? -1 : 1;
+    }
 
-      if (!empty($detail['uc_catalog_image'])) {
-        $imagem = file_get_contents($detail['uc_catalog_image'][0]['url']);
-        $file = file_save_data($imagem, file_default_scheme().'://imagens/taxonomia/produto/'.basename($detail['uc_catalog_image'][0]['url']), FILE_EXISTS_REPLACE);
-      }
-      $taxonomy->set('uuid', $detail['uuid'][0]['value']);
-      $taxonomy->set('name', $detail['name'][0]['value']);
-      $taxonomy->set('weight', $detail['weight'][0]['value']);
-      $taxonomy->set('description', array('format' => 'full_html', 'value' => $detail['description'][0]['value']) );
-      
-      if (!empty($detail['uc_catalog_image'])) {
-        $taxonomy->set('field_cat_produto_image', [
-          'target_id' => $file->id(),
-        ]);
-      }
-      if(!is_null($parent)){
-        $taxonomy->set('parent', $taxonomyParent->id());  
-      }  
-      $taxonomy->save();
-      $taxonomias[$nid] = $taxonomy->id();
-  }
+    uasort($data, 'cmp');
 
-  $produtos = $tigre_service->getProducts();
+    foreach ($data as $item) {
+        if ($item['id'] != 9 && $item['id'] != 10 && $item['id'] != 21 && $item['id'] != 190) {
+            continue;
+        }
+        $nid = (string) $item['id'];
 
-  foreach ($produtos as $nid => $produto) {
+        $produto = $produtos[$nid];
+        foreach ($produto as $lang => $tax) {
 
-    $produto_language = $produto['pt-br'];
-    $detail = $tigre_service->getDetailProduct($produto_language['url']);
-    $detail['taxonomias'] = $taxonomias;
-    $data['detail'] = $detail;
-    $queue->createItem($data);
-    
-    // if (!isset($detail['uuid'][0]['value'])) {
-    //   return null;
-    // }
-    // $current_product = \Drupal::service('entity.repository')->loadEntityByUuid('node', $detail['uuid']['0']['value']);
-  
-    // if (!empty($current_product)) {
-    //   $node = Node::load($current_product->id());
-    //   if (!empty($detail['taxonomy_catalog'])) {
-    //     foreach ($detail['taxonomy_catalog'] as $term) {
-    //       $taxId = (string) $term['target_id'];
-    //       $node->field_taxonomy_catalog->appendItem(['target_id' => (int) $taxonomias[$taxId]]);
-    //       //$node->set('field_taxonomy_catalog', ['target_id' => (int) $taxonomias[$taxId] ]);
-    //     }
-    //   }
-    //   $node->save();
-    // }
-  }
+            $parent = $tax['parent'];
+
+            if ($lang == 'pt-br') {
+                if (!is_null($parent)) {
+                    $detailParent = $tigre_service->getDetailTaxonomy($produtos[$parent]['pt-br']['url']);
+                    $taxonomyParent = \Drupal::service('entity.repository')->loadEntityByUuid('taxonomy_term', $detailParent['uuid']['0']['value']);
+                }
+                $detail = $tigre_service->getDetailTaxonomy($tax['url']);
+                $current_taxonomy = \Drupal::service('entity.repository')->loadEntityByUuid('taxonomy_term', $detail['uuid']['0']['value']);
+
+                if (empty($current_taxonomy)) {
+                    $taxonomy = Term::create([
+                        'vid' => 'produto',
+                    ]);
+                } else {
+                    $taxonomy = Term::load($current_taxonomy->id());
+                }
+
+                if (!empty($detail['uc_catalog_image'])) {
+                    $imagem = file_get_contents($detail['uc_catalog_image'][0]['url']);
+                    $file = file_save_data($imagem, file_default_scheme() . '://imagens/taxonomia/produto/' . basename($detail['uc_catalog_image'][0]['url']), FILE_EXISTS_REPLACE);
+                }
+
+                if (!empty($detail['field_download_catalogo'])) {
+                  $anexo = file_get_contents($detail['field_download_catalogo'][0]['url']);
+                  $fileAnexo = file_save_data($anexo, file_default_scheme() . '://arquivos/taxonomia/produtos/' . basename($detail['field_download_catalogo'][0]['url']), FILE_EXISTS_REPLACE);
+              }
+
+                
+
+            } else {
+                if (!is_null($parent)) {
+                    $detailParent = $tigre_service->getDetailTaxonomy($produtos[$parent][$lang]['url']);
+                }
+                $detail = $tigre_service->getDetailTaxonomy($tax['url']);
+                if ($taxonomy->hasTranslation($lang)) {
+                    $taxonomy = $taxonomy->getTranslation($lang);
+                } else {
+                    $taxonomy = $taxonomy->addTranslation($lang);
+                }
+            }
+
+            $taxonomy->set('uuid', $detail['uuid'][0]['value']);
+            $taxonomy->set('name', $detail['name'][0]['value']);
+            $taxonomy->set('weight', $detail['weight'][0]['value']);
+            $taxonomy->set('description', array('format' => 'full_html', 'value' => $detail['description'][0]['value']));
+
+            if ($lang == 'pt-br') {
+                if (!empty($detail['uc_catalog_image'])) {
+                    $taxonomy->set('field_cat_produto_image', [
+                        'target_id' => $file->id(),
+                    ]);
+                }
+                if (!empty($detail['field_download_catalogo'])) {
+                  $taxonomy->set('field_cad_produto_anexo', [
+                      'target_id' => $fileAnexo->id(),
+                  ]);
+              }
+            }
+            if (!is_null($parent)) {
+                $taxonomy->set('parent', $taxonomyParent->id());
+            }
+            if ($tax === end($produto)){
+                $taxonomy->save();
+                $taxonomias['pt-br'][$nid] = $taxonomy->id();
+                $taxonomias['en'][$nid] = $taxonomy->id();
+                $taxonomias['es'][$nid] = $taxonomy->id();
+            }
+        }
+    }
+
+    $produtos = $tigre_service->getProducts();
+
+    $i = 0;
+    foreach ($produtos as $nid => $produto) {
+
+        $detail = [];
+        $detail['produto'] = [];
+        $detail['produto']['pt-br'] = $tigre_service->getDetailProduct($produto['pt-br']['url']);
+        $detail['produto']['en'] = $tigre_service->getDetailProduct($produto['en']['url']);
+        $detail['produto']['es'] = $tigre_service->getDetailProduct($produto['es']['url']);
+        $detail['taxonomias'] = $taxonomias;
+        $data['detail'] = $detail;
+        $queue->createItem($data);
+
+        $info = $detail['produto'];
+        foreach ($info as $nid => $produto) {
+
+            if (!isset($produto['uuid'][0]['value'])) {
+                return null;
+            }
+
+            if ($nid == 'pt-br') {
+                // TODO: Implement processItem() method.
+                /** @var \Drupal\node\Entity\Node $current_product */
+                $current_product = \Drupal::service('entity.repository')->loadEntityByUuid('node', $produto['uuid']['0']['value']);
+
+                if (empty($current_product)) {
+                    $node = Node::create([
+                        'type' => 'produto',
+                    ]);
+                } else {
+                    $node = Node::load($current_product->id());
+                }
+            } else {
+                if ($node->hasTranslation($nid)) {
+                    $node = $node->getTranslation($nid);
+                } else {
+                    $node = $node->addTranslation($nid);
+                }
+            }
+
+            $node->set('uuid', $produto['uuid'][0]['value']);
+
+            $node->set('title', $produto['title'][0]['value']);
+            $node->set('body', array('format' => 'full_html', 'value' => $produto['body'][0]['value']));
+
+            if (!empty($produto['model'])) {
+                $node->set('field_sku', $produto['model'][0]['value']);
+            }
+            if (!empty($produto['uc_product_image'])) {
+                $node->set('field_uc_product_image_url', $produto['uc_product_image'][0]['url']);
+            }
+            if (!empty($produto['field_produto_chamada'])) {
+                $node->set('field_produto_chamada', $produto['field_produto_chamada'][0]['value']);
+            }
+            if (!empty($produto['field_produto_descricao'])) {
+                $node->set('field_produto_descricao', array('format' => 'full_html', 'value' => $produto['field_produto_descricao'][0]['value']));
+            }
+            if (!empty($produto['field_desenho_tecnico'])) {
+                $node->set('field_desenho_tecnico', $produto['field_desenho_tecnico'][0]['value']);
+            }
+            if (!empty($produto['field_ficha_seguranca'])) {
+                $node->set('field_ficha_seguranca', $produto['field_ficha_seguranca'][0]['value']);
+            }
+            if (!empty($produto['field_ficha_tecnica'])) {
+                $node->set('field_ficha_tecnica_url', $produto['field_ficha_tecnica'][0]['url']);
+            }
+            if (!empty($produto['field_produtos_instrucoes'])) {
+                $node->set('field_produto_instrucoes', array('format' => 'full_html', 'value' => $produto['field_produtos_instrucoes'][0]['value']));
+            }
+            if (!empty($produto['field_keywords'])) {
+                $node->set('field_keywords', $produto['field_keywords'][0]['value']);
+            }
+            if (!empty($produto['field_label_aba_1'])) {
+                $node->set('field_label_aba_1', $produto['field_label_aba_1'][0]['value']);
+            }
+            if (!empty($produto['field_label_aba_2'])) {
+                $node->set('field_label_aba_2', $produto['field_label_aba_2'][0]['value']);
+            }
+            if (!empty($produto['field_label_aba_3'])) {
+                $node->set('field_label_aba_3', $produto['field_label_aba_3'][0]['value']);
+            }
+            if (!empty($produto['field_label_coluna_1_aba_1'])) {
+                $node->set('field_label_coluna_1_aba_1', $produto['field_label_coluna_1_aba_1'][0]['value']);
+            }
+            if (!empty($produto['field_label_coluna_2_aba_1'])) {
+                $node->set('field_label_coluna_2_aba_1', $produto['field_label_coluna_2_aba_1'][0]['value']);
+            }
+            if (!empty($produto['field_label_da_coluna_modelo'])) {
+                $node->set('field_label_da_coluna_modelo', $produto['field_label_da_coluna_modelo'][0]['value']);
+            }
+            if (!empty($produto['field_meta_tags'])) {
+                $node->set('field_meta_tags', $produto['field_meta_tags'][0]['value']);
+            }
+            if (!empty($produto['field_prioridade'])) {
+                $node->set('field_prioridade', $produto['field_prioridade'][0]['value']);
+            }
+            if (!empty($produto['field_produto_genero'])) {
+                $node->set('field_produto_genero', $produto['field_produto_genero'][0]['value']);
+            }
+            if (!empty($produto['field_produto_revisado'])) {
+                $node->set('field_produto_revisado', $produto['field_produto_revisado'][0]['value']);
+            }
+
+            if (!empty($produto['taxonomy_catalog'])) {
+                foreach ($produto['taxonomy_catalog'] as $term) {
+                    $taxId = (string) $term['target_id'];
+                    $node->field_taxonomy_catalog->appendItem(['target_id' => (int) $produto['taxonomias'][$nid][$taxId]]);
+                }
+            }
+
+            if (!empty($produto['field_texto_tecnico'])) {
+                $node->set('field_texto_tecnico', array('format' => 'full_html', 'value' => $produto['field_texto_tecnico'][0]['value']));
+            }
+            if (!empty($produto['field_titulo_especificacao'])) {
+                $node->set('field_titulo_especificacao', $produto['field_titulo_especificacao'][0]['value']);
+            }
+            if (!empty($produto['field_video'])) {
+                $node->set('field_video', $produto['field_video'][0]['value']);
+            }
+            if (!empty($produto['field_video_titulo'])) {
+                $node->set('field_video_titulo', $produto['field_video_titulo'][0]['value']);
+            }
+
+            $node->save();
+        }
+    }
 }
 
+function tigre_list_products()
+{
+    /** @var TigreRestService $tigre_service */
+    $tigre_service = new TigreRestService();
+    $tigre_service->setHost("http://34.193.90.181");
+    //$tigre_service->setHost("https://www.tigre.com.br");
+    $tigre_service->setUsername("lucas");
+    $tigre_service->setPassword('102030');
+    $produtos = $tigre_service->getProducts();
 
-function tigre_list_products() {
-  /** @var TigreRestService $tigre_service */
-  $tigre_service = new TigreRestService();
-  $tigre_service->setHost("http://34.193.90.181");
-  //$tigre_service->setHost("https://www.tigre.com.br");
-  $tigre_service->setUsername("lucas");
-  $tigre_service->setPassword('102030');
-  $produtos = $tigre_service->getProducts();
+    foreach ($produtos as $nid => $produto) {
 
-  foreach ($produtos as $nid => $produto) {
+        $produto_language = $produto['pt-br'];
+        $detail = $tigre_service->getDetailProduct($produto_language['url']);
 
-    $produto_language = $produto['pt-br'];
-    $detail = $tigre_service->getDetailProduct($produto_language['url']);
+        //die();
 
-
-    //die();
-
-
-  }
+    }
 
 }

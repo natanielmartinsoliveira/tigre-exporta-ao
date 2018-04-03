@@ -1687,15 +1687,19 @@ li.ui-menu-item:hover {
     font-size: 14px; }
   .view-categoria-produto-descricao .views-field-nothing {
     display: inline-block; }
-    .view-categoria-produto-descricao .views-field-nothing .txt-catalogo .lk-download {
-      display: inline-block;
-      padding-right: 26px;
-      font-size: 16px;
-      color: #fe860c;
-      font-family: 'ubuntumedium';
-      text-transform: uppercase;
-      text-decoration: none;
-      background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xicon_download2.png.pagespeed.ic.c6B5s82Nsy.png) no-repeat 100% 50%; }
+
+.lk-download {
+  display: inline-block;
+  padding-right: 26px;
+  font-size: 16px;
+  color: #fe860c;
+  font-family: 'ubuntumedium';
+  text-transform: uppercase;
+  background: url(https://www.tigre.com.br/themes/tigre2016/assets/images/xicon_download2.png.pagespeed.ic.c6B5s82Nsy.png) no-repeat 100% 50%;
+  text-decoration: none !important; }
+
+.lk-download:hover {
+  color: #fe860c; }
 
 .view-categoria-produtos .views-col h2, .view-produtos .views-col h2, .view-categoria-produtos-nivel-1 .views-col h2 {
   font-family: "ubuntulight", Arial, sans-serif;
@@ -1829,6 +1833,13 @@ li.ui-menu-item:hover {
     color: #000000;
     font-size: 24px;
     margin-bottom: 18px; }
+  .produto .field--ficha-tecnica {
+    font-size: 16px; }
+    .produto .field--ficha-tecnica strong {
+      font-family: "ubuntubold", Arial, sans-serif;
+      color: #000000; }
+    .produto .field--ficha-tecnica .lk-download {
+      margin-left: 20px; }
 
 @media (min-width: 992px) {
   .produto .card-contato {
