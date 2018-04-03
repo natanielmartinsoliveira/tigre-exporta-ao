@@ -12,6 +12,7 @@ use Drupal\Core\Menu\MenuLinkBase;
 use Drupal\Core\Menu\StaticMenuLinkOverridesInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Language\LanguageManager;
 
 /**
  * Defines menu links provided by taxonomy menu.
@@ -49,6 +50,13 @@ class TaxonomyMenuMenuLink extends MenuLinkBase implements ContainerFactoryPlugi
   protected $staticOverride;
 
   /**
+   * The language manager.
+   *
+   * @var \Drupal\Core\Language\LanguageManager
+   */
+  protected $languageManager;
+
+  /**
    * Constructs a new TaxonomyMenuMenuLink.
    *
    * @param array                                      $configuration
@@ -61,19 +69,23 @@ class TaxonomyMenuMenuLink extends MenuLinkBase implements ContainerFactoryPlugi
    *   The entity manager
    * @param \Drupal\views\ViewExecutableFactory        $view_executable_factory
    *   The view executable factory
+   * * @param \Drupal\Core\Language\LanguageManager $language_manager
+   *   The language manager
    */
   public function __construct(
     array $configuration,
     $plugin_id,
     $plugin_definition,
     EntityManagerInterface $entity_manager,
-    StaticMenuLinkOverridesInterface $static_override
+    StaticMenuLinkOverridesInterface $static_override,
+    LanguageManager $language_manager
   ) {
     $this->configuration = $configuration;
     $this->pluginId = $plugin_id;
     $this->pluginDefinition = $plugin_definition;
     $this->entityManager = $entity_manager;
     $this->staticOverride = $static_override;
+    $this->languageManager = $language_manager;
   }
 
   /**
@@ -85,7 +97,8 @@ class TaxonomyMenuMenuLink extends MenuLinkBase implements ContainerFactoryPlugi
       $plugin_id,
       $plugin_definition,
       $container->get('entity.manager'),
-      $container->get('menu_link.static.overrides')
+      $container->get('menu_link.static.overrides'),
+      $container->get('language_manager')
     );
   }
 
@@ -97,7 +110,15 @@ class TaxonomyMenuMenuLink extends MenuLinkBase implements ContainerFactoryPlugi
     $link = $this->entityManager->getStorage('taxonomy_term')
       ->load($this->pluginDefinition['metadata']['taxonomy_term_id']);
     if (!empty($link)) {
-      return $link->label();
+      // Get the current code for current language.
+      $lang_code = $this->languageManager->getCurrentLanguage()->getId();
+      // If the term has a translation, fetch translated name for link.
+      if ($link->hasTranslation($lang_code)) {
+        return $link->getTranslation($lang_code)->getName();
+      }
+      else {
+        return $link->getName();
+      }
     }
     return NULL;
   }

@@ -161,9 +161,9 @@ function tigre_custom_queue_import_produto_cronjob()
     uasort($data, 'cmp');
 
     foreach ($data as $item) {
-        if ($item['id'] != 9 && $item['id'] != 10 && $item['id'] != 21 && $item['id'] != 190) {
-            continue;
-        }
+        // if ($item['id'] != 9 && $item['id'] != 10 && $item['id'] != 21 && $item['id'] != 190) {
+        //     continue;
+        // }
         $nid = (string) $item['id'];
 
         $produto = $produtos[$nid];
@@ -188,14 +188,20 @@ function tigre_custom_queue_import_produto_cronjob()
                 }
 
                 if (!empty($detail['uc_catalog_image'])) {
-                    $imagem = file_get_contents($detail['uc_catalog_image'][0]['url']);
-                    $file = file_save_data($imagem, file_default_scheme() . '://imagens/taxonomia/produto/' . basename($detail['uc_catalog_image'][0]['url']), FILE_EXISTS_REPLACE);
+                    $headers = @get_headers($detail['uc_catalog_image'][0]['url']);
+                    if(strpos($headers[0],'200') != false){
+                        $imagem = file_get_contents($detail['uc_catalog_image'][0]['url']);
+                        $file = file_save_data($imagem, file_default_scheme() . '://imagens/taxonomia/produto/' . basename($detail['uc_catalog_image'][0]['url']), FILE_EXISTS_REPLACE);
+                    }
                 }
 
                 if (!empty($detail['field_download_catalogo'])) {
-                  $anexo = file_get_contents($detail['field_download_catalogo'][0]['url']);
-                  $fileAnexo = file_save_data($anexo, file_default_scheme() . '://arquivos/taxonomia/produtos/' . basename($detail['field_download_catalogo'][0]['url']), FILE_EXISTS_REPLACE);
-              }
+                    $headers = @get_headers($detail['field_download_catalogo'][0]['url']);
+                    if(strpos($headers[0],'200') != false){
+                        $anexo = file_get_contents($detail['field_download_catalogo'][0]['url']);
+                        $fileAnexo = file_save_data($anexo, file_default_scheme() . '://arquivos/taxonomia/produtos/' . basename($detail['field_download_catalogo'][0]['url']), FILE_EXISTS_REPLACE);
+                    }
+                }
 
                 
 
@@ -242,8 +248,11 @@ function tigre_custom_queue_import_produto_cronjob()
 
     $produtos = $tigre_service->getProducts();
 
-    $i = 0;
     foreach ($produtos as $nid => $produto) {
+
+        // if($nid != 78 && $nid != 79){
+        //     continue;
+        // }
 
         $detail = [];
         $detail['produto'] = [];
@@ -252,7 +261,7 @@ function tigre_custom_queue_import_produto_cronjob()
         $detail['produto']['es'] = $tigre_service->getDetailProduct($produto['es']['url']);
         $detail['taxonomias'] = $taxonomias;
         $data['detail'] = $detail;
-        $queue->createItem($data);
+        //$queue->createItem($data);
 
         $info = $detail['produto'];
         foreach ($info as $nid => $produto) {
@@ -347,7 +356,7 @@ function tigre_custom_queue_import_produto_cronjob()
             if (!empty($produto['taxonomy_catalog'])) {
                 foreach ($produto['taxonomy_catalog'] as $term) {
                     $taxId = (string) $term['target_id'];
-                    $node->field_taxonomy_catalog->appendItem(['target_id' => (int) $produto['taxonomias'][$nid][$taxId]]);
+                    $node->field_taxonomy_catalog->appendItem(['target_id' => (int) $detail['taxonomias'][$nid][$taxId]]);
                 }
             }
 
