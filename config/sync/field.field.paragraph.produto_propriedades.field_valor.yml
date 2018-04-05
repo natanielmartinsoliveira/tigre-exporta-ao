@@ -1,0 +1,19 @@
+uuid: 70716eae-c8c9-48ce-be7e-0754ed678ce4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_valor
+    - paragraphs.paragraphs_type.produto_propriedades
+id: paragraph.produto_propriedades.field_valor
+field_name: field_valor
+entity_type: paragraph
+bundle: produto_propriedades
+label: Valor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

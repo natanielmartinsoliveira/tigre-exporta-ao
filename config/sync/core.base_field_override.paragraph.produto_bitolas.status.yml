@@ -1,0 +1,22 @@
+uuid: 5d2213d8-9b9f-4461-89fe-47f6e541a999
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produto_bitolas
+id: paragraph.produto_bitolas.status
+field_name: status
+entity_type: paragraph
+bundle: produto_bitolas
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

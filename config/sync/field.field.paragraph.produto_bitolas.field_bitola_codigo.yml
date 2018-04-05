@@ -1,0 +1,19 @@
+uuid: 8048406c-310c-48cc-ae97-8951144e9d44
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bitola_codigo
+    - paragraphs.paragraphs_type.produto_bitolas
+id: paragraph.produto_bitolas.field_bitola_codigo
+field_name: field_bitola_codigo
+entity_type: paragraph
+bundle: produto_bitolas
+label: 'Bitola Codigo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

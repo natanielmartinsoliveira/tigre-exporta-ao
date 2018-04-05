@@ -1,0 +1,51 @@
+uuid: 3a92d528-36ae-44e5-a0d6-224779063b12
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.produto_bitolas.field_bitola
+    - field.field.paragraph.produto_bitolas.field_bitola_codigo
+    - field.field.paragraph.produto_bitolas.field_bitola_embalagem
+    - field.field.paragraph.produto_bitolas.field_codigo
+    - paragraphs.paragraphs_type.produto_bitolas
+id: paragraph.produto_bitolas.default
+targetEntityType: paragraph
+bundle: produto_bitolas
+mode: default
+content:
+  field_bitola:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bitola_codigo:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bitola_embalagem:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_codigo:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

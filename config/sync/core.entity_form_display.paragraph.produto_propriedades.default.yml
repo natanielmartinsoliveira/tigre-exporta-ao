@@ -1,0 +1,42 @@
+uuid: 5bc83a4c-9815-467f-a65e-4b5b318080ab
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.produto_propriedades.field_codigo
+    - field.field.paragraph.produto_propriedades.field_nome
+    - field.field.paragraph.produto_propriedades.field_valor
+    - paragraphs.paragraphs_type.produto_propriedades
+id: paragraph.produto_propriedades.default
+targetEntityType: paragraph
+bundle: produto_propriedades
+mode: default
+content:
+  field_codigo:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nome:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_valor:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,32 @@
+uuid: 279d0096-efda-45f0-b2bf-ff87d3f3c183
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.produto_propriedades.field_codigo
+    - field.field.paragraph.produto_propriedades.field_nome
+    - field.field.paragraph.produto_propriedades.field_valor
+    - paragraphs.paragraphs_type.produto_propriedades
+id: paragraph.produto_propriedades.default
+targetEntityType: paragraph
+bundle: produto_propriedades
+mode: default
+content:
+  field_nome:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_valor:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_codigo: true

@@ -18,7 +18,7 @@ provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: 'BUSQUE POR PRODUTO, SOLUÇÃO OU DÚVIDA'
+  label: 'SEARCH FOR PRODUCT, SOLUTION OR DOUBT'
   provider: search
   label_display: visible
 visibility: {  }

@@ -1,0 +1,18 @@
+uuid: a0053556-0016-4005-bce7-b121d41d6df5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produto_bitolas
+id: paragraph.produto_bitolas.created
+field_name: created
+entity_type: paragraph
+bundle: produto_bitolas
+label: 'Escrito em'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

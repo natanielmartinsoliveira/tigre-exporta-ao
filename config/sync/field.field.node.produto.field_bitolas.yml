@@ -1,0 +1,73 @@
+uuid: 159cbe6d-796b-46bf-bc85-8f568e837468
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bitolas
+    - node.type.produto
+    - paragraphs.paragraphs_type.produto_bitolas
+  module:
+    - entity_reference_revisions
+id: node.produto.field_bitolas
+field_name: field_bitolas
+entity_type: node
+bundle: produto
+label: Especificações
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      produto_bitolas: produto_bitolas
+    target_bundles_drag_drop:
+      produto_bitolas:
+        enabled: true
+        weight: 16
+      abas:
+        weight: 17
+        enabled: false
+      abas_an_item_:
+        weight: 18
+        enabled: false
+      abas_antigo:
+        weight: 19
+        enabled: false
+      abas_item:
+        weight: 20
+        enabled: false
+      bloco_de_enderecos:
+        weight: 21
+        enabled: false
+      canal_de_atendimento:
+        weight: 22
+        enabled: false
+      cta_2_colunas:
+        weight: 23
+        enabled: false
+      cta_centralizado:
+        weight: 24
+        enabled: false
+      imagem_c_texto:
+        weight: 25
+        enabled: false
+      localidade_da_unidade:
+        weight: 26
+        enabled: false
+      produto_banners:
+        weight: 27
+        enabled: false
+      produto_propriedades:
+        weight: 28
+        enabled: false
+      texto:
+        weight: 29
+        enabled: false
+      unidades:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

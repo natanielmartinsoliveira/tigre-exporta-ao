@@ -21,10 +21,10 @@ provider: null
 plugin: 'views_block:produtos_relacionados-block_1'
 settings:
   id: 'views_block:produtos_relacionados-block_1'
-  label: ''
+  label: 'Related products'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'Related products'
   items_per_page: none
 visibility:
   node_type:

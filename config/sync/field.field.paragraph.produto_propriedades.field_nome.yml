@@ -1,0 +1,19 @@
+uuid: b476f004-a850-40bb-b081-30bcced0a63b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nome
+    - paragraphs.paragraphs_type.produto_propriedades
+id: paragraph.produto_propriedades.field_nome
+field_name: field_nome
+entity_type: paragraph
+bundle: produto_propriedades
+label: Nome
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,16 @@
+uuid: 80e44948-c8b3-4cb6-82b3-5e80a416938a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produto_bitolas
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.produto_bitolas
+target_entity_type_id: paragraph
+target_bundle: produto_bitolas
+default_langcode: site_default
+language_alterable: false

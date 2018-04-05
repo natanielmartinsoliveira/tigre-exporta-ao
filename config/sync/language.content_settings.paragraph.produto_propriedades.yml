@@ -1,0 +1,16 @@
+uuid: 4153055f-a2fd-46a3-925a-f5a184d9619f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produto_propriedades
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.produto_propriedades
+target_entity_type_id: paragraph
+target_bundle: produto_propriedades
+default_langcode: site_default
+language_alterable: false

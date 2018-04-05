@@ -1,0 +1,9 @@
+uuid: 5166722b-7870-473b-86e4-f6196238965a
+langcode: pt-br
+status: true
+dependencies: {  }
+id: produto_propriedades
+label: 'Produto - Propriedades'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

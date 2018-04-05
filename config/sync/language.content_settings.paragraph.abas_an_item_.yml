@@ -13,4 +13,4 @@ id: paragraph.abas_an_item_
 target_entity_type_id: paragraph
 target_bundle: abas_an_item_
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

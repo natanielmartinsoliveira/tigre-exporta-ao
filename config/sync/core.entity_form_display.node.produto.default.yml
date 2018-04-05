@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.produto.body
+    - field.field.node.produto.field_bitolas
     - field.field.node.produto.field_desenho_tecnico
     - field.field.node.produto.field_ficha_seguranca
     - field.field.node.produto.field_ficha_tecnica
@@ -22,6 +23,7 @@ dependencies:
     - field.field.node.produto.field_produto_descricao
     - field.field.node.produto.field_produto_genero
     - field.field.node.produto.field_produto_instrucoes
+    - field.field.node.produto.field_produto_propriedades
     - field.field.node.produto.field_produto_revisado
     - field.field.node.produto.field_sku
     - field.field.node.produto.field_taxonomy_catalog
@@ -212,6 +214,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_bitolas:
+    type: entity_reference_paragraphs
+    weight: 41
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_desenho_tecnico:
     weight: 24
     settings:
@@ -354,6 +368,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea_with_summary
+    region: content
+  field_produto_propriedades:
+    type: entity_reference_paragraphs
+    weight: 40
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_produto_revisado:
     weight: 3

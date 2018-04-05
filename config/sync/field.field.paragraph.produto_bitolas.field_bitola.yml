@@ -1,0 +1,19 @@
+uuid: 28b20b1d-ca1e-40ec-85e6-a397559961df
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bitola
+    - paragraphs.paragraphs_type.produto_bitolas
+id: paragraph.produto_bitolas.field_bitola
+field_name: field_bitola
+entity_type: paragraph
+bundle: produto_bitolas
+label: Bitola
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

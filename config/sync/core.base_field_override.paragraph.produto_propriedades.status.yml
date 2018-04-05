@@ -1,0 +1,22 @@
+uuid: 8feb8c36-85a7-45d6-94e8-3f01f5be7f7f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.produto_propriedades
+id: paragraph.produto_propriedades.status
+field_name: status
+entity_type: paragraph
+bundle: produto_propriedades
+label: Publicado
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

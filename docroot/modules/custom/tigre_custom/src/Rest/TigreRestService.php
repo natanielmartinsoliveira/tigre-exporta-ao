@@ -77,6 +77,10 @@ class TigreRestService {
     $this->curl = curl_init($url . '?_format=json');
     return $this->getResult();
   }
+  public function getPropertyProduct($url) {
+    $this->curl = curl_init($this->host .'/nodes/products/property/' . $url . '?_format=json');
+    return $this->getResult();
+  }
 
   public function getResult() {
     curl_setopt($this->curl, CURLOPT_HTTPHEADER, array('Authorization: Basic '. base64_encode($this->username . ':' . $this->password)));

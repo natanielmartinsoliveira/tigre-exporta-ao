@@ -1,0 +1,9 @@
+uuid: 174de522-309b-439b-9bcc-0bc32f7fa3b0
+langcode: pt-br
+status: true
+dependencies: {  }
+id: produto_bitolas
+label: 'Produto - Bitolas'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

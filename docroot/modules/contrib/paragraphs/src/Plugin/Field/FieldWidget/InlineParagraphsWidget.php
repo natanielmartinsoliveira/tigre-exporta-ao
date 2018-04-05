@@ -1326,6 +1326,11 @@ class InlineParagraphsWidget extends WidgetBase {
     }
     $this->isTranslating = FALSE;
     if (!$host->isTranslatable()) {
+      if ($host instanceof ParagraphInterface) {
+        if ($host = $host->getParentEntity()) {
+          $this->initIsTranslating($form_state, $host);
+        }
+      }
       return;
     }
     if (!$host->getEntityType()->hasKey('default_langcode')) {

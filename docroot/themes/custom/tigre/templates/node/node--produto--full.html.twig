@@ -104,8 +104,8 @@
           <div class="row">
             <div class="col-xs-12 col-md-9 product--details">
 
-              <div class="row list-product-icons-row">
-                <div class="col-xs-12 col-sm-4  list-product-icons">
+              {#<div class="row list-product-icons-row">
+                 <div class="col-xs-12 col-sm-4  list-product-icons">
                   <span class="icon icon-materia-prima"></span>
                   <span class="icon-label">Matéria-prima</span>
                   <span class="icon-destaque">CPVC</span>
@@ -121,15 +121,20 @@
                   <span class="icon icon-norma"></span>
                   <span class="icon-label">Norma</span>
                   <span class="icon-destaque">NBR 15884</span>
-                </div>
-              </div>
+                </div> 
+
+                
+              </div>#}
+              {{ content.field_produto_propriedades }}
 
               <!-- Nav tabs -->
               <ul class="nav nav-tabs" role="tablist">
                 {% if content.body[0] is not empty or content.field_produto_instrucoes[0] is not empty %}
                   <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">{% trans %}DESCRIÇÃO DO PRODUTO{% endtrans %}</a></li>
                 {% endif %}
-                <li role="presentation"><a href="#code" aria-controls="code" role="tab" data-toggle="tab">{% trans %}CÓDIGO E EMBALAGEM{% endtrans %}</a></li>
+                {% if content.field_bitolas[0] is not empty %}
+                  <li role="presentation"><a href="#code" aria-controls="code" role="tab" data-toggle="tab">{% trans %}CÓDIGO E EMBALAGEM{% endtrans %}</a></li>
+                {% endif %}
                 {% if content.field_texto_tecnico[0] is not empty %}
                   <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">{% trans %}INFORMAÇÕES TÉCNICAS{% endtrans %}</a></li>
                 {% endif %}
@@ -145,7 +150,9 @@
                     {{ content.field_produto_instrucoes }}
                   </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="code">...</div>
+                <div role="tabpanel" class="tab-pane" id="code">
+                  {{ content.field_bitolas }}
+                </div>
                 <div role="tabpanel" class="tab-pane" id="info">
                   {{ content.field_texto_tecnico }}
                 </div>

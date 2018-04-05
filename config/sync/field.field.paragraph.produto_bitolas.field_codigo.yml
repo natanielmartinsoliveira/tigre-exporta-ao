@@ -1,0 +1,19 @@
+uuid: ab406bec-dc57-4736-933d-fb530f38ae3e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_codigo
+    - paragraphs.paragraphs_type.produto_bitolas
+id: paragraph.produto_bitolas.field_codigo
+field_name: field_codigo
+entity_type: paragraph
+bundle: produto_bitolas
+label: Código
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
