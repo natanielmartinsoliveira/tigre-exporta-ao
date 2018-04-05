@@ -1,0 +1,14 @@
+uuid: 3facdc20-d129-4cb6-be49-5a86a637868d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.catalogos-header
+    - taxonomy.vocabulary.catalogo
+id: catalogos_header
+label: 'Catalogos Header'
+vocabulary: catalogo
+menu: catalogos-header
+expanded: true
+depth: 1
+menu_parent: 'admin:'

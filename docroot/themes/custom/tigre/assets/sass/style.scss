@@ -164,6 +164,7 @@
         z-index: 9999;
         width: 100%;
         position: fixed;
+        overflow: hidden;
         .logo {
             padding-bottom: 5px;
             margin-right: 10px;
@@ -192,12 +193,14 @@
                 display: none;
             }
             #block-tigre-main-menu {
-                li {
-                    text-align: justify;
-                    a {
-                        color: #000000;
+
+                    li {
+                        text-align: justify;
+                        a {
+                            color: #000000;
+                        }
                     }
-                }
+                
             }
             #block-busca {
                 display: none;
@@ -791,21 +794,44 @@
         }
     }
     #block-tigre-main-menu, #block-busca {
-        li {
-            display: block;
-            text-align: center;
-            margin-bottom: 10px;
 
-            a {
+            li {
                 display: block;
-                text-transform: uppercase;
-                font-size: 16px;
-                color: #fff;
-                cursor: pointer;
-                transition: .2s all;
-                background-color: transparent;
-                padding-top: 20px;
+                text-align: center;
+                margin-bottom: 10px;
+
+                a {
+                    display: block;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    color: #fff;
+                    cursor: pointer;
+                    transition: .2s all;
+                    background-color: transparent;
+                    padding-top: 20px;
+                }
             }
+        
+    }
+    #block-tigre-main-menu {
+        z-index: 999;
+        // ul:after {
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 1px;
+        //     background: #dadada;
+        //     left: 0;
+        //     top: 73px;
+        // }
+        .js-menu--ativo:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 100%;
+            height: 2px;
+            background: #ff8600;
+            z-index: 2;
         }
     }
 }
@@ -2856,4 +2882,81 @@ li.ui-menu-item:hover {
     animation-name: buttonnav;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+}
+#block-categoriasprodutoheader, #block-catalogosheader {
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .menu--link--main {
+        font-size: 18px;
+        color: #2b2b2b;
+        line-height: 25px;
+        cursor: pointer;
+        font-family: 'ubuntubold','Arial',sans-serif;
+    }
+    .menu--link--title {
+        font-size: 16px;
+        color: #2b2b2b;
+        line-height: 25px;
+        cursor: pointer;
+        font-family: 'ubuntubold','Arial',sans-serif;
+    }
+    .menu--link {
+        font-size: 14px;
+        font-weight: 100;
+        color: #2b2b2b;
+        line-height: 25px;
+        cursor: pointer;
+        font-family: 'ubuntulight','Arial',sans-serif;
+    }
+    .menu--header--box {
+        display: none;
+    }
+    .active--box {
+        display: block !important;
+    }
+    .menu--main--products, .menu--main--catalogos {
+        display: none;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .menu--main--solutions {
+            border: 1px solid #dadada;
+            ul {
+                padding: 25px 0;
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    a {
+        text-decoration: none !important;
+    }
+    a:hover {
+        color: #FF8532;
+    }
+}
+.menu--flutuante--header--ativo {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 23px 8px rgba(0,0,0,0.25);
+}
+.menu--main--close {
+    display: none;
+    padding-top: 20px;
+    padding-right: 30px;
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+.menu--main--divider {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: #dadada;
+    left: 0;
+    top: 73px;
+    display: none;
 }

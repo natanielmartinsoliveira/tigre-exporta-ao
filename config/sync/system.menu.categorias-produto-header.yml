@@ -1,0 +1,8 @@
+uuid: 58ddb36a-c026-4ed9-9414-383d05188e04
+langcode: pt-br
+status: true
+dependencies: {  }
+id: categorias-produto-header
+label: 'Categorias Produto Header'
+description: ''
+locked: false

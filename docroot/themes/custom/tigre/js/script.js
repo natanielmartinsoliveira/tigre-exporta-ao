@@ -8,26 +8,7 @@
                     scroll_start = $(this).scrollTop();
                     // From top
                     if(scroll_start > 0) {
-                        $("#navbar-collapse").css({
-                            'background-color': '#fff',
-                            "margin-top": "-39px",
-                            "box-shadow": "0 1px 0 rgba(12,13,14,0.1), 0 1px 3px rgba(12,13,14,0.1), 0 4px 20px rgba(12,13,14,0.035), 0 1px 1px rgba(12,13,14,0.025)"
-                            });
-                        $(".menu--main li a").css({
-                                'color': '#000000'
-                        });
-                        $(".menu--busca li a").css({
-                            'color': '#000000'
-                        });
-                        // $("#navbar-collapse .logo img").css({
-                        //         'background': 'url(themes/custom/tigre/assets/images/logo-azul.png) no-repeat'
-                        //     });
-                        $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/assets/images/logo-azul.png';
-                        if ($(window).width() <= 768){
-                            $(".navbar-header").css({
-                                'background': '#0083ca'
-                            });
-                        }
+                        navBarBlue();
                     } else {
                         if ($(window).width() > 768){
                             $('#navbar-collapse').css({
@@ -50,18 +31,102 @@
                         }
                     }
                  }
-                 
+                
+                function navBarBlue() {
+                    $("#navbar-collapse").css({
+                        'background-color': '#fff',
+                        "margin-top": "-39px",
+                        "box-shadow": "0 1px 0 rgba(12,13,14,0.1), 0 1px 3px rgba(12,13,14,0.1), 0 4px 20px rgba(12,13,14,0.035), 0 1px 1px rgba(12,13,14,0.025)"
+                        });
+                    $(".menu--main li a").css({
+                            'color': '#000000'
+                    });
+                    $(".menu--busca li a").css({
+                        'color': '#000000'
+                    });
+                    $("#navbar-collapse .logo img")[0].src = 'http://34.193.90.181/export/themes/custom/tigre/assets/images/logo-azul.png';
+                    if ($(window).width() <= 768){
+                        $(".navbar-header").css({
+                            'background': '#0083ca'
+                        });
+                    }
+                }
+                if( $(".menu--main--close").length == 0) {
+                    $("#block-views-block-contatos-block-1").after("<span class='menu--main--close'>X</span>");
+                }
+                if( $(".menu--main--divider").length == 0) {
+                    $(".menu--main--close").after("<div class='menu--main--divider'></div>");
+                }
                 navBarVerify();
                 $(document).scroll(function() { 
-                    navBarVerify();
-                    // From middle, session products
-                    if ( $(window).width() > 992 ) {
-                        if ( scroll_start > 800) {
-                            $('.card-contato').fadeOut();
-                        } else {
-                            $('.card-contato').fadeIn();
+                    if( $(".menu--flutuante--header--ativo").length == 0) {
+                        navBarVerify();
+                        // From middle, session products
+                        if ( $(window).width() > 992 ) {
+                            if ( scroll_start > 800) {
+                                $('.card-contato').fadeOut();
+                            } else {
+                                $('.card-contato').fadeIn();
+                            }
+                        }
+                    }else{
+                        if($(window).scrollTop() === 0){
+                            $('#navbar-collapse').css({"margin-top": "0px"});
+                        }else{
+                            $('#navbar-collapse').css({"margin-top": "-39px"});
                         }
                     }
+                });
+
+                $('.menu--main li a').each(function () {
+                    $(this).addClass('menu--main--link');
+                });
+                //$(".menu--main--catalogos").hide();
+                //$(".menu--main--products").hide();
+                //$("#block-tigre-main-menu ul:after").hide();
+                
+                $(".menu--main--link").click(function(e) { 
+                    $('.menu--main--link').removeClass('js-menu--ativo');
+                    $(this).addClass('js-menu--ativo');
+                    $('.menu--flutuante--header').addClass('menu--flutuante--header--ativo');
+                    if ('#produtos' == $(this).attr('href') || '#materiais-tecnicos' == $(this).attr('href')) {
+                        navBarBlue();
+                        $('#navbar-collapse').css({
+                            'background-color': 'transparent',
+                            "box-shadow": "none"
+                        });
+                        if($(window).scrollTop() === 0){
+                            $('#navbar-collapse').css({"margin-top": "0px"});
+                        }else{
+                            $('#navbar-collapse').css({"margin-top": "-39px"});
+                        }
+                        //$("#block-tigre-main-menu ul:after").show();
+                        $("#block-busca").hide();
+                        $("#block-views-block-contatos-block-1").hide();
+                        $('.menu--main--close').css({"display": "block"});
+                        $('.menu--main--divider').css({"display": "block"});
+                        e.preventDefault();
+                    }
+                    if ('#produtos' == $(this).attr('href') ) {
+                        $(".menu--main--catalogos").hide();
+                        $(".menu--main--products").show();
+                    }
+                    if ('#materiais-tecnicos' == $(this).attr('href') ) {
+                        $(".menu--main--products").hide();
+                        $(".menu--main--catalogos").show();
+                    } 
+                });
+                $(".menu--main--close").click(function(e) { 
+                    $('.menu--flutuante--header').removeClass('menu--flutuante--header--ativo');
+                    $("#block-busca").show();
+                    $("#block-views-block-contatos-block-1").show();
+                    $(".menu--main--catalogos").hide();
+                    $(".menu--main--products").hide();
+                    $('.menu--main--close').css({"display": "none"});
+                    $('.menu--main--link').removeClass('js-menu--ativo');
+                    $('.menu--main--divider').css({"display": "none"});
+                    
+                    navBarVerify();
                 });
 
                 $(".busca--btn").click(function() { 
@@ -98,6 +163,13 @@
                     $('html, body').animate({
                         scrollTop: $("#search-block-form").offset().top - 200
                     }, 1000);
+                });
+
+                $('.menu--icon--main').click(function(e) {
+                    //$('.menu--header--box').hide();
+                    $('.menu--header--box').removeClass('active--box');
+                    $('#' + $(this).attr('title')).toggleClass('active--box');
+                    e.preventDefault();
                 });
 
                 $.fn.extend({

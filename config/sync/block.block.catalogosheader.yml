@@ -1,0 +1,28 @@
+uuid: b00d0c77-784b-4493-9e79-ce819ac764c4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.catalogos-header
+  module:
+    - block_class
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: catalogosheader
+theme: tigre
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'system_menu_block:catalogos-header'
+settings:
+  id: 'system_menu_block:catalogos-header'
+  label: 'Catalogos Header'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

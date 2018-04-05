@@ -1,0 +1,28 @@
+uuid: 23c3ff32-e5c4-4c8a-9b3b-5cd6ffbfcf9c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.categorias-produto-header
+  module:
+    - block_class
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: categoriasprodutoheader
+theme: tigre
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'system_menu_block:categorias-produto-header'
+settings:
+  id: 'system_menu_block:categorias-produto-header'
+  label: 'Categorias Produto Header'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: a9f7eb81-47fc-4832-b761-de2fe5109a37
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.categorias-produto-header
+    - taxonomy.vocabulary.produto
+id: categorias_produto_header
+label: 'Categorias Produto Header'
+vocabulary: produto
+menu: categorias-produto-header
+expanded: true
+depth: 3
+menu_parent: 'admin:'

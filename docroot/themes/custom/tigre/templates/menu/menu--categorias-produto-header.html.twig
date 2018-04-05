@@ -1,0 +1,83 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ *
+ * Define a custom macro that will render all menu trees.
+ */
+#}
+{% macro menu_links(items, attributes, menu_level, classes) %}
+  {% if items %}
+    <div class="row">
+      <div class="col-md-12 menu--main--products">
+        <div class="col-md-3 menu--main--solutions">
+          <ul>
+          {% for item in items %}
+            {%
+              set item_classes = [
+                'menu--link--main',
+                loop.first ? 'is-active',
+              ]
+            %}
+            <li>
+              <a href="{{ item.url }}" {{ item.attributes.addClass(item_classes) }}>{{ item.title }}</a>
+              <span class="glyphicon glyphicon-menu-right menu--icon--main" title="menulinkprodutos{{loop.index}}"></span>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+        
+          {% for itemb in items %}
+            {% if loop.first %}
+              <div id="menulinkprodutos{{loop.index}}" class="col-md-9 menu--header--box active--box">
+            {% else %}
+              <div id="menulinkprodutos{{loop.index}}" class="col-md-9 menu--header--box" >
+            {% endif %}
+              <div class="row">
+                {% if itemb.below %}
+                  {% for item2 in itemb.below %}
+                    {% if loop.index == 1 or loop.index == 4 or loop.index == 8  %}
+                      <div class="col-md-4">
+                    {% endif %}
+                    <ul>
+                      <li>
+                        <a href="{{ item2.url }}" class="menu--link--title">{{ item2.title }}</a>
+                      </li>
+                      {% if item2.below %}
+                        {% for item3 in item2.below %}
+                          <li>
+                            <a href="{{ item3.url }}" class="menu--link">{{ item3.title }}</a>
+                          </li>
+                        {% endfor %}
+                      {% endif %}
+                    </ul>
+                    {% if loop.index == 3 or loop.index == 7 or loop.last  %}
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{#
+  Invoke the custom macro defined above. If classes were provided, use them.
+  This allows the template to be extended without having to also duplicate the
+  code above. @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ _self.menu_links(items, attributes, 0, classes ? classes : ['menu', 'menu--' ~ menu_name|clean_class, 'nav']) }}
