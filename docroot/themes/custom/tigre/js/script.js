@@ -86,10 +86,11 @@
                 //$("#block-tigre-main-menu ul:after").hide();
                 
                 $(".menu--main--link").click(function(e) { 
-                    $('.menu--main--link').removeClass('js-menu--ativo');
-                    $(this).addClass('js-menu--ativo');
-                    $('.menu--flutuante--header').addClass('menu--flutuante--header--ativo');
+                    
                     if ('#produtos' == $(this).attr('href') || '#materiais-tecnicos' == $(this).attr('href')) {
+                        $('.menu--main--link').removeClass('js-menu--ativo');
+                        $(this).addClass('js-menu--ativo');
+                        $('.menu--flutuante--header').addClass('menu--flutuante--header--ativo');
                         navBarBlue();
                         $('#navbar-collapse').css({
                             'background-color': 'transparent',

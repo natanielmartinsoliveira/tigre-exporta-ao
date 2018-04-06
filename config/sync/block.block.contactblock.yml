@@ -20,7 +20,7 @@ provider: null
 plugin: contact_block
 settings:
   id: contact_block
-  label: ' Would you like to receive our news in your email?'
+  label: 'Você gostaria de receber nossas novidades em seu email?'
   provider: contact_block
   label_display: visible
   contact_form: newsletter

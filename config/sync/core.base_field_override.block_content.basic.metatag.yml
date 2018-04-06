@@ -1,18 +1,18 @@
-uuid: 74fb5514-9983-461d-80d3-7be0505208e6
+uuid: 9b36e5ed-4cf6-42d0-931f-76fcaebe3870
 langcode: pt-br
 status: true
 dependencies:
   config:
     - block_content.type.basic
-id: block_content.basic.info
-field_name: info
+id: block_content.basic.metatag
+field_name: metatag
 entity_type: block_content
 bundle: basic
-label: 'Descrição do bloco'
-description: 'A brief description of your block.'
-required: true
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: map
