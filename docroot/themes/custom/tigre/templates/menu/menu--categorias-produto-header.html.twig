@@ -27,12 +27,14 @@
             {%
               set item_classes = [
                 'menu--link--main',
+                'menu--icon--main',
                 loop.first ? 'is-active',
               ]
             %}
             <li>
-              <a href="{{ item.url }}" {{ item.attributes.addClass(item_classes) }}>{{ item.title }}</a>
-              <span class="glyphicon glyphicon-menu-right menu--icon--main" title="menulinkprodutos{{loop.index}}"></span>
+              <a href="{{ item.url }}" {{ item.attributes.addClass(item_classes) }} title="menulinkprodutos{{loop.index}}">{{ item.title }}
+                <span class="glyphicon glyphicon-menu-right" ></span>
+              </a>
             </li>
           {% endfor %}
           </ul>

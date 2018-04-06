@@ -2950,6 +2950,8 @@ li.ui-menu-item:hover {
     float: right;
     font-size: 25px;
     cursor: pointer;
+    position: relative;
+    z-index: 9999;
 }
 .menu--main--divider {
     position: relative;
