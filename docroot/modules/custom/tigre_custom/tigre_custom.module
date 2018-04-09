@@ -72,6 +72,16 @@ function tigre_custom_search_block_form_alter(&$form, FormStateInterface $form_s
     $form['keys']['#attributes']['placeholder'] = t('Digite aqui o produto ou categoria que busca');
 }
 
+function hook_taxonomy_menu_update(&$item)
+{
+    if ($item['ptid'] !== '0') {
+        return;
+    }
+
+    $menu_link = menu_link_load($item['mlid']);
+    $item['weight'] = $menu_link['weight'];
+}
+
 function tigre_custom_preprocess_search_result(&$variables)
 {
     // Change the date displayed in search results
