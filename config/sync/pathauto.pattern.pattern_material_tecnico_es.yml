@@ -9,24 +9,24 @@ dependencies:
 id: pattern_material_tecnico_es
 label: 'Pattern Material Técnico - ES'
 type: 'canonical_entities:taxonomy_term'
-pattern: ' materiales-tecnicos/[term:parent:name]/[term:name]'
+pattern: 'materiales-tecnicos/[term:parent:name]/[term:name]'
 selection_criteria:
-  b1420db0-8b7d-4dd6-9814-82aa12e3c660:
+  d4d7ef80-6f6a-4f04-baf4-63ab77860640:
     id: 'entity_bundle:taxonomy_term'
     bundles:
       catalogo: catalogo
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: b1420db0-8b7d-4dd6-9814-82aa12e3c660
-  bd5803c7-269a-4bb4-a7f0-4c45500f49a5:
+    uuid: d4d7ef80-6f6a-4f04-baf4-63ab77860640
+  c32222e8-eb49-439d-9bd5-85e374ab1cc6:
     id: language
     langcodes:
       es: es
     negate: false
     context_mapping:
       language: 'taxonomy_term:langcode:language'
-    uuid: bd5803c7-269a-4bb4-a7f0-4c45500f49a5
+    uuid: c32222e8-eb49-439d-9bd5-85e374ab1cc6
 selection_logic: and
 weight: -10
 relationships:

@@ -5,12 +5,22 @@ dependencies:
   config:
     - field.field.taxonomy_term.produto.field_cad_produto_anexo
     - field.field.taxonomy_term.produto.field_cat_produto_image
+    - field.field.taxonomy_term.produto.field_inativo
     - taxonomy.vocabulary.produto
+  module:
+    - options
 id: taxonomy_term.produto.default
 targetEntityType: taxonomy_term
 bundle: produto
 mode: default
-content: {  }
+content:
+  field_inativo:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
 hidden:
   description: true
   field_cad_produto_anexo: true

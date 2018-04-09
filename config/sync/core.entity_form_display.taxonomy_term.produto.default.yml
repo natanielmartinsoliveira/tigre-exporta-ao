@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.taxonomy_term.produto.field_cad_produto_anexo
     - field.field.taxonomy_term.produto.field_cat_produto_image
+    - field.field.taxonomy_term.produto.field_inativo
     - image.style.thumbnail
     - taxonomy.vocabulary.produto
   module:
@@ -39,6 +40,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_inativo:
+    weight: 33
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   langcode:
     type: language_select

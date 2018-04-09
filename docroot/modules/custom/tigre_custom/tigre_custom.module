@@ -72,16 +72,6 @@ function tigre_custom_search_block_form_alter(&$form, FormStateInterface $form_s
     $form['keys']['#attributes']['placeholder'] = t('Digite aqui o produto ou categoria que busca');
 }
 
-function hook_taxonomy_menu_update(&$item)
-{
-    if ($item['ptid'] !== '0') {
-        return;
-    }
-
-    $menu_link = menu_link_load($item['mlid']);
-    $item['weight'] = $menu_link['weight'];
-}
-
 function tigre_custom_preprocess_search_result(&$variables)
 {
     // Change the date displayed in search results
@@ -139,126 +129,122 @@ function tigre_custom_queue_import_produto_cronjob()
     $tigre_service->setUsername("lucas");
     //$tigre_service->setPassword('102030');
     $tigre_service->setPassword('TigreExportAPI');
-    $produtos = $tigre_service->getProductTaxonomies();
+    // $produtos = $tigre_service->getProductTaxonomies();
 
-    foreach ($produtos as $nid => $produto) {
-        $produto_language = $produto['pt-br'];
-        $parent = $produto_language['parent'];
-        if (!is_null($parent)) {
-            $parent = (int) $parent;
-        }
+    // foreach ($produtos as $nid => $produto) {
+    //     $produto_language = $produto['pt-br'];
+    //     $parent = $produto_language['parent'];
+    //     if (!is_null($parent)) {
+    //         $parent = (int) $parent;
+    //     }
 
-        $data[] = array('id' => $nid, 'parent_id' => $parent);
-    }
+    //     $data[] = array('id' => $nid, 'parent_id' => $parent);
+    // }
 
-    function cmp($a, $b)
-    {
-        if ($a['parent_id'] == $b['parent_id']) {
-            return 0;
-        }
-        return ($a['parent_id'] < $b['parent_id']) ? -1 : 1;
-    }
+    // function cmp($a, $b)
+    // {
+    //     if ($a['parent_id'] == $b['parent_id']) {
+    //         return 0;
+    //     }
+    //     return ($a['parent_id'] < $b['parent_id']) ? -1 : 1;
+    // }
 
-    uasort($data, 'cmp');
+    // uasort($data, 'cmp');
 
-    foreach ($data as $item) {
-        // if ($item['id'] != 9 && $item['id'] != 10 && $item['id'] != 21 && $item['id'] != 190) {
-        //     continue;
-        // }
-        $nid = (string) $item['id'];
+    // foreach ($data as $item) {
+    //     // if ($item['id'] != 9 && $item['id'] != 10 && $item['id'] != 21 && $item['id'] != 190) {
+    //     //     continue;
+    //     // }
+    //     $nid = (string) $item['id'];
 
-        $produto = $produtos[$nid];
-        foreach ($produto as $lang => $tax) {
+    //     $produto = $produtos[$nid];
+    //     foreach ($produto as $lang => $tax) {
 
-            $parent = $tax['parent'];
+    //         $parent = $tax['parent'];
 
-            if ($lang == 'pt-br') {
-                if (!is_null($parent)) {
-                    $detailParent = $tigre_service->getDetailTaxonomy($produtos[$parent]['pt-br']['url']);
-                    $taxonomyParent = \Drupal::service('entity.repository')->loadEntityByUuid('taxonomy_term', $detailParent['uuid']['0']['value']);
-                }
-                $detail = $tigre_service->getDetailTaxonomy($tax['url']);
-                $current_taxonomy = \Drupal::service('entity.repository')->loadEntityByUuid('taxonomy_term', $detail['uuid']['0']['value']);
+    //         if ($lang == 'pt-br') {
+    //             if (!is_null($parent)) {
+    //                 $detailParent = $tigre_service->getDetailTaxonomy($produtos[$parent]['pt-br']['url']);
+    //                 $taxonomyParent = \Drupal::service('entity.repository')->loadEntityByUuid('taxonomy_term', $detailParent['uuid']['0']['value']);
+    //             }
+    //             $detail = $tigre_service->getDetailTaxonomy($tax['url']);
+    //             $current_taxonomy = \Drupal::service('entity.repository')->loadEntityByUuid('taxonomy_term', $detail['uuid']['0']['value']);
 
-                if (empty($current_taxonomy)) {
-                    $taxonomy = Term::create([
-                        'vid' => 'produto',
-                    ]);
-                } else {
-                    $taxonomy = Term::load($current_taxonomy->id());
-                }
+    //             if (empty($current_taxonomy)) {
+    //                 $taxonomy = Term::create([
+    //                     'vid' => 'produto',
+    //                 ]);
+    //             } else {
+    //                 $taxonomy = Term::load($current_taxonomy->id());
+    //             }
 
-                if (!empty($detail['uc_catalog_image'])) {
-                    $headers = @get_headers($detail['uc_catalog_image'][0]['url']);
-                    if (strpos($headers[0], '200') != false) {
-                        $imagem = file_get_contents($detail['uc_catalog_image'][0]['url']);
-                        $file = file_save_data($imagem, file_default_scheme() . '://imagens/taxonomia/produto/' . basename($detail['uc_catalog_image'][0]['url']), FILE_EXISTS_REPLACE);
-                    }
-                }
+    //             if (!empty($detail['uc_catalog_image'])) {
+    //                 $headers = @get_headers($detail['uc_catalog_image'][0]['url']);
+    //                 if (strpos($headers[0], '200') != false) {
+    //                     $imagem = file_get_contents($detail['uc_catalog_image'][0]['url']);
+    //                     $file = file_save_data($imagem, file_default_scheme() . '://imagens/taxonomia/produto/' . basename($detail['uc_catalog_image'][0]['url']), FILE_EXISTS_REPLACE);
+    //                 }
+    //             }
 
-                if (!empty($detail['field_download_catalogo'])) {
-                    $headers = @get_headers($detail['field_download_catalogo'][0]['url']);
-                    if (strpos($headers[0], '200') != false) {
-                        $anexo = file_get_contents($detail['field_download_catalogo'][0]['url']);
-                        $fileAnexo = file_save_data($anexo, file_default_scheme() . '://arquivos/taxonomia/produtos/' . basename($detail['field_download_catalogo'][0]['url']), FILE_EXISTS_REPLACE);
-                    }
-                }
+    //             if (!empty($detail['field_download_catalogo'])) {
+    //                 $headers = @get_headers($detail['field_download_catalogo'][0]['url']);
+    //                 if (strpos($headers[0], '200') != false) {
+    //                     $anexo = file_get_contents($detail['field_download_catalogo'][0]['url']);
+    //                     $fileAnexo = file_save_data($anexo, file_default_scheme() . '://arquivos/taxonomia/produtos/' . basename($detail['field_download_catalogo'][0]['url']), FILE_EXISTS_REPLACE);
+    //                 }
+    //             }
 
-            } else {
-                if (!is_null($parent)) {
-                    $detailParent = $tigre_service->getDetailTaxonomy($produtos[$parent][$lang]['url']);
-                }
-                $detail = $tigre_service->getDetailTaxonomy($tax['url']);
-                if ($taxonomy->hasTranslation($lang)) {
-                    $taxonomy = $taxonomy->getTranslation($lang);
-                } else {
-                    $taxonomy = $taxonomy->addTranslation($lang);
-                }
-            }
+    //         } else {
+    //             if (!is_null($parent)) {
+    //                 $detailParent = $tigre_service->getDetailTaxonomy($produtos[$parent][$lang]['url']);
+    //             }
+    //             $detail = $tigre_service->getDetailTaxonomy($tax['url']);
+    //             if ($taxonomy->hasTranslation($lang)) {
+    //                 $taxonomy = $taxonomy->getTranslation($lang);
+    //             } else {
+    //                 $taxonomy = $taxonomy->addTranslation($lang);
+    //             }
+    //         }
 
-            $taxonomy->set('uuid', $detail['uuid'][0]['value']);
-            $taxonomy->set('name', $detail['name'][0]['value']);
-            $taxonomy->set('weight', $detail['weight'][0]['value']);
-            $taxonomy->set('description', array('format' => 'full_html', 'value' => $detail['description'][0]['value']));
+    //         $taxonomy->set('uuid', $detail['uuid'][0]['value']);
+    //         $taxonomy->set('name', $detail['name'][0]['value']);
+    //         $taxonomy->set('weight', $detail['weight'][0]['value']);
+    //         $taxonomy->set('description', array('format' => 'full_html', 'value' => $detail['description'][0]['value']));
 
-            if ($lang == 'pt-br') {
-                if (!empty($detail['uc_catalog_image'])) {
-                    $taxonomy->set('field_cat_produto_image', [
-                        'target_id' => $file->id(),
-                    ]);
-                }
-                if (!empty($detail['field_download_catalogo'])) {
-                    $taxonomy->set('field_cad_produto_anexo', [
-                        'target_id' => $fileAnexo->id(),
-                    ]);
-                }
-            }
-            if (!is_null($parent)) {
-                $taxonomy->set('parent', $taxonomyParent->id());
-            }
-            if ($tax === end($produto)) {
-                $taxonomy->save();
-                $taxonomias['pt-br'][$nid] = $taxonomy->id();
-                $taxonomias['en'][$nid] = $taxonomy->id();
-                $taxonomias['es'][$nid] = $taxonomy->id();
-            }
-        }
-    }
+    //         if ($lang == 'pt-br') {
+    //             if (!empty($detail['uc_catalog_image'])) {
+    //                 $taxonomy->set('field_cat_produto_image', [
+    //                     'target_id' => $file->id(),
+    //                 ]);
+    //             }
+    //             if (!empty($detail['field_download_catalogo'])) {
+    //                 $taxonomy->set('field_cad_produto_anexo', [
+    //                     'target_id' => $fileAnexo->id(),
+    //                 ]);
+    //             }
+    //         }
+    //         if (!is_null($parent)) {
+    //             $taxonomy->set('parent', $taxonomyParent->id());
+    //         }
+    //         if ($tax === end($produto)) {
+    //             $taxonomy->save();
+    //             $taxonomias['pt-br'][$nid] = $taxonomy->id();
+    //             $taxonomias['en'][$nid] = $taxonomy->id();
+    //             $taxonomias['es'][$nid] = $taxonomy->id();
+    //         }
+    //     }
+    // }
 
     $produtos = $tigre_service->getProducts();
 
     foreach ($produtos as $nid => $produto) {
-
-        if($nid != 7){
-            continue;
-        }
 
         $detail = [];
         $detail['produto'] = [];
         $detail['produto']['pt-br'] = $tigre_service->getDetailProduct($produto['pt-br']['url']);
         $detail['produto']['en'] = $tigre_service->getDetailProduct($produto['en']['url']);
         $detail['produto']['es'] = $tigre_service->getDetailProduct($produto['es']['url']);
-        $detail['taxonomias'] = $taxonomias;
+        //$detail['taxonomias'] = $taxonomias;
         $data['detail'] = $detail;
         //$queue->createItem($data);
 
@@ -352,12 +338,12 @@ function tigre_custom_queue_import_produto_cronjob()
                 $node->set('field_produto_revisado', $produto['field_produto_revisado'][0]['value']);
             }
 
-            if (!empty($produto['taxonomy_catalog'])) {
-                foreach ($produto['taxonomy_catalog'] as $term) {
-                    $taxId = (string) $term['target_id'];
-                    $node->field_taxonomy_catalog->appendItem(['target_id' => (int) $detail['taxonomias'][$nid][$taxId]]);
-                }
-            }
+            // if (!empty($produto['taxonomy_catalog'])) {
+            //     foreach ($produto['taxonomy_catalog'] as $term) {
+            //         $taxId = (string) $term['target_id'];
+            //         $node->field_taxonomy_catalog->appendItem(['target_id' => (int) $detail['taxonomias'][$nid][$taxId]]);
+            //     }
+            // }
 
             if (!empty($produto['field_texto_tecnico'])) {
                 $node->set('field_texto_tecnico', array('format' => 'full_html', 'value' => $produto['field_texto_tecnico'][0]['value']));

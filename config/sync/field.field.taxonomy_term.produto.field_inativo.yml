@@ -1,0 +1,23 @@
+uuid: cb5bfcd6-1a16-491c-a5e5-e4da7797de7c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_inativo
+    - taxonomy.vocabulary.produto
+  module:
+    - options
+id: taxonomy_term.produto.field_inativo
+field_name: field_inativo
+entity_type: taxonomy_term
+bundle: produto
+label: Inativo
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'false'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
