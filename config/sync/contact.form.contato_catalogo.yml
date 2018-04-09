@@ -1,11 +1,21 @@
 uuid: a9e9a4d5-df71-4b2c-b84d-80b00bd85925
 langcode: pt-br
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Enviar mensagem'
+    show_preview: true
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
 id: contato_catalogo
 label: 'Contato Catálogo'
 recipients:
-  - lucas@nextidea.com.br
+  - teleservicos@tigre.com
+  - teletigre@tigre.com
 reply: ''
 weight: 0
 message: ''

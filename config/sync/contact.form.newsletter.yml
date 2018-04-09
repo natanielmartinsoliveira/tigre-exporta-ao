@@ -14,7 +14,7 @@ third_party_settings:
 id: newsletter
 label: Newsletter
 recipients:
-  - lucas@nextidea.com.br
+  - tigretube@gmail.com
 reply: ''
 weight: 0
 message: 'Sua mensagem foi enviada'
