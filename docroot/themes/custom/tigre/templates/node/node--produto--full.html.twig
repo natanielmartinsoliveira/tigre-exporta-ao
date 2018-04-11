@@ -133,29 +133,52 @@
                   <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">{% trans %}DESCRIÇÃO DO PRODUTO{% endtrans %}</a></li>
                 {% endif %}
                 {% if content.field_bitolas[0] is not empty %}
-                  <li role="presentation"><a href="#code" aria-controls="code" role="tab" data-toggle="tab">{% trans %}CÓDIGO E EMBALAGEM{% endtrans %}</a></li>
+                  {% if content.body[0] is empty and content.field_produto_instrucoes[0] is empty and content.field_texto_tecnico[0] is empty %}
+                    <li role="presentation" class="active"><a href="#code" aria-controls="code" role="tab" data-toggle="tab">{% trans %}CÓDIGO E EMBALAGEM{% endtrans %}</a></li>
+                  {% else %}
+                    <li role="presentation"><a href="#code" aria-controls="code" role="tab" data-toggle="tab">{% trans %}CÓDIGO E EMBALAGEM{% endtrans %}</a></li>
+                  {% endif %}
                 {% endif %}
                 {% if content.field_texto_tecnico[0] is not empty %}
-                  <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">{% trans %}INFORMAÇÕES TÉCNICAS{% endtrans %}</a></li>
+                  {% if content.body[0] is empty and content.field_produto_instrucoes[0] is empty and content.field_bitolas[0] is empty %}
+                    <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">{% trans %}INFORMAÇÕES TÉCNICAS{% endtrans %}</a></li>
+                  {% else %}
+                    <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">{% trans %}INFORMAÇÕES TÉCNICAS{% endtrans %}</a></li>
+                  {% endif %}
                 {% endif %}
               </ul>
 
               <!-- Tab panes -->
               <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="description">
-                  <div class="col-xs-12 col-md-6">
-                    {{ content.body }}
+                {% if content.body[0] is not empty or content.field_produto_instrucoes[0] is not empty %}
+                  <div role="tabpanel" class="tab-pane active" id="description">
+                    <div class="col-xs-12 col-md-6">
+                      {{ content.body }}
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      {{ content.field_produto_instrucoes }}
+                    </div>
                   </div>
-                  <div class="col-xs-12 col-md-6">
-                    {{ content.field_produto_instrucoes }}
+                {% endif %}
+                {% if content.body[0] is empty and content.field_produto_instrucoes[0] is empty and content.field_texto_tecnico[0] is empty %}
+                    <div role="tabpanel" class="tab-pane active" id="code">
+                    {{ content.field_bitolas }}
                   </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="code">
-                  {{ content.field_bitolas }}
-                </div>
-                <div role="tabpanel" class="tab-pane" id="info">
-                  {{ content.field_texto_tecnico }}
-                </div>
+                {% else %}
+                  <div role="tabpanel" class="tab-pane" id="code">
+                    {{ content.field_bitolas }}
+                  </div>
+                {% endif %}
+                {% if content.body[0] is empty and content.field_produto_instrucoes[0] is empty and content.field_bitolas[0] is empty %}
+                  <div role="tabpanel" class="tab-pane active" id="info">
+                    {{ content.field_texto_tecnico }}
+                  </div>
+                {% else %}
+                  <div role="tabpanel" class="tab-pane" id="info">
+                    {{ content.field_texto_tecnico }}
+                  </div>
+                {% endif %}
+                
               </div>
              </div>
 
