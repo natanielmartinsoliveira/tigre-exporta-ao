@@ -243,40 +243,28 @@ p {
   .menu-global #navbar-collapse .logo {
     padding-bottom: 5px;
     margin-right: 10px; }
-	
-.navbar-header.scrollingbar{
-	top:0 !important;
-}
-.navbar-collapse.scrollingmenu{
-	top:80px !important;
-}
+
 @media (max-width: 768px) {
-  .menu-global {
-		
-	}
-    .menu-global .region-menu-global {
-      
-	  }
-    .menu-global .navbar-header {
-      width: 100%;
-      position: fixed; 
-	  margin-top:0;}
-      .menu-global .navbar-header .logo {
-        display: block;
-        margin-left: 15px; }
-    .menu-global #navbar-collapse {
-      margin-top: 25px !important;
-      background: #fff; }
-      .menu-global #navbar-collapse .logo {
-        display: none; }
-      .menu-global #navbar-collapse #block-tigre-main-menu li {
-        text-align: justify; }
-        .menu-global #navbar-collapse #block-tigre-main-menu li a {
-          color: #000000; }
-      .menu-global #navbar-collapse #block-busca {
-        display: none; }
-      .menu-global #navbar-collapse #block-views-block-contatos-block-1 {
-        display: none; } }
+  .menu-global .navbar-header {
+    width: 100%;
+    position: fixed;
+    margin-top: 0; }
+    .menu-global .navbar-header .logo {
+      display: block;
+      margin-left: 15px; }
+  .menu-global #navbar-collapse {
+    margin-top: 25px !important;
+    background: #fff; }
+    .menu-global #navbar-collapse .logo {
+      display: none; }
+    .menu-global #navbar-collapse #block-tigre-main-menu li {
+      text-align: justify; }
+      .menu-global #navbar-collapse #block-tigre-main-menu li a {
+        color: #000000; }
+    .menu-global #navbar-collapse #block-busca {
+      display: none; }
+    .menu-global #navbar-collapse #block-views-block-contatos-block-1 {
+      display: none; } }
 .footer {
   margin-top: 0;
   padding: 0;
@@ -657,6 +645,8 @@ p {
     padding: 6px 0; }
   #block-dropdownlanguageselector .dropdown-toggle {
     padding-bottom: 8px; }
+  #block-dropdownlanguageselector #ajax-link--3 {
+    display: none; }
 
 #navbar-collapse {
   padding-top: 8px;
@@ -709,10 +699,6 @@ p {
       height: 2px;
       background: #ff8600;
       z-index: 2; }
-	  
-.navbar-header .busca--btn1.collapse{
-display:none;
-}
 
 @media (max-width: 768px) {
   .menu-global #navbar-collapse {
@@ -724,8 +710,7 @@ display:none;
       .menu-global #navbar-collapse #block-tigre-main-menu li a, .menu-global #navbar-collapse #block-busca li a {
         color: #000000; }
     .menu-global #navbar-collapse #block-busca {
-      display: none; 
-}
+      display: none; }
     .menu-global #navbar-collapse #block-views-block-contatos-block-1 {
       display: none; } }
 #block-menuprincipalcontatoebusca .menu-contact-search {
@@ -2262,4 +2247,13 @@ li.ui-menu-item:hover {
   background: #dadada;
   left: 0;
   top: 73px;
+  display: none; }
+
+.navbar-header.scrollingbar {
+  top: 0 !important; }
+
+.navbar-collapse.scrollingmenu {
+  top: 80px !important; }
+
+.navbar-header .busca--btn1.collapse {
   display: none; }

@@ -174,13 +174,11 @@
 
 @media (max-width: 768px) {
     .menu-global {
-        background-color: transparent;
-        .region-menu-global {
-            display: none;
-        }
+
         .navbar-header {
             width: 100%;
             position: fixed;
+            margin-top:0;
             .logo {
                 display: block;
                 margin-left: 15px;
@@ -755,6 +753,9 @@
     }
     .dropdown-toggle {
         padding-bottom: 8px;
+    }
+    #ajax-link--3 {
+        display: none;
     }
 }
 
@@ -2962,3 +2963,14 @@ li.ui-menu-item:hover {
     top: 73px;
     display: none;
 }
+
+.navbar-header.scrollingbar{
+	top:0 !important;
+}
+.navbar-collapse.scrollingmenu{
+	top:80px !important;
+}
+.navbar-header .busca--btn1.collapse{
+    display:none;
+    }
+    
