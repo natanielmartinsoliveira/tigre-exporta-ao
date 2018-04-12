@@ -3,6 +3,7 @@
 namespace Drupal\tigre_custom\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\tigre_custom\Rest\TigreRestService;
+use Drupal\node\Entity\Node;
 
 /**
  * Created by PhpStorm.
@@ -28,5 +29,28 @@ class TigreCustomController extends ControllerBase {
 
     die();
 
+  }
+
+  public function listProducts() {
+    $result = \Drupal::entityQuery('node')
+         ->condition('type', 'produto')
+         ->execute();
+    
+    foreach ($result as $nid) {
+      $node = Node::load($nid);
+      $terms = [];
+      for ($i = 0; $i < $node->field_taxonomy_catalog->count(); $i++) {
+        if ($node->field_taxonomy_catalog[$i]->entity) {
+          if( array_search($node->field_taxonomy_catalog[$i]->entity->id(), $terms) === false ) {
+            $terms[] = $node->field_taxonomy_catalog[$i]->entity->id();
+          }else {
+            $node->field_taxonomy_catalog->removeItem($i);
+            $i--;
+          }
+        }
+      }
+      $node->save();
+    }
+    
   }
 }

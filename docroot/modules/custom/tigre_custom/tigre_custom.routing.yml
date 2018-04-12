@@ -5,4 +5,10 @@ tigre_custom.controller:
     _title: 'Hello World'
   requirements:
     _permission: 'access content'
-
+tigre_custom.controller:
+  path: '/tigre_custom/list'
+  defaults:
+    _controller: '\Drupal\tigre_custom\Controller\TigreCustomController::listProducts'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
