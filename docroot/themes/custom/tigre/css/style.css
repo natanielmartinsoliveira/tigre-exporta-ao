@@ -243,15 +243,24 @@ p {
   .menu-global #navbar-collapse .logo {
     padding-bottom: 5px;
     margin-right: 10px; }
-
+	
+.navbar-header.scrollingbar{
+	top:0 !important;
+}
+.navbar-collapse.scrollingmenu{
+	top:80px !important;
+}
 @media (max-width: 768px) {
   .menu-global {
-    background-color: transparent; }
+		
+	}
     .menu-global .region-menu-global {
-      display: none; }
+      
+	  }
     .menu-global .navbar-header {
       width: 100%;
-      position: fixed; }
+      position: fixed; 
+	  margin-top:0;}
       .menu-global .navbar-header .logo {
         display: block;
         margin-left: 15px; }
@@ -700,6 +709,10 @@ p {
       height: 2px;
       background: #ff8600;
       z-index: 2; }
+	  
+.navbar-header .busca--btn1.collapse{
+display:none;
+}
 
 @media (max-width: 768px) {
   .menu-global #navbar-collapse {
@@ -711,7 +724,8 @@ p {
       .menu-global #navbar-collapse #block-tigre-main-menu li a, .menu-global #navbar-collapse #block-busca li a {
         color: #000000; }
     .menu-global #navbar-collapse #block-busca {
-      display: none; }
+      display: none; 
+}
     .menu-global #navbar-collapse #block-views-block-contatos-block-1 {
       display: none; } }
 #block-menuprincipalcontatoebusca .menu-contact-search {
