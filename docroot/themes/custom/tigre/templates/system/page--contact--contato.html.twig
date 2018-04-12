@@ -148,6 +148,9 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
+          <div class="container">
+            {{ page.content.tigre_messages }}
+          </div>
           {% if page.content.views_block__exportacao_block_1 %}
             <div class="container page--contact--content--region">
               <div class="row">
