@@ -2,6 +2,15 @@
     Drupal.behaviors.myBehavior = {
         attach: function (context, settings) {    
             var scroll_start = 0;
+			
+			$(window).on('resize', function(){
+				  var win = $(this); //this = window
+				  var scroll_init = $(this).scrollTop();
+				  if (win.width() > 691 ) { 
+					$( ".navbar-collapse" ).removeClass( "scrollingmenu" ); 
+				  }
+				  
+			});
             $(document).ready(function(){
                 
                 function navBarVerify($param) {
@@ -9,6 +18,7 @@
                     // From top
                     if(scroll_start > 0) {
                         navBarBlue();
+						
                     } else {
                         if ($(window).width() > 768){
                             $('#navbar-collapse').css({
@@ -29,7 +39,12 @@
                                 'background': 'transparent'
                             });
                         }
+						$( ".navbar-header" ).removeClass( "scrollingbar" );
+						
                     }
+					    if ($(window).width() <= 768){
+							$( "#navbar-collapse" ).addClass( "scrollingmenu" );
+						}
                  }
                 
                 function navBarBlue() {
@@ -49,6 +64,9 @@
                         $(".navbar-header").css({
                             'background': '#0083ca'
                         });
+						$( ".navbar-header" ).addClass( "scrollingbar" );
+						$( "#navbar-collapse" ).removeClass( "scrollingmenu" );
+						
                     }
                 }
                 if( $(".menu--main--close").length == 0) {
