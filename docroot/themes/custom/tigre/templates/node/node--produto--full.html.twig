@@ -185,7 +185,7 @@
               <div class="col-xs-12 col-sm-3">
                 <div class="card-contato">
                   <h3>{% trans %}Quer saber mais sobre este produto?{% endtrans %}</h3>
-                  <a href="#">{% trans %}ENTRE EM CONTATO{% endtrans %}</a>
+                  <a href="{{ path('entity.contact_form.canonical', {'contact_form': 'contato'}) }}">{% trans %}ENTRE EM CONTATO{% endtrans %}</a>
                 </div>
               </div>
 

@@ -764,6 +764,10 @@ p {
   padding: 80px 0; }
   #block-contactblock #contact-message-newsletter-form {
     display: inline; }
+    #block-contactblock #contact-message-newsletter-form .form-required .label--required {
+      display: none; }
+    #block-contactblock #contact-message-newsletter-form .form-required:after {
+      display: none; }
   #block-contactblock .block-title {
     font-size: 24px;
     line-height: 34px;

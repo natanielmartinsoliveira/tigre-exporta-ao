@@ -945,6 +945,14 @@
     padding: 80px 0;
     #contact-message-newsletter-form{
         display: inline;
+        .form-required {
+            .label--required {
+                display: none;
+            }
+            &:after {
+                display: none;
+            }
+        }
     }
     .block-title {
         font-size: 24px;
