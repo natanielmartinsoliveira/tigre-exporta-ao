@@ -2557,12 +2557,70 @@ li.ui-menu-item:hover {
 
 #block-categoriasproduto{
     margin-bottom: 30px;
+    border: 1px solid #dadada;
+    border-radius: 6px;
     .is-active {
         color: $larangaEscuro;
         font-weight: 700;
     }
     #block-categoriasproduto-menu {
         display: none;
+    }
+    .tree {
+        display: none;
+        border: 0;
+    }
+    .js-open-filter-mob {
+        display: block;
+        float: left;
+        border: 0;
+        border-radius: 4px;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #797979;
+        text-align: center;
+        margin-top: 2px;
+        background-color: #fff;
+        svg {
+            margin-left: 10px;
+            margin-bottom: -3px;
+        }
+    }
+    .js-open-filter-mob:focus {
+         outline:0 !important; 
+    }
+    .js-open-filter-mob-close {
+        display: none;
+        font-size: 40px;
+    }
+    .menulateral--produtos-close {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+    .menulateral--produtos {
+        width: 100%;
+        position: relative;
+    }
+    .contextual {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #block-categoriasproduto{
+        .tree {
+            display: block !important;
+            padding-top: 21px !important;
+        }
+        .js-open-filter-mob {
+            display: none;
+        }
+        .menulateral--produtos-close {
+            display: none;
+        }
     }
 }
 

@@ -96,6 +96,15 @@
                     }
                 });
 
+                $(".js-open-filter-mob").click(function() { 
+                    $('.tree').css({"display": "block", "padding-top": "0px"});
+                    $('.js-open-filter-mob-close').css({"display": "inline-block"});
+                });
+                $(".js-open-filter-mob-close").click(function() { 
+                    $('.tree').css({"display": "none", "padding-top": "21px"});
+                    $('.js-open-filter-mob-close').css({"display": "none"});
+                });
+
                 $('.menu--main li a').each(function () {
                     $(this).addClass('menu--main--link');
                 });
