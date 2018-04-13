@@ -2303,20 +2303,17 @@ li.ui-menu-item:hover {
   top: 80px !important; }
 
 .navbar-header .busca--btn {
-color:#fff;
-  }
-@media (max-width: 768px) {
-.navbar-header .busca--btn {
-	position: relative;
-	float:right;
-	margin-top: 23px;
-    margin-right: 28px;
-	margin-bottom: 8px;
-  }
-}
-@media (min-width: 768px) {
-.navbar-header .busca--btn {
-display:none;
-  }	
-}
+  color: #fff; }
 
+@media (max-width: 768px) {
+  .navbar-header .busca--btn {
+    position: relative;
+    float: right;
+    margin-top: 23px;
+    margin-right: 28px;
+    margin-bottom: 8px; } }
+@media (min-width: 768px) {
+  .navbar-header .busca--btn {
+    display: none; } }
+.busca--btn span {
+  cursor: pointer; }
