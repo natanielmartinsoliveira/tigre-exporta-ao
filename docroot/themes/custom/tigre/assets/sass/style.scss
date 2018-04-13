@@ -3336,3 +3336,32 @@ li.ui-menu-item:hover {
         cursor: pointer;
     }
 }
+#modal--download-catalogo {
+    background-color: rgba(0, 65, 138, 0.7);
+    .modal-dialog {
+        .button--primary {
+            float: right;
+        }
+        .label--required {
+            font-family: "ubunturegular", Arial, sans-serif;
+            float: right;
+            text-transform: lowercase;
+            font-size: 10px;
+            padding-top: 4px;
+        }
+    
+        .form-required:after {
+            display: none;
+        }
+    }
+}
+@media (min-width: 768px) {
+    #modal--download-catalogo {
+        .modal-dialog {
+            width: 400px;
+            .modal-body {
+                padding: 30px;
+            }
+        }
+    }
+}

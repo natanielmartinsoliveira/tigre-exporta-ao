@@ -2317,3 +2317,22 @@ li.ui-menu-item:hover {
     display: none; } }
 .busca--btn span {
   cursor: pointer; }
+
+#modal--download-catalogo {
+  background-color: rgba(0, 65, 138, 0.7); }
+  #modal--download-catalogo .modal-dialog .button--primary {
+    float: right; }
+  #modal--download-catalogo .modal-dialog .label--required {
+    font-family: "ubunturegular", Arial, sans-serif;
+    float: right;
+    text-transform: lowercase;
+    font-size: 10px;
+    padding-top: 4px; }
+  #modal--download-catalogo .modal-dialog .form-required:after {
+    display: none; }
+
+@media (min-width: 768px) {
+  #modal--download-catalogo .modal-dialog {
+    width: 400px; }
+    #modal--download-catalogo .modal-dialog .modal-body {
+      padding: 30px; } }

@@ -3,19 +3,24 @@ langcode: pt-br
 status: true
 dependencies:
   module:
+    - contact_ajax
     - contact_storage
 third_party_settings:
   contact_storage:
     submit_text: 'Enviar mensagem'
-    show_preview: true
+    show_preview: false
     disabled_form_message: 'This contact form has been disabled.'
     maximum_submissions_user: 0
     page_autoreply_format: plain_text
+  contact_ajax:
+    enabled: true
+    prefix_id: ''
+    render_selector: ''
+    confirmation_type: 1
 id: contato_catalogo
 label: 'Contato Catálogo'
 recipients:
-  - teleservicos@tigre.com
-  - teletigre@tigre.com
+  - lucas@nextidea.com.br
 reply: ''
 weight: 0
 message: ''

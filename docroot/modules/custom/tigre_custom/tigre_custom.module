@@ -64,6 +64,9 @@ function tigre_custom_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
 
         $form['actions']['submit']['#value'] = t('Submit');
 
+    } else if ($form_id == 'contact_message_contato_catalogo_form') {
+
+        $form['actions']['submit']['#value'] = t('Download');
     }
 }
 
