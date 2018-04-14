@@ -139,6 +139,21 @@
                     $('.tree').css({"display": "none", "padding-top": "21px"});
                     $('.js-open-filter-mob-close').css({"display": "none"});
                 });
+                // $(".file-link a").click(function(e) { 
+                //     if( $('#down-clicked').val() == "" ){
+                //         var idElem = $(this).attr('href');
+                //         var urlElem = encodeURIComponent(idElem);
+                //         e.preventDefault();
+                //         $('#down-clicked').val(urlElem);
+                //         $('#modal--download-catalogo').modal('show');
+                //     }
+                // });
+                $("#edit-submit--2").click(function(e) { 
+                    var idClicked = $('#down-clicked').val();
+                    window.open(decodeURIComponent(idClicked)); 
+                });
+                
+                
 
                 $('.menu--main li a').each(function () {
                     $(this).addClass('menu--main--link');

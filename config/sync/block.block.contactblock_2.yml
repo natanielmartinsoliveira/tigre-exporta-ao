@@ -1,0 +1,33 @@
+uuid: 32e37c14-4109-4f06-ac55-136dee673559
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - contact.form.contato_catalogo
+  module:
+    - block_class
+    - contact_block
+    - system
+  theme:
+    - tigre
+third_party_settings:
+  block_class:
+    classes: ''
+id: contactblock_2
+theme: tigre
+region: modals
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  provider: contact_block
+  label_display: '0'
+  contact_form: contato_catalogo
+visibility:
+  request_path:
+    id: request_path
+    pages: "/materiais-tecnicos/*\r\n/technical-materials/*\r\n/materiales-tecnicos/*\r\n/materiaux-techniques/*\r\n/materiais-tecnicos\r\n/technical-materials\r\n/materiales-tecnicos\r\n/materiaux-techniques\r\n/material-tecnico/*\r\n/technical-material/*\r\n/material-tecnico/*\r\n/materiel-technique/*"
+    negate: false
+    context_mapping: {  }
