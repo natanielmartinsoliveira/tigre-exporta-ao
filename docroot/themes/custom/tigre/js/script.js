@@ -10,9 +10,44 @@
 					$( ".navbar-collapse" ).removeClass( "scrollingmenu" ); 
 				  }
 				  
+				if (win.width() < 691 ) { 
+
+					$('.block-block-content .field--name-field-banner-imagem img').css({
+						'height': '550px'
+					});
+					$('.page-header').css({
+						'margin-top':'-176px'
+					});
+					
+				} else{
+					$('.block-block-content .field--name-field-banner-imagem img').css({
+						'height': '400px'
+					});
+					$('.page-header').css({
+						'margin-top':'-86px'
+					});
+				} 
 			});
             $(document).ready(function(){
-                
+				var win = $(this); //this = window
+				
+                if (win.width() < 691 ) { 
+				
+					$('.block-block-content .field--name-field-banner-imagem img').css({
+						'height': '550px'
+					});
+					$('.page-header').css({
+						'margin-top':'-176px'
+					});
+					
+				}else{
+					$('.block-block-content .field--name-field-banner-imagem img').css({
+						'height': '400px'
+					});
+					$('.page-header').css({
+						'margin-top':'-86px'
+					});
+				}
                 function navBarVerify($param) {
                     scroll_start = $(this).scrollTop();
                     // From top
