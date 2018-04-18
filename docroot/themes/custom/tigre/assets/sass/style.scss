@@ -2309,6 +2309,9 @@ li.ui-menu-item:hover {
 
 // Catalogos
 .view-catalogos {
+    .col {
+        min-height: 294px;
+    }
     .node--type-catalogo {
         padding: 19px;
         margin: 0 0 28px 0;
