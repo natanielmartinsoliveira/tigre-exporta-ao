@@ -1924,6 +1924,9 @@ li.ui-menu-item:hover {
   .breadcrumb li a {
     color: #fff; }
 
+@media (max-width: 768px) {
+  .breadcrumb {
+    display: none; } }
 .region-breadcrumb {
   float: left; }
 

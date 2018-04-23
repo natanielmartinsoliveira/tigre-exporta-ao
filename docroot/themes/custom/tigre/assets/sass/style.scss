@@ -2747,6 +2747,11 @@ li.ui-menu-item:hover {
         color: #fff;
     }
 }
+@media (max-width: 768px) {
+    .breadcrumb {
+        display: none;
+    }
+}
 
 .region-breadcrumb {
     float: left;
