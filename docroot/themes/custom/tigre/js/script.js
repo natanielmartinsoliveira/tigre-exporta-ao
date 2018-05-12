@@ -4,33 +4,26 @@
             var scroll_start = 0;
 			
 			$(window).on('resize', function(){
+				 $( ".navbar-collapse" ).removeClass( "in" ); 
+				
 				  var win = $(this); //this = window
 				  var scroll_init = $(this).scrollTop();
 				  if (win.width() > 691 ) { 
 					$( ".navbar-collapse" ).removeClass( "scrollingmenu" ); 
 				  }
+				  if (win.width() < 691 && scroll_init > 0 ) { 
+					$( ".logo.navbar-btn" ).removeClass( ".pull-left" ); 
+				  }
 				  
-				if (win.width() < 691 ) { 
-
-					$('.block-block-content .field--name-field-banner-imagem img').css({
-						'height': '550px'
-					});
-					$('.page-header').css({
-						'margin-top':'-176px'
-					});
-					
-				} else{
-					$('.block-block-content .field--name-field-banner-imagem img').css({
-						'height': '400px'
-					});
-					$('.page-header').css({
-						'margin-top':'-86px'
-					});
-				} 
+				
 			});
+			$(".menu--main--close").on('click', function () {            
+				$( ".navbar-collapse" ).removeClass( "in" ); 
+			});
+							
             $(document).ready(function(){
 				var win = $(this); //this = window
-				
+
                 if (win.width() < 691 ) { 
 				
 					$('.block-block-content .field--name-field-banner-imagem img').css({
@@ -73,19 +66,19 @@
                             $(".navbar-header").css({
                                 'background': 'transparent'
                             });
+							$( "#navbar-collapse" ).addClass( "scrollingmenu" );
                         }
 						$( ".navbar-header" ).removeClass( "scrollingbar" );
 						
                     }
-					    if ($(window).width() <= 768){
-							$( "#navbar-collapse" ).addClass( "scrollingmenu" );
-						}
+					    
                  }
                 
                 function navBarBlue() {
                     $("#navbar-collapse").css({
                         'background-color': '#fff',
                         "margin-top": "-39px",
+						"z-Index": "999999",
                         "box-shadow": "0 1px 0 rgba(12,13,14,0.1), 0 1px 3px rgba(12,13,14,0.1), 0 4px 20px rgba(12,13,14,0.035), 0 1px 1px rgba(12,13,14,0.025)"
                         });
                     $(".menu--main li a").css({
