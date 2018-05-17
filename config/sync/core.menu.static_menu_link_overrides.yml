@@ -2297,6 +2297,222 @@ definitions:
     parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.categorias_produto.923'
     weight: 0
     expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__14':
+    weight: 13
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__14':
+    weight: 11
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__25':
+    weight: 7
+    menu_name: catalogos-header
+    parent: ''
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__19':
+    weight: 3
+    menu_name: catalogos-header
+    parent: ''
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__22':
+    weight: 5
+    menu_name: catalogos-header
+    parent: ''
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__8':
+    weight: 1
+    menu_name: catalogos-header
+    parent: ''
+    enabled: true
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__25':
+    weight: 7
+    menu_name: catalogo
+    parent: ''
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__19':
+    weight: 3
+    menu_name: catalogo
+    parent: ''
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__22':
+    weight: 5
+    menu_name: catalogo
+    parent: ''
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__8':
+    weight: 1
+    menu_name: catalogo
+    parent: ''
+    enabled: true
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__18':
+    weight: 21
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__11':
+    weight: 7
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__12':
+    weight: 9
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__13':
+    weight: 11
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__15':
+    weight: 15
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__16':
+    weight: 17
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__17':
+    weight: 19
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__10':
+    weight: 5
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__9':
+    weight: 3
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__21':
+    weight: 3
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.19'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogos_header__20':
+    weight: 1
+    menu_name: catalogos-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogos_header.19'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__18':
+    weight: 19
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__11':
+    weight: 5
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__12':
+    weight: 7
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__13':
+    weight: 9
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__15':
+    weight: 13
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__16':
+    weight: 15
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__17':
+    weight: 17
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__10':
+    weight: 3
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__9':
+    weight: 1
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.8'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__21':
+    weight: 3
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.19'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__catalogo_de_produtos__20':
+    weight: 1
+    menu_name: catalogo
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.catalogo_de_produtos.19'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_produto_header__792':
+    enabled: false
+    menu_name: categorias-produto-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.categorias_produto_header.743'
+    expanded: true
+    weight: 0
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_produto_header__978':
+    enabled: false
+    menu_name: categorias-produto-header
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.categorias_produto_header.792'
+    weight: 0
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_produto__792':
+    enabled: false
+    menu_name: categorias-p
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.categorias_produto.743'
+    expanded: true
+    weight: 0
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_produto__978':
+    enabled: false
+    menu_name: categorias-p
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.categorias_produto.792'
+    weight: 0
+    expanded: true
 _core:
   default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
 langcode: pt-br

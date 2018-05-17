@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.taxonomy_term.listagem_terms
     - field.field.taxonomy_term.produto.field_cad_produto_anexo
     - field.field.taxonomy_term.produto.field_cat_produto_image
+    - field.field.taxonomy_term.produto.field_inativo
     - image.style.produto_thumbnail_200x
     - taxonomy.vocabulary.produto
   module:
@@ -49,7 +50,7 @@ content:
     label: hidden
     settings:
       image_style: produto_thumbnail_200x
-      image_link: content
+      image_link: ''
     third_party_settings:
       ds:
         ft:

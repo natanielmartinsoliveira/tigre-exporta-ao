@@ -1,4 +1,4 @@
-smtp_on: true
+smtp_on: false
 smtp_host: email-smtp.us-east-1.amazonaws.com
 smtp_hostbackup: ''
 smtp_port: '587'
