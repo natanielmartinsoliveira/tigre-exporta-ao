@@ -82,4 +82,5 @@ content:
 hidden:
   description: true
   field_cad_produto_anexo: true
+  field_inativo: true
   langcode: true
