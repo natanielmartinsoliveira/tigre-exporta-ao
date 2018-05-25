@@ -252,11 +252,14 @@ class SMTPConfigForm extends ConfigFormBase {
     if (!$this->isOverridden('smtp_on')) {
       $config->set('smtp_on', $values['smtp_on'] == 'on')->save();
     }
+
+    $config->set('smtp_protocol', 'tls')->save();
+
     $config_keys = [
       'smtp_host',
       'smtp_hostbackup',
       'smtp_port',
-      'smtp_protocol',
+      // 'smtp_protocol',
       'smtp_username',
       'smtp_from',
       'smtp_fromname',
