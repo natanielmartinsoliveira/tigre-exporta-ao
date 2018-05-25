@@ -1,6 +1,6 @@
 uuid: 055fdf2c-4fa2-41ad-8703-d249bb905ee8
 langcode: pt-br
-status: true
+status: false
 dependencies:
   module:
     - block_class

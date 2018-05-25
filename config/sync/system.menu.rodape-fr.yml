@@ -1,0 +1,8 @@
+uuid: 3e117992-b4d9-4362-a98d-85c54ef71156
+langcode: fr
+status: true
+dependencies: {  }
+id: rodape-fr
+label: 'Rodapé FR'
+description: ''
+locked: false

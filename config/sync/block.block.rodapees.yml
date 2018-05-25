@@ -1,9 +1,9 @@
-uuid: 414cee33-3a2b-49ec-bb59-71475375bb76
+uuid: 2ecbbb56-620b-4fbb-9d43-e1ad42d686f2
 langcode: pt-br
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.rodape-es
   module:
     - block_class
     - language
@@ -13,17 +13,15 @@ dependencies:
 third_party_settings:
   block_class:
     classes: 'block-links col-xs-12 col-sm-9'
-_core:
-  default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: tigre_footer
+id: rodapees
 theme: tigre
 region: footer
-weight: -26
+weight: -25
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:rodape-es'
 settings:
-  id: 'system_menu_block:footer'
-  label: 'Menu do rodapé'
+  id: 'system_menu_block:rodape-es'
+  label: 'Rodapé ES'
   provider: system
   label_display: '0'
   level: 1
@@ -34,7 +32,7 @@ visibility:
   language:
     id: language
     langcodes:
-      pt-br: pt-br
+      es: es
     negate: false
     context_mapping:
       language: '@language.current_language_context:language_interface'

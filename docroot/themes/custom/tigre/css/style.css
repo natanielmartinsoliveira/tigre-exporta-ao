@@ -341,10 +341,10 @@ p {
       .footer #footer-middle .footer--links--subtitle a {
         color: #fff;
         text-decoration: none; }
-    .footer #footer-middle #block-tigre-footer, .footer #footer-middle #block-contato {
+    .footer #footer-middle #block-tigre-footer, .footer #footer-middle #block-contato, .footer #footer-middle #block-rodapees, .footer #footer-middle #block-rodapeen, .footer #footer-middle #block-rodapefr {
       padding-left: 0;
       padding-right: 0; }
-      .footer #footer-middle #block-tigre-footer .cols, .footer #footer-middle #block-contato .cols {
+      .footer #footer-middle #block-tigre-footer .cols, .footer #footer-middle #block-contato .cols, .footer #footer-middle #block-rodapees .cols, .footer #footer-middle #block-rodapeen .cols, .footer #footer-middle #block-rodapefr .cols {
         margin-top: 18px;
         text-align: center; }
     .footer #footer-middle #block-views-block-contato-rodape-block-1 .views-row {
@@ -399,7 +399,7 @@ p {
   .footer #footer-middle {
     padding-top: 35px;
     padding-bottom: 35px; }
-    .footer #footer-middle #block-tigre-footer .cols, .footer #footer-middle #block-contato .cols {
+    .footer #footer-middle #block-tigre-footer .cols, .footer #footer-middle #block-contato .cols, .footer #footer-middle #block-rodapees .cols, .footer #footer-middle #block-rodapeen .cols, .footer #footer-middle #block-rodapefr .cols {
       margin-top: 0px;
       text-align: left; }
     .footer #footer-middle #block-views-block-contato-rodape-block-1 h2 {

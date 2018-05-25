@@ -1,0 +1,8 @@
+uuid: c2678c27-ec81-492f-b812-039f7735bea8
+langcode: en
+status: true
+dependencies: {  }
+id: rodape-en
+label: 'Rodapé EN'
+description: ''
+locked: false
