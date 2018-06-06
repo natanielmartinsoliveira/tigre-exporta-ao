@@ -112,6 +112,355 @@ AddEncoding gzip svgz
   # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   # RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
 
+  # Rewrite rule for old URL's
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=acessorios => http://export.tigre.com/pt-br/materiais-tecnicos/predial/acessorios
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=acessorios($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/acessorios? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=gas-predial => http://export.tigre.com/pt-br/materiais-tecnicos/predial/acessorios
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=gas\-predial($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/acessorios? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=esgoto => http://export.tigre.com/pt-br/materiais-tecnicos/predial/esgoto
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=esgoto($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/esgoto? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/contato => http://export.tigre.com/pt-br/contato
+  RewriteRule ^pt/contato$ /pt-br/contato? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/set_language/es => http://export.tigre.com/es/
+  RewriteRule ^es/set_language/es$ /es/? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=drenagem-tigre-ads => http://export.tigre.com/pt-br/materiais-tecnicos/predial/drenagem
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=drenagem\-tigre\-ads($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/drenagem? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=agua-fria => http://export.tigre.com/pt-br/materiais-tecnicos/predial/agua-fria
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=agua\-fria($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/agua-fria? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=eletricidade => http://export.tigre.com/pt-br/materiais-tecnicos/predial/eletricidade
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=eletricidade($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/eletricidade? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=protecao-contra-incendio => http://export.tigre.com/pt-br/materiais-tecnicos/predial/protecao-contra-incendio
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=protecao\-contra\-incendio($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/protecao-contra-incendio? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=sistema-de-fixacao-tigre => http://export.tigre.com/pt-br/materiais-tecnicos/predial/sistema-de-fixacao-tigre
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=sistema\-de\-fixacao\-tigre($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/sistema-de-fixacao-tigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/set_language/en => http://export.tigre.com/en/
+  RewriteRule ^en/set_language/en$ /en/? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=cpvc-industrial => http://export.tigre.com/pt-br/materiais-tecnicos/industrial/cpvc-industrial
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=cpvc\-industrial($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/industrial/cpvc-industrial? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=drenagem => http://export.tigre.com/pt-br/materiais-tecnicos/predial/drenagem
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=drenagem($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/drenagem? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/set_language/pt => http://export.tigre.com/pt-br/
+  RewriteRule ^pt/set_language/pt$ /pt-br/? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=agua-quente => http://export.tigre.com/pt-br/materiais-tecnicos/predial/agua-quente
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=agua\-quente($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/agua-quente? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=ventilacao => http://export.tigre.com/pt-br/materiais-tecnicos/predial/ventilacao
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=ventilacao($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/predial/ventilacao? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/group-tigre => http://export.tigre.com/en/a-tigre
+  RewriteRule ^fr/group\-tigre$ /en/a-tigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=protection-contre-les-incendies => http://export.tigre.com/en/technical-materials/predial/fire-protection
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=protection\-contre\-les\-incendies($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/fire-protection? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/group-tigre/tigre-internacional-3 => http://export.tigre.com/en/unidades
+  RewriteRule ^fr/group\-tigre/tigre\-internacional\-3$ /en/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/group-tigre/tigre-ads-3 => http://export.tigre.com/en/unidades
+  RewriteRule ^fr/group\-tigre/tigre\-ads\-3$ /en/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=cpvc-industrielle => http://export.tigre.com/en/technical-materials/predial/fire-protection
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=cpvc\-industrielle($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/fire-protection? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=ventilation-1 => http://export.tigre.com/en/technical-materials/predial/ventilation
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=ventilation\-1($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/ventilation? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=leau-chaude => http://export.tigre.com/en/technical-materials/predial/hot-water
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=leau\-chaude($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/hot-water? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=drainage-tigre-ads-1 => http://export.tigre.com/en/technical-materials/infraestrutura/drainage-tigre-ads
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=drainage\-tigre\-ads\-1($|&)
+  RewriteRule ^fr/$ /en/technical-materials/infraestrutura/drainage-tigre-ads? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=attache => http://export.tigre.com/en/technical-materials/predial/accessories
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=attache($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/accessories? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=geotigre-3 => http://export.tigre.com/en/technical-materials/irrigacao/geotigre
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=geotigre\-3($|&)
+  RewriteRule ^fr/$ /en/technical-materials/irrigacao/geotigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/set_language/fr => http://export.tigre.com/en/
+  RewriteRule ^fr/set_language/fr$ /en/? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=geotigre => http://export.tigre.com/pt-br/materiais-tecnicos/irrigacao/geotigre
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=geotigre($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/irrigacao/geotigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/group-tigre/tigre-brasil-3 => http://export.tigre.com/en/unidades
+  RewriteRule ^fr/group\-tigre/tigre\-brasil\-3$ /en/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=irrigacao => http://export.tigre.com/pt-br/materiais-tecnicos/irrigacao/irrigacao
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=irrigacao($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/irrigacao/irrigacao? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=vannes-cpvc-industrielle => http://export.tigre.com/en/technical-materials/industrial/cpvc-industry
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=vannes\-cpvc\-industrielle($|&)
+  RewriteRule ^fr/$ /en/technical-materials/industrial/cpvc-industry? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=leau-froide => http://export.tigre.com/en/technical-materials/predial/cold-water
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=leau\-froide($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/cold-water? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=conexion-predial => http://export.tigre.com/es/materiales-tecnicos/infraestrutura/conexion-predial
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=conexion\-predial($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/infraestrutura/conexion-predial? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=ventilacion => http://export.tigre.com/es/materiales-tecnicos/predial/ventilacio
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=ventilacion($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/ventilacio? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=desague => http://export.tigre.com/es/materiales-tecnicos/predial/desague
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=desague($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/desague? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=accesorios => http://export.tigre.com/es/materiales-tecnicos/predial/accesorios
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=accesorios($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/accesorios? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=drenaje => http://export.tigre.com/es/materiales-tecnicos/predial/drenaje
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=drenaje($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/drenaje? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=agua-caliente => http://export.tigre.com/es/materiales-tecnicos/predial/agua-caliente
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=agua\-caliente($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/agua-caliente? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=irrigacion => http://export.tigre.com/es/materiales-tecnicos/irrigacao/irrigacion
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=irrigacion($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/irrigacao/irrigacion? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=valvula-cpvc => http://export.tigre.com/es/materiales-tecnicos/industrial/valvula-cpvc
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=valvula\-cpvc($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/industrial/valvula-cpvc? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=agua-fria-4 => http://export.tigre.com/es/materiales-tecnicos/predial/agua-fria
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=agua\-fria\-4($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/agua-fria? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=drenaje-1 => http://export.tigre.com/es/materiales-tecnicos/predial/drenaje
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=drenaje\-1($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/drenaje? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=cpvc-industrial-1 => http://export.tigre.com/es/materiales-tecnicos/industrial/cpvc-industrial
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=cpvc\-industrial\-1($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/industrial/cpvc-industrial? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=geotigre-2 => http://export.tigre.com/es/materiales-tecnicos/irrigacao/geotigre
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=geotigre\-2($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/irrigacao/geotigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=proteccion-contra-el-fuego => http://export.tigre.com/es/materiales-tecnicos/predial/proteccion-contra-incendios
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=proteccion\-contra\-el\-fuego($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/proteccion-contra-incendios? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=ppr-industrial-1 => http://export.tigre.com/es/materiales-tecnicos/industrial/ppr-industrial
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=ppr\-industrial\-1($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/industrial/ppr-industrial? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=ppr-industrielle => http://export.tigre.com/en/technical-materials/industrial/ppr-industry
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=ppr\-industrielle($|&)
+  RewriteRule ^fr/$ /en/technical-materials/industrial/ppr-industry? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=ligacao-predial => http://export.tigre.com/pt-br/materiais-tecnicos/infraestrutura/ligacao-predial
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=ligacao\-predial($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/infraestrutura/ligacao-predial? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=valvula-cpvc-industrial => http://export.tigre.com/pt-br/materiais-tecnicos/industrial/valvula-cpvc-industrial
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=valvula\-cpvc\-industrial($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/industrial/valvula-cpvc-industrial? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/contacto => http://export.tigre.com/es/contato
+  RewriteRule ^es/contacto$ /es/contato? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=sistema-de-fijacion => http://export.tigre.com/es/materiales-tecnicos/predial/sistema-de-fijacion-tigre
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=sistema\-de\-fijacion($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/sistema-de-fijacion-tigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/grupo-tigre => http://export.tigre.com/pt-br/a-tigre
+  RewriteRule ^pt/grupo\-tigre$ /pt-br/a-tigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/?subcategoria=ppr-industrial => http://export.tigre.com/pt-br/materiais-tecnicos/industrial/ppr-industrial
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=ppr\-industrial($|&)
+  RewriteRule ^pt/$ /pt-br/materiais-tecnicos/industrial/ppr-industrial? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/grupo-tigre/tigre-brasil => http://export.tigre.com/pt-br/unidades
+  RewriteRule ^pt/grupo\-tigre/tigre\-brasil$ /pt-br/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/grupo-tigre/tigre-internacional => http://export.tigre.com/pt-br/unidades
+  RewriteRule ^pt/grupo\-tigre/tigre\-internacional$ /pt-br/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/grupo-tigre/claris => http://export.tigre.com/pt-br/unidades
+  RewriteRule ^pt/grupo\-tigre/claris$ /pt-br/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/grupo-tigre/tigre-ferramentas-para-pintura => http://export.tigre.com/pt-br/unidades
+  RewriteRule ^pt/grupo\-tigre/tigre\-ferramentas\-para\-pintura$ /pt-br/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=drainage-1 => http://export.tigre.com/en/technical-materials/predial/drainage
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=drainage\-1($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/drainage? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/?subcategoria=electrica => http://export.tigre.com/es/materiales-tecnicos/predial/electricidad
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=electrica($|&)
+  RewriteRule ^es/$ /es/materiales-tecnicos/predial/electricidad? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/group-tigre/tigre-ferramentas-para-pintura-3 => http://export.tigre.com/en/unidades
+  RewriteRule ^fr/group\-tigre/tigre\-ferramentas\-para\-pintura\-3$ /en/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/group-tigre => http://export.tigre.com/es/a-tigre
+  RewriteRule ^es/group\-tigre$ /es/a-tigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/pt/grupo-tigre/tigre-ads => http://export.tigre.com/pt-br/unidades
+  RewriteRule ^pt/grupo\-tigre/tigre\-ads$ /pt-br/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/group-tigre/tigre-ads-2 => http://export.tigre.com/es/unidades
+  RewriteRule ^es/group\-tigre/tigre\-ads\-2$ /es/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/group-tigre/tigre-ferramentas-para-pintura-2 => http://export.tigre.com/es/unidades
+  RewriteRule ^es/group\-tigre/tigre\-ferramentas\-para\-pintura\-2$ /es/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/group-tigre/tigre-brasil-2 => http://export.tigre.com/es/unidades
+  RewriteRule ^es/group\-tigre/tigre\-brasil\-2$ /es/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=accessoires => http://export.tigre.com/en/technical-materials/predial/accessories
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=accessoires($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/accessories? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=connexion-batiment => http://export.tigre.com/en/technical-materials/infraestrutura/building-connection
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=connexion\-batiment($|&)
+  RewriteRule ^fr/$ /en/technical-materials/infraestrutura/building-connection? [L,R=301]
+
+  # 301 --- http://export.tigre.com/es/group-tigre/tigre-internacional-2 => http://export.tigre.com/es/unidades
+  RewriteRule ^es/group\-tigre/tigre\-internacional\-2$ /es/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=evacuation => http://export.tigre.com/en/technical-materials/predial/sewer
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=evacuation($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/sewer? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=irrigation-1 => http://export.tigre.com/en/technical-materials/irrigacao/irrigation
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=irrigation\-1($|&)
+  RewriteRule ^fr/$ /en/technical-materials/irrigacao/irrigation? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/?subcategoria=electricite => http://export.tigre.com/en/technical-materials/predial/electricit
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=electricite($|&)
+  RewriteRule ^fr/$ /en/technical-materials/predial/electricit? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=sewer => http://export.tigre.com/en/technical-materials/predial/sewer
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=sewer($|&)
+  RewriteRule ^en/$ /en/technical-materials/predial/sewer? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=electric => http://export.tigre.com/en/technical-materials/predial/electricit
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=electric($|&)
+  RewriteRule ^en/$ /en/technical-materials/predial/electricit? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=hot-water => http://export.tigre.com/en/technical-materials/predial/hot-water
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=hot\-water($|&)
+  RewriteRule ^en/$ /en/technical-materials/predial/hot-water? [L,R=301]
+
+  # 301 --- http://export.tigre.com/fr/contact => http://export.tigre.com/en/contato
+  RewriteRule ^fr/contact$ /en/contato? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=irrigation => http://export.tigre.com/en/technical-materials/irrigacao/irrigation
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=irrigation($|&)
+  RewriteRule ^en/$ /en/technical-materials/irrigacao/irrigation? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/group-tigre => http://export.tigre.com/en/a-tigre
+  RewriteRule ^en/group\-tigre$ /en/a-tigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=drainage => http://export.tigre.com/en/technical-materials/predial/drainage
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=drainage($|&)
+  RewriteRule ^en/$ /en/technical-materials/predial/drainage? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=geotigre-1 => http://export.tigre.com/en/technical-materials/irrigacao/geotigre
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=geotigre\-1($|&)
+  RewriteRule ^en/$ /en/technical-materials/irrigacao/geotigre? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=brace => http://export.tigre.com/en/technical-materials/predial/accessories
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=brace($|&)
+  RewriteRule ^en/$ /en/technical-materials/predial/accessories? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/group-tigre/tigre-ads-1 => http://export.tigre.com/en/unidades
+  RewriteRule ^en/group\-tigre/tigre\-ads\-1$ /en/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/group-tigre/tigre-brazil => http://export.tigre.com/en/unidades
+  RewriteRule ^en/group\-tigre/tigre\-brazil$ /en/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/group-tigre/tigre-ferramentas-para-pintura-1 => http://export.tigre.com/en/unidades
+  RewriteRule ^en/group\-tigre/tigre\-ferramentas\-para\-pintura\-1$ /en/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=drainage-tigre-ads => http://export.tigre.com/en/technical-materials/infraestrutura/drainage-tigre-ads
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=drainage\-tigre\-ads($|&)
+  RewriteRule ^en/$ /en/technical-materials/infraestrutura/drainage-tigre-ads? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=accessories => http://export.tigre.com/en/technical-materials/predial/accessories
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=accessories($|&)
+  RewriteRule ^en/$ /en/technical-materials/predial/accessories? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=ppr-industry => http://export.tigre.com/en/technical-materials/industrial/ppr-industry
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=ppr\-industry($|&)
+  RewriteRule ^en/$ /en/technical-materials/industrial/ppr-industry? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=cold-water => http://export.tigre.com/en/technical-materials/predial/cold-water
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=cold\-water($|&)
+  RewriteRule ^en/$ /en/technical-materials/predial/cold-water? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=ventilation => http://export.tigre.com/en/technical-materials/predial/ventilation
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=ventilation($|&)
+  RewriteRule ^en/$ /en/technical-materials/predial/ventilation? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/contact => http://export.tigre.com/en/contato
+  RewriteRule ^en/contact$ /en/contato? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=building-connection => http://export.tigre.com/en/technical-materials/infraestrutura/building-connection
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=building\-connection($|&)
+  RewriteRule ^en/$ /en/technical-materials/infraestrutura/building-connection? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/group-tigre/tigre-internacional-1 => http://export.tigre.com/en/unidades
+  RewriteRule ^en/group\-tigre/tigre\-internacional\-1$ /en/unidades? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=fire-protection => http://export.tigre.com/en/technical-materials/predial/fire-protection
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=fire\-protection($|&)
+  RewriteRule ^en/$ /en/technical-materials/predial/fire-protection? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=cpvc-industry => http://export.tigre.com/en/technical-materials/industrial/cpvc-industry
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=cpvc\-industry($|&)
+  RewriteRule ^en/$ /en/technical-materials/industrial/cpvc-industry? [L,R=301]
+
+  # 301 --- http://export.tigre.com/en/?subcategoria=cpvc-valve => http://export.tigre.com/en/technical-materials/industrial/cpvc-valve
+  RewriteCond %{QUERY_STRING} (^|&)subcategoria\=cpvc\-valve($|&)
+  RewriteRule ^en/$ /en/technical-materials/industrial/cpvc-valve? [L,R=301]
+
   # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
   # VirtualDocumentRoot and the rewrite rules are not working properly.
   # For example if your site is at http://example.com/drupal uncomment and
