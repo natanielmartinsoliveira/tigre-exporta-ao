@@ -3,6 +3,7 @@ langcode: pt-br
 status: true
 dependencies:
   module:
+    - contact_ajax
     - contact_storage
 third_party_settings:
   contact_storage:
@@ -11,6 +12,11 @@ third_party_settings:
     disabled_form_message: 'This contact form has been disabled.'
     maximum_submissions_user: 0
     page_autoreply_format: plain_text
+  contact_ajax:
+    enabled: false
+    prefix_id: ''
+    render_selector: ''
+    confirmation_type: 1
 id: contato
 label: Contato
 recipients:
@@ -19,4 +25,4 @@ recipients:
 reply: ''
 weight: 0
 message: 'Sua mensagem foi enviada'
-redirect: ''
+redirect: /node/16
