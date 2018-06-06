@@ -626,26 +626,26 @@ p {
   text-decoration: none;
   background-color: transparent; }
 
-#block-dropdownlanguageselector {
+#block-dropdownlanguage {
   float: right; }
-  #block-dropdownlanguageselector .active-language, #block-dropdownlanguageselector .dropdown-toggle {
+  #block-dropdownlanguage .active-language, #block-dropdownlanguage .dropdown-toggle {
     background-color: transparent;
     color: white;
     border: none;
     height: 39px; }
-  #block-dropdownlanguageselector .dropdown-menu {
+  #block-dropdownlanguage .dropdown-menu {
     z-index: 11000;
     min-width: 80px;
     border: 0;
     left: -15px;
     border-radius: 0; }
-    #block-dropdownlanguageselector .dropdown-menu a {
+    #block-dropdownlanguage .dropdown-menu a {
       color: #797979; }
-  #block-dropdownlanguageselector .active-language {
+  #block-dropdownlanguage .active-language {
     padding: 6px 0; }
-  #block-dropdownlanguageselector .dropdown-toggle {
+  #block-dropdownlanguage .dropdown-toggle {
     padding-bottom: 8px; }
-  #block-dropdownlanguageselector #ajax-link--3 {
+  #block-dropdownlanguage #ajax-link--3 {
     display: none; }
 
 #navbar-collapse {
