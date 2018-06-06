@@ -8,8 +8,8 @@ dependencies:
 type: module
 configure: dropdown_language.setting
 
-# Information added by Drupal.org packaging script on 2017-07-04
-version: '8.x-1.2'
+# Information added by Drupal.org packaging script on 2018-04-29
+version: '8.x-2.0'
 core: '8.x'
 project: 'dropdown_language'
-datestamp: 1499211245
+datestamp: 1525034587

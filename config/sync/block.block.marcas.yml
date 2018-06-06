@@ -15,7 +15,7 @@ third_party_settings:
 id: marcas
 theme: tigre
 region: menu_global
-weight: -21
+weight: -27
 provider: null
 plugin: 'system_menu_block:marcas'
 settings:

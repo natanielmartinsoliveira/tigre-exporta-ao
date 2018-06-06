@@ -1,4 +1,4 @@
-uuid: 1f91e4fb-5719-4318-8165-28271afd5e2d
+uuid: 788b6940-7693-4bb8-b113-4b6d3aa59c3e
 langcode: pt-br
 status: true
 dependencies:
@@ -10,15 +10,15 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: dropdownlanguageselector
+id: dropdownlanguage
 theme: tigre
 region: menu_global
-weight: -20
+weight: -25
 provider: null
-plugin: dropdown_language
+plugin: 'dropdown_language:language_interface'
 settings:
-  id: dropdown_language
-  label: 'Dropdown Language Selector'
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
   provider: dropdown_language
   label_display: '0'
   labels: null

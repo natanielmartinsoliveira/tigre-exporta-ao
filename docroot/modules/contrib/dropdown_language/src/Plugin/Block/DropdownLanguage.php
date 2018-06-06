@@ -2,12 +2,16 @@
 
 namespace Drupal\dropdown_language\Plugin\Block;
 
+use Drupal\Core\Cache\Cache;
+use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Language\LanguageManagerInterface;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Path\PathMatcherInterface;
 use Drupal\Core\Url;
 use Drupal\Component\Utility\Unicode;
 
@@ -18,6 +22,7 @@ use Drupal\Component\Utility\Unicode;
  *   id = "dropdown_language",
  *   admin_label = @Translation("Dropdown Language Selector"),
  *   category = @Translation("Custom Blocks"),
+ *   deriver = "Drupal\dropdown_language\Plugin\Derivative\DropdownLanguage"
  * )
  */
 class DropdownLanguage extends BlockBase implements ContainerFactoryPluginInterface {
@@ -37,6 +42,13 @@ class DropdownLanguage extends BlockBase implements ContainerFactoryPluginInterf
   private $configFactory;
 
   /**
+   * The path matcher.
+   *
+   * @var \Drupal\Core\Path\PathMatcherInterface
+   */
+  protected $pathMatcher;
+
+  /**
    * Constructs a new DropdownLanguage instance.
    *
    * @param array $block_configuration
@@ -49,12 +61,15 @@ class DropdownLanguage extends BlockBase implements ContainerFactoryPluginInterf
    *   The language manager.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The config factory.
+   * @param \Drupal\Core\Path\PathMatcherInterface $path_matcher
+   *   The path matcher.
    */
-  public function __construct(array $block_configuration, $plugin_id, $plugin_definition, LanguageManagerInterface $language_manager, ConfigFactoryInterface $config_factory) {
+  public function __construct(array $block_configuration, $plugin_id, $plugin_definition, LanguageManagerInterface $language_manager, ConfigFactoryInterface $config_factory,  PathMatcherInterface $path_matcher) {
     parent::__construct($block_configuration, $plugin_id, $plugin_definition);
 
     $this->languageManager = $language_manager;
     $this->configFactory = $config_factory;
+    $this->pathMatcher = $path_matcher;
   }
 
   /**
@@ -62,11 +77,12 @@ class DropdownLanguage extends BlockBase implements ContainerFactoryPluginInterf
    */
   public static function create(ContainerInterface $container, array $block_configuration, $plugin_id, $plugin_definition) {
     return new static(
-     $block_configuration,
-     $plugin_id,
-     $plugin_definition,
-     $container->get('language_manager'),
-     $container->get('config.factory')
+      $block_configuration,
+      $plugin_id,
+      $plugin_definition,
+      $container->get('language_manager'),
+      $container->get('config.factory'),
+      $container->get('path.matcher')
     );
   }
 
@@ -82,12 +98,21 @@ class DropdownLanguage extends BlockBase implements ContainerFactoryPluginInterf
   /**
    * {@inheritdoc}
    */
+  protected function blockAccess(AccountInterface $account) {
+    $access = $this->languageManager->isMultilingual() ? AccessResult::allowed() : AccessResult::forbidden();
+    return $access->addCacheTags(['config:configurable_language_list']);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     $block = [];
     $languages = $this->languageManager->getLanguages();
     if (count($languages) > 1) {
-      $current_language = $this->languageManager->getCurrentLanguage()->getId();
-      $links = $this->languageManager->getLanguageSwitchLinks("language_interface", Url::fromRoute('<current>'))->links;
+      $derivative_id = $this->getDerivativeId();
+      $current_language = $this->languageManager->getCurrentLanguage($derivative_id)->getId();
+      $links = $this->languageManager->getLanguageSwitchLinks($derivative_id, Url::fromRoute('<current>'))->links;
 
       // Place active language ontop of list.
       if (isset($links[$current_language])) {
@@ -102,16 +127,31 @@ class DropdownLanguage extends BlockBase implements ContainerFactoryPluginInterf
       $wrapper_default = $general_config->get('wrapper');
       $display_language_id = $general_config->get('display_language_id');
 
+      // only load once, rather than in switch (in a loop)
+      $native_names = false;
+      if ($display_language_id==2){
+         $native_names = $this->languageManager->getStandardLanguageList();
+      }
+
       // Re-label as per general setting.
       foreach ($links as $lid => $link) {
         switch ($display_language_id) {
-          case '0':
+          case '1':
             $links[$lid]['title'] = Unicode::strtoupper($lid);
             break;
 
           case '2':
+            $name = $link['language']->getName();
+            $links[$lid]['title'] = isset($native_names[$lid]) ? $native_names[$lid][1] : $name;
+            if (isset($native_names[$lid]) && (isset($native_names[$lid]) && $native_names[$lid][1]!=$name) ) {
+              $links[$lid]['attributes']['title'] = $link['language']->getName();
+            }
+            break;
+
+          case '3':
             $links[$lid]['title'] = isset($block_config['labels'][$lid]) ? $block_config['labels'][$lid] : $link['language']->getName();
             break;
+
         }
       }
 
@@ -138,7 +178,9 @@ class DropdownLanguage extends BlockBase implements ContainerFactoryPluginInterf
       }
     }
 
-    return $block;
+    $build['#markup'] =\Drupal::service('renderer')->render($block);
+    $build['#cache']['contexts'] = ['user.permissions', 'url.path', 'url.query_args', 'languages:' . $derivative_id];
+    return $build;
   }
 
   /**
@@ -165,7 +207,7 @@ class DropdownLanguage extends BlockBase implements ContainerFactoryPluginInterf
       ],
     ];
 
-    if ($display_language_id == 2) {
+    if ($display_language_id == 3) {
       $block_config = $this->getConfiguration();
       $languages = $this->languageManager->getLanguages();
       $form['labels'] = [
@@ -204,13 +246,9 @@ class DropdownLanguage extends BlockBase implements ContainerFactoryPluginInterf
    */
   public function blockSubmit($form, FormStateInterface $form_state) {
     $this->setConfigurationValue('labels', $form_state->getValue('labels'));
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getCacheMaxAge() {
-    return 0;
+    $bid = $form['id']['#default_value'];
+    $tag = 'config:block.block.'.$bid;
+    Cache::invalidateTags([$tag]);
   }
 
 }

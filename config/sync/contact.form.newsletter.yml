@@ -20,7 +20,7 @@ third_party_settings:
 id: newsletter
 label: Newsletter
 recipients:
-  - tigretube@gmail.com
+  - rudamaia@gmail.com
 reply: ''
 weight: 0
 message: 'Sua mensagem foi enviada'
